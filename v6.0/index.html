@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 현재 경로 확인
+            const path = window.location.pathname;
+    
+            // 루트 경로일 때만 리디렉션 수행
+            if (path === "/" || path === "/index.html") {
+                const lang = navigator.language || navigator.userLanguage;
+    
+                if (lang.startsWith("ko")) {
+                    window.location.href = "/ko";
+                } else if (lang.startsWith("ja")) {
+                    window.location.href = "/ja";
+                } else if (lang.startsWith("en")) {
+                    window.location.href = "/en";
+                } else {
+                    window.location.href = "/en";
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Loading ...</p>
+</body>
+</html>
