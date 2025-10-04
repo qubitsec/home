@@ -7,29 +7,40 @@
   <title>Redirecting...</title>
   <script>
     (function () {
-      function setLangCookie(lang) {
-        var maxAge = 31536000; // 1 year
+      // --- util: cookie get/set/del ---
+      function getCookie(name) {
+        var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([$?*|{}()[\\]\\/+^])/g,'\\$1') + '=([^;]*)'));
+        return m ? decodeURIComponent(m[1]) : null;
+      }
+      function setCookie(name, value, opts) {
+        var maxAge = (opts && opts.maxAge) ? opts.maxAge : 31536000; // 1y
         var parts = [
-          'lang=' + encodeURIComponent(lang),
+          name + '=' + encodeURIComponent(value),
           'Max-Age=' + maxAge,
           'Path=/',
           'SameSite=Lax'
         ];
-        // HTTPS 환경에서만 Secure 사용
         if (location.protocol === 'https:') parts.push('Secure');
-        // plura.io 및 서브도메인에 공통 적용
+        try {
+          if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io');
+        } catch (e) {}
+        document.cookie = parts.join('; ');
+      }
+      function delCookie(name) {
+        var parts = [
+          name + '=',
+          'Max-Age=0',
+          'Path=/'
+        ];
+        if (location.protocol === 'https:') parts.push('Secure');
         try {
           if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io');
         } catch (e) {}
         document.cookie = parts.join('; ');
       }
 
-      function getCookie(name) {
-        var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([$?*|{}()[\]\\/+^])/g,'\\$1') + '=([^;]*)'));
-        return m ? decodeURIComponent(m[1]) : null;
-      }
-
-      function normalize(lang) {
+      // --- normalize browser language -> ko/ja/en ---
+      function mapLang(lang) {
         if (!lang) return 'en';
         var l = lang.toLowerCase();
         if (l.startsWith('ko')) return 'ko';
@@ -37,26 +48,39 @@
         return 'en';
       }
 
+      // --- main ---
       document.addEventListener('DOMContentLoaded', function () {
         var path = location.pathname;
 
-        // 이미 /ko|/ja|/en에 있는 경우: 쿠키만 보정하고 그대로 둠(루프 방지)
+        // 언어 경로 감지
         var m = path.match(/^\/(ko|ja|en)(\/|$)/);
+
+        // 1) 쿠키 마이그레이션: 기존 lang -> px_lang
+        var legacy = getCookie('lang');
+        if (legacy && !getCookie('px_lang')) {
+          setCookie('px_lang', mapLang(legacy));
+          // 선택: 구 쿠키 제거(충돌 방지)
+          delCookie('lang');
+        }
+
+        // 2) 이미 언어 경로라면 쿠키 보정만 하고 끝 (루프 방지)
         if (m) {
           var cur = m[1];
-          if (getCookie('lang') !== cur) setLangCookie(cur);
+          if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
+          // <html lang>도 맞춰 놓기(선택)
+          try { document.documentElement.setAttribute('lang', cur); } catch (e) {}
           return;
         }
 
-        // 루트 또는 /index.html 에서만 처리
+        // 3) 루트(/ 또는 /index.html) 에서만 리다이렉트 수행
         if (path === '/' || path === '/index.html') {
-          var lang = getCookie('lang');
-          if (!lang) {
-            lang = normalize(navigator.language || navigator.userLanguage);
-            setLangCookie(lang);
+          var target = getCookie('px_lang');
+          if (!target) {
+            target = mapLang(navigator.language || navigator.userLanguage);
+            setCookie('px_lang', target);
           }
-          // 동일 페이지로의 불필요한 리다이렉트 방지
-          location.replace('/' + lang + '/');
+          // back 버튼 루프 방지용 replace
+          location.replace('/' + target + '/');
         }
       });
     })();
