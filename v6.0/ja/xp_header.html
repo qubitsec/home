@@ -1,0 +1,208 @@
+<header>
+  <div class="inner">
+    <div class="header-left">
+      <h1>
+        <a href="index.html">
+          <img src="../res/images/logo.png" alt="Plura" />
+          <img class="over" src="../res/images/logo_over.png" alt="Plura" />
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="video.html">動画</a>
+          </li>
+          <li class="has-depth">
+            <a href="javascript:void(0);">プラットフォーム</a>
+            <div class="depth-menu">
+              <ul>
+                <li><a href="platform_xdr.html">拡張検知と対応 (XDR)</a></li>
+                <li><a href="platform_siem.html">統合セキュリティイベント管理 (SIEM)</a></li>
+                <li><a href="platform_waf.html">Webファイアウォール (WAF)</a></li>
+                <li><a href="platform_edr.html">ホスト防御 (EDR)</a></li>
+                <li><a href="platform_forensic.html">フォレンジック (Forensic)</a></li>
+                <li><a href="platform_sysmon.html">リソースモニタリング (PLURA-SysMon)</a></li>
+                <li><a href="platform_soc.html">CERT セキュリティ監視 (PLURA-SOC)</a></li>
+                <li><a href="platform_backup.html">データバックアップ (Backup)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="customer.html">顧客</a>
+          </li>
+          <li>
+            <a href="pricing.html">価格</a>
+          </li>
+          <li>
+            <a href="contact.html">連絡先</a>
+          </li>
+          <li>
+            <a href="https://www.qubitsec.com/recruit" target="_blank">採用</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <ul>
+        <li><a href="https://xdr.plura.io/auth/signup">無料トライアル開始</a></li>
+        <!--li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">なぜ無料ですか？</a></li-->
+      </ul>
+      <a href="https://xdr.plura.io/auth/login" class="login">ログイン</a>
+      <div class="lang">
+        <button type="button" class="">韓国語</button>
+        <div class="depth">
+          <ul>
+            <li>
+              <a onClick="javascript:jsSetCookie('ko');" class="dis-block width_110 cursor_p"><span>韓国語</span></a>
+            </li>
+            <li>
+              <a onClick="javascript:jsSetCookie('en');" class="dis-block width_110 cursor_p"><span>English</span></a>
+            </li>
+            <li>
+              <a onClick="javascript:jsSetCookie('ja');" class="dis-block width_110 cursor_p"><span>日本語</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="m-btn"></button>
+    </div>
+  </div>
+  <div class="depth-bg"></div>
+</header>
+<!-- region-aware link rewriter: ko -> kr.plura.io, ja -> jp.plura.io -->
+<!-- region 확인 모달 (레이아웃 무영향, 클릭 시에만 DOM 추가) -->
+<!-- region 확인 모달 (Shadow DOM + 배경 선택/스크롤 잠금) -->
+<style>
+  /* 모달 열릴 때 배경 스크롤 잠금 + 텍스트 선택 방지 + 선택 하이라이트 무효화 */
+  html.plr-modal-open { overflow: hidden; }
+  html.plr-modal-open * { user-select: none !important; }
+  html.plr-modal-open *::selection { background: transparent !important; color: inherit !important; }
+</style>
+<script>
+(function(){
+  function langToRegion(){
+    var lang=(document.documentElement.getAttribute('lang')||'').toLowerCase();
+    if(lang.indexOf('ja')===0) return 'jp';
+    if(lang.indexOf('ko')===0) return 'kr';
+    return 'kr';
+  }
+  function setRegionCookie(code){
+    try{
+      var maxAge=31536000;
+      document.cookie='region='+code+'; Domain=.plura.io; Path=/; Max-Age='+maxAge+'; SameSite=Lax; Secure';
+    }catch(e){}
+  }
+
+  function clearSelection(){
+    try{
+      var sel = window.getSelection ? window.getSelection() : document.selection;
+      if(sel){
+        if(sel.removeAllRanges) sel.removeAllRanges();
+        else if(sel.empty) sel.empty();
+      }
+    }catch(e){}
+  }
+
+  function ensureModal(){
+    var host = document.getElementById('plr-modal-host');
+    if (host) return host;
+    host = document.createElement('div');
+    host.id = 'plr-modal-host';
+    var root = host.attachShadow({mode:'open'});
+    root.innerHTML = `
+      <style>
+        .backdrop{position:fixed;inset:0;background:rgba(2,6,23,.60);backdrop-filter:blur(2px);z-index:1}
+        .wrap{position:fixed;inset:0;display:grid;place-items:center;z-index:2}
+        .panel{width:min(520px,92vw);background:#111827;color:#e5e7eb;border:1px solid rgba(255,255,255,.15);
+               border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.6);font:600 14px/1.55 ui-sans-serif,system-ui,Segoe UI,Roboto}
+        .hd{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+        .title{margin:0;font-size:16px}
+        .x{background:transparent;border:0;color:#9ca3af;font-size:20px;cursor:pointer}
+        .bd{padding:16px 18px;color:#cbd5e1}
+        .ft{display:flex;justify-content:flex-end;gap:8px;padding:14px 18px;border-top:1px solid rgba(255,255,255,.08)}
+        .btn{appearance:none;border:0;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}
+        .ghost{background:transparent;color:#e5e7eb;border:1px solid rgba(255,255,255,.2)}
+        .primary{background:#60a5fa;color:#0b1220}
+      </style>
+      <div class="backdrop" part="backdrop"></div>
+      <div class="wrap" role="dialog" aria-modal="true" aria-labelledby="plrTitle" aria-describedby="plrDesc">
+        <div class="panel" role="document">
+          <div class="hd">
+            <h2 id="plrTitle" class="title">지역 이동 안내</h2>
+            <button class="x" id="plrClose" aria-label="닫기">×</button>
+          </div>
+          <div class="bd">
+            <p id="plrDesc">선택하신 작업을 계속하면 <strong id="plrRegion">한국 리전</strong> 으로 이동합니다.</p>
+          </div>
+          <div class="ft">
+            <button class="btn ghost" id="plrCancel" type="button">취소</button>
+            <button class="btn primary" id="plrOk" type="button">확인 후 이동</button>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(host);
+    return host;
+  }
+
+  let pendingUrl=null, pendingRegion=null, lastFocused=null;
+
+  function openModal(region, url){
+    const host = ensureModal();
+    const root = host.shadowRoot;
+
+    pendingUrl = url;
+    pendingRegion = region;
+    lastFocused = document.activeElement;
+
+    // 배경 하이라이트 제거 + 선택 차단 + 스크롤 잠금
+    clearSelection();
+    document.documentElement.classList.add('plr-modal-open');
+
+    // 라벨
+    root.getElementById('plrRegion').textContent = (region==='jp' ? '日本リージョン' : '한국 리전');
+
+    // 이벤트 바인딩(한 번만)
+    if (!host._wired){
+      const close = () => {
+        // 선택 가능/스크롤 복구
+        document.documentElement.classList.remove('plr-modal-open');
+        host.remove();
+        document.removeEventListener('keydown', onEsc, true);
+        if (lastFocused) try{ lastFocused.focus(); }catch(e){}
+        pendingUrl = null; pendingRegion = null;
+      };
+      const onEsc = (e)=>{ if(e.key==='Escape'){ e.preventDefault(); close(); } };
+
+      root.getElementById('plrClose').addEventListener('click', close);
+      root.getElementById('plrCancel').addEventListener('click', close);
+      root.getElementById('plrOk').addEventListener('click', function(){
+        if(!pendingUrl || !pendingRegion) return close();
+        setRegionCookie(pendingRegion);
+        window.location.assign(pendingUrl);
+      });
+      root.querySelector('.backdrop').addEventListener('click', close);
+      document.addEventListener('keydown', onEsc, true);
+      host._wired = true;
+    }
+
+    // 포커스
+    try { host.shadowRoot.getElementById('plrOk').focus(); } catch(e){}
+  }
+
+  function intercept(selector, path){
+    const a = document.querySelector(selector);
+    if(!a) return;
+    a.addEventListener('click', function(ev){
+      ev.preventDefault();
+      const region = langToRegion();
+      const base = 'https://' + region + '.plura.io';
+      openModal(region, base + path);
+    }, {capture:true});
+  }
+
+  intercept('a[href^="https://xdr.plura.io/auth/signup"]','/auth/signup');
+  intercept('a[href^="https://xdr.plura.io/auth/login"]','/auth/login');
+  intercept('a.login','/auth/login'); // 보조
+})();
+</script>
