@@ -7,11 +7,10 @@
   <title>Redirecting...</title>
   <script>
     (function () {
-      // --- cookie utils (no regex) ---
+      /* ---------- cookie utils (no regex) ---------- */
       function getCookie(name){
-        var cs = ('; ' + document.cookie).split('; ' + name + '=');
-        if (cs.length < 2) return null;
-        return decodeURIComponent(cs.pop().split(';').shift());
+        var cs=('; '+document.cookie).split('; '+name+'=');
+        return cs.length<2 ? null : decodeURIComponent(cs.pop().split(';').shift());
       }
       function setCookie(name, value){
         var parts = [
@@ -25,12 +24,13 @@
         document.cookie = parts.join('; ');
       }
       function delCookie(name){
-        var parts = [name + '=', 'Max-Age=0', 'Path=/'];
+        var parts = [ name + '=', 'Max-Age=0', 'Path=/' ];
         if (location.protocol === 'https:') parts.push('Secure');
         try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
         document.cookie = parts.join('; ');
       }
 
+      /* ---------- mapping ---------- */
       function mapLang(l){
         if (!l) return 'en';
         l = l.toLowerCase();
@@ -38,21 +38,27 @@
         if (l.indexOf('ja') === 0) return 'ja';
         return 'en';
       }
+      function mapRegionFromLang(lang){
+        return (lang === 'ja') ? 'jp' : 'kr'; // ko→kr, ja→jp, 기타→kr
+      }
 
       document.addEventListener('DOMContentLoaded', function(){
         var path = location.pathname;
 
-        // 언어 폴더에 이미 있으면 쿠키만 보정하고 종료
+        // 이미 언어 경로면: 두 쿠키 보정 후 종료(루프 방지)
         var m = /^\/(ko|ja|en)(\/|$)/.exec(path);
         if (m) {
-          var cur = m[1];
-          if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
-          try { document.documentElement.setAttribute('lang', cur); } catch(e){}
+          var curLang = m[1];
+          var wantRegion = mapRegionFromLang(curLang);
+          if (getCookie('px_lang') !== curLang) setCookie('px_lang', curLang);
+          if (getCookie('px_region') !== wantRegion) setCookie('px_region', wantRegion);
+          try { document.documentElement.setAttribute('lang', curLang); } catch(e){}
           return;
         }
 
+        // 루트(/ 또는 /index.html)에서만 리디렉트 수행
         if (path === '/' || path === '/index.html') {
-          // 구 쿠키 lang -> px_lang 마이그레이션
+          // (선택) 구 쿠키 마이그레이션
           var legacy = getCookie('lang');
           if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
 
@@ -61,8 +67,11 @@
             lang = mapLang(navigator.language || navigator.userLanguage);
             setCookie('px_lang', lang);
           }
+          // region도 보정/생성
+          var region = getCookie('px_region') || mapRegionFromLang(lang);
+          setCookie('px_region', region);
 
-          // 실제 컨텐츠가 /{lang}/index.html 에 있어야 합니다
+          // 실제 컨텐츠가 /{lang}/index.html 에 존재해야 함
           location.replace('/' + lang + '/index.html');
         }
       });
