@@ -1,39 +1,43 @@
 (function () {
-  function getCookie(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n.replace(/([$?*|{}()[\\]\\/+^])/g,'\\$1')+'=([^;]*)'));return m?decodeURIComponent(m[1]):null}
-  function setCookie(n,v){var parts=[n+'='+encodeURIComponent(v),'Max-Age=31536000','Path=/','SameSite=Lax'];if(location.protocol==='https:')parts.push('Secure');try{if(location.hostname.endsWith('plura.io'))parts.push('Domain=.plura.io')}catch(e){}document.cookie=parts.join('; ')}
-  function mapLang(l){if(!l)return'en';l=l.toLowerCase();if(l==='ko'||l.startsWith('ko'))return'ko';if(l==='ja'||l.startsWith('ja'))return'ja';return'en'}
-
-  function go(lang){
-    var origin = location.origin;
-    var list = [
-      origin + '/' + lang + '/index.html',
-      origin + '/' + lang + '/',
-      'https://www.plura.io/' + lang + '/index.html',
-      'https://www.plura.io/' + lang + '/'
+  // --- cookie utils (no regex) ---
+  function getCookie(name){
+    var cs = ('; ' + document.cookie).split('; ' + name + '=');
+    if (cs.length < 2) return null;
+    return decodeURIComponent(cs.pop().split(';').shift());
+  }
+  function setCookie(name, value){
+    var parts = [
+      name + '=' + encodeURIComponent(value),
+      'Max-Age=31536000',
+      'Path=/',
+      'SameSite=Lax'
     ];
-    // 첫 후보로 이동 후, 800ms 내 타이틀이 안 바뀌면 폴백
-    document.title = 'Redirecting...';
-    location.href = list[0];
-    setTimeout(function(){
-      if (document.title && document.title.toLowerCase().indexOf('redirecting') !== -1) {
-        location.href = list[2];
-      }
-    }, 800);
+    if (location.protocol === 'https:') parts.push('Secure');
+    try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
+    document.cookie = parts.join('; ');
+  }
+  function mapLang(l){
+    if (!l) return 'en';
+    l = l.toLowerCase();
+    if (l === 'ko' || l.indexOf('ko') === 0) return 'ko';
+    if (l === 'ja' || l.indexOf('ja') === 0) return 'ja';
+    return 'en';
   }
 
-  // 헤더에서 onClick="jsSetCookie('ja')" 사용
+  // 헤더에서: <a href="/ko/" onclick="return jsSetCookie('ko')">한국어</a>
   window.jsSetCookie = function (lang) {
     var target = mapLang(lang);
     setCookie('px_lang', target);
-    go(target);
+    // 앵커 기본 이동 막음(돌아가기 이슈 방지)
+    location.href = '/' + target + '/index.html';
+    return false;
   };
 
-  // 버튼 라벨 동기화(선택)
+  // 버튼 라벨/상태 갱신(선택)
   document.addEventListener('DOMContentLoaded', function(){
-    var current = mapLang(getCookie('px_lang') || (document.documentElement.getAttribute('lang') || ''));
-    var label = (current === 'ko') ? '한국어' : (current === 'ja') ? '日本語' : 'English';
+    var current = mapLang(getCookie('px_lang') || document.documentElement.getAttribute('lang'));
     var btn = document.querySelector('.header-right .lang > button, .header-right .lang-btn');
-    if (btn) btn.textContent = label;
+    if (btn) btn.textContent = (current === 'ko') ? '한국어' : (current === 'ja') ? '日本語' : 'English';
     try { document.documentElement.setAttribute('lang', current); } catch(e){}
   });
 })();
