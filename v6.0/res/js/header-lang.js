@@ -24,7 +24,7 @@
     document.cookie = cookie;
 
     // 선택 즉시 이동
-    location.href = 'https://v6.plura.io/' + target;
+    location.href = 'http://v6.plura.io/' + target;
   };
 
   // 선택사항: 헤더 버튼 라벨을 쿠키 기준으로 갱신
@@ -36,4 +36,5 @@
   }
   document.addEventListener('DOMContentLoaded', updateLangButton);
 })();
+
 
