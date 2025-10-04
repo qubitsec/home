@@ -7,83 +7,67 @@
   <title>Redirecting...</title>
   <script>
     (function () {
-      // ---------- cookie utils ----------
-      function getCookie(name) {
-        var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([$?*|{}()[\\]\\/+^])/g,'\\$1') + '=([^;]*)'));
-        return m ? decodeURIComponent(m[1]) : null;
-      }
-      function setCookie(name, value, opts) {
-        var maxAge = (opts && opts.maxAge) ? opts.maxAge : 31536000; // 1y
-        var parts = [
-          name + '=' + encodeURIComponent(value),
-          'Max-Age=' + maxAge,
-          'Path=/',
-          'SameSite=Lax'
-        ];
-        if (location.protocol === 'https:') parts.push('Secure');
-        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch (e) {}
-        document.cookie = parts.join('; ');
-      }
-      function delCookie(name) {
-        var parts = [ name + '=', 'Max-Age=0', 'Path=/' ];
-        if (location.protocol === 'https:') parts.push('Secure');
-        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch (e) {}
-        document.cookie = parts.join('; ');
-      }
+      // ----- utils -----
+      function q(k){return new URLSearchParams(location.search).get(k)}
+      function getCookie(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n.replace(/([$?*|{}()[\\]\\/+^])/g,'\\$1')+'=([^;]*)'));return m?decodeURIComponent(m[1]):null}
+      function setCookie(n,v){var parts=[n+'='+encodeURIComponent(v),'Max-Age=31536000','Path=/','SameSite=Lax'];if(location.protocol==='https:')parts.push('Secure');try{if(location.hostname.endsWith('plura.io'))parts.push('Domain=.plura.io')}catch(e){}document.cookie=parts.join('; ')}
+      function delCookie(n){var parts=[n+'=','Max-Age=0','Path=/'];if(location.protocol==='https:')parts.push('Secure');try{if(location.hostname.endsWith('plura.io'))parts.push('Domain=.plura.io')}catch(e){}document.cookie=parts.join('; ')}
+      function mapLang(l){if(!l)return'en';l=l.toLowerCase();if(l.startsWith('ko'))return'ko';if(l.startsWith('ja'))return'ja';return'en'}
 
-      // ---------- lang mapping ----------
-      function mapLang(lang) {
-        if (!lang) return 'en';
-        var l = lang.toLowerCase();
-        if (l.startsWith('ko')) return 'ko';
-        if (l.startsWith('ja')) return 'ja';
-        return 'en';
-      }
+      // ----- main -----
+      document.addEventListener('DOMContentLoaded', async function () {
+        // 디버그용: 리디렉트 끄기
+        if (q('noredirect') === '1') { document.title='No redirect'; return; }
 
-      // ---------- redirect helpers ----------
-      function goToLang(lang) {
-        var origin = location.origin;
-        var targets = [
-          origin + '/' + lang + '/index.html',
-          origin + '/' + lang + '/',                 // 디렉터리 인덱스
-          'https://www.plura.io/' + lang + '/index.html',
-          'https://www.plura.io/' + lang + '/'
-        ];
-        // 첫 후보로 이동
-        location.replace(targets[0]);
-        // 1.2초 내 타이틀이 'Redirecting...' 그대로면 폴백 시도
-        setTimeout(function(){
-          if (document.title.indexOf('Redirecting') !== -1) {
-            location.replace(targets[2]);
-          }
-        }, 1200);
-      }
-
-      document.addEventListener('DOMContentLoaded', function () {
         var path = location.pathname;
-
-        // 언어 경로에 이미 진입한 경우: 쿠키만 보정하고 종료
+        // 이미 언어 경로면: 쿠키만 보정하고 종료(루프 방지)
         var m = path.match(/^\/(ko|ja|en)(\/|$)/);
         if (m) {
           var cur = m[1];
           if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
-          try { document.documentElement.setAttribute('lang', cur); } catch (e) {}
+          try { document.documentElement.setAttribute('lang', cur); } catch(e){}
           return;
         }
 
-        // 루트 또는 /index.html 에서만 동작
-        if (path === '/' || path === '/index.html') {
-          // 마이그레이션: legacy lang -> px_lang
-          var legacy = getCookie('lang');
-          if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
+        // 마이그레이션: legacy lang -> px_lang
+        var legacy = getCookie('lang');
+        if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
 
-          var lang = getCookie('px_lang');
-          if (!lang) {
-            lang = mapLang(navigator.language || navigator.userLanguage);
-            setCookie('px_lang', lang);
-          }
-          goToLang(lang);
+        // 언어 결정
+        var lang = getCookie('px_lang') || mapLang(navigator.language || navigator.userLanguage);
+        setCookie('px_lang', lang);
+
+        // 후보 URL (현재 오리진 우선, 그 다음 www 폴백)
+        var origin = location.origin;
+        var targets = [
+          origin + '/' + lang + '/index.html',
+          origin + '/' + lang + '/',
+          'https://www.plura.io/' + lang + '/index.html',
+          'https://www.plura.io/' + lang + '/'
+        ];
+
+        // 존재 확인: HEAD → 200/ok면 즉시 이동
+        async function tryHead(url){
+          try{
+            const r = await fetch(url, {method:'HEAD', mode:'no-cors'}); 
+            // 일부 CDN은 no-cors에서 상태 접근 불가 -> 그냥 시도
+            return true;
+          }catch(e){ return false; }
         }
+
+        for (let i=0;i<targets.length;i++){
+          const ok = await tryHead(targets[i]);
+          // HEAD 성공 여부와 관계없이 우선 현재 오리진 1번 후보로 이동
+          if (i===0) { location.replace(targets[i]); }
+          // 첫 이동 후 약간 대기, 타이틀이 바뀌면 성공으로 간주
+          await new Promise(r=>setTimeout(r, 800));
+          if (document.title && document.title.toLowerCase().indexOf('redirecting')===-1) return;
+          // 실패 추정시 다음 후보로 교체
+          location.replace(targets[i]);
+        }
+
+        // 여전히 머물면 안내
+        document.body.innerHTML = '<p style="font:14px/1.6 system-ui">해당 언어 페이지가 없습니다. <a href="/en/">/en/</a>로 이동하거나 <code>?noredirect=1</code>로 진입해 점검하세요.</p>';
       });
     })();
   </script>
