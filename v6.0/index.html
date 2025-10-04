@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      function setLangCookie(lang) {
+        var maxAge = 31536000; // 1 year
+        var parts = [
+          'lang=' + encodeURIComponent(lang),
+          'Max-Age=' + maxAge,
+          'Path=/',
+          'SameSite=Lax'
+        ];
+        // HTTPS 환경에서만 Secure 사용
+        if (location.protocol === 'https:') parts.push('Secure');
+        // plura.io 및 서브도메인에 공통 적용
+        try {
+          if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io');
+        } catch (e) {}
+        document.cookie = parts.join('; ');
+      }
+
+      function getCookie(name) {
+        var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([$?*|{}()[\]\\/+^])/g,'\\$1') + '=([^;]*)'));
+        return m ? decodeURIComponent(m[1]) : null;
+      }
+
+      function normalize(lang) {
+        if (!lang) return 'en';
+        var l = lang.toLowerCase();
+        if (l.startsWith('ko')) return 'ko';
+        if (l.startsWith('ja')) return 'ja';
+        return 'en';
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var path = location.pathname;
+
+        // 이미 /ko|/ja|/en에 있는 경우: 쿠키만 보정하고 그대로 둠(루프 방지)
+        var m = path.match(/^\/(ko|ja|en)(\/|$)/);
+        if (m) {
+          var cur = m[1];
+          if (getCookie('lang') !== cur) setLangCookie(cur);
+          return;
+        }
+
+        // 루트 또는 /index.html 에서만 처리
+        if (path === '/' || path === '/index.html') {
+          var lang = getCookie('lang');
+          if (!lang) {
+            lang = normalize(navigator.language || navigator.userLanguage);
+            setLangCookie(lang);
+          }
+          // 동일 페이지로의 불필요한 리다이렉트 방지
+          location.replace('/' + lang + '/');
+        }
+      });
+    })();
+  </script>
+</head>
+<body>
+  <p>Loading ...</p>
+</body>
+</html>
