@@ -1,0 +1,107 @@
+<header>
+  <div class="inner">
+    <div class="header-left">
+      <h1>
+        <a href="index.html">
+          <img src="../res/images/logo.png" alt="Plura" />
+          <img class="over" src="../res/images/logo_over.png" alt="Plura" />
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="video.html">영상</a>
+          </li>
+          <li class="has-depth">
+            <a href="javascript:void(0);">플랫폼</a>
+            <div class="depth-menu">
+              <ul>
+                <li><a href="platform_xdr.html">확장탐지및대응 (XDR)</a></li>
+                <li><a href="platform_siem.html">통합보안이벤트관리 (SIEM)</a></li>
+                <li><a href="platform_waf.html">웹방화벽 (WAF)</a></li>
+                <li><a href="platform_edr.html">호스트보안 (EDR)</a></li>
+                <li><a href="platform_forensic.html">포렌식 (Forensic)</a></li>
+                <li><a href="platform_sysmon.html">리소스모니터링 (PLURA-SysMon)</a></li>
+                <li><a href="platform_soc.html">서트보안관제 (PLURA-SOC)</a></li>
+                <li><a href="platform_backup.html">데이터백업 (Backup)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="customer.html">고객</a>
+          </li>
+          <li>
+            <a href="pricing.html">가격</a>
+          </li>
+          <li>
+            <a href="contact.html">연락처</a>
+          </li>
+          <li>
+            <a href="https://www.qubitsec.com/recruit" target="_blank">채용</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <ul>
+        <li><a href="https://xdr.plura.io/auth/signup">무료 평가판 시작</a></li>
+        <li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">왜 무료인가요?</a></li>
+      </ul>
+      <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
+      <div class="lang">
+        <button type="button" class="">한국어</button>
+        <div class="depth">
+          <ul>
+            <li>
+              <a onClick="javascript:jsSetCookie('ko');" class="dis-block width_110 cursor_p"><span>한국어</span></a>
+            </li>
+            <li>
+              <a onClick="javascript:jsSetCookie('en');" class="dis-block width_110 cursor_p"><span>English</span></a>
+            </li>
+            <li>
+              <a onClick="javascript:jsSetCookie('ja');" class="dis-block width_110 cursor_p"><span>日本語</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="m-btn"></button>
+    </div>
+  </div>
+  <div class="depth-bg"></div>
+</header>
+<!-- region-aware link rewriter: ko -> kr.plura.io, ja -> jp.plura.io -->
+<script>
+(function(){
+  function langToRegion(){
+    var lang=(document.documentElement.getAttribute('lang')||'').toLowerCase();
+    if(lang.indexOf('ja')===0) return 'jp';
+    if(lang.indexOf('ko')===0) return 'kr';
+    // fallback: prefer kr
+    return 'kr';
+  }
+  function setRegionCookie(code){
+    try{
+      var maxAge=31536000; // 1 year
+      document.cookie='region='+code+'; Domain=.plura.io; Path=/; Max-Age='+maxAge+'; SameSite=Lax; Secure';
+    }catch(e){}
+  }
+  function rewrite(selector, path){
+    var a=document.querySelector(selector);
+    if(!a) return;
+    var region=langToRegion();
+    var base='https://'+region+'.plura.io';
+    a.href=base+path;
+    a.addEventListener('click', function(){ setRegionCookie(region); });
+  }
+  // rewrite signup/login anchors that currently point at xdr.plura.io
+  rewrite('a[href^="https://xdr.plura.io/auth/signup"]','/auth/signup');
+  rewrite('a[href^="https://xdr.plura.io/auth/login"]','/auth/login');
+  // also handle any .login class anchor as a fallback
+  var loginA=document.querySelector('a.login');
+  if(loginA && !/https:\/\/(kr|jp)\.plura\.io/.test(loginA.href)){
+    var region=langToRegion();
+    loginA.href='https://'+region+'.plura.io/auth/login';
+    loginA.addEventListener('click', function(){ setRegionCookie(region); });
+  }
+})();
+</script>
