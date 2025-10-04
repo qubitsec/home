@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      // --- cookie utils (no regex) ---
+      function getCookie(name){
+        var cs = ('; ' + document.cookie).split('; ' + name + '=');
+        if (cs.length < 2) return null;
+        return decodeURIComponent(cs.pop().split(';').shift());
+      }
+      function setCookie(name, value){
+        var parts = [
+          name + '=' + encodeURIComponent(value),
+          'Max-Age=31536000',
+          'Path=/',
+          'SameSite=Lax'
+        ];
+        if (location.protocol === 'https:') parts.push('Secure');
+        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
+        document.cookie = parts.join('; ');
+      }
+      function delCookie(name){
+        var parts = [name + '=', 'Max-Age=0', 'Path=/'];
+        if (location.protocol === 'https:') parts.push('Secure');
+        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
+        document.cookie = parts.join('; ');
+      }
+
+      function mapLang(l){
+        if (!l) return 'en';
+        l = l.toLowerCase();
+        if (l.indexOf('ko') === 0) return 'ko';
+        if (l.indexOf('ja') === 0) return 'ja';
+        return 'en';
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var path = location.pathname;
+
+        // 언어 폴더에 이미 있으면 쿠키만 보정하고 종료
+        var m = /^\/(ko|ja|en)(\/|$)/.exec(path);
+        if (m) {
+          var cur = m[1];
+          if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
+          try { document.documentElement.setAttribute('lang', cur); } catch(e){}
+          return;
+        }
+
+        if (path === '/' || path === '/index.html') {
+          // 구 쿠키 lang -> px_lang 마이그레이션
+          var legacy = getCookie('lang');
+          if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
+
+          var lang = getCookie('px_lang');
+          if (!lang) {
+            lang = mapLang(navigator.language || navigator.userLanguage);
+            setCookie('px_lang', lang);
+          }
+
+          // 실제 컨텐츠가 /{lang}/index.html 에 있어야 합니다
+          location.replace('/' + lang + '/index.html');
+        }
+      });
+    })();
+  </script>
+</head>
+<body>
+  <p>Loading ...</p>
+</body>
+</html>
