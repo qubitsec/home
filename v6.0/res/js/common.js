@@ -91,7 +91,7 @@ $(function () {
     speed: 1000,
     loop: true,
     effect: 'fade',
-    autoplay: { delay: 1500 }
+     { delay: 1500 }
   });
 });
 
@@ -265,7 +265,7 @@ $(function () {
   new Swiper('.contents-slide', {
     slidesPerView: 3,
     loop: true,
-    autoplay: { delay: 3000 },
+     { delay: 3000 },
     speed: 1200,
     navigation: { nextEl: '.contents-slide-next', prevEl: '.contents-slide-prev' },
     breakpoints: {
@@ -277,7 +277,7 @@ $(function () {
   new Swiper('.banner-slide', {
     slidesPerView: 1,
     loop: true,
-    autoplay: { delay: 5000, disableOnInteraction: false },
+    autoplay: { delay: 7000, disableOnInteraction: false },
     speed: 700,
     navigation: { nextEl: '.banner-slide-next', prevEl: '.banner-slide-prev' }
   });
@@ -365,5 +365,6 @@ $(function () {
     });
   });
 });
+
 
 
