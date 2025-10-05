@@ -479,52 +479,67 @@
 			  </div>
 			</section>
           
-            <div class="attack-wrap">
-                <section class="sec-1">
-                    <div class="inner p-t-0">
-                        <div class="sec-top">
-                            <p data-aos="fade-up" class="aos-init aos-animate">PLURA-XDR의 제로데이 공격 대응 방식</p>
-                            <ol data-aos="fade-up" class="aos-init aos-animate">
-                                <li class="p-b-20">
-                                    <span class="num">1</span>
-                                    <p class="bold">전체 로그 분석을 통한 탐지</p>
-                                    <div class="f-16">기존 보안 체계는 개별 솔루션별 로그 분석에 의존하지만, PLURA-XDR은 모든 로그를 통합 분석하여 이상 징후를 감지합니다.</div>
-                                    <div class="f-16">단일 이벤트가 아닌, 다양한 로그 간의 관계를 분석하여 제로데이 공격을 탐지합니다.</div>
-                                </li>
-                                <li class="p-b-20">
-                                    <span class="num">2</span>
-                                    <p class="bold">행위 기반 상관 분석</p>
-                                    <div class="f-16">단순한 시그니처 탐지가 아닌 로그 패턴 분석을 통해 정상적인 동작과의 차이를 비교하여 공격 여부를 판단합니다.</div>
-                                    <div class="f-16">예를 들어, 웹 방화벽(WAF)과 EDR 로그를 비교하여 특정 사용자 계정이 여러 시스템에서 비정상적으로 로그인을 시도하는 패턴을 감지합니다.</div>
-                                </li>
-                                <li class="p-b-20">
-                                    <span class="num">3</span>
-                                    <p class="bold">MITRE ATT&CK 프레임워크 적용</p>
-                                    <div class="f-16">공격자의 전술(Tactics)과 기법(Techniques)을 기반으로 위협을 분석하고 대응합니다.</div>
-                                    <div class="f-16">기존 보안 장비로 탐지되지 않는 공격도, 공격 흐름을 분석하여 의심스러운 행위를 사전에 감지할 수 있습니다.</div>
-                                </li>
-                                <li class="p-b-20">
-                                    <span class="num">4</span>
-                                    <p class="bold">위협 인텔리전스(Threat Intelligence) 연계</p>
-                                    <div class="f-16">최신 제로데이 공격 정보를 활용하여 로그 상에서 유사한 패턴을 탐색하고, 실시간으로 대응합니다.</div>
-                                </li>
-                                <li class="p-b-20">
-                                    <span class="num">5</span>
-                                    <p class="bold">자동화된 대응 (SOAR 연계 가능)</p>
-                                    <div class="f-16">탐지된 위협에 대해 즉각적인 차단 조치를 수행하며, 보안 운영 자동화를 통해 보안 팀의 대응 속도를 높입니다.</div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="sec-top">
-                            <div class="desc aos-init aos-animate" data-aos="fade-up" style="border-bottom:0">
-                                <div>
-                                    <em class=" c-green">기존 보안 체계는 알려진 공격을 방어하는 데 초점이 맞춰져 있지만, PLURA-XDR은 전체 로그 분석을 기반으로 제로데이 공격까지 탐지할 수 있습니다. 특히, 상관 분석과 위협 인텔리전스를 결합한 탐지 방식을 통해, 개별 장비에서 탐지되지 않는 고도화된 공격의 징후를 파악하고 대응할 수 있습니다. 즉, PLURA-XDR의 핵심은 AI가 아니라 전체 로그를 분석하여 공격의 흐름을 감지하고 대응하는 것입니다.</em>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+			<div class="attack-wrap">
+			  <section class="sec-1">
+			    <div class="inner p-t-0">
+			      <div class="sec-top">
+			        <p data-aos="fade-up" class="aos-init aos-animate">PLURA-XDR의 제로데이 공격 대응 방식</p>
+			        <ol data-aos="fade-up" class="aos-init aos-animate">
+			          <li class="p-b-20">
+			            <span class="num">1</span>
+			            <p class="bold">전체 로그 통합 분석으로 이상 징후 포착</p>
+			            <div class="f-16">기존 체계가 개별 솔루션 로그에 의존하는 반면, PLURA-XDR은 <strong>WAF·EDR·시스템·애플리케이션</strong> 전 영역 로그를 단일 스키마로 통합 분석합니다.</div>
+			            <div class="f-16">단일 이벤트가 아니라 <strong>서로 다른 로그 간 연쇄 관계</strong>를 추적해 미지(Zero-Day) 공격의 전조를 식별합니다.</div>
+			          </li>
+			
+			          <li class="p-b-20">
+			            <span class="num">2</span>
+			            <p class="bold">행위(Behavior) 기반 상관 분석</p>
+			            <div class="f-16">시그니처 유무와 무관하게 <strong>정상 베이스라인 대비 편차</strong>를 계산해 공격 가능성을 점수화합니다.</div>
+			            <div class="f-16">
+			              예: WAF와 EDR 로그를 결합해 동일 계정이 짧은 시간에 여러 시스템에서 로그인 시도하는 비정상 패턴을 탐지(속도·위치·디바이스 지문 상관).
+			            </div>
+			          </li>
+			
+			          <li class="p-b-20">
+			            <span class="num">3</span>
+			            <p class="bold">MITRE ATT&amp;CK 프레임워크 매핑</p>
+			            <div class="f-16">관측된 이벤트를 전술(Tactics)·기법(Techniques)으로 매핑해 <strong>공격 단계별 가설</strong>을 세우고 증거를 축적합니다.</div>
+			            <div class="f-16">기존 장비가 놓친 이벤트라도 <strong>킬체인 흐름</strong>에서 어긋난 행위를 선제적으로 표지(Flag)합니다.</div>
+			          </li>
+			
+			          <li class="p-b-20">
+			            <span class="num">4</span>
+			            <p class="bold">위협 인텔리전스(Threat Intelligence) 연계</p>
+			            <div class="f-16">IP/도메인/해시 평판과 <strong>최근 전술·기법 변화</strong>를 반영해 유사 패턴을 실시간 스코어링합니다.</div>
+			            <div class="f-16">내부 행위 신호 + 외부 TI를 결합해 <strong>오탐을 낮추고</strong> 대응 우선순위를 자동 정렬합니다.</div>
+			          </li>
+			
+			          <li class="p-b-20">
+			            <span class="num">5</span>
+			            <p class="bold">자동화된 대응( SOAR 연계 · 런북 기반 )</p>
+			            <div class="f-16">임계치 초과 시 <strong>즉시 차단·격리·계정 보호·티켓 발행</strong> 등 표준 런북을 실행하고, 사후 분석을 위한 아티팩트를 자동 보존합니다.</div>
+			            <div class="f-16">인적 의사결정이 필요한 상황은 <strong>승인 워크플로</strong>로 전환해 안전하게 반자동 운영합니다.</div>
+			          </li>
+			        </ol>
+			      </div>
+			
+			      <div class="sec-top">
+			        <div class="desc aos-init aos-animate" data-aos="fade-up" style="border-bottom:0">
+			          <div>
+			            <em class="c-green">
+			              기존 보안 체계는 주로 <strong>알려진 시그니처</strong> 방어에 초점이 맞춰져 있습니다.
+			              PLURA-XDR은 <strong>전체 로그의 증거 중심 분석</strong>과 <strong>행위 상관·ATT&amp;CK 매핑·TI 결합</strong>으로,
+			              개별 장비에서 탐지되지 않는 <strong>고도화된 제로데이 징후</strong>까지 포착하여 대응합니다.
+			              핵심은 “AI 자체”가 아니라, <strong>표준화된 데이터 모델 위에서 전 흐름을 읽고 자동화하는 운영</strong>입니다.
+			            </em>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </section>
+			</div>
+
             
         </div>
     </div>
@@ -535,6 +550,7 @@
 </body>
 
 </html>
+
 
 
 
