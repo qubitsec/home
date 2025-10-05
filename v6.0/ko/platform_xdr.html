@@ -14,8 +14,12 @@
   <meta property="og:image" content="" />
   <link rel="shortcut icon" href="../res/images/favicon.ico">
 
-  <link rel="stylesheet" href="../res/css/swiper.min.css">
+  <!-- styles -->
   <link rel="stylesheet" href="../res/css/style.css">
+  <!-- Swiper CSS (필수) -->
+  <link rel="stylesheet" href="../res/css/swiper.min.css">
+
+  <!-- scripts -->
   <script src="../res/js/jquery-1.11.1.min.js"></script>
   <script src="../res/js/swiper.min.js"></script>
   <script src="../res/js/aos.js"></script>
@@ -23,15 +27,19 @@
   <script src="../res/js/common.js"></script>
   <script src="../res/js/data-include-path.js"></script>
 
-
-  <!-- 배지 스타일(중복 제거본) -->
+  <!-- 배지 스타일(중복 제거) -->
   <style>
     .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px}
     .px-badge.bad-poor{color:#8a1b1b;background:#fde2e2;border:1px solid #f4b4b4}
     .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600}
     .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9}
     .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}
+  </style>
+
+  <!-- 슬라이드 표시 보조 스타일 -->
+  <style>
     .img-slide{width:100%;max-width:1080px;margin:0 auto}
+    .img-slide .swiper-wrapper{align-items:center}
     .img-slide .swiper-slide{display:flex;align-items:center;justify-content:center}
     .img-slide .swiper-slide img{display:block;max-width:100%;height:auto}
   </style>
@@ -120,13 +128,18 @@
 
           <!-- 다이어그램 -->
           <div class="img aos-init" data-aos="fade-left">
-            <div class="img-slide swiper-container">
+            <!-- 최신 Swiper 컨테이너 클래스 'swiper' 사용 -->
+            <div class="img-slide swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="../res/images/diagrams/xdr-diagram-oci.png" alt="PLURA-XDR 아키텍처 다이어그램" loading="lazy">
                 </div>
                 <!-- (필요 시 추가 슬라이드 삽입) -->
               </div>
+              <!-- 페이지네이션/버튼이 필요하면 열어 사용
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
             </div>
           </div>
         </div>
@@ -585,32 +598,34 @@
 
 <!-- 스크립트 초기화: Swiper autoplay & AOS -->
 <script>
-  // Swiper: .img-slide 컨테이너에 적용 (autoplay 지연 설정)
+  // Swiper 초기화
   (function(){
     if (window.Swiper) {
       new Swiper('.img-slide', {
         loop: true,
-        autoplay: { delay: 7000, disableOnInteraction: false }, // ← 필요 시 지연(ms) 조정
+        autoplay: { delay: 7000, disableOnInteraction: false },
         speed: 600,
         slidesPerView: 1,
         spaceBetween: 0,
-        allowTouchMove: true
+        allowTouchMove: true,
+        autoHeight: true
+        // pagination: { el: '.swiper-pagination', clickable: true },
+        // navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
       });
+    } else {
+      console.warn('Swiper가 로드되지 않았습니다.');
     }
   })();
 
-  // AOS: 스크롤 애니메이션
+  // AOS 초기화
   (function(){
     if (window.AOS) {
-      AOS.init({
-        once: true,
-        duration: 600,
-        easing: 'ease-out'
-      });
+      AOS.init({ once: true, duration: 600, easing: 'ease-out' });
+    } else {
+      console.warn('AOS가 로드되지 않았습니다.');
     }
   })();
 </script>
 
 </body>
 </html>
-
