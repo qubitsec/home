@@ -21,6 +21,16 @@
     <script src="../res/js/fancybox.umd.js"></script>
     <script src="../res/js/common.js"></script>
     <script src="../res/js/data-include-path.js"></script>
+
+	<!-- 간단한 배지 스타일: 어디에 붙여도 충돌 적은 네임스페이스 -->
+	<style>
+	  .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px}
+	  .px-badge.bad-poor{color:#8a1b1b;background:#fde2e2;border:1px solid #f4b4b4}       /* 부족 */
+	  .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600} /* 매우 부족 */
+	  .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9}          /* 우수 */
+	  .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}/* 매우 우수 */
+	</style>
+
 </head>
 <body>
 <div id="wrap">
@@ -216,96 +226,194 @@
                     </div>
                 </div>
             </section>
-            <section class="sec-1">
-                <div class="inner">
-                    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
-                        <h3 class="w-500">기존 정보보안 체계 vs. PLURA-XDR 기반 체계 비교 (상관 분석 + 제로데이 공격 대응 포함)</h3>
-                    </div>
-                    <div class="dis-block width-100p" data-aos="fade-up">
-                      <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
-                        <thead class="h-70">
-                            <tr class="h-40">
-                                <th class="text-center p-10 c-white bg-magenta" style="width:150px">비교 항목</th>
-                                <th class="text-center p-10 c-white bg-magenta">기존 정보보안 체계</th>
-                                <th class="text-center p-10 c-white bg-magenta">PLURA-XDR 기반 체계</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center p-10">구성 방식</td>
-                                <td class="text-center p-10">개별 솔루션 도입 (방화벽, IPS, SIEM 등)</td>
-                                <td class="text-center p-10">통합 사이버 보안 클라우드 플랫폼</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">운영 방식</td>
-                                <td class="text-center p-10">온프레미스 중심, 개별 장비 유지보수 필요</td>
-                                <td class="text-center p-10">클라우드 SaaS 기반, 유지보수 불필요</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">솔루션 연계</td>
-                                <td class="text-center p-10">서로 다른 보안 솔루션 간 통합 어려움</td>
-                                <td class="text-center p-10">WAF, EDR, SIEM, Forensic, Resource Monitoring을 하나의 플랫폼에서 제공</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">구실시간 대응</td>
-                                <td class="text-center p-10">수동 분석 및 대응이 많음</td>
-                                <td class="text-center p-10">전체 로그 분석을 통한 위협 탐지 및 자동 대응</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">데이터 처리 방식</td>
-                                <td class="text-center p-10">로그 수집 후 개별 분석</td>
-                                <td class="text-center p-10">중앙 집중형 분석 및 상관관계 탐지</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">운영 비용</td>
-                                <td class="text-center p-10">고가의 장비 및 유지보수 비용 발생</td>
-                                <td class="text-center p-10">클라우드 구독형 서비스로 비용 절감</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">확장성</td>
-                                <td class="text-center p-10">장비 추가가 필요하여 확장에 제한적</td>
-                                <td class="text-center p-10">클라우드 기반으로 자동 확장 가능</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">제로 트러스트 적용</td>
-                                <td class="text-center p-10">부분적 또는 미적용</td>
-                                <td class="text-center p-10">제로 트러스트 아키텍처(ZTA) 완전 적용</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">보안 규정 준수</td>
-                                <td class="text-center p-10">별도 정책 관리 필요</td>
-                                <td class="text-center p-10">자동 규정 준수 및 로그 관리</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">사용자 편의성</td>
-                                <td class="text-center p-10">보안 전문가가 필요한 경우 많음</td>
-                                <td class="text-center p-10">직관적인 UI 제공, IT 관리자가 쉽게 운영 가능</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">상관(연관) 분석</td>
-                                <td class="text-center p-10">개별 장비나 솔루션의 로그를 따로 분석하며, 공격 패턴 연계 분석 어려움</td>
-                                <td class="text-center p-10">SIEM을 통해 다중 로그 및 이벤트 간 상관 분석 수행, 의심스러운 활동을 자동 탐지하고 경보 제공</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">제로데이 공격 대응</td>
-                                <td class="text-center p-10">기존 패턴 기반 탐지(시그니처), 알려진 위협에만 효과적</td>
-                                <td class="text-center p-10">전체 로그를 분석하여 비정상적인 행위를 감지하고, 위협 인텔리전스와 결합하여 대응</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center p-10">공급망 보안</td>
-                                <td class="text-center p-10">제한적으로 가능</td>
-                                <td class="text-center p-10">클라우드 SaaS 플랫폼 제공 및 ISMS, ISO 27001 등 보안 인증 지원</td>
-                            </tr>
-                            <tr class="bg-warning">
-                                <td class="text-center p-10">SOC 운영</td>
-                                <td class="text-center p-10">입력 부족 및 전문성 결여</td>
-                                <td class="text-center p-10">통합 UI 및 자동화로 개인 경험치 한계 극복</td>
-                            </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                </div>
-            </section>
+
+			<section class="sec-1">
+			  <div class="inner">
+			    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+			      <h3 class="w-500">기존 정보보안 체계 vs. PLURA-XDR 기반 체계 비교 (상관 분석 + 제로데이 공격 대응 포함)</h3>
+			    </div>
+			    <div class="dis-block width-100p" data-aos="fade-up">
+			      <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+			        <thead class="h-70">
+			          <tr class="h-40">
+			            <th class="text-center p-10 c-white bg-magenta" style="width:150px">비교 항목</th>
+			            <th class="text-center p-10 c-white bg-magenta">기존 정보보안 체계</th>
+			            <th class="text-center p-10 c-white bg-magenta">PLURA-XDR 기반 체계</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td class="text-center p-10">구성 방식</td>
+			            <td class="text-center p-10">
+			              개별 솔루션 도입 (방화벽, IPS, SIEM 등)
+			              <span class="px-badge bad-poor" title="솔루션 단절로 통합 가시성/운영 복잡도 증가">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              통합 사이버 보안 클라우드 플랫폼
+			              <span class="px-badge excellent" title="단일 플랫폼에서 일관된 가시성/운영">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">운영 방식</td>
+			            <td class="text-center p-10">
+			              온프레미스 중심, 개별 장비 유지보수 필요
+			              <span class="px-badge bad-very" title="패치·장애·확장에 높은 운영 부담">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              클라우드 SaaS 기반, 유지보수 불필요
+			              <span class="px-badge excellent" title="무중단 업데이트·가용성">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">솔루션 연계</td>
+			            <td class="text-center p-10">
+			              서로 다른 보안 솔루션 간 통합 어려움
+			              <span class="px-badge bad-very" title="이기종 간 연계/자동화 한계">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              WAF, EDR, SIEM, Forensic, Resource Monitoring을 하나의 플랫폼에서 제공
+			              <span class="px-badge excellent" title="원클릭 연계/공통 스키마/자동화">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">실시간 대응</td>
+			            <td class="text-center p-10">
+			              수동 분석 및 대응이 많음
+			              <span class="px-badge bad-very" title="탐지-조치 지연으로 위험 증폭">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              전체 로그 분석을 통한 위협 탐지 및 자동 대응
+			              <span class="px-badge excellent" title="자동 대응 플로우·런북">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">데이터 처리 방식</td>
+			            <td class="text-center p-10">
+			              로그 수집 후 개별 분석
+			              <span class="px-badge bad-poor" title="단편 분석으로 공격 연쇄 식별 어려움">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              중앙 집중형 분석 및 상관관계 탐지
+			              <span class="px-badge good" title="전사 관점 이벤트 상관">우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">운영 비용</td>
+			            <td class="text-center p-10">
+			              고가의 장비 및 유지보수 비용 발생
+			              <span class="px-badge bad-very" title="CapEx·OpEx 모두 부담">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              클라우드 구독형 서비스로 비용 절감
+			              <span class="px-badge good" title="합리적 TCO">우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">확장성</td>
+			            <td class="text-center p-10">
+			              장비 추가가 필요하여 확장에 제한적
+			              <span class="px-badge bad-poor" title="증설 리드타임·비용 부담">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              클라우드 기반으로 자동 확장 가능
+			              <span class="px-badge excellent" title="수요 탄력 확장">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">제로 트러스트 적용</td>
+			            <td class="text-center p-10">
+			              부분적 또는 미적용
+			              <span class="px-badge bad-very" title="광범위한 신뢰 영역·수동 정책">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              제로 트러스트 아키텍처(ZTA) 완전 적용
+			              <span class="px-badge excellent" title="최소권한·검증기반 접근">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">보안 규정 준수</td>
+			            <td class="text-center p-10">
+			              별도 정책 관리 필요
+			              <span class="px-badge bad-poor" title="감사 대비 수작업·누락 리스크">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              자동 규정 준수 및 로그 관리
+			              <span class="px-badge good" title="감사 추적·보존 자동화">우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">사용자 편의성</td>
+			            <td class="text-center p-10">
+			              보안 전문가가 필요한 경우 많음
+			              <span class="px-badge bad-poor" title="전문화 인력 의존도 높음">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              직관적인 UI 제공, IT 관리자가 쉽게 운영 가능
+			              <span class="px-badge good" title="러닝커브 낮음">우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">상관(연관) 분석</td>
+			            <td class="text-center p-10">
+			              개별 장비나 솔루션의 로그를 따로 분석하며, 공격 패턴 연계 분석 어려움
+			              <span class="px-badge bad-very" title="체인/킬체인 식별 취약">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              SIEM을 통해 다중 로그 및 이벤트 간 상관 분석 수행, 의심스러운 활동을 자동 탐지하고 경보 제공
+			              <span class="px-badge excellent" title="행위기반 상관·알림">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">제로데이 공격 대응</td>
+			            <td class="text-center p-10">
+			              기존 패턴 기반 탐지(시그니처), 알려진 위협에만 효과적
+			              <span class="px-badge bad-very" title="미지 위협·우회 탐지 취약">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              전체 로그를 분석하여 비정상적인 행위를 감지하고, 위협 인텔리전스와 결합하여 대응
+			              <span class="px-badge excellent" title="행위·컨텍스트+TI 결합">매우 우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr>
+			            <td class="text-center p-10">공급망 보안</td>
+			            <td class="text-center p-10">
+			              제한적으로 가능
+			              <span class="px-badge bad-poor" title="파트너 리스크 가시성 제한">부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              클라우드 SaaS 플랫폼 제공 및 ISMS, ISO 27001 등 보안 인증 지원
+			              <span class="px-badge good" title="표준 기반 거버넌스">우수</span>
+			            </td>
+			          </tr>
+			
+			          <tr class="bg-warning">
+			            <td class="text-center p-10">SOC 운영</td>
+			            <td class="text-center p-10">
+			              인력 부족 및 전문성 결여
+			              <span class="px-badge bad-very" title="경보 피로·대응 지연">매우 부족</span>
+			            </td>
+			            <td class="text-center p-10">
+			              통합 UI 및 자동화로 개인 경험치 한계 극복
+			              <span class="px-badge good" title="자동화·플레이북 기반 운영">우수</span>
+			            </td>
+			          </tr>
+			        </tbody>
+			      </table>
+			    </div>
+			  </div>
+			</section>
             
             <div class="attack-wrap">
                 <section class="sec-1">
@@ -363,4 +471,5 @@
 </body>
 
 </html>
+
 
