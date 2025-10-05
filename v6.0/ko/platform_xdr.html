@@ -16,12 +16,9 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="../res/css/style.css">
-  <!-- Swiper CSS (필수) -->
-  <link rel="stylesheet" href="../res/css/swiper.min.css">
 
   <!-- scripts -->
   <script src="../res/js/jquery-1.11.1.min.js"></script>
-  <script src="../res/js/swiper.min.js"></script>
   <script src="../res/js/aos.js"></script>
   <script src="../res/js/fancybox.umd.js"></script>
   <script src="../res/js/common.js"></script>
@@ -128,19 +125,12 @@
 
           <!-- 다이어그램 -->
           <div class="img aos-init" data-aos="fade-left">
-            <!-- 최신 Swiper 컨테이너 클래스 'swiper' 사용 -->
-            <div class="img-slide swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../res/images/diagrams/xdr-diagram-oci.png" alt="PLURA-XDR 아키텍처 다이어그램" loading="lazy">
-                </div>
-                <!-- (필요 시 추가 슬라이드 삽입) -->
-              </div>
-              <!-- 페이지네이션/버튼이 필요하면 열어 사용
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div> -->
-            </div>
+            <img
+              src="../res/images/diagrams/xdr-diagram-oci.png"
+              alt="PLURA-XDR 아키텍처 다이어그램"
+              loading="lazy"
+              style="display:block;max-width:1080px;width:100%;height:auto;margin:0 auto"
+            >
           </div>
         </div>
       </section>
@@ -629,3 +619,4 @@
 
 </body>
 </html>
+
