@@ -277,7 +277,7 @@ $(function () {
   new Swiper('.banner-slide', {
     slidesPerView: 1,
     loop: true,
-    autoplay: { delay: 5000, disableOnInteraction: false },
+    autoplay: { delay: 7000, disableOnInteraction: false },
     speed: 700,
     navigation: { nextEl: '.banner-slide-next', prevEl: '.banner-slide-prev' }
   });
@@ -365,3 +365,4 @@ $(function () {
     });
   });
 });
+
