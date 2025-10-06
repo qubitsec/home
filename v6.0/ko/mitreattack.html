@@ -24,116 +24,105 @@
 </head>
 <body>
 <div id="wrap">
-  <div data-include-path="./p_header.html"></div>
+<div data-include-path="./p_header.html"></div>
 
-  <div class="mask"></div>
-  <div data-include-path="./p_aside.html"></div>
-
-  <div id="content">
-    <div class="sub-top attack">
-      <div class="inner">
-        <div class="text" data-aos="fade-up">
-          <span class="line"></span>
-          <h2>마이터 어택(ATT&CK)</h2>
-          <p>MITRE Adversarial Tactics, Techniques &amp; Common Knowledge Framework</br>공격 대응에 최선의 선택입니다.</p>
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top attack">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>마이터 어택(ATT&CK)</h2>
+                        <p>MITRE Adversarial Tactics, Techniques & Common Knowledge Framework</br>공격 대응에 최선의 선택입니다.</p>
+                    </div>
+                    <img src="../res/images/attack_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="attack-wrap">
+                <section class="sec-1">
+                    <div class="inner">
+                        <div class="sec-top">
+                            <p data-aos="fade-up">마이터 어택 프레임워크 구성 요소</p>
+                            <ol data-aos="fade-up">
+                                <li>
+                                    <span class="num">1</span>
+                                    <p><b><a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" class="link">매트릭스 (Matrix)</a></b> ↗️</p>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                  <p><b><a href="https://attack.mitre.org/tactics/enterprise/" target="_blank" class="link">전술 (Tactics)</a></b> ↗️</p>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                  <p><b><a href="https://attack.mitre.org/techniques/enterprise/" target="_blank" class="link">기술 (Techniques)</a></b> ↗️</p>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                  <p><b><a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank" class="link">완화 (Mitigations)</a></b> ↗️</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="img" data-aos="fade-up">
+                            <img src="../res/images/screenshots/mitre_screen_ko.gif" alt="ATT&CK">
+                        </div>
+                    </div>
+                </section>
+                <section class="sec-2">
+                    <div class="inner">
+                      <ul>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Matrix : <br>선제적 공격 대응 전략</strong>
+                            <div>
+							<span class="dis-block"><b>시각화 도구를 통한 각 공격 단계의 탐지 및 자동 대응 체계 구축</b></span>
+                                초기 정찰 단계부터 공격 조기 탐지<br/>
+								호스트 접속 권한 확보 및 권한 상승<br/>
+								호스트 장악 後 측면 이동을 통한 추가적인 호스트 접근 및 장악<br/>
+								장악된 호스트에서의 <b>랜섬웨어</b> 공격 및 그 영향 파악<br/>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Tactics : <br>전략적 보안 통합 솔루션</strong>
+                            <div>
+                                <span class="dis-block"><b>사용자 친화적인 대시보드를 통한 보안 상태의 쉬운 모니터링 및 관리</b></span>
+                                다양한 공격 벡터에 대한 종합적인 대응 전략 수립<br/>
+                                지속적인 위협 모니터링 및 실시간 위협 인텔리전스 통합<br/>
+                                사용자 행동 분석 및 비정상적 활동 감지를 통한 내부 위협 최소화<br/>
+                                효과적인 취약점 관리 및 위험 평가로 예방적 보안 강화<br/>
+								자동화된 대응 메커니즘으로 신속하고 효율적인 사고 대응<br/>
+                            </div>							
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Techniques : <br>정교한 보안 기술의 결합</strong>
+                            <div>
+                            <span class="dis-block"><b>실시간 보안 대시보드를 통한 연속적인 모니터링 및 빠른 대응</b></span>
+							    고급 침투 테스트 및 적응형 위협 모델링을 통한 보안 강화<br/>
+                                상세한 로깅 및 감사 추적으로 미묘한 보안 사건 식별<br/>
+                                시나리오 기반의 행동 분석으로 복잡한 공격 패턴 인지 및 대응<br/>
+                                다층적 보안 방어를 위한 포괄적인 암호화 전략 적용<br/>
+                                네트워크 웹 패킷 분석 및 비정상적 통신 감지<br/>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Mitigations : <br>효과적인 위협 완화를 위한 첨단 솔루션</strong>
+                            <div>
+                            <span class="dis-block"><b>다양한 보안 위협에 대한 포괄적인 완화 전략 구현</b></span>
+                                취약점 패치 관리 및 시스템 보안 업데이트로 위험 최소화<br/>
+                                인트라넷 및 엔드포인트 보호를 통한 내부 네트워크 보안 강화<br/>
+                                데이터 유출 방지 및 민감한 정보의 안전한 관리<br/>
+                                사용자 및 장치 접근 제어를 통한 권한 기반 보안 정책 적용<br/>
+								위협 인지 및 대응을 위한 실시간 분석 및 보고 도구 제공<br/>
+                            </div>							
+                        </li>						
+                      </ul>
+                    </div>
+                </section>
+            </div>
         </div>
-        <img src="../res/images/attack_bg.png" alt="" class="img">
-      </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
     </div>
-
-    <div class="attack-wrap">
-		<section class="sec-1">
-			<div class="inner">
-				<div class="sec-top" >
-					<div class="name" data-aos="fade-up">
-						<h3>통합보안이벤트관리 (PLURA - SIEM)<a href="https://blog.plura.io/ko/column/why_siem_always_fails/" target="_blank" class="link">↗️</a></h3>
-					</div>
-					<div class="desc" data-aos="fade-up">
-						<div>
-							위협의 흔적은 로그에 있습니다.<br>
-							<em class="danger">감사 정책 활성화, 본문(Post/Response) 수집—두 가지 모두 점검하세요.</em>
-						</div>
-						<div>
-							<em class="success">감사 정책 없이는 로그가 남지 않고,<br>다수 솔루션은 본문 분석을 제공하지 않습니다.</em><br>
-							PLURA는 본문까지 포함한 로그를 상관분석해 수집→탐지→대응→증거화를 자동화합니다.
-						</div>
-					</div>
-					<ul data-aos="fade-up">
-					  <li><p>실시간 대시보드 & 자동 보고서(경영 요약 포함)</p></li>
-					  <li><p>MITRE ATT&CK 매핑으로 전술·기술 맥락 분석</p></li>
-					  <li><p>서버·PC·네트워크·보안장비 상관분석으로 이상행위 탐지</p></li>
-					  <li><p>요청/응답 본문(Post/Response) 분석으로 데이터 유출·우회 인젝션 조기 포착</p></li>
-					  <li><p>지속적 표적공격(APT) 및 랜섬웨어 대응</p></li>
-					  <li><p>Windows(서버/PC)·Linux/Unix·macOS 전 구간 지원</p></li>
-					  <li><p>알려지지 않은(Unknown/Zero-Day) 공격 탐지·완화</p></li>
-					  <li><p>AI SecOps 자동화: 트라이아지→격리/차단→재현·증거화, 원격 보안 관제 연계</p></li>
-					</ul>
-				</div>
-				<div class="img" data-aos="fade-up">
-				  <img src="../res/images/screenshots/mitre_screen_ko.gif" alt="ATT&CK">
-				</div>
-			</div>
-		</section>
-
-      <section class="sec-2">
-        <div class="inner">
-          <ul>
-            <li data-aos="fade-up">
-              <strong class="line-h-default">PLURA w/ Matrix : <br>선제적 공격 대응 전략</strong>
-              <div>
-                <span class="dis-block"><b>시각화 도구를 통한 각 공격 단계의 탐지 및 자동 대응 체계 구축</b></span>
-                초기 정찰 단계부터 공격 조기 탐지<br/>
-                호스트 접속 권한 확보 및 권한 상승<br/>
-                호스트 장악 後 측면 이동을 통한 추가적인 호스트 접근 및 장악<br/>
-                장악된 호스트에서의 <b>랜섬웨어</b> 공격 및 그 영향 파악<br/>
-              </div>
-            </li>
-
-            <li data-aos="fade-up">
-              <strong class="line-h-default">PLURA w/ Tactics : <br>전략적 보안 통합 솔루션</strong>
-              <div>
-                <span class="dis-block"><b>사용자 친화적인 대시보드를 통한 보안 상태의 쉬운 모니터링 및 관리</b></span>
-                다양한 공격 벡터에 대한 종합적인 대응 전략 수립<br/>
-                지속적인 위협 모니터링 및 실시간 위협 인텔리전스 통합<br/>
-                사용자 행동 분석 및 비정상적 활동 감지를 통한 내부 위협 최소화<br/>
-                효과적인 취약점 관리 및 위험 평가로 예방적 보안 강화<br/>
-                자동화된 대응 메커니즘으로 신속하고 효율적인 사고 대응<br/>
-              </div>
-            </li>
-
-            <li data-aos="fade-up">
-              <strong class="line-h-default">PLURA w/ Techniques : <br>정교한 보안 기술의 결합</strong>
-              <div>
-                <span class="dis-block"><b>실시간 보안 대시보드를 통한 연속적인 모니터링 및 빠른 대응</b></span>
-                고급 침투 테스트 및 적응형 위협 모델링을 통한 보안 강화<br/>
-                상세한 로깅 및 감사 추적으로 미묘한 보안 사건 식별<br/>
-                시나리오 기반의 행동 분석으로 복잡한 공격 패턴 인지 및 대응<br/>
-                다층적 보안 방어를 위한 포괄적인 암호화 전략 적용<br/>
-                네트워크 웹 패킷 분석 및 비정상적 통신 감지<br/>
-              </div>
-            </li>
-
-            <li data-aos="fade-up">
-              <strong class="line-h-default">PLURA w/ Mitigations : <br>효과적인 위협 완화를 위한 첨단 솔루션</strong>
-              <div>
-                <span class="dis-block"><b>다양한 보안 위협에 대한 포괄적인 완화 전략 구현</b></span>
-                취약점 패치 관리 및 시스템 보안 업데이트로 위험 최소화<br/>
-                인트라넷 및 엔드포인트 보호를 통한 내부 네트워크 보안 강화<br/>
-                데이터 유출 방지 및 민감한 정보의 안전한 관리<br/>
-                사용자 및 장치 접근 제어를 통한 권한 기반 보안 정책 적용<br/>
-                위협 인지 및 대응을 위한 실시간 분석 및 보고 도구 제공<br/>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div><!-- /.attack-wrap -->
-  </div><!-- /#content -->
-
-  <div data-include-path="./p_footer.html"></div>
-  <button type="button" id="top">상단으로</button>
-</div><!-- /#wrap -->
 </body>
+
 </html>
-
-
