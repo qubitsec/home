@@ -714,7 +714,7 @@
 .video-wrap .sec-3 .dashboard ul {
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 10px;
   right: 0;
   display: flex;
   flex-wrap: wrap;
@@ -967,6 +967,74 @@
 .attack-wrap .sec-1 .inner {
   padding: 100px 0;
 }
+
+
+.attack-wrap .sec-1 .inner .sec-title .name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.attack-wrap .sec-1 .inner .sec-title .name h3 {
+  font-size: 30px;
+  color: #333;
+  line-height: 1.33em;
+}
+.attack-wrap .sec-1 .inner .sec-title .name h3 em {
+  color: #38b3b0;
+  font-style:normal
+}
+.attack-wrap .sec-1 .inner .sec-title .name .link {
+  width: 20px;
+  margin-left: 15px;
+  margin-top: 11px;
+}
+.attack-wrap .sec-1 .inner .sec-title .name .link img {
+  display: block;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc {
+  padding: 50px 0;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 17px;
+  line-height: 2em;
+  color: #666;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc p {
+  font-size: 20px;
+  line-height: 2em;
+  color: #333;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc p a {
+  display: inline-block;
+  width: 19px;
+  margin-left: 16px;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc p a img {
+  display: block;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc div {
+  font-size: 17px;
+  line-height: 2em;
+  color: #666;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc div em {
+  font-size: 20px;
+  line-height: 1.75em;
+  font-style:normal
+}
+.attack-wrap .sec-1 .inner .sec-title .desc div em.success {
+  color: #38b3b0;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc div em.danger {
+  color: #e84a64;
+}
+.attack-wrap .sec-1 .inner .sec-title .desc div + div {
+  margin-top: 1.75em;
+}
+
+.attack-wrap .sec-1 .inner .sec-top {
+  margin-top: 50px;
+}
+
 .attack-wrap .sec-1 .inner .sec-top > p {
   font-size: 30px;
   line-height: 1.33em;
