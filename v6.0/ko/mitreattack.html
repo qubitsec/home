@@ -44,25 +44,53 @@
                 <section class="sec-1">
                     <div class="inner">
                     
-                        <div class="sec-title">
-                            <div class="name aos-init aos-animate" data-aos="fade-up">
-                                <h3>마이터 어택이란?</h3>
-                                <a href="https://blog.plura.io/ko/column/why_siem_always_fails/" target="_blank" class="link">
-                                    <img src="../res/images/icon_product_link.png" alt="">
-                                </a>
-                            </div>
-                            <div class="desc aos-init aos-animate" data-aos="fade-up">
-                                <div>
-                                    위협의 흔적은 로그에 있습니다.<br>
-                                    <em class="danger">감사 정책 활성화, 본문(Post/Response) 수집—두 가지 모두 점검하세요.</em>
-                                </div>
-                                <div>
-                                    <em class="success">감사 정책 없이는 로그가 남지 않고,<br>다수 솔루션은 본문 분석을 제공하지 않습니다.</em><br>
-                                    PLURA는 본문까지 포함한 로그를 상관분석해 수집→탐지→대응→증거화를 자동화합니다.
-                                </div>
-                            </div>
-							
-                        </div>
+						<div class="sec-title">
+						  <!-- MITRE ATT&CK – Compact Intro Block -->
+						  <div class="name aos-init aos-animate" data-aos="fade-up">
+						    <h3>
+						      마이터 어택이란?
+						      <a href="https://blog.plura.io/ko/column/mitre_attack_audit_policy/"
+						         target="_blank" rel="noopener noreferrer"
+						         class="link" aria-label="MITRE ATT&CK 자세히 보기">↗️</a>
+						    </h3>
+						  </div>
+						
+						  <div class="desc aos-init aos-animate" data-aos="fade-up">
+						    <!-- 한 줄 핵심 메시지 -->
+						    <p>
+						      <strong>공격자의 전술·기술·절차(TTPs)를 체계화한 공개 지식베이스</strong>이며,
+						      PLURA는 로그 증거를 ATT&CK에 매핑해 <strong>행위 기반 탐지·대응</strong>을 표준화합니다.
+						    </p>
+						
+						    <!-- 중요 체크 포인트 (ATT&CK 관점으로 재정리) -->
+						    <div class="points" style="display:grid;gap:10px;">
+						      <div>
+						        <em class="danger">
+						          ATT&CK 적용의 전제는 <u>전술(Tactics)</u>·<u>기술(Techniques)</u>에 대한
+						          <strong>행위 증거</strong>입니다. 이를 위해 <u>감사 정책</u>을 활성화하고
+						          <u>HTTP 본문(Post/Response)</u>과 <u>프로세스·파일·네트워크</u> 텔레메트리를 수집해야 합니다.
+						        </em>
+						      </div>
+						
+						      <div>
+						        <em class="success">
+						          PLURA는 수집된 로그를 ATT&CK 전술·기술로 자동 매핑하여
+						          <strong>탐지(Detect) → 대응(Respond) → 증거화(Evidence)</strong>를 표준화합니다.
+						        </em>
+						
+						        <!-- 예시: 목록으로 가독성 향상 -->
+						        <ul class="mini-list" style="margin-top:8px;display:grid;gap:4px;">
+						          <li><strong>초기 접근/실행</strong> (예: T1059)</li>
+						          <li><strong>권한 상승</strong> (예: T1068)</li>
+						          <li><strong>자격 증명 접근</strong> (예: T1555)</li>
+						          <li><strong>횡적 이동</strong> (예: T1021)</li>
+						          <li><strong>C2 통신/툴 전송</strong> (예: T1071/T1105)</li>
+						        </ul>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
                     
                         <div class="sec-top">
                             <p data-aos="fade-up">마이터 어택 프레임워크 구성 요소</p>
@@ -146,4 +174,5 @@
 
     </div>
 </body>
+
 </html>
