@@ -1455,7 +1455,7 @@ p {line-height: normal;}
     color: #fff !important;
 }
 .line-h-default {
-    line-height: 1.2em;
+    line-height: 1.2em  !important
 }
 .w_120px {
     width: 120px !important;
@@ -1475,3 +1475,6 @@ p {line-height: normal;}
 .border-top0 {
     border-top: 0px !important;
 }
+.points {display:grid;gap:10px;}
+.line-h-default-7 { line-height:1.7em !important}
+.mini-list {margin-top:8px;display:grid;gap:4px;}
