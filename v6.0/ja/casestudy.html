@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>PLURA・AI-XDR Cloud SaaS Platform</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="WAF, EDR, SIEM, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
+  <meta property="og:title" content="PLURA-XDR Cloud SECaaS Platform" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="WAF, EDR, SIEM, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../res/css/swiper.min.css"><!-- Swiper CSS (必須) -->
+  <link rel="stylesheet" href="../res/css/style.css">
+
+  <!-- Scripts -->
+  <script src="../res/js/jquery-1.11.1.min.js"></script>
+  <script src="../res/js/swiper.min.js"></script>
+  <script src="../res/js/aos.js"></script>
+  <script src="../res/js/fancybox.umd.js"></script>
+  <script src="../res/js/common.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top case">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>ケーススタディ</h2>
+                        <p>あらゆる行為はログに残ります。<br/>PLURAはログ分析で攻撃にリアルタイム対応します。<a href="https://blog.plura.io/ko/column/myth/" target="_blank">↗️</a></p>
+                    </div>
+                    <img src="../res/images/case_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="case-wrap">
+                <section class="case-content">
+                    <div class="inner">
+                        <div class="case-tab" data-aos="fade-up">
+                            <div class="case-slide swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><button type="button" class="cur">クレデンシャルスタッフィング</button></li>
+                                    <li class="swiper-slide"><button type="button">SQLインジェクション</button></li>
+                                    <li class="swiper-slide"><button type="button">高度持続的脅威（APT）</button></li>
+                                    <li class="swiper-slide"><button type="button">Log4Shell</button></li>
+                                    <li class="swiper-slide"><button type="button">リモートワーク</button></li>
+                                </ul>
+                            </div>
+                            <a href="https://blog.plura.io/ko/threats/" target="_blank" class="more">+</a>
+                        </div>
+                        <div class="tab-contents" data-aos="fade-up">
+                          <div class="tab-content tab-1 cur">
+                                <div class="case">A社は長年にわたり認証システムを運用しています。<br/>
+                                    IDとパスワードでログインする一般的なWebサイトと同様の方式です。<br/>
+                                    会員情報の流出リスクにどう対処すべきでしょうか。</div>
+                                <div class="solution">
+                                    <strong>対応方法</strong>
+                                     <div>
+                                        クレデンシャルスタッフィングは現在最も脅威的な攻撃の一つです。<br/>
+                                        あるサイトで入手したアカウント情報を分析し、別のサイトで不正ログインを試みる攻撃で、<br/>
+                                        ユーザーが複数サイトで同じ認証情報を再利用する傾向を突きます。<br/>
+                                        Webアプリケーションファイアウォール（WAF）だけでは検知が難しく、多くの企業で個人情報流出事故が発生しています。<br/>
+                                        <b><em>PLURAはWebのヘッダーおよび本文データを用いた統計的検知手法により、クレデンシャルスタッフィングを自動で検知・遮断します。</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>参考ドキュメント</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/" target="_blank">クレデンシャルスタッフィング攻撃への対処（ChatGPT活用）</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/" target="_blank">クレデンシャルスタッフィング攻撃への対処</a>↗️</p>
+                                        <p>[3] <a href="https://docs.plura.io/ko/function/common/sdetection/takeover" target="_blank">PLURAマニュアル：アカウント乗っ取り</a>↗️</p>
+                                        <p>[4] <a href="https://docs.plura.io/ko/video/demo/web/credential_stuffing" target="_blank">PLURAビデオ：アカウント乗っ取り</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-2">
+                                <div class="case">B社は長年SQLインジェクション対策に取り組んでいますが、攻撃手口は日々巧妙化しています。<br/>
+                                    攻撃元IPは国内外を問わず、特に週末や祝日の未明など対応の手薄な時間帯に集中します。<br/>
+                                    外部SOCの24時間監視でも即応は難しく、自社で365日24時間体制を敷くのも現実的ではありません。</div>
+                                <div class="solution">
+                                    <strong>対応方法</strong>
+                                     <div>
+                                        SQLインジェクションは一度の成功でも大量の顧客情報・機密情報が流出し得ます。<br/>
+                                        多様な回避パターンが存在するため、シグネチャ中心の対策だけでは熟練した攻撃グループに対処しにくいのが現実です。<br/>
+                                        <b><em>PLURAは一度でもSQLインジェクションの試行を検知したIPからのアクセスを遮断し、いかなるパターンでも実効性ある防御を実現します。<br/>
+										PLURA CERT監視は革新的なサービスです。</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>参考ドキュメント</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/column/responding_to_zero_day_attacks/" t=targe"_blank">ゼロデイ攻撃への対応戦略</a>↗️</p>
+										<p>[2] <a href="https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/" t=targe"_blank">WAFなしのWeb運用はシートベルトなしの運転と同じ</a>↗️</p>
+                                        <p>[3] <a href="https://blog.plura.io/ko/column/dlp/" t=targe"_blank">Web経由のデータ流出対策入門</a>↗️</p>
+										<p>[4] <a href="https://docs.plura.io/ko/function/waf/defense/setting" target="_blank">PLURAマニュアル：Web攻撃</a>↗️</p>
+                                        <p>[5] <a href="https://docs.plura.io/ko/video/demo/web/sql_injeciton" target="_blank">PLURAビデオ：SQLインジェクション</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-3">
+                                <div class="case">
+                                    C社ではCPU高負荷による障害など、継続的な脅威に晒されていました。<br/>
+                                    負荷要因を調査しても原因は特定できず、複数のアンチウイルスを導入しても成果はありません。<br/>
+                                    システムを再インストールするにはリスクが大きく、週末には必ず障害対応に追われています。
+                                </div>
+                                <div class="solution">
+                                    <strong>対応方法</strong>
+                                     <div>
+                                        近年のAPTは既知のマルウェアに依存しない手口が増えています。<br/>
+                                        さらにPowerShell等のスクリプトを用いた不正実行はアンチウイルスでは検知が困難です。<br/>
+                                        <b><em>PLURAはマルウェアの「振る舞い」を分析して検知します。<br/>
+                                        MITRE ATT&amp;CKに基づく検知結果を、5W1Hで提示するため、原因究明と対処に十分な情報を提供します。</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>参考ドキュメント</strong>
+                                    <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/column/leak_of_skt_usim/" target="_blank">SKT USIMハッキング事件まとめ</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/threats/case-lottecard_weblogic/" target="_blank">ロッテカード侵害事故の分析</a>↗️</p>
+                                    </div>									
+									<div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/tech/mitre_attck/" target="_blank">MITRE ATT&amp;CKの理解</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/respond/web-service-attack-response-against-xiaoqiying/" target="_blank">Xiaoqiying攻撃への対応</a>↗️</p>
+                                        <p>[3] <a href="https://blog.plura.io/ko/respond/xiaoqiying-hacking-qna/" target="_blank">Xiaoqiying攻撃対応 Q&amp;A（ChatGPT）</a>↗️</p>										
+                                        <p>[4] <a href="https://blog.plura.io/ko/respond/process_hollowing/" target="_blank">Process Hollowing：手口と検知戦略</a>↗️</p>									 
+										<p>[5] <a href="https://blog.plura.io/ko/column/mitre_attack_audit_policy/" target="_blank">ATT&amp;CK観点での監査ポリシー活用</a>↗️</p>
+										<p>[6] <a href="https://blog.plura.io/ko/column/understanding_firewall/" target="_blank">ファイアウォールの正しい理解</a>↗️</p>
+										<p>[7] <a href="https://blog.plura.io/ko/column/castle-gatekeeper/" target="_blank">城門守の最後の任務：アウトバウンド制御</a>↗️</p>
+                                        <p>[8] <a href="https://blog.plura.io/ko/column/plura_forensic_quick_analysis/" target="_blank">PLURAフォレンジックで迅速対応</a>↗️</p>
+										<p>[9] <a href="https://docs.plura.io/ko/function/common/sdetection/attack/matrix" target="_blank">PLURAマニュアル：MITRE ATT&amp;CK</a>↗️</p>
+                                        <p>[10] <a href="https://docs.plura.io/ko/video/demo/system/apt29" target="_blank">PLURAビデオ：APT29</a>↗️</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-4">
+                                <div class="case">
+                                    D社はApache Log4jの脆弱性が公表されたものの、修正が容易ではありません。<br/>
+                                    Javaで開発された業務システムは数年前の外注開発で、現在は社内で運用のみ行っています。<br/>
+                                    脆弱性が含まれていることは認識しているものの、どのように管理すべきでしょうか。
+                                </div>
+                                <div class="solution">
+                                    <strong>対応方法</strong>
+                                     <div>
+                                        Apache Log4jの脆弱性を悪用されると、攻撃者は管理者権限を取得する可能性があります。<br/>
+                                        広範に利用されているため、今後数年にわたり持続的な脅威となるでしょう。<br/>
+                                        <b><em>PLURAはWAFで事前遮断し、ホスト防御（EDR）で攻撃者のリモート実行を検知・阻止します。</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>参考ドキュメント</strong>
+                                     <div>
+										<p>[1] <a href="https://blog.plura.io/ko/tech/apache_jmeter_log4shell_mitigation/" target="_blank">CVE-2021-44228（Log4Shell）対応</a>↗️</p>
+                                        <p>[2] <a href="https://docs.plura.io/ko/video/demo/system/log4shell" target="_blank">PLURAビデオ：Log4Shell</a>↗️</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-5">
+                                <div class="case">
+                                    E社はコロナ禍を受け、柔軟な在宅勤務制度を導入しています。<br/>
+                                    体調に少しでも異変があれば自宅で勤務できる環境を提供しています。<br/>
+                                    しかし、自宅PCのセキュリティ状態や、VPN経由の社内接続時にマルウェアや攻撃者を招き入れていないか不安です。
+                                </div>
+                                <div class="solution">
+                                    <strong>対応方法</strong>
+                                     <div>
+                                        PLURAは業務PCにインストールされ、端末上の全ての動作を分析してマルウェアや<br/>
+                                        攻撃者の存在をリアルタイムに検知・対応できるようにします。<br/>
+                                        また、家庭のPCに導入しても不審な挙動を検知し対処可能です。<br/>
+                                        <b><em>攻撃者は今や在宅勤務用PCを狙っています。<br/>
+                                        PLURAで安全なPC環境を構築しましょう。</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>参考ドキュメント</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/respond/detecting-emotet-with-mitre-attck/" target="_blank">ATT&amp;CK観点でのEmotet検知</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/column/why_sslvpn_always_fails/" target="_blank">SSL VPNは安全か：エッジ機器の盲点</a></p>
+										<p>[3] <a href="https://blog.plura.io/ko/tech/rdp-bruteforce-protection/" target="_blank">RDP設定変更だけで総当たり攻撃を遮断</a>↗️</p>
+									    <p>[4] <a href="https://blog.plura.io/ko/column/why-edr-is-necessary/" target="_blank">PC/サーバはWindows Defenderで十分か</a>↗️</p>
+										<p>[5] <a href="https://docs.plura.io/ko/video/demo/system/wannacry_ransomware" target="_blank">PLURAビデオ：WannaCryランサムウェア</a>↗️</p>
+                                        <p>[6] <a href="https://docs.plura.io/ko/video/demo/web/xsl" target="_blank">PLURAビデオ：XSL Script Processing [T1220]</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+				<section class="video">
+					<div class="inner">
+						<div class="video-top" data-aos="fade-up">
+							<h3>ハッキング検知デモ動画</h3>
+							<p>PLURAは最も危険な攻撃を高精度かつ効率的に検知し、リアルタイムで対応します。</p>
+						</div>
+						<div class="video-slide-wrap" data-aos="fade-up">
+							<div class="video-slide swiper-container">
+								<div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=Rkz7vNAM0ZY">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_09.jpg)"></div>
+										</div>
+											<div class="video-text">BPFDoor</div>
+										</a>
+									</div>
+                                    <div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=blN1LoMGSAk">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_10.jpg)"></div>
+										</div>
+											<div class="video-text">WebLogic脆弱性（CVE-2017-10271）</div>
+										</a>
+									</div>
+                                    
+                                    
+                                    
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=_LA7p-IeOOY">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_02.jpg)"></div>
+										</div>
+											<div class="video-text">Credential Stuffing</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=fqLpY4NEDXc&t=3s">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_03.jpg)"></div>
+										</div>
+											<div class="video-text">APT29</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=_QjZ7xsziAs&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_04.jpg)"></div>
+										</div>
+											<div class="video-text">SQLインジェクション</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=RGg7C7vrGvI&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_05.jpg)"></div>
+										</div>
+											<div class="video-text">XSS</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=f3rOa4IiKzE&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_06.jpg)"></div>
+										</div>
+											<div class="video-text">WannaCry Ransomware</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=hhd1hRuXk4g&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_07.jpg)"></div>
+										</div>
+											<div class="video-text">XSL Script Processing</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=4be1A17lFUU&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_08.jpg)"></div>
+										</div>
+											<div class="video-text">WebShell</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=9YtI-plPXm8&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_01.jpg)"></div>
+										</div>
+											<div class="video-text">Log4Shell</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="video-slide-controls">
+								<button type="button" class="video-slide-prev">前へ</button>
+								<button type="button" class="video-slide-next">次へ</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+                <section class="start">
+                    <div class="inner">
+                        <div>
+                            <ul>
+                                <li data-aos="fade-up">
+                                    <strong>2014</strong>
+                                    <p>Since We Started</p>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <strong>百聞は一見に如かず</strong>
+                                    <p>(백문불여일견)</p>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <strong>0</strong>
+                                    <p>Hacking</p>
+                                </li>
+                            </ul>
+                        </div>
+						<div style="text-align:center">
+						  <p><br></p>
+						  <p style="margin:18px 0 0;font-size:22px;line-height:1.5;font-weight:800;color:#fff;
+						            background:rgba(14,107,87,.88); padding:10px 14px; border-radius:10px;
+						            text-shadow:0 1px 2px rgba(0,0,0,.25); display:inline-block">
+						    完璧は宣言ではなく証拠だ — 定義して準備すれば、セキュリティの完璧は可能です。
+						  </p>
+						</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">ページトップへ</button>
+
+    </div>
+</body>
+
+
+</html>
