@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>PLURA・AI-XDR Cloud SaaS Platform</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="WAF, EDR, SIEM, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
+  <meta property="og:title" content="PLURA-XDR Cloud SECaaS Platform" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="WAF, EDR, SIEM, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../res/css/style.css">
+
+  <!-- scripts -->
+  <script src="../res/js/jquery-1.11.1.min.js"></script>
+  <script src="../res/js/aos.js"></script>
+  <script src="../res/js/fancybox.umd.js"></script>
+  <script src="../res/js/common.js"></script>
+  <script src="../res/js/data-include-path.js"></script>
+
+  <!-- バッジスタイル（重複削減） -->
+  <style>
+    .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px}
+    .px-badge.bad-poor{color:#8a1b1b;background:#fde2e2;border:1px solid #f4b4b4}
+    .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600}
+    .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9}
+    .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}
+  </style>
+
+  <!-- スライド表示補助スタイル -->
+  <style>
+    .img-slide{width:100%;max-width:1080px;margin:0 auto}
+    .img-slide .swiper-wrapper{align-items:center}
+    .img-slide .swiper-slide{display:flex;align-items:center;justify-content:center}
+    .img-slide .swiper-slide img{display:block;max-width:100%;height:auto}
+  </style>
+</head>
+
+<body>
+<div id="wrap">
+  <div data-include-path="./p_header.html"></div>
+
+  <div class="mask"></div>
+  <div data-include-path="./p_aside.html"></div>
+
+  <div id="content">
+    <div class="sub-top product">
+      <div class="inner">
+        <div class="text" data-aos="fade-up">
+          <span class="line"></span>
+          <h2>PLATFORM ♡</h2>
+          <p>eXpanded Detection and Response<br>セキュリティは単一製品の寄せ集めではなく、<b>プラットフォーム</b>として統合されるべきです。</p>
+        </div>
+        <img src="../res/images/product_bg.png" alt="PLURA-XDR 製品背景" class="img" loading="lazy">
+      </div>
+    </div>
+
+    <div class="product-wrap siem">
+      <section class="sec-1">
+        <div class="inner">
+          <div class="sec-top">
+            <div class="name" data-aos="fade-up">
+              <h3>AIベース拡張型検知・対応（AI・PLURA-XDR）<a href="https://w.plura.io/index.html?doc=/philosophy/ko/README.md" target="_blank" class="link">↗️</a></h3>
+            </div>
+
+            <!-- ヘッダーメッセージ／利点 -->
+            <div class="desc" data-aos="fade-up">
+              <div>
+                単一製品を無理に連携させる旧来のセキュリティアーキテクチャは終わりました。<br>
+                <em class="danger">
+                  標準化されていない検知スキーマ、本文データの欠落、異種APIの分断により、<br>
+                  連携・自動化が制約されます。これでは SIEM・SOAR だけで目標達成は困難です。
+                </em>
+              </div>
+              <div>
+                <em class="success">
+                  Webアプリケーション防御（PLURA‑WAF）<br>ホスト防御（PLURA‑EDR）<br>フォレンジック（PLURA‑Forensic）<br>
+                  セキュリティ運用自動化（PLURA‑SOAR）<br>リソース監視（PLURA‑SysMon）<br>
+                  統合セキュリティイベント管理（PLURA‑SIEM）<br>＋ リモートSOC（PLURA‑SOC）
+                </em><br>
+                PLURAは垂直統合された<strong>単一データモデル／標準API</strong>で動作する、初のクラウドSaaSプラットフォームです。
+              </div>
+              <div>PLURA導入で次の価値を得られます。</div>
+            </div>
+
+            <!-- コアメリット -->
+            <div class="desc p-t-60 m-b-60" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-6">
+                  <p><span class="bold c-dark">
+                    <em><i class="fa fa-circle p-r-10 c-green"></i></em>攻撃への先手対応（リアルタイム）
+                  </span></p>
+                  <p><span class="bold c-dark">
+                    <i class="fa fa-circle p-r-10 c-green"></i>ゼロデイの兆候を検知・遮断
+                  </span></p>
+                </div>
+                <div class="col-md-6 m-t-0">
+                  <p><span class="bold c-dark">
+                    <i class="fa fa-circle p-r-10 c-green"></i>Unknown／回避型攻撃を行動ベースで識別
+                  </span></p>
+                  <p><span class="bold c-dark">
+                    <i class="fa fa-circle p-r-10 c-green"></i>Web脆弱性攻撃（OWASP Top 10）に対応
+                  </span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 補助リスト（非表示維持） -->
+            <div data-aos="fade-up" style="display:none">
+              <dl><p><span><i class="fa fa-circle f-17 p-r-10 c-gray"></i></span>攻撃への先制対応</p></dl>
+              <dl><p><em class="success">ゼロデイ攻撃への対応</em></p></dl>
+              <dl><p><em class="success">未知（Unknown）攻撃への対応</em></p></dl>
+              <dl><p><em class="success">アプリ脆弱性攻撃への対応</em></p></dl>
+            </div>
+          </div>
+
+          <!-- ダイアグラム -->
+          <div class="img" data-aos="fade-left">
+            <img
+              src="../res/images/diagrams/xdr-diagram-oci.png"
+              alt="PLURA-XDR アーキテクチャ図"
+              loading="lazy"
+              style="display:block;max-width:1080px;width:100%;height:auto;margin:0 auto"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="product-desc desc-1">
+        <div class="inner">
+          <!-- 特徴 -->
+          <dl data-aos="fade-up">
+            <dt>特長</dt>
+            <dd>ゼロトラスト・アーキテクチャ（ZTA）対応</dd>
+            <!-- dd>コンプライアンス（ISO 27001, PCI DSS, ISMS）対応</dd -->
+            <dd>要求本文（Post‑body）／応答本文（Resp‑body）分析に基づく対処</dd>
+            <dd>クレデンシャルスタッフィングの検知・遮断</dd>
+            <dd>ブルートフォースの検知・遮断</dd>
+            <dd>SQLインジェクションの精密検知・遮断（回避手口含む）</dd>
+            <dd>ゼロデイの検知・遮断</dd>
+            <dd>APT（高度持続的脅威）の検知・遮断</dd>
+            <dd>スナップショット分析によるホスト改ざんの検知</dd>
+          </dl>
+
+          <!-- プラットフォーム構成 -->
+          <dl data-aos="fade-up">
+            <dt>AI・PLURA‑XDR Platform</dt>
+            <!-- Sensors -->
+            <dd>Webアプリケーションファイアウォール（PLURA‑WAF）</dd>
+            <dd>ホストセキュリティ（PLURA‑EDR）</dd>
+            <dd>リソースモニタリング（PLURA‑SysMon）</dd>
+            <!-- Core Analytics -->
+            <dd>統合セキュリティイベント管理（PLURA‑SIEM）</dd>
+            <!-- Automation -->
+            <dd>セキュリティ運用自動化（PLURA‑SOAR）</dd>
+            <!-- Investigation / Operations -->
+            <dd>フォレンジック（PLURA‑Forensic）</dd>
+            <dd>セキュリティ運用センター（PLURA‑SOC）</dd>
+            <!-- dd>脆弱性診断サービス（PLURA‑VAS）</dd -->
+          </dl>
+        </div>
+      </section>
+
+      <section class="product-desc desc-2">
+        <div class="inner">
+          <!-- 特許項目 -->
+          <dl data-aos="fade-up">
+            <dt>特許</dt>
+            <dd>DLLインジェクション攻撃の検知・対応</dd>
+            <dd>Web要求本文（Post‑body）分析によるハッキング対処</dd>
+            <dd>Web応答本文（Resp‑body）分析によるデータ流出対処</dd>
+          </dl>
+
+          <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+            <h3 class="w-500">世界特許に裏づけられた独自技術</h3>
+          </div>
+
+          <!-- WAF/EDR/SIEM 目的/基盤/機能 表 -->
+          <div class="dis-block width-100p" data-aos="fade-up">
+            <table class="table  table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+              <thead>
+                <tr class="h-40">
+                  <th class="text-center p-10 c-black bg-blue">区分</th>
+                  <th class="text-center p-10 c-black bg-blue">WebアプリケーションFW<br>(WAF)</th>
+                  <th class="text-center p-10 c-black bg-blue">ホストセキュリティ<br>(EDR)</th>
+                  <th class="text-center p-10 c-black bg-blue">統合セキュリティイベント管理<br>(SIEM)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center p-10">目的</td>
+                  <td class="text-center p-10">Webトラフィック／パケット分析により<br>攻撃を検知・遮断</td>
+                  <td class="text-center p-10">ホスト／OSログ分析により<br>攻撃を検知・遮断</td>
+                  <td class="text-center p-10">WAF・EDR等の全社ログを収集・相関し<br>異常行為を検知・遮断</td>
+                </tr>
+                <tr class="bg-blue-light">
+                  <td class="text-center p-10">基盤技術</td>
+                  <td class="text-center p-10">OWASP Top 10</td>
+                  <td class="text-center p-10">MITRE ATT&amp;CK</td>
+                  <td class="text-center p-10">Webパケット／本文ログ統合分析・相関ルール</td>
+                </tr>
+                <tr>
+                  <td class="text-center p-10">コア機能</td>
+                  <td class="text-center p-10">クレデンシャルスタッフィング<br>行為兆候の遮断</td>
+                  <td class="text-center p-10">APT検知・遮断／リモートライブフォレンジック</td>
+                  <td class="text-center p-10">ランサムウェア・クレデンシャルスタッフィング<br>行為相関による検知</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- プラットフォームの強み最大化 表 -->
+          <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+            <h3 class="w-500">プラットフォームの強みを最大化した技術</h3>
+          </div>
+          <div class="dis-block width-100p" data-aos="fade-up">
+            <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+              <thead>
+                <tr class="h-40">
+                  <th rowspan="2" class="text-center p-10 bg-purple">比較項目</th>
+                  <th rowspan="2" class="text-center p-10 bg-purple2">現行セキュリティ技術</th>
+                  <th colspan="3" class="text-center p-10 bg-purple" style="border:0">PLURA‑XDR</th>
+                </tr>
+                <tr class="bg-blue-light h-40">
+                  <th class="text-center p-10 bg-purple">WAF</th>
+                  <th class="text-center p-10 bg-purple">EDR</th>
+                  <th class="text-center p-10 bg-purple">SIEM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center p-10">クレデンシャルスタッフィング<br>攻撃対処</td>
+                  <td class="text-center p-10 bg-purple3">
+                    <span class="px-badge bad-very">非常に不十分</span>
+                  </td>
+                  <td class="text-center p-10">
+                    ヘッダー／本文ロギングに基づく検知<br>SIEM連携で遮断（自動化ルール）
+                  </td>
+                  <td class="text-center p-10">
+                    SSH／RDP 等の認証試行をロギング<br>異常兆候を自動遮断
+                  </td>
+                  <td class="text-center p-10">
+                    アカウントシグナル相関（ログインパターン・IPレピュテーション・速度）で検知
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center p-10">MITRE ATT&amp;CK<br>フレームワーク対応</td>
+                  <td class="text-center p-10 bg-purple3">
+                    <span class="px-badge bad-very">非常に不十分</span>
+                  </td>
+                  <td class="text-center p-10">
+                    攻撃段階のマッピング・証拠ログを提供
+                  </td>
+                  <td class="text-center p-10">
+                    監査ポリシー有効化・行動検知（戦術／技術マッピング）
+                  </td>
+                  <td class="text-center p-10">
+                    WAF／EDR 戦術連携ダッシュボード・アラート
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center p-10">Web全パケット／本文保存で<br>Unknownに対処</td>
+                  <td class="text-center p-10 bg-purple3">
+                    <span class="px-badge bad-very">非常に不十分</span>
+                  </td>
+                  <td class="text-center p-10">
+                    ヘッダー／本文の完全ロギング（証拠ベース再分析）
+                  </td>
+                  <td class="text-center p-10">
+                    Web関連イベントのホスト相関コンテキストを提供
+                  </td>
+                  <td class="text-center p-10">
+                    WAF連携・Webサーバモジュール・全文検索で行為相関
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center p-10">監査ポリシー型ロギング・APT/ランサム対応</td>
+                  <td class="text-center p-10 bg-purple3">
+                    <span class="px-badge bad-very">非常に不十分</span>
+                  </td>
+                  <td class="text-center p-10">—</td>
+                  <td class="text-center p-10">
+                    24種以上のイベントチャネル有効化で<br>APT／ランサムウェア検知
+                  </td>
+                  <td class="text-center p-10">
+                    EDRシグナル統合相関・ランブック自動化
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 既存体制 vs XDR 比較 -->
+          <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+            <h3 class="w-500">従来の情報セキュリティ体制 vs. AI・PLURA‑XDR 体制（相関分析＋ゼロデイ対処を含む）</h3>
+          </div>
+          <div class="dis-block width-100p" data-aos="fade-up">
+            <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+              <thead class="h-70">
+                <tr class="h-40">
+                  <th class="text-center p-10 c-white bg-magenta" style="width:150px">比較項目</th>
+                  <th class="text-center p-10 c-white bg-magenta">従来の体制</th>
+                  <th class="text-center p-10 c-white bg-magenta">AI・PLURA‑XDR 体制</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center p-10">構成方式</td>
+                  <td class="text-center p-10">
+                    個別ソリューション導入（FW, IPS, SIEM など）
+                    <span class="px-badge bad-poor" title="連携不足で統合可視性・運用複雑度が増大">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    統合サイバーセキュリティ・クラウドプラットフォーム
+                    <span class="px-badge excellent" title="単一プラットフォームで一貫した可視性・運用">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">運用方式</td>
+                  <td class="text-center p-10">
+                    オンプレ中心、個別機器の保守が必要
+                    <span class="px-badge bad-very" title="パッチ・障害・拡張の運用負荷が高い">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    クラウドSaaS基盤、保守不要
+                    <span class="px-badge excellent" title="無停止アップデート・可用性">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">ソリューション連携</td>
+                  <td class="text-center p-10">
+                    異なるセキュリティ製品間の統合が困難
+                    <span class="px-badge bad-very" title="異種連携・自動化の限界">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    WAF／EDR／SIEM／Forensic／Resource Monitoring を単一プラットフォームで提供
+                    <span class="px-badge excellent" title="ワンクリック連携・共通スキーマ・自動化">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">リアルタイム対応</td>
+                  <td class="text-center p-10">
+                    手作業の分析と対応が多い
+                    <span class="px-badge bad-very" title="検知から対処までの遅延でリスク増大">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    全ログ分析による脅威検知と自動対応
+                    <span class="px-badge excellent" title="自動対応フロー・ランブック">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">データ処理方式</td>
+                  <td class="text-center p-10">
+                    ログ収集後に個別分析
+                    <span class="px-badge bad-poor" title="断片分析で攻撃連鎖の把握が困難">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    集中分析と相関検知
+                    <span class="px-badge good" title="全社視点のイベント相関">優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">運用コスト</td>
+                  <td class="text-center p-10">
+                    高価な機器・保守費用が発生
+                    <span class="px-badge bad-very" title="CapEx/OpEx 負担">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    クラウドサブスクリプションでコスト削減
+                    <span class="px-badge good" title="妥当な TCO">優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">拡張性</td>
+                  <td class="text-center p-10">
+                    機器追加が必要で拡張に制約
+                    <span class="px-badge bad-poor" title="増設リードタイムと費用負担">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    クラウド基盤で自動スケール
+                    <span class="px-badge excellent" title="需要連動の弾力拡張">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">ゼロトラスト適用</td>
+                  <td class="text-center p-10">
+                    部分的または未適用
+                    <span class="px-badge bad-very" title="広い信頼領域・手動ポリシー">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    ZTA を完全適用
+                    <span class="px-badge excellent" title="最小権限・検証に基づくアクセス">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">規制遵守</td>
+                  <td class="text-center p-10">
+                    個別にポリシー管理が必要
+                    <span class="px-badge bad-poor" title="監査対策の手作業・漏れリスク">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    自動コンプライアンスとログ管理
+                    <span class="px-badge good" title="監査追跡・保全の自動化">優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">ユーザビリティ</td>
+                  <td class="text-center p-10">
+                    セキュリティ専門家が必要な場面が多い
+                    <span class="px-badge bad-poor" title="専門人材依存度が高い">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    直感的UIで IT 管理者でも容易に運用
+                    <span class="px-badge good" title="学習コストが低い">優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">相関（関連）分析</td>
+                  <td class="text-center p-10">
+                    個別機器のログを別々に分析し、攻撃連鎖の把握が困難
+                    <span class="px-badge bad-very" title="チェーン／キルチェーンの識別に弱い">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    SIEMで多様なログ／イベントを相関し、疑わしい活動を自動検知・警報
+                    <span class="px-badge excellent" title="行動相関・アラート">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">ゼロデイ対処</td>
+                  <td class="text-center p-10">
+                    シグネチャ中心（既知の脅威重視）
+                    <span class="px-badge bad-very" title="未知・回避の検知に弱い">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    全ログによる異常行動検知＋TI 連携で対処
+                    <span class="px-badge excellent" title="行動・コンテキスト＋TI">非常に優秀</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center p-10">サプライチェーンセキュリティ</td>
+                  <td class="text-center p-10">
+                    限定的にのみ可能
+                    <span class="px-badge bad-poor" title="パートナーリスクの可視性が限定的">不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    クラウドSaaS＋ISMS／ISO 27001 など認証を支援
+                    <span class="px-badge good" title="標準ベースのガバナンス">優秀</span>
+                  </td>
+                </tr>
+
+                <tr class="bg-warning">
+                  <td class="text-center p-10">SOC運用</td>
+                  <td class="text-center p-10">
+                    人員不足と専門性の不足
+                    <span class="px-badge bad-very" title="アラート疲労・対処遅延">非常に不足</span>
+                  </td>
+                  <td class="text-center p-10">
+                    統合UI・自動化で個人経験値の限界を克服
+                    <span class="px-badge good" title="自動化・プレイブック運用">優秀</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="attack-wrap">
+        <section class="sec-1">
+          <div class="inner p-t-0">
+            <div class="sec-top">
+              <p data-aos="fade-up"><br></p>
+              <p data-aos="fade-up">AI・PLURA‑XDR のゼロデイ対処フロー</p>
+              <ol data-aos="fade-up">
+                <li class="p-b-20">
+                  <span class="num">1</span>
+                  <p class="bold">全ログの統合分析で異常兆候を捕捉</p>
+                  <div class="f-16">従来体制が個別ログに依存するのに対し、PLURA‑XDR は <strong>WAF・EDR・システム・アプリ</strong>全域のログを単一スキーマで統合分析します。</div>
+                  <div class="f-16">単一イベントではなく<strong>異種ログ間の連鎖関係</strong>を追跡し、未知（ゼロデイ）攻撃の前兆を識別します。</div>
+                </li>
+
+                <li class="p-b-20">
+                  <span class="num">2</span>
+                  <p class="bold">行動（Behavior）ベースの相関分析</p>
+                  <div class="f-16">シグネチャ有無に関係なく、<strong>正常ベースラインからの偏差</strong>を算出して攻撃可能性をスコア化します。</div>
+                  <div class="f-16">
+                    例：WAF と EDR ログを結合し、同一アカウントが短時間に複数システムへログイン試行する異常パターンを検知（速度・位置・デバイス指紋の相関）。
+                  </div>
+                </li>
+
+                <li class="p-b-20">
+                  <span class="num">3</span>
+                  <p class="bold">MITRE ATT&amp;CK フレームワークへのマッピング</p>
+                  <div class="f-16">観測イベントを戦術（Tactics）／技術（Techniques）にマッピングし、<strong>段階別の仮説</strong>を構築して証拠を蓄積します。</div>
+                  <div class="f-16">既存機器が見落としたイベントでも、<strong>キルチェーンの流れ</strong>から外れた行為を先取りでフラグします。</div>
+                </li>
+
+                <li class="p-b-20">
+                  <span class="num">4</span>
+                  <p class="bold">脅威インテリジェンス（TI）連携</p>
+                  <div class="f-16">IP／ドメイン／ハッシュの評判と<strong>最新の戦術・技術の変化</strong>を反映し、類似パターンをリアルタイム採点します。</div>
+                  <div class="f-16">内部の行動シグナル＋外部 TI を組み合わせ、<strong>誤検知を抑え</strong>対応優先度を自動整列します。</div>
+                </li>
+
+                <li class="p-b-20">
+                  <span class="num">5</span>
+                  <p class="bold">自動化対応（SOAR 連携・ランブック）</p>
+                  <div class="f-16">閾値超過時に<strong>即時の遮断・隔離・アカウント保護・チケット発行</strong>など標準ランブックを実行し、事後分析用アーティファクトを自動保全します。</div>
+                  <div class="f-16">人的判断が必要なケースは<strong>承認ワークフロー</strong>に切替え、半自動で安全に運用します。</div>
+                </li>
+
+                <li class="p-b-20">
+                  <span class="num">6</span>
+                  <p class="bold">AI 検知・検証で「真検知↑・誤検知↓・見逃し↓」を達成</p>
+                  <div class="f-16">
+                    <strong>ゼロデイ検知と WAF 遮断検証 360（DBV 360）</strong>を組み合わせ、検知品質を継続的に改善します。
+                  </div>
+                  <div class="f-16">
+                    PLURA‑WAF は OWASP の<strong>真検知強化（↑）</strong>、DBV 360 で<strong>誤検知排除（↓）</strong>、
+                    <strong>ゼロデイ仮想パッチ（見逃し↓）</strong>を<strong>SLA・指標・証拠</strong>まで一貫運用する実行型 WAF です。
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="sec-top">
+              <div class="desc" data-aos="fade-up" style="border-bottom:0">
+                <div style="background:#f3fbf8;border:1px solid #cfeee3;border-radius:12px;padding:18px 20px">
+                  <p style="margin:0 0 10px 0;color:#0e6b57;line-height:1.8">
+                    既存の体制は主に<strong>既知シグネチャ</strong>防御に焦点が当たっています。
+                  </p>
+
+                  <!-- コアポイント・チップ -->
+                  <div style="display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px 0" aria-label="コア検知ポイント">
+                    <span style="font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600">
+                      全ログの証拠分析
+                    </span>
+                    <span style="font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600">
+                      行動相関・ATT&amp;CK マッピング
+                    </span>
+                    <span style="font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600">
+                      TI（評判／戦術）結合
+                    </span>
+                    <span style="font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600">
+                      AI 検知・検証（DBV 360）
+                    </span>
+                    <span style="font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600">
+                      ゼロデイ仮想パッチ・SLA／証拠運用
+                    </span>
+                  </div>
+
+                  <p style="margin:0;color:#0e6b57;line-height:1.8">
+                    PLURA‑XDR はこれらの要素を結合し、個別機器が見逃す<strong>高度化したゼロデイ兆候</strong>まで捕捉・対処します。<br>
+                    特に<strong>AI 検知と WAF 遮断検証 360（DBV 360）</strong>により、
+                    <strong>真検知強化（↑）</strong>・<strong>誤検知削減（↓）</strong>・<strong>見逃し低減（↓）</strong>を、
+                    <strong>SLA・指標・証拠</strong>まで繋げた実行型 WAF（<strong>PLURA‑WAF</strong>）を実現します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <div data-include-path="./p_footer.html"></div>
+  <button type="button" id="top">ページトップへ</button>
+</div>
+
+<!-- スクリプト初期化: Swiper autoplay & AOS -->
+<script>
+  // Swiper 初期化
+  (function(){
+    if (window.Swiper) {
+      new Swiper('.img-slide', {
+        loop: true,
+        autoplay: { delay: 7000, disableOnInteraction: false },
+        speed: 600,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        allowTouchMove: true,
+        autoHeight: true
+      });
+    } else {
+      console.warn('Swiper が読み込まれていません。');
+    }
+  })();
+
+  // AOS 初期化
+  (function(){
+    if (window.AOS) {
+      AOS.init({ once: true, duration: 600, easing: 'ease-out' });
+    } else {
+      console.warn('AOS が読み込まれていません。');
+    }
+  })();
+</script>
+
+</body>
+</html>
