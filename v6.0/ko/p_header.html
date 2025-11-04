@@ -35,6 +35,21 @@
     @media (max-width:768px){
       .header-right .login-menu{ right:auto; left:0; }
     }
+  
+    /* === refine: center dropdown under login, compact width, strong hover === */
+    .header-right .login-dropdown{ --login-bg:#0c2f57; } /* 로그인 버튼 배경과 유사한 기본값(원하는 색으로 조정 가능) */
+    .header-right .login-menu{
+      left:50%; right:auto; transform:translateX(-50%);
+      min-width: auto; padding:8px 14px; white-space:nowrap;
+    }
+    .header-right .login-menu .sep{ margin:0 10px; }
+    /* choice hover → 로그인 버튼 배경색과 동일하게 */
+    .header-right .login-menu a.choice:hover{
+      background: var(--login-bg);
+      color:#fff;
+    }
+    /* reduce corner + shadow a touch */
+    .header-right .login-menu{ border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,.12); }
   </style>
   <div class="inner">
     <div class="header-left">
