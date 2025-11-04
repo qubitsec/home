@@ -1,4 +1,37 @@
 <header>
+  <style>
+    /* === 로그인 드롭다운: V6 | V5 (중앙 정렬) === */
+    .header-right .login-dropdown{ position:relative; display:inline-block; }
+    .header-right .login-dropdown > a.login{
+      display:inline-block; padding:10px 16px; border-radius:4px;
+      color:#fff; background:#1e88e5; text-decoration:none; font-weight:700;
+    }
+    .header-right .login-dropdown > a.login:hover{ background:#1565c0; }
+    .header-right .login-menu{
+      position:absolute; right:0; top:100%; /* 버튼에 밀착 */
+      min-width:200px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+      box-shadow:0 8px 24px rgba(0,0,0,.12); padding:10px 12px; display:none; z-index:9999;
+      /* 중앙 정렬 */
+      display:flex; justify-content:center; align-items:center; gap:8px;
+    }
+    .header-right .login-menu::before{
+      content:""; position:absolute; left:0; right:0; top:-8px; height:8px;
+    }
+    .header-right .login-dropdown:hover .login-menu{ display:flex; }
+    .header-right .login-menu a.choice{
+      display:inline-block; padding:6px 8px; border-radius:6px; text-decoration:none;
+      color:#1f2937; font-weight:700;
+    }
+    .header-right .login-menu a.choice:hover{ background:#f1f5f9; }
+    .header-right .login-menu .sep{ color:#cbd5e1; }
+
+    /* 기존 레이아웃 호환 */
+    .header-right ul{ list-style:none; margin:0; padding:0; display:flex; gap:10px; align-items:center;}
+    .header-right ul li{ display:inline-flex; }
+    @media (max-width:768px){
+      .header-right .login-menu{ right:auto; left:0; }
+    }
+  </style>
   <div class="inner">
     <div class="header-left">
       <h1>
@@ -47,7 +80,17 @@
         <li><a href="https://xdr.plura.io/auth/signup">무료 평가판 시작</a></li>
         <li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">왜 무료인가요?</a></li>
       </ul>
-      <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
+
+      <!-- 로그인 버튼 + 중앙정렬 V6 | V5 드롭다운 -->
+      <div class="login-dropdown">
+        <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
+        <div class="login-menu" aria-label="로그인 버전 선택">
+          <a class="choice" href="https://xdr.plura.io/auth/login">V6</a>
+          <span class="sep">|</span>
+          <a class="choice" href="https://siem.plura.io/login">V5</a>
+        </div>
+      </div>
+
       <div class="lang">
         <button type="button" class="">한국어</button>
         <div class="depth">
