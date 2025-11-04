@@ -1,26 +1,30 @@
 <header>
   <style>
-    /* === 로그인 드롭다운: V6 | V5 (중앙 정렬) === */
+    /* === 로그인 드롭다운: 기본 스타일 보존 + V6|V5는 hover에만 표시 === */
     .header-right .login-dropdown{ position:relative; display:inline-block; }
+    /* 버튼은 기존 사이트 CSS를 그대로 사용하도록 색상/배경 지정 제거 */
     .header-right .login-dropdown > a.login{
-      display:inline-block; padding:10px 16px; border-radius:4px;
-      color:#fff; background:#1e88e5; text-decoration:none; font-weight:700;
+      display:inline-block; padding:0.6rem 1rem; text-decoration:none; /* 색상/배경 미지정 */
+      border-radius:4px; font-weight:700;
     }
-    .header-right .login-dropdown > a.login:hover{ background:#1565c0; }
+    /* 메뉴: 기본은 숨김 */
     .header-right .login-menu{
-      position:absolute; right:0; top:100%; /* 버튼에 밀착 */
-      min-width:200px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
-      box-shadow:0 8px 24px rgba(0,0,0,.12); padding:10px 12px; display:none; z-index:9999;
+      position:absolute; right:0; top:100%;
+      min-width:200px; background:#fff; border:1px solid #e5e7eb; border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.12); padding:10px 16px; display:none; z-index:9999;
       /* 중앙 정렬 */
-      display:flex; justify-content:center; align-items:center; gap:8px;
+      display:none;
+      justify-content:center; align-items:center; gap:10px; text-align:center;
     }
+    /* hover bridge: 메뉴로 이동할 때 사라지지 않도록 */
     .header-right .login-menu::before{
       content:""; position:absolute; left:0; right:0; top:-8px; height:8px;
     }
+    /* 트리거 또는 메뉴 위에 있을 때만 표시 */
     .header-right .login-dropdown:hover .login-menu{ display:flex; }
     .header-right .login-menu a.choice{
       display:inline-block; padding:6px 8px; border-radius:6px; text-decoration:none;
-      color:#1f2937; font-weight:700;
+      color:#111827; font-weight:700;
     }
     .header-right .login-menu a.choice:hover{ background:#f1f5f9; }
     .header-right .login-menu .sep{ color:#cbd5e1; }
@@ -42,9 +46,7 @@
       </h1>
       <nav>
         <ul>
-          <li>
-            <a href="video.html">영상</a>
-          </li>
+          <li><a href="video.html">영상</a></li>
           <li class="has-depth">
             <a href="javascript:void(0);">플랫폼</a>
             <div class="depth-menu">
@@ -60,18 +62,10 @@
               </ul>
             </div>
           </li>
-          <li>
-            <a href="customer.html">고객</a>
-          </li>
-          <li>
-            <a href="pricing.html">가격</a>
-          </li>
-          <li>
-            <a href="contact.html">연락처</a>
-          </li>
-          <li>
-            <a href="https://www.qubitsec.com/recruit" target="_blank">채용</a>
-          </li>
+          <li><a href="customer.html">고객</a></li>
+          <li><a href="pricing.html">가격</a></li>
+          <li><a href="contact.html">연락처</a></li>
+          <li><a href="https://www.qubitsec.com/recruit" target="_blank">채용</a></li>
         </ul>
       </nav>
     </div>
@@ -81,7 +75,7 @@
         <li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">왜 무료인가요?</a></li>
       </ul>
 
-      <!-- 로그인 버튼 + 중앙정렬 V6 | V5 드롭다운 -->
+      <!-- 로그인 버튼 + V6 | V5 드롭다운 (hover시에만 표시) -->
       <div class="login-dropdown">
         <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
         <div class="login-menu" aria-label="로그인 버전 선택">
@@ -95,15 +89,9 @@
         <button type="button" class="">한국어</button>
         <div class="depth">
           <ul>
-            <li>
-              <a onClick="return jsSetCookie('ko')" class="dis-block width_110 cursor_p"><span>한국어</span></a>
-            </li>
-            <li>
-              <a onClick="return jsSetCookie('en')" class="dis-block width_110 cursor_p"><span>English</span></a>
-            </li>
-            <li>
-              <a onClick="return jsSetCookie('ja');" class="dis-block width_110 cursor_p"><span>日本語</span></a>
-            </li>
+            <li><a onClick="return jsSetCookie('ko')" class="dis-block width_110 cursor_p"><span>한국어</span></a></li>
+            <li><a onClick="return jsSetCookie('en')" class="dis-block width_110 cursor_p"><span>English</span></a></li>
+            <li><a onClick="return jsSetCookie('ja');" class="dis-block width_110 cursor_p"><span>日本語</span></a></li>
           </ul>
         </div>
       </div>
