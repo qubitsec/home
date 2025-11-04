@@ -1,32 +1,36 @@
 <header>
   <style>
-    /* === Login Hover Menu (개인 | 기업) + 무료 평가판(A | B) === */
-    .header-right .login-dropdown { position: relative; display: inline-block; }
-    .header-right .login-dropdown > a.login {
-      display:inline-block; padding:10px 16px; border:1px solid #1e88e5; border-radius:4px;
-      color:#fff; background:#1e88e5; text-decoration:none; font-weight:600;
+    /* === Hover Menu: 무료 평가판 시작 → A | B === */
+    .header-right .trial-dropdown { position: relative; display: inline-block; }
+    .header-right .trial-dropdown > a.trial-btn{
+      display:inline-block; padding:10px 16px; border:1px solid #10b981; border-radius:4px;
+      color:#fff; background:#10b981; text-decoration:none; font-weight:700;
     }
-    .header-right .login-dropdown > a.login:hover{ background:#1565c0; }
-    .header-right .login-menu{
-      position:absolute; right:0; top:calc(100% + 8px);
-      min-width:240px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+    .header-right .trial-dropdown > a.trial-btn:hover{ background:#0ea371; }
+    .header-right .trial-menu{
+      position:absolute; right:0; top:100%; /* 붙여서 gap 제거 */
+      min-width:220px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
       box-shadow:0 8px 24px rgba(0,0,0,.12); padding:12px; display:none; z-index:9999;
     }
-    .header-right .login-dropdown:hover .login-menu{ display:block; }
-    .header-right .login-menu .group{ padding:8px 10px; }
-    .header-right .login-menu .group + .group{ border-top:1px solid #f1f5f9; margin-top:8px; }
-    .header-right .login-menu .group-title{ display:block; font-size:12px; color:#64748b; margin-bottom:6px; }
-    .header-right .login-menu a.choice{
-      display:inline-block; padding:6px 8px; border-radius:6px; text-decoration:none;
-      color:#1f2937; font-weight:600;
+    /* 마우스가 메뉴로 이동할 때 사라지지 않도록 hover bridge */
+    .header-right .trial-menu::before{
+      content:""; position:absolute; left:0; right:0; top:-8px; height:8px;
     }
-    .header-right .login-menu a.choice:hover{ background:#f1f5f9; }
-    .header-right .login-menu .sep{ color:#cbd5e1; margin:0 6px; font-weight:400;}
+    /* 트리거 또는 메뉴 위에 있을 때 모두 표시 */
+    .header-right .trial-dropdown:hover .trial-menu{ display:block; }
+    .header-right .trial-menu .group-title{ display:block; font-size:12px; color:#64748b; margin-bottom:6px; }
+    .header-right .trial-menu a.choice{
+      display:inline-block; padding:6px 8px; border-radius:6px; text-decoration:none;
+      color:#1f2937; font-weight:700;
+    }
+    .header-right .trial-menu a.choice:hover{ background:#f1f5f9; }
+    .header-right .trial-menu .sep{ color:#cbd5e1; margin:0 6px; font-weight:400;}
+
     /* keep existing layout expectations */
     .header-right ul{ list-style:none; margin:0; padding:0; display:flex; gap:10px; align-items:center;}
     .header-right ul li{ display:inline-flex; }
     @media (max-width: 768px){
-      .header-right .login-menu{ right:auto; left:0; }
+      .header-right .trial-menu{ right:auto; left:0; }
     }
   </style>
   <div class="inner">
@@ -64,28 +68,18 @@
     </div>
     <div class="header-right">
       <ul>
-        <!-- 기존 '무료 평가판 시작' 단일 링크 제거 → 로그인 드롭다운 안으로 이동 -->
         <li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">왜 무료인가요?</a></li>
       </ul>
 
-      <!-- 로그인에 마우스 오버 시: 개인 | 기업 & 무료 평가판: A | B  -->
-      <div class="login-dropdown">
-        <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
-        <div class="login-menu" aria-label="로그인/평가판 선택">
-          <div class="group">
-            <span class="group-title">로그인</span>
-            <a class="choice" href="https://xdr.plura.io/auth/login">개인</a>
-            <span class="sep">|</span>
-            <!-- 기업 로그인 URL은 예시입니다. 실제 기업용 로그인 URL로 교체하세요. -->
-            <a class="choice" href="https://xdr.plura.io/auth/login?org=business">기업</a>
-          </div>
-          <div class="group">
-            <span class="group-title">무료 평가판 시작</span>
-            <!-- A/B 링크는 요구에 맞춰 교체하세요. -->
-            <a class="choice" href="https://xdr.plura.io/auth/signup?type=A">A</a>
-            <span class="sep">|</span>
-            <a class="choice" href="https://xdr.plura.io/auth/signup?type=B">B</a>
-          </div>
+      <!-- 무료 평가판 시작: A | B (hover 유지) -->
+      <div class="trial-dropdown">
+        <a href="https://xdr.plura.io/auth/signup" class="trial-btn">무료 평가판 시작</a>
+        <div class="trial-menu" aria-label="무료 평가판 선택">
+          <span class="group-title">무료 평가판 선택</span>
+          <!-- 별도 링크 유지 -->
+          <a class="choice" href="https://xdr.plura.io/auth/signup?type=A">A</a>
+          <span class="sep">|</span>
+          <a class="choice" href="https://xdr.plura.io/auth/signup?type=B">B</a>
         </div>
       </div>
 
