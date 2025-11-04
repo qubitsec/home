@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>AI・PLURA-XDR クラウド SaaS プラットフォーム</title>
+    <title>PLURA・AI-XDR Cloud SaaS Platform</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="format-detection" content="telephone=no" />
@@ -34,20 +34,73 @@
                     <div class="text" data-aos="fade-up">
                         <span class="line"></span>
                         <h2>マイター・アタック（ATT&CK）</h2>
-                        <p>MITRE Adversarial Tactics, Techniques & Common Knowledge Framework</br>공격 대응에 최선의 선택입니다.</p>
+                        <p>MITRE Adversarial Tactics, Techniques &amp; Common Knowledge Framework</br>攻撃対処のための最良の選択です。</p>
                     </div>
                     <img src="../res/images/attack_bg.png" alt="" class="img">
                 </div>
             </div>
+            
             <div class="attack-wrap">
                 <section class="sec-1">
                     <div class="inner">
+                    
+						<div class="sec-title">
+						  <!-- MITRE ATT&CK – Compact Intro Block -->
+						  <div class="name aos-init aos-animate" data-aos="fade-up">
+						    <h3>
+						      ATT&amp;CKとは？
+						      <a href="https://blog.plura.io/ko/column/mitre_attack_audit_policy/"
+						         target="_blank" rel="noopener noreferrer"
+						         class="link" aria-label="MITRE ATT&CK 詳細">↗️</a>
+						    </h3>
+						  </div>
+						
+						  <div class="desc aos-init aos-animate p-t-10" data-aos="fade-up">
+						    <!-- One-line core message -->
+						    <p class="f-24 line-h-default-7">
+						      <strong>攻撃者の戦術・技術・手順（TTPs）を体系化した公開ナレッジベース</strong>であり、<br>
+						      PLURAはログ証拠をATT&amp;CKにマッピングして<strong>振る舞い検知と対応</strong>を標準化します。
+						    </p>
+						
+						    <!-- Key points -->
+						    <div class="points">
+						      <div>
+						        <em class="danger dis-block">
+						          ATT&amp;CK適用の前提は<u>戦術</u>（Tactics）・<u>技術</u>（Techniques）に関する
+						          <strong>行為証拠</strong>です。
+						        </em>
+						        <em class="danger dis-block">
+						          そのために<u>監査ポリシー</u>を有効化し、
+						          <u>HTTP本文</u>（POST/Response）および<u>プロセス・ファイル・ネットワーク</u>のテレメトリを収集する必要があります。
+						        </em>
+						      </div>
+						
+						      <div>
+						        <em class="success dis-block">
+						          PLURAは収集したログをATT&amp;CKの戦術・技術へ自動マッピングし、<br>
+						          <strong>検知（Detect）→ 対応（Respond）→ 証拠化（Evidence）</strong>を標準化します。
+						        </em>
+						
+						        <!-- Example list -->
+						        <ul class="mini-list">
+						          <li><strong>初期侵入／実行</strong>（例：T1059）</li>
+						          <li><strong>権限昇格</strong>（例：T1068）</li>
+						          <li><strong>認証情報アクセス</strong>（例：T1555）</li>
+						          <li><strong>横展開</strong>（例：T1021）</li>
+						          <li><strong>C2通信／ツール転送</strong>（例：T1071 / T1105）</li>
+						        </ul>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+                    
                         <div class="sec-top">
-                            <p data-aos="fade-up">MITRE ATT&CK フレームワークの構成要素</p>
+                            <p data-aos="fade-up">ATT&amp;CK フレームワークの構成要素</p>
                             <ol data-aos="fade-up">
                                 <li>
                                     <span class="num">1</span>
-                                    <p><b><a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" class="link">マトリックス（Matrix）<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                    <p><b><a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" class="link">マトリクス（Matrix）<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
                                 </li>
                                 <li>
                                     <span class="num">2</span>
@@ -72,46 +125,46 @@
                     <div class="inner">
                       <ul>
                         <li data-aos="fade-up">
-                            <strong class="line-h-default">PLURA w/ Matrix : <br>선제적 공격 대응 전략</strong>
+                            <strong class="line-h-default">PLURA × Matrix：<br>先手の攻撃対処戦略</strong>
                             <div>
-							<span class="dis-block"><b>可視化ツールにより各攻撃段階の検知と自動対応体制を構築</b></span>
-                                初期偵察段階から攻撃を早期検知<br/>
-								ホストへのアクセス権獲得および権限昇格<br/>
-								ホスト掌握後、ラテラルムーブメントにより追加ホストへアクセス・掌握<br/>
-								掌握されたホストにおける <b>ランサムウェア</b> 攻撃とその影響の把握<br/>
+							<span class="dis-block"><b>可視化ツールで各攻撃段階の検知と自動対応を構築</b></span>
+                                初期偵察段階からの早期検知<br/>
+								ホストへのアクセス権取得と権限昇格<br/>
+								ホスト掌握後の横展開による追加ホストへの侵入・掌握<br/>
+								掌握済みホストでの<b>ランサムウェア</b>攻撃とその影響把握<br/>
                             </div>
                         </li>
                         <li data-aos="fade-up">
-                            <strong class="line-h-default">PLURA w/ Tactics : <br>전략적 보안 통합 솔루션</strong>
+                            <strong class="line-h-default">PLURA × Tactics：<br>戦略的セキュリティ統合ソリューション</strong>
                             <div>
-                                <span class="dis-block"><b>ユーザーフレンドリーなダッシュボードでセキュリティ状態を容易に監視・管理</b></span>
-                                多様な攻撃ベクターに対する総合的な対応戦略を策定<br/>
+                                <span class="dis-block"><b>使いやすいダッシュボードで状態を直感的に監視・管理</b></span>
+                                多様な攻撃ベクターに対する総合的な対処戦略の策定<br/>
                                 継続的な脅威監視とリアルタイム脅威インテリジェンスの統合<br/>
-                                ユーザー行動分析と異常活動の検知により内部脅威を最小化<br/>
-                                効果的な脆弱性管理とリスク評価で予防的セキュリティを強化<br/>
-								自動化されたメカニズムで迅速かつ効率的なインシデント対応<br/>
+                                振る舞い分析による内部脅威の最小化<br/>
+                                効果的な脆弱性管理とリスク評価による予防的強化<br/>
+								自動化されたレスポンスで迅速・効率的なインシデント対応<br/>
                             </div>							
                         </li>
                         <li data-aos="fade-up">
-                            <strong class="line-h-default">PLURA w/ Techniques : <br>정교한 보안 기술의 결합</strong>
+                            <strong class="line-h-default">PLURA × Techniques：<br>精緻なセキュリティ技術の結合</strong>
                             <div>
-                            <span class="dis-block"><b>リアルタイムのセキュリティダッシュボードで継続監視と迅速対応</b></span>
-							    高度なペネトレーションテストと適応型脅威モデリングで防御を強化<br/>
-                                詳細なロギングと監査トレイルで微細なセキュリティ事象を識別<br/>
-                                シナリオベースの行動分析で複雑な攻撃パターンを把握・対応<br/>
+                            <span class="dis-block"><b>リアルタイムダッシュボードで継続的に監視し迅速に対応</b></span>
+							    高度な侵入テストと適応型脅威モデリングで防御を強化<br/>
+                                詳細なロギングと監査追跡で微妙な事象を識別<br/>
+                                シナリオ指向の行動分析で複雑な攻撃パターンを把握・対処<br/>
                                 多層防御のための包括的な暗号化戦略を適用<br/>
-                                ネットワーク／Web パケットの分析と異常通信の検知<br/>
+                                ネットワーク／Webパケット分析と異常通信の検知<br/>
                             </div>
                         </li>
                         <li data-aos="fade-up">
-                            <strong class="line-h-default">PLURA w/ Mitigations : <br>효과적인 위협 완화를 위한 첨단 솔루션</strong>
+                            <strong class="line-h-default">PLURA × Mitigations：<br>効果的な脅威緩和のための先端ソリューション</strong>
                             <div>
-                            <span class="dis-block"><b>多様な脅威に対する包括的な緩和戦略を実装</b></span>
-                                脆弱性パッチ管理とシステムのセキュリティ更新でリスクを最小化<br/>
-                                イントラネットおよびエンドポイント保護により社内ネットワークの防御を強化<br/>
-                                データ漏えい防止と機微情報の安全な管理<br/>
-                                ユーザーおよびデバイスのアクセス制御により権限ベースのセキュリティポリシーを適用<br/>
-								脅威の把握と対応のためのリアルタイム分析・レポートツールを提供<br/>
+                            <span class="dis-block"><b>多様な脅威に対する包括的な緩和策を実装</b></span>
+                                パッチ管理とセキュリティ更新でリスクを最小化<br/>
+                                社内ネットワークとエンドポイントの保護を強化<br/>
+                                データ流出防止と機微情報の安全な管理<br/>
+                                ユーザー／デバイスアクセス制御による権限ベースの運用<br/>
+								認知と対応のためのリアルタイム分析とレポートツールを提供<br/>
                             </div>							
                         </li>						
                       </ul>
@@ -120,8 +173,10 @@
             </div>
         </div>
 <div data-include-path="./p_footer.html"></div>
-<button type="button" id="top">ページ上部へ</button>
+<button type="button" id="top">ページトップへ</button>
 
     </div>
 </body>
+
+
 </html>
