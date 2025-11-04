@@ -1,55 +1,37 @@
 <header>
   <style>
-    /* === 로그인 드롭다운: 기본 스타일 보존 + V6|V5는 hover에만 표시 === */
-    .header-right .login-dropdown{ position:relative; display:inline-block; }
-    /* 버튼은 기존 사이트 CSS를 그대로 사용하도록 색상/배경 지정 제거 */
-    .header-right .login-dropdown > a.login{
-      display:inline-block; padding:0.6rem 1rem; text-decoration:none; /* 색상/배경 미지정 */
-      border-radius:4px; font-weight:700;
+    /* === Hover Menu: 무료 평가판 시작 → A | B === */
+    .header-right .trial-dropdown { position: relative; display: inline-block; }
+    .header-right .trial-dropdown > a.trial-btn{
+      display:inline-block; padding:10px 16px; border:1px solid #10b981; border-radius:4px;
+      color:#fff; background:#10b981; text-decoration:none; font-weight:700;
     }
-    /* 메뉴: 기본은 숨김 */
-    .header-right .login-menu{
-      position:absolute; right:0; top:100%;
-      min-width:200px; background:#fff; border:1px solid #e5e7eb; border-radius:12px;
-      box-shadow:0 8px 24px rgba(0,0,0,.12); padding:10px 16px; display:none; z-index:9999;
-      /* 중앙 정렬 */
-      display:none;
-      justify-content:center; align-items:center; gap:10px; text-align:center;
+    .header-right .trial-dropdown > a.trial-btn:hover{ background:#0ea371; }
+    .header-right .trial-menu{
+      position:absolute; right:0; top:100%; /* 붙여서 gap 제거 */
+      min-width:220px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+      box-shadow:0 8px 24px rgba(0,0,0,.12); padding:12px; display:none; z-index:9999;
     }
-    /* hover bridge: 메뉴로 이동할 때 사라지지 않도록 */
-    .header-right .login-menu::before{
+    /* 마우스가 메뉴로 이동할 때 사라지지 않도록 hover bridge */
+    .header-right .trial-menu::before{
       content:""; position:absolute; left:0; right:0; top:-8px; height:8px;
     }
-    /* 트리거 또는 메뉴 위에 있을 때만 표시 */
-    .header-right .login-dropdown:hover .login-menu{ display:flex; }
-    .header-right .login-menu a.choice{
+    /* 트리거 또는 메뉴 위에 있을 때 모두 표시 */
+    .header-right .trial-dropdown:hover .trial-menu{ display:block; }
+    .header-right .trial-menu .group-title{ display:block; font-size:12px; color:#64748b; margin-bottom:6px; }
+    .header-right .trial-menu a.choice{
       display:inline-block; padding:6px 8px; border-radius:6px; text-decoration:none;
-      color:#111827; font-weight:700;
+      color:#1f2937; font-weight:700;
     }
-    .header-right .login-menu a.choice:hover{ background:#f1f5f9; }
-    .header-right .login-menu .sep{ color:#cbd5e1; }
+    .header-right .trial-menu a.choice:hover{ background:#f1f5f9; }
+    .header-right .trial-menu .sep{ color:#cbd5e1; margin:0 6px; font-weight:400;}
 
-    /* 기존 레이아웃 호환 */
+    /* keep existing layout expectations */
     .header-right ul{ list-style:none; margin:0; padding:0; display:flex; gap:10px; align-items:center;}
     .header-right ul li{ display:inline-flex; }
-    @media (max-width:768px){
-      .header-right .login-menu{ right:auto; left:0; }
+    @media (max-width: 768px){
+      .header-right .trial-menu{ right:auto; left:0; }
     }
-  
-    /* === refine: center dropdown under login, compact width, strong hover === */
-    .header-right .login-dropdown{ --login-bg:#0c2f57; } /* 로그인 버튼 배경과 유사한 기본값(원하는 색으로 조정 가능) */
-    .header-right .login-menu{
-      left:50%; right:auto; transform:translateX(-50%);
-      min-width: auto; padding:8px 14px; white-space:nowrap;
-    }
-    .header-right .login-menu .sep{ margin:0 10px; }
-    /* choice hover → 로그인 버튼 배경색과 동일하게 */
-    .header-right .login-menu a.choice:hover{
-      background: var(--login-bg);
-      color:#fff;
-    }
-    /* reduce corner + shadow a touch */
-    .header-right .login-menu{ border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,.12); }
   </style>
   <div class="inner">
     <div class="header-left">
@@ -86,14 +68,14 @@
     </div>
     <div class="header-right">
       <ul>
-        <li><a href="https://xdr.plura.io/auth/signup">무료 평가판 시작</a></li>
         <li><a href="https://w.plura.io/index.html?doc=/why-free/ko/README.md" target="_blank">왜 무료인가요?</a></li>
       </ul>
 
-      <!-- 로그인 버튼 + V6 | V5 드롭다운 (hover시에만 표시) -->
-      <div class="login-dropdown">
-        <a href="https://xdr.plura.io/auth/login" class="login">로그인</a>
-        <div class="login-menu" aria-label="로그인 버전 선택">
+      <!-- 무료 평가판 시작: A | B (hover 유지) -->
+      <div class="trial-dropdown">
+        <a href="https://xdr.plura.io/auth/signup" class="trial-btn">무료 평가판 시작</a>
+        <div class="trial-menu" aria-label="무료 평가판 선택">
+          <!-- 별도 링크 유지 -->
           <a class="choice" href="https://xdr.plura.io/auth/login">V6</a>
           <span class="sep">|</span>
           <a class="choice" href="https://siem.plura.io/login">V5</a>
