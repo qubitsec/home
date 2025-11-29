@@ -7620,10 +7620,19 @@ header .logo::after,
   font-weight: 600;
 }
 
-/* Hover 시에만 크리스마스 컬러 */
-.main-visual .visual-text > a:hover {
-  background: linear-gradient(135deg, #1f7a4f, #d73232);
-  border-color: transparent;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  transform: translateY(-1px);
+/* === Christmas: Logo Santa Hat === */
+header .header-left h1 a {
+  position: relative;
+  display: inline-block;
+}
+
+header .header-left h1 a::after {
+  content: "🎅";
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  font-size: 26px;
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 10;
 }
