@@ -7626,7 +7626,6 @@ header .header-left h1 a {
   display: inline-block;
 }
 
-/* 5초 주기로 은은하게 반짝 */
 header .header-left h1 a::after {
   content: "✨";
   position: absolute;
@@ -7636,26 +7635,4 @@ header .header-left h1 a::after {
   transform: rotate(-10deg);
   pointer-events: none;
   z-index: 10;
-
-  /* blink */
-  animation: hnySparkle 5s ease-in-out infinite;
-}
-
-/* "깜빡"이 아니라 "은은한 반짝" 느낌 */
-@keyframes hnySparkle {
-  0%, 84%, 100% {
-    opacity: 0.25;
-    transform: rotate(-10deg) scale(1);
-    filter: none;
-  }
-  88% {
-    opacity: 1;
-    transform: rotate(-10deg) scale(1.10);
-    filter: drop-shadow(0 0 6px rgba(255,255,255,0.65));
-  }
-  92% {
-    opacity: 0.35;
-    transform: rotate(-10deg) scale(1.02);
-    filter: drop-shadow(0 0 2px rgba(255,255,255,0.25));
-  }
 }
