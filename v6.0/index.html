@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
   <title>Redirecting...</title>
+
   <script>
     (function () {
       // --- cookie utils (no regex) ---
@@ -39,37 +41,40 @@
         return 'en';
       }
 
-      document.addEventListener('DOMContentLoaded', function(){
-        var path = location.pathname;
+      var path = location.pathname;
 
-        // 언어 폴더에 이미 있으면 쿠키만 보정하고 종료
-        var m = /^\/(ko|ja|en)(\/|$)/.exec(path);
-        if (m) {
-          var cur = m[1];
-          if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
-          try { document.documentElement.setAttribute('lang', cur); } catch(e){}
-          return;
+      // 언어 폴더에 이미 있으면 쿠키만 보정하고 종료
+      var m = /^\/(ko|ja|en)(\/|$)/.exec(path);
+      if (m) {
+        var cur = m[1];
+        if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
+        try { document.documentElement.setAttribute('lang', cur); } catch(e){}
+        return;
+      }
+
+      // 루트에서만 리다이렉트
+      if (path === '/' || path === '/index.html') {
+        // 구 쿠키 lang -> px_lang 마이그레이션
+        var legacy = getCookie('lang');
+        if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
+
+        var lang = getCookie('px_lang');
+        if (!lang) {
+          lang = mapLang(navigator.language || navigator.userLanguage);
+          setCookie('px_lang', lang);
         }
 
-        if (path === '/' || path === '/index.html') {
-          // 구 쿠키 lang -> px_lang 마이그레이션
-          var legacy = getCookie('lang');
-          if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
-
-          var lang = getCookie('px_lang');
-          if (!lang) {
-            lang = mapLang(navigator.language || navigator.userLanguage);
-            setCookie('px_lang', lang);
-          }
-
-          // 실제 컨텐츠가 /{lang}/index.html 에 있어야 합니다
-          location.replace('/' + lang + '/index.html');
-        }
-      });
+        // blog처럼 /{lang}/ 로 보내도 되고, 기존대로 /{lang}/index.html 유지해도 됩니다.
+        location.replace('/' + lang + '/index.html');
+        // location.replace('/' + lang + '/');  // (선택) blog와 동일한 형태
+      }
     })();
   </script>
+
+  <!-- (선택) JS 비활성 fallback -->
+  <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
 </head>
 <body>
-  <p>Loading ...</p>
+  <!-- Loading 문구 제거 -->
 </body>
 </html>
