@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>PLURA Case Study | AI-XDR 침해 대응 사례</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="PLURA-AI·XDR, Case Study, WAF, EDR, SIEM, Forensic, Credential Stuffing, SQL Injection, APT, Ransomware, MITRE ATT&CK" />
+  <meta property="og:title" content="PLURA Case Study | AI-XDR 침해 대응 사례" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="크리덴셜 스터핑, SQL 인젝션, APT, Log4Shell, 원격근무 보안 사례를 PLURA-AI·XDR 관점에서 정리합니다." />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../res/css/swiper.min.css"><!-- Swiper CSS (필수) -->
+  <link rel="stylesheet" href="../res/css/style.css">
+
+  <!-- Case Study page emphasis styles: 기존 구조 유지, 내용 강조만 보강 -->
+  <style>
+    .case-wrap .case-content .case{background:#f7fbff;border:1px solid #dbeafe;border-radius:16px;padding:24px 26px;line-height:1.85;color:#1f2937;word-break:keep-all}
+    .case-wrap .case-content .solution{margin-top:22px;background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:22px 24px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
+    .case-wrap .case-content .solution strong{display:inline-block;margin-bottom:10px;color:#0f766e}
+    .case-wrap .case-content .solution div{line-height:1.85;color:#374151;word-break:keep-all}
+    .case-wrap .case-content .solution em{font-style:normal;color:#0f766e}
+    .case-wrap .case-content .case-key{display:inline-block;margin:0 6px 8px 0;padding:5px 10px;border-radius:999px;background:#eef6ff;border:1px solid #cfe3ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1}
+    .case-wrap .case-tab button{word-break:keep-all}
+    .case-wrap .video .video-top p{word-break:keep-all}
+    .case-wrap .start .proof-copy{margin:18px 0 0;font-size:22px;line-height:1.55;font-weight:800;color:#fff;background:rgba(14,107,87,.88);padding:12px 16px;border-radius:12px;text-shadow:0 1px 2px rgba(0,0,0,.25);display:inline-block}
+    @media (max-width:767px){
+      .case-wrap .case-content .case,.case-wrap .case-content .solution{padding:18px 16px;border-radius:12px}
+      .case-wrap .start .proof-copy{font-size:17px;line-height:1.5}
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="../res/js/jquery-1.11.1.min.js"></script>
+  <script src="../res/js/swiper.min.js"></script>
+  <script src="../res/js/aos.js"></script>
+  <script src="../res/js/fancybox.umd.js"></script>
+  <script src="../res/js/common.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top case">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>CASE STUDY</h2>
+                        <p>실제 공격은 하나의 이벤트로 끝나지 않습니다.<br/>PLURA는 웹·서버·PC·계정 로그를 연결해 침해 흐름을 추적합니다.<a href="https://blog.plura.io/ko/column/myth/" target="_blank">↗️</a></p>
+                    </div>
+                    <img src="../res/images/case_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="case-wrap">
+                <section class="case-content">
+                    <div class="inner">
+                        <div class="case-tab" data-aos="fade-up">
+                            <div class="case-slide swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><button type="button" class="cur">크리덴셜 스터핑</button></li>
+                                    <li class="swiper-slide"><button type="button">SQL 인젝션</button></li>
+                                    <li class="swiper-slide"><button type="button">지능형지속위협(APT)</button></li>
+                                    <li class="swiper-slide"><button type="button">Log4shell</button></li>
+                                    <li class="swiper-slide"><button type="button">비대면 재택 근무</button></li>
+                                </ul>
+                            </div>
+                            <a href="https://blog.plura.io/ko/threats/" target="_blank" class="more">+</a>
+                        </div>
+                        <div class="tab-contents" data-aos="fade-up">
+                          <div class="tab-content tab-1 cur">
+                                <div class="case">
+                                    <span class="case-key">Account Takeover</span>
+                                    <span class="case-key">Credential Stuffing</span><br/>
+                                    A 기업은 오랜 기간 운영해 온 인증 시스템을 통해 고객 로그인을 제공하고 있습니다.<br/>
+                                    공격자는 외부에서 유출된 아이디·비밀번호 조합을 자동 대입하며, 정상 로그인처럼 보이는 대량 인증 시도를 반복합니다.<br/>
+                                    단순 실패 횟수만으로는 정상 사용자와 공격자를 구분하기 어렵기 때문에, 로그인 행위와 요청 본문, IP 평판, 속도 패턴을 함께 분석해야 합니다.
+                                </div>
+                                <div class="solution">
+                                    <strong>대응방법</strong>
+                                     <div>                                        크리덴셜 스터핑은 계정 탈취와 개인정보 유출로 이어질 수 있는 대표적인 자동화 공격입니다.<br/>
+                                        PLURA-WAF는 로그인 요청의 헤더·본문·계정·IP·시도 속도를 분석하고, PLURA-SIEM은 여러 로그를 상관 분석해 비정상 인증 행위를 식별합니다.<br/>
+                                        <b><em>PLURA-AI·XDR은 계정 공격을 단일 이벤트가 아니라 행위 흐름으로 분석하여 탐지·차단·관제 대응까지 연결합니다.</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>참고 문서</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/" target="_blank">크리덴셜 스터핑 공격 대응하기 with ChatGPT</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/" target="_blank">크리덴셜 스터핑 공격 대응하기</a>↗️</p>
+                                        <p>[3] <a href="https://docs.plura.io/ko/function/common/sdetection/takeover" target="_blank">PLURA-Manual, 계정탈취</a>↗️</p>
+                                        <p>[4] <a href="https://docs.plura.io/ko/video/demo/web/credential_stuffing" target="_blank">PLURA-Video, 계정탈취</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-2">
+                                <div class="case">
+                                    <span class="case-key">SQL Injection</span>
+                                    <span class="case-key">Data Exfiltration</span><br/>
+                                    B 기업은 SQL 인젝션과 우회 인젝션 시도가 반복되는 웹 서비스를 운영하고 있습니다.<br/>
+                                    공격은 주말·야간 등 대응이 어려운 시간대에 집중되고, 단순 URL 패턴만으로는 변형된 페이로드를 놓칠 수 있습니다.<br/>
+                                    공격 성공 여부와 데이터 유출 가능성을 판단하려면 요청 본문뿐 아니라 응답 본문과 서버 이벤트까지 함께 확인해야 합니다.
+                                </div>
+                                <div class="solution">
+                                    <strong>대응방법</strong>
+                                     <div>                                        SQL 인젝션은 단 한 번의 성공만으로도 고객 정보와 내부 데이터 유출로 이어질 수 있습니다.<br/>
+                                        PLURA-WAF는 요청 본문과 우회 패턴을 분석하고, 응답 본문에서 민감정보 노출 징후를 확인합니다.<br/>
+                                        PLURA-SIEM은 동일 IP·계정·URL·서버 이벤트를 연결해 공격 흐름을 추적하고, 정책에 따라 차단과 관제 대응을 수행합니다.<br/>
+                                        <b><em>PLURA는 정탐 강화, 오탐 감소, 미탐 보완을 목표로 웹 공격 대응을 증거 기반으로 운영합니다.</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>참고 문서</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/column/responding_to_zero_day_attacks/" target="_blank">제로 데이 공격 대응 전략</a>↗️</p>
+										<p>[2] <a href="https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/" target="_blank">웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다</a>↗️</p>
+                                        <p>[3] <a href="https://blog.plura.io/ko/column/dlp/" target="_blank">웹을 통한 데이터유출 해킹 대응 개론</a>↗️</p>
+										<p>[4] <a href="https://docs.plura.io/ko/function/waf/defense/setting" target="_blank">PLURA-Manual, 웹 공격</a>↗️</p>
+                                        <p>[5] <a href="https://docs.plura.io/ko/video/demo/web/sql_injeciton" target="_blank">PLURA-Video, SQL 삽입 공격</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-3">
+                                <div class="case">
+                                    <span class="case-key">APT</span>
+                                    <span class="case-key">Living-off-the-Land</span><br/>
+                                    C 기업은 반복적인 시스템 부하와 장애를 겪고 있지만 원인을 명확히 확인하지 못하고 있습니다.<br/>
+                                    공격자는 알려진 악성코드 대신 정상 도구, 스크립트, 예약 작업, 원격 접속을 이용해 장기간 은밀하게 활동할 수 있습니다.<br/>
+                                    이런 공격은 파일 하나만 보는 백신 방식보다 프로세스 계보, 네트워크 연결, 계정 행위, 파일 변경을 함께 분석해야 합니다.
+                                </div>
+                                <div class="solution">
+                                    <strong>대응방법</strong>
+                                     <div>                                        최근 APT 공격은 정상 도구를 악용하거나 스크립트 기반으로 동작해 단순 시그니처 탐지만으로 식별하기 어렵습니다.<br/>
+                                        PLURA-EDR은 프로세스·파일·레지스트리·네트워크·계정 행위를 수집하고, PLURA-SIEM은 이를 MITRE ATT&amp;CK 전술·기법에 매핑합니다.<br/>
+                                        <b><em>탐지 결과는 공격 흐름, 원인, 영향 범위를 이해할 수 있도록 증거 중심으로 제공되어 대응 우선순위를 정하는 데 도움을 줍니다.</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>참고 문서</strong>
+                                    <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/column/leak_of_skt_usim/" target="_blank">SKT 유심 해킹 사건 총정리</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/threats/case-lottecard_weblogic/" target="_blank">롯데카드 해킹 사고 분석</a>↗️</p>
+                                    </div>									
+									<div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/tech/mitre_attck/" target="_blank">MITRE ATT&amp;CK 이해</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/respond/web-service-attack-response-against-xiaoqiying/" target="_blank">샤오치잉(Xiaoqiying) 해킹 공격 대응하기</a>↗️</p>
+                                        <p>[3] <a href="https://blog.plura.io/ko/respond/xiaoqiying-hacking-qna/" target="_blank">샤오치잉(Xiaoqiying) 해킹 공격 대응하기 with ChatGPT</a>↗️</p>										
+                                        <p>[4] <a href="https://blog.plura.io/ko/respond/process_hollowing/" target="_blank">Process Hollowing: 공격 기법과 탐지 전략</a>↗️</p>									 
+										<p>[5] <a href="https://blog.plura.io/ko/column/mitre_attack_audit_policy/" target="_blank">마이터 어택 관점에서 고급감사정책 활용</a>↗️</p>
+										<p>[6] <a href="https://blog.plura.io/ko/column/understanding_firewall/" target="_blank">방화벽(Firewall)에 대한 올바른 이해</a>↗️</p>
+										<p>[7] <a href="https://blog.plura.io/ko/column/castle-gatekeeper/" target="_blank">성문지기의 마지막 임무: 아웃바운드 통제</a>↗️</p>
+                                        <p>[8] <a href="https://blog.plura.io/ko/column/plura_forensic_quick_analysis/" target="_blank">PLURA 포렌식으로 빠르게 대응하세요</a>↗️</p>
+										<p>[9] <a href="https://docs.plura.io/ko/function/common/sdetection/attack/matrix" target="_blank">PLURA-Manual, MITRE ATT&amp;CK</a>↗️</p>
+                                        <p>[10] <a href="https://docs.plura.io/ko/video/demo/system/apt29" target="_blank">PLURA-Video, SQL 삽입</a>↗️</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-4">
+                                <div class="case">
+                                    <span class="case-key">Log4Shell</span>
+                                    <span class="case-key">Virtual Patch</span><br/>
+                                    D 기업은 Apache Log4j 취약점이 공개된 이후에도 운영 시스템을 즉시 수정하기 어려운 상황입니다.<br/>
+                                    오래된 외주 개발 시스템, 복잡한 배포 절차, 서비스 중단 부담 때문에 패치가 지연될 수 있습니다.<br/>
+                                    이런 경우에는 웹 계층에서 공격 시도를 먼저 줄이고, 서버 내부의 원격 실행 흔적을 함께 확인해야 합니다.
+                                </div>
+                                <div class="solution">
+                                    <strong>대응방법</strong>
+                                     <div>                                        Log4Shell과 같은 고위험 취약점은 패치 전까지 반복적으로 악용될 수 있으므로 임시 완화와 탐지가 함께 필요합니다.<br/>
+                                        PLURA-WAF는 웹 요청 단계에서 악용 시도를 탐지·차단하고, PLURA-EDR은 서버에서 발생하는 비정상 프로세스 실행과 외부 연결을 추적합니다.<br/>
+                                        <b><em>PLURA-AI·XDR은 WAF·EDR·SIEM을 연결해 웹 취약점 공격이 서버 침투로 이어지는 흐름을 확인합니다.</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>참고 문서</strong>
+                                     <div>
+										<p>[1] <a href="https://blog.plura.io/ko/tech/apache_jmeter_log4shell_mitigation/" target="_blank">CVE-2021-44228 (Log4Shell) Apache Log4j 보안 취약점 대응</a>↗️</p>
+                                        <p>[2] <a href="https://docs.plura.io/ko/video/demo/system/log4shell" target="_blank">PLURA-Video, Log4Shell</a>↗️</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-5">
+                                <div class="case">
+                                    <span class="case-key">Remote Work</span>
+                                    <span class="case-key">Endpoint Security</span><br/>
+                                    E 기업은 원격 근무와 외부 접속 환경을 운영하고 있습니다.<br/>
+                                    사용자의 PC 보안 상태, VPN 접속 이후 행위, 원격 접속 계정 보호 수준이 전체 보안의 핵심 변수가 됩니다.<br/>
+                                    원격 근무 환경에서는 접속 자체보다 접속 이후의 프로세스 실행, 계정 행위, 네트워크 연결을 지속적으로 확인해야 합니다.
+                                </div>
+                                <div class="solution">
+                                    <strong>대응방법</strong>
+                                     <div>                                        원격 근무 환경에서는 PC와 서버의 행위 로그를 지속적으로 수집하고, 로그인 이후의 이상 행위를 추적해야 합니다.<br/>
+                                        PLURA-EDR은 업무용 PC와 서버에서 발생하는 프로세스·파일·네트워크·계정 행위를 분석하고, PLURA-SIEM은 이를 웹·계정 로그와 연결합니다.<br/>
+                                        <b><em>PLURA는 원격 접속 이후의 침해 흐름을 탐지하고, 필요 시 격리·차단·포렌식 증거화로 대응을 이어갑니다.</em></b>
+                                     </div>
+                                </div>
+                                <div class="solution">
+                                    <strong>참고 문서</strong>
+                                     <div>
+                                        <p>[1] <a href="https://blog.plura.io/ko/respond/detecting-emotet-with-mitre-attck/" target="_blank">마이터 어택 관점에서 Emotet (이모텟) 탐지하기</a>↗️</p>
+                                        <p>[2] <a href="https://blog.plura.io/ko/column/why_sslvpn_always_fails/" target="_blank">SSL VPN, 써도 되나요? 침해로 이어지는 엣지 장비의 허상</a></p>
+										<p>[3] <a href="https://blog.plura.io/ko/tech/rdp-bruteforce-protection/" target="_blank">RDP 기본 설정 변경만으로 무차별 대입 공격 차단하기</a>↗️</p>
+									    <p>[4] <a href="https://blog.plura.io/ko/column/why-edr-is-necessary/" target="_blank">PC와 서버의 백신은 윈도우즈 디펜더만으로 충분하다</a>↗️</p>
+										<p>[5] <a href="https://docs.plura.io/ko/video/demo/system/wannacry_ransomware" target="_blank">PLURA-Video, Wannacry Ransomware</a>↗️</p>
+                                        <p>[6] <a href="https://docs.plura.io/ko/video/demo/web/xsl" target="_blank">PLURA-Video, XSL Script Processing [T1220]</a>↗️</p>                                        
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+				<section class="video">
+					<div class="inner">
+						<div class="video-top" data-aos="fade-up">
+							<h3>해킹 탐지 시연 영상</h3>
+							<p>PLURA는 실제 공격 시나리오를 로그 증거와 탐지 흐름으로 보여 줍니다.</p>
+						</div>
+						<div class="video-slide-wrap" data-aos="fade-up">
+							<div class="video-slide swiper-container">
+								<div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=Rkz7vNAM0ZY">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_09.jpg)"></div>
+										</div>
+											<div class="video-text">BPFDoor</div>
+										</a>
+									</div>
+                                    <div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=blN1LoMGSAk">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_10.jpg)"></div>
+										</div>
+											<div class="video-text">WebLogic 취약점(CVE-2017-10271)</div>
+										</a>
+									</div>
+                                    
+                                    
+                                    
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=_LA7p-IeOOY">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_02.jpg)"></div>
+										</div>
+											<div class="video-text">Credential Stuffing</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=fqLpY4NEDXc&t=3s">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_03.jpg)"></div>
+										</div>
+											<div class="video-text">APT29</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=_QjZ7xsziAs&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_04.jpg)"></div>
+										</div>
+											<div class="video-text">SQL 인젝션</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=RGg7C7vrGvI&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_05.jpg)"></div>
+										</div>
+											<div class="video-text">XSS</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=f3rOa4IiKzE&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_06.jpg)"></div>
+										</div>
+											<div class="video-text">Wannacry Ransomware</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=hhd1hRuXk4g&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_07.jpg)"></div>
+										</div>
+											<div class="video-text">XSL Script Processing</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=4be1A17lFUU&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_08.jpg)"></div>
+										</div>
+											<div class="video-text">WebShell</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox href="https://www.youtube.com/watch?v=9YtI-plPXm8&feature=youtu.be">
+											<div class="video-thumb fancy-video">
+												<div class="bg" style="background-image:url(../res/images/casestudy/case_video_01.jpg)"></div>
+										</div>
+											<div class="video-text">Log4Shell</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="video-slide-controls">
+								<button type="button" class="video-slide-prev">이전</button>
+								<button type="button" class="video-slide-next">다음</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+                <section class="start">
+                    <div class="inner">
+                        <div>
+                            <ul>
+                                <li data-aos="fade-up">
+                                    <strong>2014</strong>
+                                    <p>Since We Started</p>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <strong>百聞不如一見</strong>
+                                    <p>(백문불여일견)</p>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <strong>0</strong>
+                                    <p>Hacking</p>
+                                </li>
+                            </ul>
+                        </div>
+						<div style="text-align:center">
+						  <p><br></p>
+						  <p class="proof-copy">
+						    보안은 선언이 아니라 증거입니다 — 로그를 남기고, 연결 분석해야 대응할 수 있습니다.
+						  </p>
+						</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
+    </div>
+</body>
+
+
+</html>
+
+
+
