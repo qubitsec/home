@@ -1,20 +1,162 @@
-<section class="contact">
-  <div class="inner">
-	<div class="contact-box">
-	  <div class="contact-left">
-		<h2>CONTACT</h2>
-		<span class="line"></span>
-	  </div>
+<style>
+  /* PLURA contact partial: scoped styles only */
+  .contact.px-contact .contact-box{
+    position:relative;
+    overflow:hidden;
+  }
+  .contact.px-contact .contact-box:before{
+    content:"";
+    position:absolute;
+    right:-90px;
+    top:-90px;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    pointer-events:none;
+  }
+  .contact.px-contact .contact-left h2{
+    letter-spacing:.02em;
+  }
+  .contact.px-contact .contact-kicker{
+    display:inline-block;
+    margin:0 0 10px 0;
+    padding:6px 11px;
+    border-radius:999px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.28);
+    color:#fff;
+    font-size:13px;
+    line-height:1;
+    font-weight:700;
+  }
+  .contact.px-contact .contact-right p{
+    margin-bottom:12px;
+    line-height:1.65;
+    word-break:keep-all;
+  }
+  .contact.px-contact .contact-right .contact-desc{
+    display:block;
+    margin-top:4px;
+    font-size:15px;
+    line-height:1.65;
+    opacity:.9;
+  }
+  .contact.px-contact .contact-badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin:0 0 14px 0;
+    padding:0;
+  }
+  .contact.px-contact .contact-badges li{
+    list-style:none;
+    margin:0;
+    padding:6px 10px;
+    border-radius:999px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.22);
+    color:#fff;
+    font-size:13px;
+    line-height:1;
+  }
+  .contact.px-contact .contact-info{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px 10px;
+    margin:0 0 18px 0;
+    padding:0;
+  }
+  .contact.px-contact .contact-info li{
+    list-style:none;
+    margin:0;
+    line-height:1.5;
+  }
+  .contact.px-contact .contact-info a{
+    color:inherit;
+    text-decoration:none;
+  }
+  .contact.px-contact .contact-info .sep{
+    opacity:.45;
+  }
+  .contact.px-contact .contact-cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    white-space:nowrap;
+  }
+  .contact.px-contact .contact-cta span{
+    display:inline-block;
+  }
+  @media (max-width:767px){
+    .contact.px-contact .contact-kicker{
+      font-size:12px;
+      margin-bottom:8px;
+    }
+    .contact.px-contact .contact-right p{
+      font-size:16px;
+      line-height:1.6;
+    }
+    .contact.px-contact .contact-right .contact-desc{
+      font-size:14px;
+    }
+    .contact.px-contact .contact-badges{
+      justify-content:flex-start;
+      margin-bottom:12px;
+    }
+    .contact.px-contact .contact-info{
+      display:block;
+      margin-bottom:16px;
+    }
+    .contact.px-contact .contact-info li{
+      display:block;
+      margin:4px 0;
+    }
+    .contact.px-contact .contact-info .sep{
+      display:none;
+    }
+    .contact.px-contact .contact-cta{
+      width:100%;
+      max-width:280px;
+    }
+  }
+</style>
 
-	  <div class="contact-right">
-		<p>지금 막아야 할 공격이 있나요? <strong>바로 연락 주세요.</strong></p>
-		<ul>
-		  <li>Tel. +82-70-8802-0306 (10:00-17:00)</li>
-		  <li>/</li>
-		  <li>E-mail. plura@qubitsec.com</li>
-		</ul>
-		<a href="https://xdr.plura.io/auth/login">무료 평가판 시작하기</a>
-	  </div>
-	</div>
+<section class="contact px-contact">
+  <div class="inner">
+    <div class="contact-box">
+      <div class="contact-left">
+        <h2>CONTACT</h2>
+        <span class="line"></span>
+      </div>
+
+      <div class="contact-right">
+        <span class="contact-kicker">AI-XDR 도입 상담</span>
+        <p>
+          지금 막아야 할 공격이 있거나, 보안 체계를 점검하고 싶으신가요?
+          <strong>PLURA 전문가에게 바로 문의해 주세요.</strong>
+          <span class="contact-desc">PoC, 견적, 원격 보안 관제, WAF·EDR·SIEM·Forensic 연동까지 상담해 드립니다.</span>
+        </p>
+
+        <ul class="contact-badges" aria-label="상담 항목">
+          <li>PoC 상담</li>
+          <li>견적 문의</li>
+          <li>원격 보안 관제</li>
+          <li>AI-XDR 전환</li>
+        </ul>
+
+        <ul class="contact-info">
+          <li>Tel. <a href="tel:+827088020306">+82-70-8802-0306</a> (10:00-17:00)</li>
+          <li class="sep">/</li>
+          <li>E-mail. <a href="mailto:plura@qubitsec.com">plura@qubitsec.com</a></li>
+        </ul>
+
+        <a href="https://xdr.plura.io/auth/signup" class="contact-cta">
+          <span>무료 평가판 시작하기</span>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
