@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>PLURA-WAF | AI-XDR Cloud SaaS Platform</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="WAF, Web Application Firewall, AI-XDR, OWASP Top 10, Credential Stuffing, SQL Injection, Zero-Day, Data Exfiltration, Web Shell, MITRE ATT&CK" />
+  <meta property="og:title" content="PLURA-WAF | AI-XDR Cloud SaaS Platform" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="요청·응답 본문, 계정 행위, 서버 이벤트를 연결해 웹 공격과 제로데이 징후를 탐지·차단하는 PLURA-WAF" />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+    <link rel="stylesheet" href="../res/css/style.css">
+    <script src="../res/js/jquery-1.11.1.min.js"></script>
+    <script src="../res/js/swiper.min.js"></script>
+    <script src="../res/js/aos.js"></script>
+    <script src="../res/js/fancybox.umd.js"></script>
+    <script src="../res/js/common.js"></script>
+    <script src="../res/js/data-include-path.js"></script>
+
+    <!-- 비교 배지 스타일 -->
+    <style>
+      .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px}
+      .px-badge.bad-poor{color:#8a1b1b;background:#fde2e2;border:1px solid #f4b4b4}
+      .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600}
+      .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9}
+      .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}
+      .px-note-box{background:#f3fbf8;border:1px solid #cfeee3;border-radius:12px;padding:18px 20px}
+      .px-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px 0}
+      .px-chip{font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top product">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>PLATFORM &#9825;</h2>
+                        <p>Web Application Firewall<br>AI 해킹 시대의 웹 공격은 요청·응답 본문과 계정 행위까지 연결해 봐야 합니다.</p>
+                    </div>
+                    <img src="../res/images/product_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="product-wrap siem">
+                <section class="sec-1">
+                    <div class="inner">
+                        <div class="sec-top" >
+                            <div class="name" data-aos="fade-up">
+                                <h3>웹방화벽 (PLURA - WAF)<a href="https://blog.plura.io/ko/respond/xwaf_cloud_native/" target="_blank" class="link">↗️</a></h3>
+                            </div>
+							<div class="desc" data-aos="fade-up">
+							  <div>
+								웹 공격은 더 이상 알려진 시그니처만으로 대응하기 어렵습니다.<br>
+								<em class="danger">SQL 인젝션, 인증 우회, 웹셸 업로드, 크리덴셜 스터핑, 데이터 유출 시도는<br>웹 요청 하나가 아니라 계정·서버·응답 흐름까지 이어지는 공격 체인으로 봐야 합니다.</em>
+							  </div>
+							  <div>
+								<em class="success"><b>PLURA-WAF는 웹 요청 헤더·본문(Post-body), 응답 본문(Resp-body), 로그인 행위와 서버 이벤트를 함께 분석합니다.</b><br>PLURA-SIEM·EDR·Forensic과 연결해 미지(Unknown)·제로데이 징후까지 추적합니다.</em><br>
+								단순 차단 장비가 아니라 <strong>탐지 → 차단 → 상관 분석 → 증거화 → 재발 방지</strong>까지 이어지는 AI-XDR 기반 웹 보안 체계입니다.
+							  </div>
+							</div>
+							<ul data-aos="fade-up">
+							  <li><p>OWASP Top 10:2025 기준 웹 애플리케이션 위험 탐지·차단</p></li>
+							  <li><p>SQL 인젝션·XSS·경로 조작·명령 실행·웹셸 업로드 등 우회 공격 대응</p></li>
+							  <li><p>자격 증명 대입(Credential Stuffing)·브루트 포스 등 계정 탈취 공격 차단</p></li>
+							  <li><p>요청·응답 본문 분석으로 개인정보·민감정보 유출 시도 조기 포착</p></li>
+							  <li><p>PLURA-SIEM·EDR·Forensic 연동으로 Unknown/Zero-Day 공격 흐름 추적</p></li>
+							  <li><p>AI SecOps 자동화와 원격 보안 관제 연계로 대응 지연 최소화</p></li>
+							</ul>
+                        </div>
+
+                        <!-- 화면 슬라이드: 원본과 동일한 구조 유지 -->
+                        <div class="img" data-aos="fade-left">
+                            <div class="img-slide swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../res/images/screenshots/waf_01.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="../res/images/screenshots/waf_02.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="../res/images/screenshots/waf_03.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="product-desc desc-1">
+                    <div class="inner">
+                        <dl data-aos="fade-up">
+                            <dt>특징</dt>
+                            <dd>제로 트러스트 아키텍처(ZTA) 구현 지원</dd>
+                            <dd>OWASP Top 10:2025 기준 웹 취약점 공격 탐지·차단</dd>
+                            <dd>SQL 인젝션, XSS, 경로 조작, 명령 실행, 웹셸 업로드 등 우회 공격 탐지</dd>
+                            <dd>크리덴셜 스터핑(Credential Stuffing), 브루트 포스 등 계정 탈취 공격 차단</dd>
+                            <dd>웹 요청 본문(Post-body) 분석으로 알려지지 않은(Unknown) 공격 징후 식별</dd>
+                            <dd>웹 응답 본문(Resp-body) 분석으로 데이터 유출·오류 정보 노출 징후 탐지</dd>
+                            <dd>요청·응답 크기, 속도, 계정, IP, URL 패턴 분석으로 이상 행위 탐지</dd>
+                            <dd>AI 기반 탐지와 WAF 차단 검증 360(DBV 360)을 통한 정탐·오탐·미탐 관리</dd>
+                            <dd>TLS/SSL 인증서 관리</dd>
+                            <dd>정기점검 공지 안내 관리</dd>
+                            <dd>실시간 탐지 현황 대시보드, 보고서 및 통계 서비스</dd>
+                            <dd>잔디, 텔레그램, 라인, 구글챗을 통한 알림 제공</dd>
+                        </dl>
+                        <dl data-aos="fade-up">
+                            <dt>PLURA-SIEM 연동 서비스 기능</dt>
+                            <dd>사용자 정의 필터(룰) 등록 및 정책 기반 차단</dd>
+                            <dd>계정 로그인(Login) 정보 수집·분석</dd>
+                            <dd>크리덴셜 스터핑(Credential Stuffing) 행위 상관 분석</dd>
+                            <dd>볼륨 메트릭(Volume Metric) 기반 비정상 요청 탐지</dd>
+                            <dd>웹사이트 위변조 탐지</dd>
+                            <dd>공격 IP 주소 수집·분석·보관 및 위협 인텔리전스 연계</dd>
+                            <dd>공격 URL, User-Agent, Referer, Cookie, 요청·응답 본문 정보 분석</dd>
+                            <dd>PLURA-EDR·Forensic 연동으로 웹 공격 이후 서버 명령 실행·웹셸·파일 생성 추적</dd>
+                            <dd>전체 로그 수집·분석·장기 보관 및 증거화 지원</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="product-desc desc-2">
+                  <div class="inner">
+
+                    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                      <h3 class="w-500">기존 WAF vs. PLURA-WAF vs. AI-XDR 연계 효과</h3>
+                    </div>
+                    <div class="dis-block width-100p" data-aos="fade-up">
+                      <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+                        <thead>
+                          <tr class="h-40">
+                            <th class="text-center p-10 bg-purple">비교 항목</th>
+                            <th class="text-center p-10 bg-purple2">기존 WAF 중심 대응</th>
+                            <th class="text-center p-10 bg-purple">PLURA-WAF</th>
+                            <th class="text-center p-10 bg-purple">AI-XDR 연계 효과</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center p-10">탐지 기준</td>
+                            <td class="text-center p-10 bg-purple3">
+                              시그니처·룰 중심 탐지
+                              <span class="px-badge bad-poor">제한적</span>
+                            </td>
+                            <td class="text-center p-10">
+                              요청·응답 본문, 헤더, URL, 계정 행위 분석
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              SIEM·EDR 이벤트와 연결해 공격 체인 분석
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">우회 인젝션 대응</td>
+                            <td class="text-center p-10 bg-purple3">
+                              알려진 패턴 중심
+                              <span class="px-badge bad-poor">제한적</span>
+                            </td>
+                            <td class="text-center p-10">
+                              SQLi·XSS·경로 조작·명령 실행 페이로드 정밀 분석
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              공격 후 서버 이벤트·파일 생성·프로세스 실행까지 추적
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">크리덴셜 스터핑</td>
+                            <td class="text-center p-10 bg-purple3">
+                              단순 횟수 제한 중심
+                              <span class="px-badge bad-poor">제한적</span>
+                            </td>
+                            <td class="text-center p-10">
+                              로그인 속도, 계정 분산, IP 평판, URL 패턴 분석
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              계정·단말·서버 로그와 연결해 탈취 이후 행위 추적
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">데이터 유출 탐지</td>
+                            <td class="text-center p-10 bg-purple3">
+                              요청 차단 중심, 응답 분석 제한
+                              <span class="px-badge bad-very">취약</span>
+                            </td>
+                            <td class="text-center p-10">
+                              응답 본문 기반 개인정보·DB 오류·디렉터리 노출 분석
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              유출 징후를 포렌식 증거와 연결해 재발 방지 정책화
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">제로데이 징후 대응</td>
+                            <td class="text-center p-10 bg-purple3">
+                              알려진 취약점·룰에 의존
+                              <span class="px-badge bad-very">취약</span>
+                            </td>
+                            <td class="text-center p-10">
+                              비정상 요청·응답·행위 패턴을 AI로 분석
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              WAF 탐지 이후 EDR·Forensic 상관 분석으로 공격 흐름 검증
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">운영 방식</td>
+                            <td class="text-center p-10 bg-purple3">
+                              장비별 정책·로그 별도 관리
+                              <span class="px-badge bad-poor">복잡</span>
+                            </td>
+                            <td class="text-center p-10">
+                              클라우드 기반 정책·로그·보고서 통합 관리
+                              <span class="px-badge good">우수</span>
+                            </td>
+                            <td class="text-center p-10">
+                              탐지·차단·상관 분석·보고·관제까지 하나의 흐름으로 운영
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                      <h3 class="w-500">기존 웹 보안 체계 vs. PLURA-WAF 기반 AI-XDR 체계</h3>
+                    </div>
+                    <div class="dis-block width-100p" data-aos="fade-up">
+                      <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+                        <thead class="h-70">
+                          <tr class="h-40">
+                            <th class="text-center p-10 c-white bg-magenta" style="width:150px">비교 항목</th>
+                            <th class="text-center p-10 c-white bg-magenta">기존 웹 보안 체계</th>
+                            <th class="text-center p-10 c-white bg-magenta">PLURA-WAF 기반 AI-XDR 체계</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center p-10">보안 관점</td>
+                            <td class="text-center p-10">
+                              개별 웹 요청의 공격 패턴 판단
+                              <span class="px-badge bad-poor">제한적</span>
+                            </td>
+                            <td class="text-center p-10">
+                              웹 요청·응답·계정·서버 이벤트를 연결한 맥락 기반 판단
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">로그 가시성</td>
+                            <td class="text-center p-10">
+                              URL·상태코드·일부 파라미터 중심
+                              <span class="px-badge bad-poor">부족</span>
+                            </td>
+                            <td class="text-center p-10">
+                              헤더·본문·응답·로그인·IP·URL·서버 이벤트 통합 가시성
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">AI 해킹 대응</td>
+                            <td class="text-center p-10">
+                              자동화된 우회·변형 공격 식별에 한계
+                              <span class="px-badge bad-very">취약</span>
+                            </td>
+                            <td class="text-center p-10">
+                              AI 기반 맥락 분석으로 변형 페이로드·비정상 행위·공격 체인 식별
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">차단 이후 분석</td>
+                            <td class="text-center p-10">
+                              차단 이벤트 중심 확인
+                              <span class="px-badge bad-poor">제한적</span>
+                            </td>
+                            <td class="text-center p-10">
+                              차단 전후 로그, 서버 이벤트, 포렌식 아티팩트까지 연결 분석
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">가상패치 운영</td>
+                            <td class="text-center p-10">
+                              수동 룰 작성과 검증에 의존
+                              <span class="px-badge bad-poor">복잡</span>
+                            </td>
+                            <td class="text-center p-10">
+                              탐지 근거, 차단 검증, SLA 지표를 기반으로 정책 개선
+                              <span class="px-badge good">우수</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">관제·보고</td>
+                            <td class="text-center p-10">
+                              장비별 경보·보고서 분리
+                              <span class="px-badge bad-poor">부족</span>
+                            </td>
+                            <td class="text-center p-10">
+                              탐지 현황, 차단 근거, 공격자 IP, 영향 범위를 통합 보고
+                              <span class="px-badge excellent">매우 우수</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </section>
+
+                <div class="attack-wrap">
+                  <section class="sec-1">
+                    <div class="inner p-t-0">
+                      <div class="sec-top">
+                        <p data-aos="fade-up" class="aos-init aos-animate"><br></p>
+                        <p data-aos="fade-up" class="aos-init aos-animate">PLURA-WAF의 AI 해킹·제로데이 대응 방식</p>
+                        <ol data-aos="fade-up" class="aos-init aos-animate">
+                          <li class="p-b-20">
+                            <span class="num">1</span>
+                            <p class="bold">요청·응답 본문 기반 웹 공격 증거 확보</p>
+                            <div class="f-16">단순 URL이나 상태코드만 보지 않고 <strong>헤더, 쿠키, 요청 본문, 응답 본문</strong>까지 분석해 공격 흔적과 유출 징후를 함께 확인합니다.</div>
+                            <div class="f-16">웹 요청이 서버 명령 실행, 웹셸 생성, 데이터 유출로 이어지는 흐름을 추적할 수 있도록 증거를 보존합니다.</div>
+                          </li>
+
+                          <li class="p-b-20">
+                            <span class="num">2</span>
+                            <p class="bold">OWASP Top 10:2025 기준 주요 웹 위험 대응</p>
+                            <div class="f-16">접근제어 실패, 보안 설정 오류, 인증 실패, 인젝션, 로깅·경보 실패, 예외 처리 오류 등 주요 웹 위험을 탐지 관점에 반영합니다.</div>
+                            <div class="f-16">SQL 인젝션처럼 알려진 공격뿐 아니라 변형·우회된 페이로드도 맥락 기반으로 분석합니다.</div>
+                          </li>
+
+                          <li class="p-b-20">
+                            <span class="num">3</span>
+                            <p class="bold">크리덴셜 스터핑과 계정 탈취 공격 차단</p>
+                            <div class="f-16">로그인 속도, 실패율, 계정 분산, IP 평판, URL 패턴을 함께 분석해 자동화된 계정 탈취 시도를 식별합니다.</div>
+                            <div class="f-16">PLURA-SIEM과 연계하면 웹 로그인 이벤트 이후 서버·PC·계정 행위까지 이어서 추적할 수 있습니다.</div>
+                          </li>
+
+                          <li class="p-b-20">
+                            <span class="num">4</span>
+                            <p class="bold">MITRE ATT&amp;CK 기반 웹 공격 맥락 분석</p>
+                            <div class="f-16">웹 공격 이벤트를 초기 접근, 실행, 지속성, 권한 상승, 방어 회피, 유출 등 공격 단계와 연결해 분석합니다.</div>
+                            <div class="f-16">단일 차단 이벤트가 아니라 <strong>공격 체인 전체의 위치와 의미</strong>를 파악할 수 있도록 지원합니다.</div>
+                          </li>
+
+                          <li class="p-b-20">
+                            <span class="num">5</span>
+                            <p class="bold">SIEM·EDR·Forensic 연동 상관 분석</p>
+                            <div class="f-16">WAF에서 탐지된 공격 IP, URL, 계정, 페이로드를 기준으로 서버 이벤트, 프로세스 실행, 파일 생성, 웹셸 흔적을 자동 상관 분석합니다.</div>
+                            <div class="f-16">웹에서 시작된 공격이 서버와 내부 시스템으로 확장되는지 확인해 대응 우선순위를 정렬합니다.</div>
+                          </li>
+
+                          <li class="p-b-20">
+                            <span class="num">6</span>
+                            <p class="bold">AI 기반 탐지·검증과 제로데이 가상패치</p>
+                            <div class="f-16">AI 분석과 WAF 차단 검증 360(DBV 360)을 통해 정탐 강화, 오탐 감소, 미탐 보완을 운영 지표와 증거로 관리합니다.</div>
+                            <div class="f-16">새로운 공격 징후는 가상패치 정책으로 반영하고, 차단 근거와 재현 가능한 증거를 함께 보존합니다.</div>
+                          </li>
+                        </ol>
+                      </div>
+
+                      <div class="sec-top">
+                        <div class="desc aos-init aos-animate" data-aos="fade-up" style="border-bottom:0">
+                          <div class="px-note-box">
+                            <p style="margin:0 0 10px 0;color:#0e6b57;line-height:1.8">
+                              기존 웹방화벽은 주로 <strong>알려진 패턴</strong>과 <strong>개별 요청 차단</strong>에 초점이 맞춰져 있었습니다.
+                            </p>
+
+                            <div class="px-chip-wrap" aria-label="핵심 탐지 포인트">
+                              <span class="px-chip">요청·응답 본문 분석</span>
+                              <span class="px-chip">크리덴셜 스터핑 차단</span>
+                              <span class="px-chip">웹셸·명령 실행 상관</span>
+                              <span class="px-chip">데이터 유출 징후 탐지</span>
+                              <span class="px-chip">AI 탐지·DBV 360</span>
+                              <span class="px-chip">제로데이 가상패치</span>
+                            </div>
+
+                            <p style="margin:0;color:#0e6b57;line-height:1.8">
+                              PLURA-WAF는 웹 요청·응답 로그와 계정 행위, 서버 이벤트, 포렌식 증거를 결합해
+                              <strong>AI 해킹 시대의 웹 공격 흐름</strong>을 탐지·차단·검증합니다.<br>
+                              단순 웹방화벽을 넘어 <strong>PLURA-AI·XDR의 웹 보안 센서이자 실시간 차단 엔진</strong>으로 동작합니다.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                </div>
+
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
+    </div>
+</body>
+
+</html>
