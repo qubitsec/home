@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>PLURA-AI·XDR | 크리덴셜 스터핑·웹 공격 즉시 대응</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="Credential Stuffing, Brute Force, Account Takeover, WAF, EDR, SIEM, Forensic, Zero-Day, APT, Ransomware, PLURA" />
+  <meta property="og:title" content="PLURA-AI·XDR | 크리덴셜 스터핑·웹 공격 즉시 대응" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="계정 탈취, 웹 우회 공격, 웹셸, 서버 침투, 랜섬웨어와 데이터 유출 징후를 WAF·EDR·SIEM·Forensic으로 연결 분석합니다." />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+	
+  <link rel="stylesheet" href="../res/css/style.css">
+  <script src="../res/js/jquery-1.11.1.min.js"></script>
+  <script src="../res/js/swiper.min.js"></script>
+  <script src="../res/js/aos.js"></script>
+  <script src="../res/js/fancybox.umd.js"></script>
+  <script src="../res/js/common.js"></script>
+  <script src="../res/js/data-include-path.js"></script>
+
+  <!-- Page emphasis styles: 기존 구조 유지, 강조 요소만 보강 -->
+  <style>
+    .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px;white-space:nowrap}
+    .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600}
+    .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9;font-weight:600}
+    .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}
+    .attack-emphasis{background:#f3fbf8;border:1px solid #cfeee3;border-radius:14px;padding:18px 20px;margin:28px 0 0 0;color:#0e6b57;line-height:1.8}
+    .attack-emphasis strong{color:#064d3f}
+    .attack-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0 0}
+    .attack-chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-size:14px;font-weight:600;line-height:1}
+    .table-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .attack-table{min-width:760px;border-collapse:collapse}
+    .attack-table th,.attack-table td{vertical-align:middle;line-height:1.7}
+    .attack-note{font-size:15px;line-height:1.8;color:#555;margin-top:12px}
+    @media (max-width:767px){
+      .attack-chip{font-size:13px}
+      .attack-emphasis{padding:14px 15px}
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+
+        <div id="content">
+            <div class="sub-top attack">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2 style="text-transform:none">Credential Stuffing</h2>
+                        <p>계정 탈취·웹 우회 공격·서버 침투 징후를<br>WAF·EDR·SIEM·Forensic으로 즉시 연결 분석합니다.</p>
+                    </div>
+                    <img src="../res/images/attack_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="attack-wrap">
+                <section class="sec-1">
+                    <div class="inner">
+                        <div class="sec-top">
+                            <p data-aos="fade-up">지금 공격을 받고 있습니까?</p>
+                            <ol data-aos="fade-up">
+                                <li>
+                                    <span class="num">1</span>
+                                    <p>DNS 전환만으로 <b>웹방화벽(PLURA-WAF)</b>을 빠르게 적용</p>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <p>요청·응답 본문과 로그인 행위를 분석해 <b>계정 탈취·데이터 유출</b> 징후 추적</p>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <p><b>호스트보안(PLURA-EDR)</b>으로 서버·PC의 프로세스·파일·네트워크 행위 수집</p>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                    <p><b>PLURA-SIEM·Forensic</b>으로 공격 흐름을 상관 분석하고 증거화</p>
+                                </li>
+                            </ol>
+
+                            <div class="attack-emphasis" data-aos="fade-up">
+                                <strong>공격 대응의 핵심은 단일 차단이 아니라 흐름 분석입니다.</strong><br>
+                                크리덴셜 스터핑은 로그인 성공 이후 내부 이동과 데이터 접근으로 이어질 수 있고,
+                                웹 취약점 공격은 웹셸 업로드, 서버 명령 실행, 랜섬웨어 또는 정보 유출로 확장될 수 있습니다.
+                                PLURA-AI·XDR은 웹·계정·호스트·포렌식 증거를 연결해 대응 우선순위를 정리합니다.
+                                <div class="attack-chip-wrap" aria-label="핵심 대응 포인트">
+                                    <span class="attack-chip">Credential Stuffing</span>
+                                    <span class="attack-chip">Brute Force</span>
+                                    <span class="attack-chip">Web Shell</span>
+                                    <span class="attack-chip">Lateral Movement</span>
+                                    <span class="attack-chip">Data Exfiltration</span>
+                                    <span class="attack-chip">Ransomware</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img" data-aos="fade-up">
+                            <img src="../res/images/diagrams/config_xdr.gif" alt="PLURA-XDR Diagram">
+                        </div>
+                    </div>
+                </section>
+                <section class="sec-2">
+                    <div class="inner">
+                        <ul>
+                            <li data-aos="fade-up">
+                                <strong>크리덴셜 스터핑</strong>
+                                <div>
+                                    <span><b>로그인 시도와 성공 이후 행위를 함께 봅니다.</b></span><br>
+                                    IP·계정·속도·URL·User-Agent·본문 값을 연결해<br>
+                                    정상 로그인처럼 보이는 계정 탈취 시도를 식별합니다.<br>
+                                    탐지 후 정책에 따라 <em><b>차단·알림·관제 연계</b></em>가 가능합니다.
+                                </div>
+                            </li>
+                            <li data-aos="fade-up">
+                                <strong>웹 우회 공격·웹셸</strong>
+                                <div>
+                                    <span><b>URL만 보지 않고 요청·응답 본문까지 분석합니다.</b></span><br>
+                                    SQL Injection, XSS, 파일 업로드, 웹셸 시도와<br>
+                                    서버 응답의 정보 노출·민감정보 유출 징후를 추적합니다.<br>
+                                    WAF 탐지 이후 EDR·Forensic 분석으로 <em><b>서버 침투 여부</b></em>를 확인합니다.
+                                </div>
+                            </li>
+                            <li data-aos="fade-up">
+                                <strong>APT·측면 이동</strong>
+                                <div>
+                                    <span><b>웹에서 시작된 공격이 서버·PC로 확장되는 흐름을 봅니다.</b></span><br>
+                                    프로세스 실행, 파일 생성, 레지스트리 변경, 외부 연결,<br>
+                                    계정 사용 흔적을 MITRE ATT&amp;CK 전술·기법과 연결합니다.<br>
+                                    단일 경보가 아니라 <em><b>공격 체인</b></em>으로 판단합니다.
+                                </div>
+                            </li>
+                            <li data-aos="fade-up">
+                                <strong>랜섬웨어·데이터 유출</strong>
+                                <div>
+                                    <span><b>실제 암호화나 유출이 발생하기 전 전조를 찾습니다.</b></span><br>
+                                    대량 파일 접근, 의심 프로세스, 비정상 외부 전송,<br>
+                                    민감정보 응답 패턴을 상관 분석합니다.<br>
+                                    필요 시 격리·차단·포렌식 증거 보존으로 <em><b>피해 확산</b></em>을 줄입니다.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="product-desc desc-2">
+                  <div class="inner">
+                    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                      <h3 class="w-500">공격 유형별 PLURA-AI·XDR 대응 방식</h3>
+                      <p class="attack-note">PLURA는 웹방화벽 차단 이벤트에 머물지 않고, 로그인 행위·호스트 이벤트·포렌식 아티팩트를 함께 분석해 공격 흐름을 설명합니다.</p>
+                    </div>
+                    <div class="dis-block width-100p table-scroll" data-aos="fade-up">
+                      <table class="table table-bordered text-center f-16 c-dark bg-white attack-table">
+                        <thead>
+                          <tr class="h-40">
+                            <th class="text-center p-10 c-white bg-magenta">공격 유형</th>
+                            <th class="text-center p-10 c-white bg-magenta">주요 징후</th>
+                            <th class="text-center p-10 c-white bg-magenta">PLURA 대응</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center p-10">크리덴셜 스터핑</td>
+                            <td class="text-center p-10">다수 계정 로그인 시도, 성공 후 비정상 URL 접근, IP·속도 이상</td>
+                            <td class="text-center p-10">WAF 로그인 행위 분석 + SIEM 계정 상관 + 정책 기반 차단</td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">웹 우회 공격</td>
+                            <td class="text-center p-10">인코딩·분할·본문 기반 우회, SQLi/XSS/파일 업로드 시도</td>
+                            <td class="text-center p-10">요청 본문 분석 + OWASP 위험 탐지 + 제로데이 징후 분석</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">웹셸·서버 침투</td>
+                            <td class="text-center p-10">업로드 이후 프로세스 실행, 의심 파일 생성, 외부 연결</td>
+                            <td class="text-center p-10">WAF 이벤트를 EDR·Forensic으로 확장해 침투 여부 확인</td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td class="text-center p-10">랜섬웨어·데이터 유출</td>
+                            <td class="text-center p-10">대량 파일 접근, 민감정보 응답, 비정상 전송·압축·암호화 행위</td>
+                            <td class="text-center p-10">SIEM 상관 분석 + EDR 행위 탐지 + Forensic 증거 보존</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                      <h3 class="w-500">기존 대응 방식 vs. PLURA-AI·XDR 대응</h3>
+                    </div>
+                    <div class="dis-block width-100p table-scroll" data-aos="fade-up">
+                      <table class="table table-bordered text-center f-16 c-dark bg-white attack-table">
+                        <thead>
+                          <tr class="h-40">
+                            <th class="text-center p-10 bg-purple">비교 항목</th>
+                            <th class="text-center p-10 bg-purple2">기존 대응 방식</th>
+                            <th class="text-center p-10 bg-purple">PLURA-AI·XDR</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center p-10">탐지 기준</td>
+                            <td class="text-center p-10 bg-purple3">개별 장비 경보 중심 <span class="px-badge bad-very">한계</span></td>
+                            <td class="text-center p-10">웹·계정·호스트·포렌식 로그 연결 분석 <span class="px-badge excellent">강화</span></td>
+                          </tr>
+                          <tr class="bg-blue-light">
+                            <td class="text-center p-10">계정 탈취 대응</td>
+                            <td class="text-center p-10 bg-purple3">실패 횟수·IP 차단 중심 <span class="px-badge bad-very">제한</span></td>
+                            <td class="text-center p-10">로그인 성공 이후 행위까지 상관 분석 <span class="px-badge excellent">우수</span></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">웹 공격 이후 분석</td>
+                            <td class="text-center p-10 bg-purple3">WAF 경보 확인에 그침 <span class="px-badge bad-very">부족</span></td>
+                            <td class="text-center p-10">EDR·Forensic으로 서버 침투 여부 확인 <span class="px-badge excellent">우수</span></td>
+                          </tr>
+                          <tr class="bg-blue-light">
+                            <td class="text-center p-10">증거화</td>
+                            <td class="text-center p-10 bg-purple3">사후 수동 조사 의존 <span class="px-badge bad-very">지연</span></td>
+                            <td class="text-center p-10">탐지 시점부터 로그·스냅샷·아티팩트 보존 <span class="px-badge good">지원</span></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-10">운영 방식</td>
+                            <td class="text-center p-10 bg-purple3">담당자 판단과 수동 대응 중심 <span class="px-badge bad-very">부담</span></td>
+                            <td class="text-center p-10">AI 분석·정책 차단·SOC 연계로 대응 흐름 표준화 <span class="px-badge excellent">강화</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+				
+				<div class="main-wrap">
+				<!-- 연락처 -->
+				<div data-include-path="./p_contact.html"></div>
+				</div>
+
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
+    </div>
+</body>
+
+</html>

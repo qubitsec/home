@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>PLURA-AI·XDR | 제로 트러스트 아키텍처</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="Zero Trust Architecture, ZTA, PLURA-AI·XDR, WAF, EDR, SIEM, Forensic, Continuous Verification, MITRE ATT&CK" />
+  <meta property="og:title" content="PLURA-AI·XDR | 제로 트러스트 아키텍처" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="제로 트러스트는 제품이 아니라 지속 검증과 로그 기반 운영 체계입니다. PLURA-AI·XDR은 WAF·EDR·SIEM·Forensic 로그를 연결해 검증 기반 보안 운영을 지원합니다." />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+    <link rel="stylesheet" href="../res/css/style.css">
+    <script src="../res/js/jquery-1.11.1.min.js"></script>
+    <script src="../res/js/swiper.min.js"></script>
+    <script src="../res/js/aos.js"></script>
+    <script src="../res/js/fancybox.umd.js"></script>
+    <script src="../res/js/common.js"></script>
+    <script src="../res/js/data-include-path.js"></script>
+
+  <!-- ZTA page emphasis styles: 기존 구조 유지, 강조 요소만 보강 -->
+  <style>
+    .zta-kicker{display:inline-block;margin:0 0 12px 0;padding:6px 12px;border-radius:999px;background:#eef7ff;border:1px solid #cce2ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1}
+    .zta-highlight{margin:18px 0 0 0;padding:18px 20px;border-radius:14px;background:#f6fbff;border:1px solid #d6eaff;color:#173b63;line-height:1.75}
+    .zta-highlight strong{color:#0b2f5f}
+    .zta-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .zta-chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef7ff;border:1px solid #cce2ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1}
+    .zta-table-wrap{width:100%;overflow-x:auto;margin-top:26px}
+    .zta-table{width:100%;border-collapse:collapse;background:#fff;color:#222;font-size:15px;line-height:1.6}
+    .zta-table th,.zta-table td{border:1px solid #d8e0ea;padding:12px 14px;vertical-align:middle}
+    .zta-table th{background:#eef3fb;color:#102a43;font-weight:700;text-align:center}
+    .zta-table td:first-child{font-weight:700;color:#111;text-align:center;white-space:nowrap}
+    .zta-badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;line-height:1;border:1px solid #cce2ff;background:#eef7ff;color:#2354a4;font-weight:700}
+    .zta-note{margin-top:14px;color:#52616f;font-size:14px;line-height:1.7}
+    @media (max-width:767px){
+      .zta-table{font-size:14px}
+      .zta-table th,.zta-table td{padding:10px}
+      .zta-table td:first-child{white-space:normal}
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top attack">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>제로 트러스트 아키텍처</h2>
+                        <p>Zero Trust Architecture<br>제품이 아니라, 지속 검증과 로그 기반 운영 체계입니다.</p>
+                    </div>
+                    <img src="../res/images/attack_bg.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="attack-wrap">
+                <section class="sec-1">
+                    <div class="inner">
+
+                        <div class="sec-title">
+                            <div class="name aos-init aos-animate" data-aos="fade-up">
+                                <h3>
+                                    제로 트러스트는 무엇인가?
+                                    <a href="https://www.nist.gov/publications/zero-trust-architecture"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="link" aria-label="NIST Zero Trust Architecture 문서 보기">↗️</a>
+                                </h3>
+                            </div>
+
+                            <div class="desc aos-init aos-animate p-t-10" data-aos="fade-up">
+                                <p class="f-24 line-h-default-7">
+                                    <strong>제로 트러스트는 “아무도 믿지 않는다”가 아니라,</strong><br>
+                                    모든 접근과 행위를 <strong>근거 로그로 검증하고, 정책으로 판단하고, 지속적으로 조정하는 보안 운영 방식</strong>입니다.
+                                </p>
+
+                                <div class="zta-highlight">
+                                    PLURA-AI·XDR은 웹 요청·응답 본문, 계정 행위, 서버·PC 이벤트, 포렌식 증거를 연결하여
+                                    <strong>제로 트러스트 구현에 필요한 가시성·상관 분석·대응 근거</strong>를 제공합니다.
+                                    접근을 차단하는 것만이 아니라, <strong>왜 위험한지 설명 가능한 증거</strong>를 남기는 것이 핵심입니다.
+
+                                    <div class="zta-chip-wrap" aria-label="제로 트러스트 핵심 운영 요소">
+                                        <span class="zta-chip">지속 검증</span>
+                                        <span class="zta-chip">최소 권한</span>
+                                        <span class="zta-chip">로그 가시성</span>
+                                        <span class="zta-chip">상관 분석</span>
+                                        <span class="zta-chip">자동 대응</span>
+                                        <span class="zta-chip">증거화</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec-top">
+                            <p data-aos="fade-up">제로 트러스트 아키텍처 구현을 위한 핵심 운영 요소</p>
+                            <ol data-aos="fade-up">
+                                <li>
+                                    <span class="num">1</span>
+                                    <p><b>정책 결정과 정책 집행</b><br>사용자·단말·애플리케이션·데이터 요청을 정책에 따라 판단하고 적용합니다.</p>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <p><b>상시 진단 및 대응 (CDM)</b><br>자산 상태, 취약 설정, 보안 정책 적용 여부를 지속적으로 확인합니다.</p>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <p><b>위협 인텔리전스 피드 (TI)</b><br>공격 IP, 도메인, 해시, 전술·기법 정보를 내부 로그와 결합합니다.</p>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                    <p><b>네트워크·시스템·웹·계정 활동 로그</b><br>접근 요청과 실행 행위, 로그인 이후 행위를 추적할 수 있어야 합니다.</p>
+                                </li>
+                                <li>
+                                    <span class="num">5</span>
+                                    <p><b>통합보안이벤트관리 (SIEM/XDR)</b><br>분리된 로그를 하나의 공격 흐름으로 연결해 판단합니다.</p>
+                                </li>
+                                <li>
+                                    <span class="num">6</span>
+                                    <p><b>자동 대응과 증거화</b><br>차단·격리·정책 조정·포렌식 증거 보존을 운영 절차로 연결합니다.</p>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="img" data-aos="fade-up">
+                            <img src="../res/images/diagrams/zta.png" alt="Zero Trust Architecture logical components">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-2">
+                    <div class="inner">
+                      <ul>
+                        <li data-aos="fade-up">
+                            <strong>상시 진단 및 대응<br>(CDM)</strong>
+                            <div>
+                                <span><b>PLURA-VAS · EDR · Forensic</b></span><br>
+                                운영체제 보안 설정, 계정·권한 정책, 감사 정책을 점검하고<br>
+                                서버·PC의 변경 사항을 지속적으로 확인합니다.<br>
+                                <em>취약한 설정을 먼저 줄여야 탐지 가능한 보안 환경이 만들어집니다.</em>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong>위협 인텔리전스<br>(TI)</strong>
+                            <div>
+                                <span><b>PLURA-SIEM · SOC</b></span><br>
+                                공격 IP, URL, 도메인, 해시, 평판 정보를 내부 로그와 결합합니다.<br>
+                                외부 TI만 보는 것이 아니라 실제 고객 환경에서 관측된<br>
+                                <em>행위 증거와 함께 위험도를 판단합니다.</em>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong>활동 로그와 가시성</strong>
+                            <div>
+                                <span><b>PLURA-WAF · EDR · SIEM</b></span><br>
+                                웹 요청·응답 본문, 로그인 행위, 프로세스 실행, 파일 변경,<br>
+                                레지스트리, 네트워크 연결을 수집·분석합니다.<br>
+                                <em>로그가 없으면 검증할 수 없고, 검증할 수 없으면 제로 트러스트도 불가능합니다.</em>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong>상관 분석과 정책 판단</strong>
+                            <div>
+                                <span><b>PLURA-AI·XDR</b></span><br>
+                                단일 이벤트가 아니라 WAF·EDR·Forensic 로그를 연결해<br>
+                                공격 흐름과 위험도를 맥락으로 판단합니다.<br>
+                                <em>정책은 정적 규칙이 아니라 관측된 위험에 따라 조정되어야 합니다.</em>
+                            </div>
+                        </li>
+                      </ul>
+
+                      <div class="zta-table-wrap" data-aos="fade-up">
+                        <table class="zta-table">
+                          <thead>
+                            <tr>
+                              <th>구분</th>
+                              <th>기존 접근통제 중심 보안</th>
+                              <th>PLURA-AI·XDR 기반 제로 트러스트 운영</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>접근 판단</td>
+                              <td>초기 인증과 고정 권한에 의존</td>
+                              <td>사용자·단말·행위·위험도를 지속적으로 검증</td>
+                            </tr>
+                            <tr>
+                              <td>로그 가시성</td>
+                              <td>로그가 분산되어 공격 흐름 확인이 어려움</td>
+                              <td>웹·호스트·계정·포렌식 로그를 통합해 맥락 분석</td>
+                            </tr>
+                            <tr>
+                              <td>탐지 기준</td>
+                              <td>장비별 경보와 시그니처 중심</td>
+                              <td>MITRE ATT&amp;CK 기반 행위 분석과 상관 탐지</td>
+                            </tr>
+                            <tr>
+                              <td>대응 방식</td>
+                              <td>수동 확인 후 개별 장비에서 조치</td>
+                              <td>정책 기반 차단·격리·증거화·관제 연계</td>
+                            </tr>
+                            <tr>
+                              <td>운영 목표</td>
+                              <td>접근 허용/차단 중심</td>
+                              <td><span class="zta-badge">검증 기반 보안 운영</span>으로 전환</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <p class="zta-note" data-aos="fade-up">
+                        제로 트러스트는 한 번에 완성되는 제품이 아니라, 로그를 만들고 수집하고 분석하며 정책을 계속 개선하는 운영 체계입니다.
+                        PLURA-AI·XDR은 이 과정을 WAF·EDR·SIEM·Forensic·SOC와 연결해 실행 가능한 보안 운영으로 전환합니다.
+                      </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
+    </div>
+</body>
+
+</html>

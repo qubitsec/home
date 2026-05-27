@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>PLURA-AI·XDR | MITRE ATT&CK 기반 행위 탐지 체계</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<meta name="keywords" content="PLURA-AI·XDR, MITRE ATT&CK, WAF, EDR, SIEM, Forensic, APT, Credential Stuffing, Zero-Day, Behavior Detection" />
+	<meta property="og:title" content="PLURA-AI·XDR | MITRE ATT&CK 기반 행위 탐지 체계" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="PLURA는 웹·서버·PC·계정·포렌식 로그를 MITRE ATT&CK 전술·기법에 매핑해 공격 흐름을 맥락으로 분석합니다." />
+	<meta property="og:image" content="" />
+	<link rel="shortcut icon" href="../res/images/favicon.ico">
+
+    <link rel="stylesheet" href="../res/css/style.css">
+    <script src="../res/js/jquery-1.11.1.min.js"></script>
+    <script src="../res/js/swiper.min.js"></script>
+    <script src="../res/js/aos.js"></script>
+    <script src="../res/js/fancybox.umd.js"></script>
+    <script src="../res/js/common.js"></script>
+    <script src="../res/js/data-include-path.js"></script>
+
+    <!-- MITRE ATT&CK page emphasis styles: 기존 구조 유지, 설명/비교 요소만 보강 -->
+    <style>
+      .attack-kicker{display:inline-block;margin:0 0 12px 0;padding:6px 12px;border-radius:999px;background:#eef7ff;border:1px solid #cfe5ff;color:#14558f;font-size:13px;font-weight:700;line-height:1}
+      .attack-lead{margin:0;color:#222;line-height:1.75}
+      .attack-lead strong{color:#111}
+      .attack-point-box{margin:22px 0 0 0;padding:20px;border-radius:16px;background:#f7fbff;border:1px solid #d8eaff}
+      .attack-point-box .danger,
+      .attack-point-box .success{line-height:1.75}
+      .attack-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0 0}
+      .attack-chip{display:inline-block;padding:7px 11px;border-radius:999px;background:#fff;border:1px solid #dbe7f4;color:#1e4d72;font-size:13px;font-weight:700;line-height:1}
+      .attack-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0 0 0}
+      .attack-flow li{list-style:none;padding:16px 12px;border-radius:14px;background:#fff;border:1px solid #dde8f3;box-shadow:0 6px 18px rgba(0,0,0,.04);text-align:center}
+      .attack-flow li strong{display:block;margin-bottom:7px;color:#0b3354;font-size:15px}
+      .attack-flow li span{display:block;color:#555;font-size:13px;line-height:1.5}
+      .attack-table-wrap{margin-top:34px}
+      .attack-table-title{margin:0 0 14px 0;font-size:24px;font-weight:600;color:#111;line-height:1.45}
+      .attack-table{width:100%;border-collapse:collapse;background:#fff;font-size:15px;color:#333}
+      .attack-table th{padding:13px 12px;background:#103c62;color:#fff;border:1px solid #d7e2ed;text-align:center;font-weight:700;line-height:1.45}
+      .attack-table td{padding:13px 12px;border:1px solid #d7e2ed;vertical-align:middle;line-height:1.6}
+      .attack-table tbody tr:nth-child(even) td{background:#f7fbff}
+      .attack-table .center{text-align:center}
+      .attack-badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;line-height:1;border:1px solid transparent}
+      .attack-badge.warn{background:#fff4e3;color:#8a5200;border-color:#ffd28a}
+      .attack-badge.good{background:#e8f8f0;color:#0c6840;border-color:#b8e7ce}
+      .attack-badge.blue{background:#eaf3ff;color:#144f86;border-color:#bfdbff}
+      .attack-note{margin-top:14px;color:#666;font-size:14px;line-height:1.7}
+      .attack-mini-list{margin:14px 0 0 0;padding:0;display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:8px}
+      .attack-mini-list li{list-style:none;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid #e2edf7;color:#333;line-height:1.5}
+      @media (max-width: 767px){
+        .attack-flow{grid-template-columns:1fr;gap:8px}
+        .attack-mini-list{grid-template-columns:1fr}
+        .attack-table{font-size:14px}
+        .attack-table th,.attack-table td{padding:10px 8px}
+        .attack-table-title{font-size:20px}
+      }
+    </style>
+</head>
+<body>
+<div id="wrap">
+<div data-include-path="./p_header.html"></div>
+
+<div class="mask"></div>
+<div data-include-path="./p_aside.html"></div>
+        <div id="content">
+            <div class="sub-top attack">
+                <div class="inner">
+                    <div class="text" data-aos="fade-up">
+                        <span class="line"></span>
+                        <h2>마이터 어택(ATT&amp;CK)</h2>
+                        <p>MITRE Adversarial Tactics, Techniques &amp; Common Knowledge Framework<br>공격 행위를 설명하고 탐지 근거를 표준화하는 공통 언어입니다.</p>
+                    </div>
+                    <img src="../res/images/attack_bg.png" alt="" class="img">
+                </div>
+            </div>
+
+            <div class="attack-wrap">
+                <section class="sec-1">
+                    <div class="inner">
+
+						<div class="sec-title">
+						  <div class="name aos-init aos-animate" data-aos="fade-up">
+						    <h3>
+						      MITRE ATT&amp;CK 기반 행위 탐지 체계
+						      <a href="https://blog.plura.io/ko/column/mitre_attack_audit_policy/"
+						         target="_blank" rel="noopener noreferrer"
+						         class="link" aria-label="MITRE ATT&CK 자세히 보기">↗️</a>
+						    </h3>
+						  </div>
+
+						  <div class="desc aos-init aos-animate p-t-10" data-aos="fade-up">
+						    <span class="attack-kicker">ATT&amp;CK v19.1 · Behavior Based Detection</span>
+						    <p class="f-24 line-h-default-7 attack-lead">
+						      MITRE ATT&amp;CK은 공격자의 전술·기술·절차(TTPs)를 체계화한 공개 지식베이스입니다.<br>
+						      PLURA-AI·XDR은 웹·서버·PC·계정·포렌식 로그를 ATT&amp;CK 전술·기법에 매핑해
+						      <strong>공격 흐름을 맥락으로 설명하고 대응 근거를 증거화</strong>합니다.
+						    </p>
+
+						    <div class="attack-point-box">
+						      <div>
+						        <em class="danger dis-block">
+						          ATT&amp;CK은 단순 체크리스트가 아닙니다. 실제 로그에 남은 <u>행위 증거</u>를 기준으로
+						          공격자의 의도와 단계를 해석하는 운영 프레임워크입니다.
+						        </em>
+						        <em class="danger dis-block">
+						          따라서 감사 정책, Sysmon·auditd 같은 텔레메트리, 웹 요청·응답 본문, 계정 행위 로그가 함께 확보되어야 합니다.
+						        </em>
+						      </div>
+
+						      <div class="m-t-15">
+						        <em class="success dis-block">
+						          PLURA는 수집된 로그를 ATT&amp;CK 전술·기법에 연결하고,
+						          탐지·대응·포렌식·보고까지 이어지는 <strong>AI-XDR 운영 흐름</strong>으로 확장합니다.
+						        </em>
+						      </div>
+
+						      <div class="attack-chip-wrap" aria-label="ATT&CK 핵심 운영 키워드">
+						        <span class="attack-chip">Tactics</span>
+						        <span class="attack-chip">Techniques</span>
+						        <span class="attack-chip">Data Sources</span>
+						        <span class="attack-chip">Detection Strategy</span>
+						        <span class="attack-chip">Evidence</span>
+						      </div>
+
+						      <ul class="attack-mini-list">
+						        <li><strong>초기 접근·실행</strong> : 웹 취약점, 스크립트 실행, 명령 실행 흐름 확인</li>
+						        <li><strong>권한 상승·방어 회피</strong> : 정책 변경, 서비스 등록, 로그 삭제 시도 확인</li>
+						        <li><strong>자격 증명 접근</strong> : 로그인 이상행위, 계정 탈취, 인증 실패 패턴 분석</li>
+						        <li><strong>횡적 이동·C2</strong> : 원격 접속, 외부 연결, 도구 다운로드, 내부 이동 추적</li>
+						      </ul>
+						    </div>
+						  </div>
+						</div>
+
+                        <div class="sec-top">
+                            <p data-aos="fade-up">마이터 어택 프레임워크 구성 요소</p>
+                            <ol data-aos="fade-up">
+                                <li>
+                                    <span class="num">1</span>
+                                    <p><b><a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" class="link">매트릭스 (Matrix)<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                  <p><b><a href="https://attack.mitre.org/tactics/enterprise/" target="_blank" class="link">전술 (Tactics)<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                  <p><b><a href="https://attack.mitre.org/techniques/enterprise/" target="_blank" class="link">기술 (Techniques)<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                  <p><b><a href="https://attack.mitre.org/datasources/" target="_blank" class="link">데이터 소스 (Data Sources)<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                </li>
+                                <li>
+                                    <span class="num">5</span>
+                                  <p><b><a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank" class="link">완화 (Mitigations)<span class="cursor_p"><i class="fa fa-external-link f-17 p-l-10 c-gray"></i></span></a></b></p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="img" data-aos="fade-up">
+                            <img src="../res/images/screenshots/mitre_screen_ko.gif" alt="ATT&CK">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-2">
+                    <div class="inner">
+                      <ul>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Matrix : <br>공격 흐름을 한눈에 보는 지도</strong>
+                            <div>
+							    <span class="dis-block"><b>탐지 항목을 ATT&amp;CK 매트릭스에 배치해 방어 범위와 공백을 확인합니다.</b></span>
+                                웹 공격에서 시작된 초기 접근<br>
+								서버 명령 실행과 권한 상승<br>
+								계정 탈취 후 내부 시스템 접근<br>
+								데이터 유출·랜섬웨어 영향 범위 추적<br>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Tactics : <br>경보를 공격 단계로 해석</strong>
+                            <div>
+                                <span class="dis-block"><b>단일 이벤트가 아니라 공격자의 목적과 다음 행동을 기준으로 우선순위를 정합니다.</b></span>
+                                Initial Access, Execution, Persistence, Privilege Escalation<br>
+                                Credential Access, Discovery, Lateral Movement<br>
+                                Command and Control, Exfiltration, Impact<br>
+                                SOC 관제와 대응 승인 흐름에 직접 연결<br>
+                            </div>							
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Techniques : <br>로그 증거 기반 정밀 탐지</strong>
+                            <div>
+                            <span class="dis-block"><b>프로세스, 파일, 레지스트리, 네트워크, 계정 로그를 기술 단위로 연결합니다.</b></span>
+							    PowerShell·cmd 실행, 웹셸 업로드, 서비스 등록<br>
+                                DLL 인젝션, 리버스 셸, 외부 연결, 도구 다운로드<br>
+                                계정 로그인 이상행위와 원격 접속 흔적 분석<br>
+                                웹 요청·응답 본문과 호스트 이벤트 상관 분석<br>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <strong class="line-h-default">PLURA w/ Mitigations : <br>탐지 이후 조치까지 연결</strong>
+                            <div>
+                            <span class="dis-block"><b>탐지는 끝이 아니라 차단·격리·포렌식·재발 방지의 시작입니다.</b></span>
+                                WAF 차단 정책과 제로데이 가상패치<br>
+                                EDR 격리·프로세스 종료·계정 보호<br>
+                                Forensic 스냅샷 비교와 침해 범위 확인<br>
+                                VAS 기반 보안 설정 개선과 감사 정책 보강<br>
+                            </div>							
+                        </li>						
+                      </ul>
+                    </div>
+                </section>
+
+                <section class="sec-1">
+                  <div class="inner">
+                    <div class="attack-table-wrap" data-aos="fade-up">
+                      <h3 class="attack-table-title">PLURA-AI·XDR에서 ATT&amp;CK이 작동하는 방식</h3>
+                      <table class="attack-table">
+                        <thead>
+                          <tr>
+                            <th>단계</th>
+                            <th>수집되는 증거</th>
+                            <th>ATT&amp;CK 해석</th>
+                            <th>PLURA 대응</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="center"><span class="attack-badge blue">Web</span></td>
+                            <td>요청·응답 본문, URL, 로그인 행위, IP 평판</td>
+                            <td>Initial Access, Credential Access, Exfiltration</td>
+                            <td>PLURA-WAF 탐지·차단, SIEM 상관 분석</td>
+                          </tr>
+                          <tr>
+                            <td class="center"><span class="attack-badge blue">Host</span></td>
+                            <td>프로세스 실행, 파일 생성, 레지스트리 변경, 네트워크 연결</td>
+                            <td>Execution, Persistence, Defense Evasion, C2</td>
+                            <td>PLURA-EDR 격리·차단, Forensic 증거 수집</td>
+                          </tr>
+                          <tr>
+                            <td class="center"><span class="attack-badge blue">Account</span></td>
+                            <td>로그인 성공·실패, 원격 접속, 권한 상승, 관리자 행위</td>
+                            <td>Credential Access, Privilege Escalation, Lateral Movement</td>
+                            <td>계정 위험도 분석, 접근 차단, SOC 관제 연계</td>
+                          </tr>
+                          <tr>
+                            <td class="center"><span class="attack-badge blue">Evidence</span></td>
+                            <td>스냅샷 diff, 설정 변경, 의심 아티팩트, 재현 가능한 흔적</td>
+                            <td>공격 체인 검증, 침해 범위 확인, 재발 방지 근거</td>
+                            <td>PLURA-Forensic·VAS 연동, 보고서·증적 관리</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="attack-note">ATT&amp;CK은 탐지 결과를 보기 좋게 분류하는 용도에 그치지 않습니다. 어떤 로그가 있어야 공격 단계를 설명할 수 있는지, 어떤 조치를 우선해야 하는지 정리하는 운영 기준입니다.</p>
+                    </div>
+
+                    <div class="attack-table-wrap" data-aos="fade-up">
+                      <h3 class="attack-table-title">기존 보안 운영 vs ATT&amp;CK 기반 PLURA 운영</h3>
+                      <table class="attack-table">
+                        <thead>
+                          <tr>
+                            <th>비교 항목</th>
+                            <th>기존 운영 방식</th>
+                            <th>PLURA-AI·XDR 운영 방식</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="center">탐지 기준</td>
+                            <td>개별 장비 경보와 시그니처 중심 <span class="attack-badge warn">분절</span></td>
+                            <td>행위 로그를 ATT&amp;CK 전술·기법으로 연결 <span class="attack-badge good">맥락화</span></td>
+                          </tr>
+                          <tr>
+                            <td class="center">로그 범위</td>
+                            <td>네트워크·서버·PC·웹 로그가 분리되어 분석</td>
+                            <td>웹 본문, 계정 행위, 호스트 이벤트, 포렌식 증거 통합</td>
+                          </tr>
+                          <tr>
+                            <td class="center">제로데이 대응</td>
+                            <td>알려진 패턴 중심으로 우회 공격 설명이 어려움</td>
+                            <td>비정상 행위와 연쇄 관계를 기반으로 징후 탐지·가상패치 연계</td>
+                          </tr>
+                          <tr>
+                            <td class="center">관제 보고</td>
+                            <td>경보 건수 중심 보고로 공격 흐름 설명이 제한적</td>
+                            <td>ATT&amp;CK 단계, 증거 로그, 조치 이력 중심으로 설명 가능</td>
+                          </tr>
+                          <tr>
+                            <td class="center">개선 활동</td>
+                            <td>탐지 후 재발 방지 기준이 모호함</td>
+                            <td>VAS·감사 정책·하드닝 기준과 연결해 탐지 가능한 환경 개선</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+
+            </div>
+        </div>
+<div data-include-path="./p_footer.html"></div>
+<button type="button" id="top">상단으로</button>
+
+    </div>
+</body>
+
+
+</html>
