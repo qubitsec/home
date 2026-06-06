@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>PLURA·AI-XDR Cloud SaaS Platform</title>
+  <title>PLURA-SysMon | 리소스 모니터링과 AI-XDR 운영 가시성</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-  <meta name="keywords" content="WAF, EDR, SIEM, Forensic, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
-  <meta property="og:title" content="PLURA·AI-XDR Cloud SaaS Platform" />
+  <meta name="keywords" content="PLURA-SysMon, Resource Monitoring, System Monitoring, WAF, EDR, SIEM, Forensic, APT, Ransomware, Credential Stuffing, MITRE ATT&CK" />
+  <meta property="og:title" content="PLURA-SysMon | 리소스 모니터링과 AI-XDR 운영 가시성" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="WAF, EDR, SIEM, Forensic, APT, Credential Stuffing, Hacking, MITRE ATT&CK, OWASP" />
+  <meta property="og:description" content="CPU, Memory, Disk, Network Traffic 리소스 이상 징후를 PLURA-AI·XDR과 연결해 장애와 침해 가능성을 함께 분석합니다." />
   <meta property="og:image" content="" />
   <link rel="shortcut icon" href="../res/images/favicon.ico">
-	
+
     <link rel="stylesheet" href="../res/css/style.css">
     <script src="../res/js/jquery-1.11.1.min.js"></script>
     <script src="../res/js/swiper.min.js"></script>
@@ -21,6 +21,22 @@
     <script src="../res/js/fancybox.umd.js"></script>
     <script src="../res/js/common.js"></script>
     <script src="../res/js/data-include-path.js"></script>
+
+  <!-- 페이지 보조 스타일: 기존 구조 유지, 표/배지 표현만 보강 -->
+  <style>
+    .px-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;line-height:1;vertical-align:middle;margin-left:6px}
+    .px-badge.bad-poor{color:#8a1b1b;background:#fde2e2;border:1px solid #f4b4b4}
+    .px-badge.bad-very{color:#7a0e0e;background:#ffd6d6;border:1px solid #ff9e9e;font-weight:600}
+    .px-badge.good{color:#0b5b3c;background:#dff5ea;border:1px solid #a8e3c9}
+    .px-badge.excellent{color:#084c61;background:#d9f2ff;border:1px solid #9ed9f6;font-weight:600}
+    .sysmon-note{margin-top:18px;background:#f3fbf8;border:1px solid #cfeee3;border-radius:12px;padding:18px 20px;color:#0e6b57;line-height:1.8}
+    .sysmon-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px 0}
+    .sysmon-chip{font-size:14px;line-height:1;padding:6px 10px;border-radius:999px;background:#e6f7f1;border:1px solid #bfe8d7;color:#0b5b49;font-weight:600}
+    @media (max-width: 767px){
+      .sysmon-chip-wrap{display:block}
+      .sysmon-chip{display:inline-block;margin:3px 2px}
+    }
+  </style>
 </head>
 <body>
     <div id="wrap">
@@ -34,7 +50,7 @@
                     <div class="text" data-aos="fade-up">
                         <span class="line"></span>
                         <h2>PLATFORM &#9825;</h2>
-                        <p>System Resource Monitoring<br>장애 관리와 해킹 공격 징후 탐지</p>
+                        <p>System Resource Monitoring<br>장애 징후와 침해 가능성을 함께 보는 운영 가시성</p>
                     </div>
                     <img src="../res/images/product_bg.png" alt="" class="img">
                 </div>
@@ -44,38 +60,60 @@
                     <div class="inner">
                         <div class="sec-top" >
                             <div class="name" data-aos="fade-up">
-                                <h3>리소스 사용량 모니터링 (sysMon)<a href="https://docs.plura.io/ko/fn/comm/resmon/host" target="_blank" class="link">↗️</a></h3>
+                                <h3>리소스 사용량 모니터링 (PLURA-SysMon)<a href="https://docs.plura.io/ko/fn/comm/resmon/host" target="_blank" class="link">↗️</a></h3>
                             </div>
 							<div class="desc" data-aos="fade-up">
 							  <div>
-								서버 및 PC의 실시간 리소스 정보 확인 및 알람 시스템<br>
-								<em class="danger">공격에 의한 리소스 과다 사용 탐지<br>장애 대응을 위한 리소스 과다 사용 탐지</em>
+								CPU, Memory, Disk, Network Traffic의 급격한 변화는 단순 장애만의 문제가 아닙니다.<br>
+								<em class="danger">
+								  랜섬웨어 암호화, 웹셸 실행, 비정상 프로세스, 데이터 유출, DDoS성 부하처럼<br>
+								  침해 행위도 리소스 이상 징후로 먼저 나타날 수 있습니다.
+								</em>
 							  </div>
-                              
+
                               <div>
-                                <em class="success c-black bold">실시간 리소스 사용량 관리로 해킹 공격 및 장애 대응</em><br>
-                                PLURA는 리소스 임계치 설정으로 알림을 받을 수 있습니다. 
+                                <em class="success c-black bold">PLURA-SysMon은 리소스 상태를 AI-XDR 탐지 맥락과 연결합니다.</em><br>
+                                임계치 기반 알림에 그치지 않고, WAF·EDR·SIEM·Forensic 이벤트와 함께 분석해
+                                장애인지 공격인지 판단할 수 있는 운영 근거를 제공합니다.
                               </div>
-                            
+
                               <div>
-                                <em class="success">알림 필터 임계치 설정 순서</em><br>
-                                1) 호스트 및 리소스별 임계치 설정<br>
-                                2) 설정된 임계치에 도달 시 알림 발송 (메일)<br>
-                                3) 확인 후 조치 
+                                <em class="success">운영 흐름</em><br>
+                                1) 호스트별 CPU·Memory·Disk·Network 기준선 확인<br>
+                                2) 임계치 초과 또는 급격한 변화 발생 시 알림<br>
+                                3) SIEM·EDR·Forensic 이벤트와 함께 원인 분석 및 조치
+                              </div>
+
+                              <div class="sysmon-note">
+                                <p style="margin:0 0 10px 0">
+                                  <strong>리소스 모니터링은 장애 대응의 시작점이자 침해 분석의 보조 증거입니다.</strong>
+                                </p>
+                                <div class="sysmon-chip-wrap" aria-label="핵심 모니터링 포인트">
+                                  <span class="sysmon-chip">CPU 급증</span>
+                                  <span class="sysmon-chip">Memory 고갈</span>
+                                  <span class="sysmon-chip">Disk I/O 증가</span>
+                                  <span class="sysmon-chip">Network Traffic 이상</span>
+                                  <span class="sysmon-chip">XDR 상관 분석</span>
+                                </div>
+                                <p style="margin:0">
+                                  PLURA-SysMon은 서비스 장애와 보안 이벤트를 분리하지 않고,
+                                  <strong>운영 상태와 공격 징후를 함께 확인</strong>할 수 있도록 지원합니다.
+                                </p>
                               </div>
 							</div>
 							<ul data-aos="fade-up">
-							  <li><p>리소스 사용량 임계치별 실시간 확인 및 날짜 검색 제공</p></li>
-							  <li><p>호스트별 상세 시각화 그래프 지원</p></li>
-							  <li><p>실시간 모니터링 지원 (특정 호스트 새창 및 새로고침)</p></li>
-							  <li><p>임계치 설정 알림 지원</p></li>
+							  <li><p>CPU·Memory·Disk·Network Traffic 사용량 실시간 확인 및 기간별 조회</p></li>
+							  <li><p>호스트별 상세 시각화 그래프와 임계치 기반 알림 제공</p></li>
+							  <li><p>장애 징후와 침해 가능성을 구분하기 위한 리소스 기준선 확인</p></li>
+							  <li><p>EDR·SIEM·Forensic 이벤트와 연계한 원인 분석 지원</p></li>
+							  <li><p>랜섬웨어·웹셸·비정상 프로세스·데이터 유출 의심 상황의 보조 지표 제공</p></li>
 							</ul>
                         </div>
                         <div class="img" data-aos="fade-left">
                             <div class="img-slide swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="../res/images/screenshots/sms_01.png" alt=""></div>
-                                    <div class="swiper-slide"><img src="../res/images/screenshots/sms_02.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="../res/images/screenshots/sms_01.png" alt="PLURA-SysMon 리소스 모니터링 화면 1"></div>
+                                    <div class="swiper-slide"><img src="../res/images/screenshots/sms_02.png" alt="PLURA-SysMon 리소스 모니터링 화면 2"></div>
                                 </div>
                             </div>
                         </div>
@@ -91,6 +129,174 @@
                             <dd>Disk Active Time 활성량</dd>
                             <dd>Network Traffic 사용량</dd>
                         </dl>
+                        <dl data-aos="fade-up">
+                            <dt>PLURA-AI·XDR 연동 기능</dt>
+                            <dd>리소스 이상 징후와 EDR 프로세스·네트워크 이벤트 상관 분석</dd>
+                            <dd>WAF 웹 공격 탐지 이후 서버 리소스 변화 확인</dd>
+                            <dd>SIEM 대시보드에서 장애·보안 이벤트를 통합 확인</dd>
+                            <dd>Forensic 스냅샷과 결합해 변경 전후 상태 비교 지원</dd>
+                            <dd>원격 보안관제(SOC)와 연계한 알림·분석·조치 지원</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="product-desc desc-2">
+                    <div class="inner">
+                        <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                            <h3 class="w-500">리소스 이상 징후가 의미하는 보안 신호</h3>
+                        </div>
+                        <div class="dis-block width-100p" data-aos="fade-up">
+                            <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+                                <thead>
+                                    <tr class="h-40">
+                                        <th class="text-center p-10 c-black bg-blue">리소스 변화</th>
+                                        <th class="text-center p-10 c-black bg-blue">장애 관점</th>
+                                        <th class="text-center p-10 c-black bg-blue">보안 관점</th>
+                                        <th class="text-center p-10 c-black bg-blue">PLURA 연계 분석</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center p-10">CPU 급증</td>
+                                        <td class="text-center p-10">서비스 과부하, 배치 작업, 프로세스 폭주</td>
+                                        <td class="text-center p-10">웹셸 명령 실행, 악성 스크립트, 코인마이닝 의심</td>
+                                        <td class="text-center p-10">EDR 프로세스 이벤트와 SIEM 탐지 로그 상관</td>
+                                    </tr>
+                                    <tr class="bg-blue-light">
+                                        <td class="text-center p-10">Memory 고갈</td>
+                                        <td class="text-center p-10">애플리케이션 누수, 비정상 서비스 증가</td>
+                                        <td class="text-center p-10">악성 프로세스 실행, 비정상 모듈 로딩 의심</td>
+                                        <td class="text-center p-10">프로세스 계보와 포렌식 스냅샷 비교</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center p-10">Disk I/O 증가</td>
+                                        <td class="text-center p-10">로그 폭증, 백업, 대량 파일 처리</td>
+                                        <td class="text-center p-10">랜섬웨어 암호화, 대량 파일 변경, 데이터 압축 의심</td>
+                                        <td class="text-center p-10">EDR 파일 이벤트·Forensic 변경 내역 연계</td>
+                                    </tr>
+                                    <tr class="bg-blue-light">
+                                        <td class="text-center p-10">Network Traffic 급증</td>
+                                        <td class="text-center p-10">정상 트래픽 증가, 장애성 재시도, 외부 연동 증가</td>
+                                        <td class="text-center p-10">데이터 유출, C2 통신, DDoS성 부하 의심</td>
+                                        <td class="text-center p-10">WAF·EDR 네트워크 이벤트와 IP 평판 상관</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                            <h3 class="w-500">기존 리소스 모니터링 vs. PLURA-SysMon 기반 AI-XDR 운영</h3>
+                        </div>
+                        <div class="dis-block width-100p" data-aos="fade-up">
+                            <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+                                <thead class="h-70">
+                                    <tr class="h-40">
+                                        <th class="text-center p-10 c-white bg-magenta" style="width:160px">비교 항목</th>
+                                        <th class="text-center p-10 c-white bg-magenta">기존 리소스 모니터링</th>
+                                        <th class="text-center p-10 c-white bg-magenta">PLURA-SysMon 기반 AI-XDR 운영</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center p-10">분석 목적</td>
+                                        <td class="text-center p-10">
+                                            장애·성능 중심 모니터링
+                                            <span class="px-badge bad-poor">제한적</span>
+                                        </td>
+                                        <td class="text-center p-10">
+                                            장애와 침해 가능성을 함께 분석
+                                            <span class="px-badge excellent">매우 우수</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-warning">
+                                        <td class="text-center p-10">보안 연계</td>
+                                        <td class="text-center p-10">
+                                            보안 로그와 별도 운영되는 경우가 많음
+                                            <span class="px-badge bad-very">매우 부족</span>
+                                        </td>
+                                        <td class="text-center p-10">
+                                            WAF·EDR·SIEM·Forensic 이벤트와 상관 분석
+                                            <span class="px-badge excellent">매우 우수</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center p-10">운영 판단</td>
+                                        <td class="text-center p-10">
+                                            임계치 초과 여부 중심 확인
+                                            <span class="px-badge bad-poor">부족</span>
+                                        </td>
+                                        <td class="text-center p-10">
+                                            리소스 변화의 원인을 공격 흐름과 함께 추적
+                                            <span class="px-badge good">우수</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-warning">
+                                        <td class="text-center p-10">사고 대응</td>
+                                        <td class="text-center p-10">
+                                            장애 조치 후 보안 분석은 별도 수행
+                                            <span class="px-badge bad-poor">부족</span>
+                                        </td>
+                                        <td class="text-center p-10">
+                                            탐지·분석·포렌식·관제 연계로 대응 근거 확보
+                                            <span class="px-badge excellent">매우 우수</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center p-10">보고·증적</td>
+                                        <td class="text-center p-10">
+                                            성능 지표 위주 보고
+                                            <span class="px-badge bad-poor">부족</span>
+                                        </td>
+                                        <td class="text-center p-10">
+                                            리소스 지표와 보안 이벤트를 함께 증적화
+                                            <span class="px-badge good">우수</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="dis-block m-t-30 width-100p" data-aos="fade-up">
+                            <h3 class="w-500">PLURA-SysMon 운영 시나리오</h3>
+                        </div>
+                        <div class="dis-block width-100p" data-aos="fade-up">
+                            <table class="table table-bordered text-center f-16 c-dark bg-white" style="border-collapse: collapse;">
+                                <thead>
+                                    <tr class="h-40">
+                                        <th class="text-center p-10 bg-purple">상황</th>
+                                        <th class="text-center p-10 bg-purple">확인 지표</th>
+                                        <th class="text-center p-10 bg-purple">연계 모듈</th>
+                                        <th class="text-center p-10 bg-purple">기대 효과</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center p-10">웹 공격 직후 CPU 급증</td>
+                                        <td class="text-center p-10">CPU, Process, Network</td>
+                                        <td class="text-center p-10">WAF·EDR·SIEM</td>
+                                        <td class="text-center p-10">웹셸 실행·명령 실행 여부 확인</td>
+                                    </tr>
+                                    <tr class="bg-blue-light">
+                                        <td class="text-center p-10">Disk I/O 급증</td>
+                                        <td class="text-center p-10">Disk, File Change</td>
+                                        <td class="text-center p-10">EDR·Forensic</td>
+                                        <td class="text-center p-10">랜섬웨어·대량 파일 변경 조기 식별</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center p-10">Network Traffic 증가</td>
+                                        <td class="text-center p-10">Network, Destination IP, URL</td>
+                                        <td class="text-center p-10">WAF·EDR·SIEM</td>
+                                        <td class="text-center p-10">데이터 유출·C2 통신 가능성 확인</td>
+                                    </tr>
+                                    <tr class="bg-blue-light">
+                                        <td class="text-center p-10">장애 원인 불명</td>
+                                        <td class="text-center p-10">Resource Trend, Event Timeline</td>
+                                        <td class="text-center p-10">SysMon·SIEM·SOC</td>
+                                        <td class="text-center p-10">운영 장애와 보안 사고를 함께 분류</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -102,5 +308,3 @@
 </body>
 
 </html>
-
-
