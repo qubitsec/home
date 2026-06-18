@@ -35,36 +35,8 @@
     @media (max-width: 767px){
       .banner-slide > .visual-text:first-child{display:none !important}
 
-      /* 모바일에서 CTA와 하단 외부 링크가 같은 위치에 겹치는 문제 보정 */
-      .main-visual .banner-slide-wrap > .visual-text{
-        left:30px !important;
-        right:30px !important;
-        bottom:86px !important;
-        width:auto !important;
-        z-index:6 !important;
-      }
-      .main-visual .banner-slide-wrap > .visual-text a{
-        display:flex !important;
-        align-items:center !important;
-        justify-content:space-between !important;
-        width:100% !important;
-        max-width:338px !important;
-        box-sizing:border-box !important;
-        padding:0 18px !important;
-        white-space:nowrap !important;
-      }
-      .main-visual .visual-link{
-        left:30px !important;
-        right:auto !important;
-        top:auto !important;
-        bottom:34px !important;
-        z-index:7 !important;
-      }
-      .main-visual .visual-link ul{
-        display:flex !important;
-        align-items:center !important;
-        gap:12px !important;
-      }
+      /* 모바일에서는 CTA와 겹치는 하단 외부 링크(B/M/G/Q/IN)를 숨겨 메인 CTA를 우선 노출 */
+      .main-visual .visual-link{display:none !important}
     }
   </style>
 
