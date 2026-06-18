@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>PLURA-AI·XDR | AI 해킹 시대의 통합 사이버보안 플랫폼</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="keywords" content="PLURA-AI·XDR, WAF, EDR, SIEM, Forensic, AI Security, Zero-Day, Credential Stuffing, MITRE ATT&CK, OWASP" />
+  <meta property="og:title" content="PLURA-AI·XDR | AI 해킹 시대의 통합 사이버보안 플랫폼" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="웹 요청·응답 본문, 계정 행위, 서버·PC 이벤트, 포렌식 증거를 하나로 연결해 탐지·분석·차단·증거화를 지원합니다." />
+  <meta property="og:image" content="" />
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../res/css/swiper.min.css"><!-- Swiper CSS (필수) -->
+  <link rel="stylesheet" href="../res/css/style.css">
+
+  <!-- Main page emphasis styles: 기존 구조 유지, 강조 요소만 보강 -->
+  <style>
+    .home-kicker{display:inline-block;margin:0 0 14px 0;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);font-size:13px;line-height:1;color:#fff;letter-spacing:.02em}
+    .home-pill-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 0 0}
+    .home-pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.24);font-size:13px;line-height:1.1;color:#fff}
+    .home-highlight{font-weight:700;color:#fff}
+    .contents-slide .text .tagline{display:block;width:max-content;max-width:100%;margin:0 auto 10px auto;padding:6px 12px;border-radius:999px;background:#f1f7ff;border:1px solid #cfe0ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1;text-align:center}
+    .contents-slide .text strong{display:block;text-align:center;margin-bottom:10px}
+    .contents-slide .text .mini-copy{display:block;width:calc(100% - 10px);max-width:430px;margin:10px auto 18px auto;padding:12px 16px;border-radius:14px;background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%);border:1px solid #d8e8ff;color:#3f4f67;line-height:1.75;font-size:15px;text-align:center !important;word-break:keep-all;box-shadow:0 8px 20px rgba(35,84,164,.08)}
+    .contents-slide .text .mini-copy:before{content:"";display:block;width:30px;height:3px;margin:0 auto 8px auto;border-radius:999px;background:#4b7bec}
+    .contents-slide .text ul{text-align:left}
+    .quick-contents span small{display:block;margin-top:5px;font-size:12px;line-height:1.3;font-weight:400;opacity:.82}
+    .certification .text strong{display:block;margin-bottom:4px;color:#111}
+    /* Mobile fix: 상단 로고와 큰 AI·XDR 라벨이 겹치지 않도록 모바일에서만 숨김 */
+    @media (max-width: 767px){
+      .banner-slide > .visual-text:first-child{display:none !important}
+
+      /* 모바일에서 CTA와 하단 외부 링크가 같은 위치에 겹치는 문제 보정 */
+      .main-visual .banner-slide-wrap > .visual-text{
+        left:30px !important;
+        right:30px !important;
+        bottom:86px !important;
+        width:auto !important;
+        z-index:6 !important;
+      }
+      .main-visual .banner-slide-wrap > .visual-text a{
+        display:flex !important;
+        align-items:center !important;
+        justify-content:space-between !important;
+        width:100% !important;
+        max-width:338px !important;
+        box-sizing:border-box !important;
+        padding:0 18px !important;
+        white-space:nowrap !important;
+      }
+      .main-visual .visual-link{
+        left:30px !important;
+        right:auto !important;
+        top:auto !important;
+        bottom:34px !important;
+        z-index:7 !important;
+      }
+      .main-visual .visual-link ul{
+        display:flex !important;
+        align-items:center !important;
+        gap:12px !important;
+      }
+    }
+  </style>
+
+
+  <!-- Scripts -->
+  <script src="../res/js/jquery-1.11.1.min.js"></script>
+  <script src="../res/js/swiper.min.js"></script>
+  <script src="../res/js/aos.js"></script>
+  <script src="../res/js/fancybox.umd.js"></script>
+  <script src="../res/js/common.js"></script>
+</head>
+<body>
+  <div id="wrap">
+
+    <!-- 공통 파셜 -->
+    <div data-include-path="./p_header.html"></div>
+    <div class="mask"></div>
+    <div data-include-path="./p_aside.html"></div>
+
+    <div id="content">
+      <div class="main-wrap">
+
+        <!-- 메인 비주얼 -->
+        <section class="main-visual">
+          <div class="inner">
+            <div class="banner-slide-wrap ov-hidden">
+              <div class="banner-slide swiper-container">
+                <!-- 상단 라벨 -->
+                <div class="visual-text">
+                  <strong>AI·XDR</strong>
+                </div>
+
+                <!-- 슬라이드 -->
+                <div class="swiper-wrapper">
+                  <!-- 1 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">AI Hacking Era Defense Platform</span>
+                      <span class="title bold">AI 해킹 시대의 PLURA-AI·XDR</span>
+                      <p>
+                        공격은 자동화되고, 방어는 더 빠르게 연결되어야 합니다.<br>
+                        웹 요청·응답 본문, 계정 행위, 서버·PC 이벤트,<br>
+                        포렌식 증거를 하나의 흐름으로 분석합니다.<br>
+                        <b>로그가 남아야 공격을 보고, 연결되어야 막을 수 있습니다.</b>
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">AI 분석</span>
+                        <span class="home-pill">본문 로그</span>
+                        <span class="home-pill">상관 분석</span>
+                        <span class="home-pill">자동 대응</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">Integrated Detection &amp; Response</span>
+                      <span class="title bold">WAF·EDR·SIEM·Forensic을 하나로</span>
+                      <p>
+                        웹에서 시작된 공격은 서버 명령 실행,<br>
+                        계정 탈취, 내부 이동, 데이터 유출로 이어질 수 있습니다.<br>
+                        PLURA는 <b>수집→분석→차단→포렌식→증거화</b>를<br>
+                        하나의 SaaS 운영 흐름으로 연결합니다.
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">PLURA-WAF</span>
+                        <span class="home-pill">PLURA-EDR</span>
+                        <span class="home-pill">PLURA-SIEM</span>
+                        <span class="home-pill">PLURA-Forensic</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">Web Request · Response Body Analysis</span>
+                      <span class="title bold">본문까지 보는 웹 공격 대응</span>
+                      <p>
+                        웹 공격은 URL만 보아서는 충분하지 않습니다.<br>
+                        요청 본문, 응답 본문, 로그인 행위, 서버 이벤트를 함께 봐야<br>
+                        우회 인젝션, 웹셸, 데이터 유출 징후를 추적할 수 있습니다.<br>
+                        PLURA-WAF는 <b>정탐 강화·오탐 감소·미탐 보완</b>을 목표로 운영됩니다.
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">OWASP Top 10</span>
+                        <span class="home-pill">Credential Stuffing</span>
+                        <span class="home-pill">Web Shell</span>
+                        <span class="home-pill">Data Exfiltration</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">MITRE ATT&amp;CK Operationalized</span>
+                      <span class="title bold">ATT&amp;CK 기반으로 공격 흐름을 설명합니다</span>
+                      <p>
+                        단일 경보보다 중요한 것은 공격의 맥락입니다.<br>
+                        PLURA는 프로세스 실행, 파일 변경, 네트워크 연결,<br>
+                        계정 행위를 ATT&amp;CK 전술·기법과 연결해 분석합니다.<br>
+                        <b>운영자가 이해할 수 있는 탐지 근거</b>를 제공합니다.
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">Process</span>
+                        <span class="home-pill">Registry</span>
+                        <span class="home-pill">Network</span>
+                        <span class="home-pill">Account</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">Account Takeover &amp; APT Response</span>
+                      <span class="title bold">계정 탈취 이후의 행위까지 추적</span>
+                      <p>
+                        크리덴셜 스터핑과 브루트포스는 로그인 성공 이후가 더 위험합니다.<br>
+                        PLURA는 계정, IP, 위치, 속도, URL, 호스트 행위를 연결해<br>
+                        정상 로그인처럼 보이는 공격을 식별합니다.<br>
+                        <b>탐지 후 정책에 따라 차단·격리·관제 연계</b>가 가능합니다.
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">계정 행위</span>
+                        <span class="home-pill">IP 평판</span>
+                        <span class="home-pill">속도 분석</span>
+                        <span class="home-pill">SOC 연계</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div class="swiper-slide">
+                    <div class="visual-text">
+                      <span class="home-kicker">Zero Trust Starts with Visibility</span>
+                      <span class="title bold">제로 트러스트는 로그 가시성에서 시작됩니다</span>
+                      <p>
+                        제로 트러스트는 제품명이 아니라 운영 아키텍처입니다.<br>
+                        사용자, 단말, 애플리케이션, 데이터 흐름을 지속적으로 검증하려면<br>
+                        근거 로그와 상관 분석이 먼저 확보되어야 합니다.<br>
+                        PLURA-XDR은 <b>검증 기반 보안 운영</b>을 지원합니다.
+                      </p>
+                      <div class="home-pill-wrap">
+                        <span class="home-pill">연속 검증</span>
+                        <span class="home-pill">최소 권한</span>
+                        <span class="home-pill">증적 관리</span>
+                        <span class="home-pill">SaaS 운영</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 컨트롤 -->
+                <div class="banner-slide-controls">
+                  <button type="button" class="banner-slide-prev">PREV</button>
+                  <button type="button" class="banner-slide-next">NEXT</button>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="visual-text">
+                <a href="https://xdr.plura.io/auth/signup">
+                  <span>무료 평가판 시작하기</span>
+                  <img src="../res/images/icon_right_white.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <img src="../res/images/main_visual.gif" alt="" class="visual-img">
+
+            <!-- 소셜/링크 -->
+            <div class="visual-link">
+              <ul>
+                <li><a href="https://blog.plura.io/ko/" target="_blank" class="wordpress">B</a></li>
+                <li><a href="https://docs.plura.io/ko/" target="_blank" class="github">M</a></li>
+                <li><a href="https://github.com/QubitSecurity/" target="_blank" class="github">G</a></li>
+                <li><a href="https://www.qubitsec.com/" target="_blank" class="hubspot">Q</a></li>
+                <li><a href="https://www.linkedin.com/company/qubit-security" target="_blank" class="linkedin">IN</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 바로가기 카드 -->
+        <section class="contents-intro">
+          <div class="inner">
+            <div class="quick-contents">
+              <ul>
+                <li>
+                  <a href="mitreattack.html" class="p-r-30 p-l-30">
+                    <img src="../res/images/icon_qc_01.png" alt="">
+                    <span>MITRE ATT&amp;CK<small>공격 전술·기법 기반 탐지</small></span>
+                    <img src="../res/images/icon_right_white.png" alt="" class="m-l-20">
+                  </a>
+                </li>
+                <li class="bg-magenta">
+                  <a href="zta.html" class="p-r-30 p-l-30">
+                    <img src="../res/images/icon_qc_03.png" alt="">
+                    <span>Zero Trust Architecture<small>로그 가시성 기반 연속 검증</small></span>
+                    <img src="../res/images/icon_right_white.png" alt="" class="m-l-20">
+                  </a>
+                </li>
+                <li>
+                  <a href="underattack.html" class="p-r-30 p-l-30">
+                    <img src="../res/images/icon_qc_02.png" alt="">
+                    <span>Credential Stuffing 대응<small>계정 탈취와 로그인 이후 행위 추적</small></span>
+                    <img src="../res/images/icon_right_white.png" alt="" class="m-l-20">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 제품 하이라이트 슬라이드 -->
+            <div class="contents-slide-wrap">
+              <div class="contents-slide swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img"><img src="../res/images/img_mc_01.png" alt=""></div>
+                    <div class="text">
+                      <span class="tagline">AI-XDR 중앙 분석 엔진</span>
+                      <strong>통합보안이벤트관리 SIEM</strong>
+                      <p class="mini-copy">WAF·EDR·Forensic 로그를 통합해<br/>공격 흐름을 맥락으로 분석합니다.</p>
+                      <ul>
+                        <li>MITRE ATT&amp;CK 기반 전술·기법 매핑</li>
+                        <li>웹·서버·PC·계정 행위 상관분석</li>
+                        <li>랜섬웨어·APT·크리덴셜 스터핑 탐지</li>
+                        <li>개인정보·민감정보 유출 징후 분석</li>
+                        <li>PLURA-WAF·EDR 연동 차단 및 관제 연계</li>
+                      </ul>
+                    </div>
+                    <a href="platform_siem.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="img"><img src="../res/images/img_mc_03.png" alt=""></div>
+                    <div class="text">
+                      <span class="tagline">서버·PC 행위 기반 탐지</span>
+                      <strong>호스트보안 EDR</strong>
+                      <p class="mini-copy">프로세스·파일·레지스트리·네트워크·계정 행위를<br/>연결 분석해 침해 흐름을 추적합니다.</p>
+                      <ul>
+                        <li>ATT&amp;CK 기반 APT·랜섬웨어 대응</li>
+                        <li>DLL 인젝션·리버스 셸·권한 상승 탐지</li>
+                        <li>Windows·Linux·macOS 감사 로그 분석</li>
+                        <li>웹 공격 이후 서버 명령 실행 연계 분석</li>
+                        <li>격리·차단·증거화 및 SIEM 연동</li>
+                      </ul>
+                    </div>
+                    <a href="platform_edr.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="img"><img src="../res/images/img_mc_04.png" alt=""></div>
+                    <div class="text">
+                      <span class="tagline">본문 분석 기반 웹 공격 대응</span>
+                      <strong>웹방화벽 WAF</strong>
+                      <p class="mini-copy">요청·응답 본문과 로그인 행위를 연결 분석해<br/>우회 공격과 데이터 유출을 포착합니다.</p>
+                      <ul>
+                        <li>OWASP Top 10 웹 공격 탐지·차단</li>
+                        <li>SQL Injection·XSS·웹셸 업로드 대응</li>
+                        <li>크리덴셜 스터핑·브루트포스 차단</li>
+                        <li>응답 본문 기반 데이터 유출 징후 분석</li>
+                        <li>SIEM·EDR 연동으로 공격 체인 추적</li>
+                      </ul>
+                    </div>
+                    <a href="platform_waf.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="img"><img src="../res/images/img_mc_02.png" alt=""></div>
+                    <div class="text">
+                      <span class="tagline">보안 설정과 감사 정책 점검</span>
+                      <strong>취약점 점검 VAS</strong>
+                      <p class="mini-copy">운영체제 보안 설정과 감사 정책을 점검해<br/>위협을 탐지할 수 있는 환경을 만듭니다.</p>
+                      <ul>
+                        <li>ISMS 기준 Windows/Linux 보안 설정 점검</li>
+                        <li>계정·비밀번호·권한 정책 진단</li>
+                        <li>불필요 서비스·원격접속·공유 설정 점검</li>
+                        <li>패치 상태 및 로그 생성 정책 확인</li>
+                        <li>근거·권장값·조치 가이드와 AI-XDR 연동</li>
+                      </ul>
+                    </div>
+                    <a href="platform_vas.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
+                  </div>
+					
+                  <!--div class="swiper-slide">
+                    <div class="img"><img src="../res/images/img_mc_05.png" alt=""></div>
+                    <div class="text">
+                      <strong>리소스모니터링 PLURA-SysMon</strong>
+                      <ul>
+                        <li>실시간 리소스 모니터링</li>
+                        <li>CPU, Memory, Disk 등</li>
+                        <li>기간별 상세 시각화 그래프</li>
+                        <li>임계치 설정에 따른 알림</li>
+                      </ul>
+                    </div>
+                    <a href="platform_sysmon.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
+				   </div-->
+
+				</div>
+              </div>
+              <div class="contents-slide-controls">
+                <button type="button" class="contents-slide-prev">PREV</button>
+                <button type="button" class="contents-slide-next">NEXT</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+		<section class="quick-category">
+			<div class="inner">
+				<ul>
+					<li class="quick-1">
+						<a href="video.html">
+							<div class="thumb" style="background-image:url(../res/images/main_quick_01.png);"></div>
+							<div class="text">
+								<strong>VIDEO</strong><span>제품 소개와 보안 인사이트</span>
+							</div>
+						</a>
+					</li>
+					<li class="quick-2">
+						<a href="customer.html">
+							<div class="thumb" style="background-image:url(../res/images/main_quick_02.png);"></div>
+							<div class="text">
+								<strong>CUSTOMERS</strong><span>도입 고객과 활용 사례</span>
+							</div>
+						</a>
+					</li>
+					<li class="quick-3">
+						<a href="casestudy.html">
+							<div class="thumb" style="background-image:url(../res/images/main_quick_03.png);"></div>
+							<div class="text">
+								<strong>CASE STUDY</strong><span>공격 대응 시나리오</span>
+							</div>
+						</a>
+					</li>
+					<li class="quick-4">
+						<a href="contact.html">
+							<div class="thumb" style="background-image:url(../res/images/main_quick_04.png);"></div>
+							<div class="text">
+								<strong>PRICING</strong><span>SaaS 요금과 상담</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+        <!-- 고객사 로고 섹션: 파셜 인클루드 -->
+        <div data-include-path="./p_customer.html"></div>
+
+        <!-- 연락처 -->
+		<div data-include-path="./p_contact.html"></div>
+
+        <!-- 인증/수상 -->
+        <section class="certification">
+          <div class="inner">
+            <ul>
+              <li>
+                <div class="img"><img src="../res/images/partner_01.png" alt=""></div>
+                <div class="text"><strong>Good Software 1등급</strong>ICT 표준화 및 국가인증</div>
+              </li>
+              <li>
+                <div class="img"><img src="../res/images/partner_02.png" alt=""></div>
+                <div class="text"><strong>조달청 혁신제품</strong>보안소프트웨어 분야 지정</div>
+              </li>
+              <li>
+                <div class="img"><img src="../res/images/partner_03.png" alt=""></div>
+                <div class="text"><strong>조달 등록 제품</strong>벤처 창업기업 보안소프트웨어</div>
+              </li>
+              <li>
+                <div class="img"><img src="../res/images/partner_04.png" alt=""></div>
+                <div class="text"><strong>우수 정보보호 제품</strong>과학기술정보통신부·KISA 지정</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div><!-- /.main-wrap -->
+    </div><!-- /#content -->
+
+    <div data-include-path="./p_footer.html"></div>
+    <button type="button" id="top">상단으로</button>
+  </div><!-- /#wrap -->
+</body>
+</html>
