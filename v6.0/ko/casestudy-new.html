@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-  <meta name="keywords" content="PLURA-AI·XDR, Case Study, Zero-day, 제로데이, WAF, EDR, SIEM, Forensic, Credential Stuffing, SQL Injection, APT, Ransomware, MITRE ATT&CK" />
+  <meta name="keywords" content="PLURA-AI·XDR, Case Study, Zero-day, 제로데이, AI Detection, AI Response, WAF, EDR, SIEM, Forensic, Credential Stuffing, SQL Injection, APT, Ransomware, MITRE ATT&CK" />
   <meta property="og:title" content="PLURA Case Study | AI-XDR 침해 대응 사례" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="제로데이, 크리덴셜 스터핑, SQL 인젝션, APT, Log4Shell, 원격근무 보안 사례를 PLURA-AI·XDR 관점에서 정리합니다." />
@@ -90,10 +90,10 @@
                                 </div>
                                 <div class="solution">
                                     <strong>대응방법</strong>
-                                     <div>                                        제로데이 공격은 알려진 룰과 패치가 준비되기 전 악용될 수 있으므로, 시그니처 탐지보다 이상 흐름 탐지와 임시 완화가 중요합니다.<br/>
-                                        PLURA-WAF는 웹 요청·응답 본문, 헤더, 쿠키, URL, 로그인 행위를 함께 분석해 우회·변형 페이로드와 데이터 유출 징후를 확인하고, 새로운 공격 징후는 가상패치 정책으로 반영합니다.<br/>
-                                        PLURA-EDR은 서버와 PC에서 발생한 비정상 프로세스, 명령행, 파일 변경, 네트워크 연결을 추적하고, PLURA-SIEM은 WAF·EDR·계정·감사 로그를 하나의 사건으로 상관 분석합니다.<br/>
-                                        <b><em>PLURA-AI·XDR은 처음 보는 공격도 웹→서버→계정→데이터 흐름으로 연결해 탐지·차단·증거화·관제 대응까지 이어지도록 지원합니다.</em></b>
+                                     <div>                                        제로데이 대응의 핵심은 패치나 기존 시그니처가 없는 상황에서도 <b><em>AI에 의하여 공격을 탐지하고 대응</em></b>하는 것입니다.<br/>
+                                        PLURA-AI는 웹 요청·응답 본문, 헤더, 쿠키, URL, 로그인 행위와 서버·PC 행위 로그를 함께 분석해 알려지지 않은 공격의 이상 징후와 우회·변형 페이로드를 식별합니다.<br/>
+                                        AI가 탐지한 공격 정황은 PLURA-WAF의 차단·가상패치, PLURA-EDR의 행위 추적·격리, PLURA-SIEM의 상관 분석과 관제 이벤트로 연결되어 즉시 대응됩니다.<br/>
+                                        <b><em>PLURA-AI·XDR은 처음 보는 제로데이 공격도 AI 기반으로 탐지하고, WAF·EDR·SIEM과 연계해 차단·격리·증거화·관제 대응까지 수행합니다.</em></b>
                                      </div>
                                 </div>
                                 <div class="solution">
