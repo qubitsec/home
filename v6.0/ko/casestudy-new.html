@@ -26,7 +26,9 @@
     .case-wrap .case-content .solution div{line-height:1.85;color:#374151;word-break:keep-all}
     .case-wrap .case-content .solution em{font-style:normal;color:#0f766e}
     .case-wrap .case-content .case-key{display:inline-block;margin:0 6px 8px 0;padding:5px 10px;border-radius:999px;background:#eef6ff;border:1px solid #cfe3ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1}
-    .case-wrap .case-tab button{word-break:keep-all}
+    .case-wrap .case-tab .case-slide{width:calc(100% - 56px)!important;max-width:calc(100% - 56px)}
+    .case-wrap .case-tab .swiper-slide{width:auto!important}
+    .case-wrap .case-tab button{word-break:keep-all;white-space:nowrap}
     .case-wrap .video .video-top p{word-break:keep-all}
     .case-wrap .start .proof-copy{margin:18px 0 0;font-size:22px;line-height:1.55;font-weight:800;color:#fff;background:rgba(14,107,87,.88);padding:12px 16px;border-radius:12px;text-shadow:0 1px 2px rgba(0,0,0,.25);display:inline-block}
     @media (max-width:767px){
@@ -66,12 +68,12 @@
                         <div class="case-tab" data-aos="fade-up">
                             <div class="case-slide swiper-container">
                                 <ul class="swiper-wrapper">
-                                    <li class="swiper-slide"><button type="button" class="cur">제로데이</button></li>
-                                    <li class="swiper-slide"><button type="button">크리덴셜 스터핑</button></li>
-                                    <li class="swiper-slide"><button type="button">SQL 인젝션</button></li>
-                                    <li class="swiper-slide"><button type="button">지능형지속위협(APT)</button></li>
-                                    <li class="swiper-slide"><button type="button">Log4shell</button></li>
-                                    <li class="swiper-slide"><button type="button">비대면 재택 근무</button></li>
+                                    <li class="swiper-slide"><button type="button" class="cur" title="제로데이(Zero-day)" aria-label="제로데이(Zero-day)">제로데이</button></li>
+                                    <li class="swiper-slide"><button type="button" title="크리덴셜 스터핑" aria-label="크리덴셜 스터핑">크리덴셜</button></li>
+                                    <li class="swiper-slide"><button type="button" title="SQL 인젝션" aria-label="SQL 인젝션">SQLi</button></li>
+                                    <li class="swiper-slide"><button type="button" title="지능형지속위협(APT)" aria-label="지능형지속위협(APT)">APT</button></li>
+                                    <li class="swiper-slide"><button type="button" title="Log4Shell" aria-label="Log4Shell">Log4Shell</button></li>
+                                    <li class="swiper-slide"><button type="button" title="비대면 재택 근무" aria-label="비대면 재택 근무">재택근무</button></li>
                                 </ul>
                             </div>
                             <a href="https://blog.plura.io/ko/threats/" target="_blank" class="more">+</a>
@@ -382,8 +384,4 @@
     </div>
 </body>
 
-
 </html>
-
-
-
