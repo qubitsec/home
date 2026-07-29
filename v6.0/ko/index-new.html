@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>PLURA-AI·XDR | AI 해킹 시대의 통합 사이버보안 플랫폼</title>
+  <title>PLURA-AI·XDR | AI 기반 제로데이 공격 탐지·대응 플랫폼</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-  <meta name="keywords" content="PLURA-AI·XDR, WAF, EDR, SIEM, Forensic, AI Security, Zero-Day, Credential Stuffing, MITRE ATT&CK, OWASP" />
-  <meta property="og:title" content="PLURA-AI·XDR | AI 해킹 시대의 통합 사이버보안 플랫폼" />
+  <meta name="keywords" content="PLURA-AI·XDR, AI Zero-Day, Zero-Day, Unknown Attack, WAF, EDR, SIEM, Forensic, Virtual Patching, Credential Stuffing, MITRE ATT&amp;CK" />
+  <meta property="og:title" content="PLURA-AI·XDR | AI 기반 제로데이 공격 탐지·대응 플랫폼" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="웹 요청·응답 본문, 계정 행위, 서버·PC 이벤트, 포렌식 증거를 하나로 연결해 탐지·분석·차단·증거화를 지원합니다." />
+  <meta property="og:description" content="패치와 알려진 시그니처가 준비되기 전에도 웹 요청·응답 본문과 서버·PC·계정 행위를 AI로 연결 분석해 제로데이 공격을 탐지하고 차단·격리·포렌식으로 대응합니다." />
   <meta property="og:image" content="" />
   <link rel="shortcut icon" href="../res/images/favicon.ico">
 
@@ -21,10 +21,15 @@
   <!-- Main page emphasis styles: 기존 구조 유지, 강조 요소만 보강 -->
   <style>
     .home-kicker{display:inline-block;margin:0 0 14px 0;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);font-size:13px;line-height:1;color:#fff;letter-spacing:.02em}
+    .home-kicker-zero{background:rgba(217,91,91,.92);border-color:rgba(255,255,255,.5);font-weight:700}
     .home-pill-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 0 0}
     .home-pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.24);font-size:13px;line-height:1.1;color:#fff}
+    .home-pill-link{display:inline-block !important;position:static !important;width:auto !important;height:auto !important;margin:0 !important;padding:6px 10px !important;line-height:1.1 !important;text-decoration:none;font-weight:700;background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.52);transition:background .2s ease,border-color .2s ease}
+    .home-pill-link:after{content:"  →"}
+    .home-pill-link:hover,.home-pill-link:focus{color:#fff;background:rgba(217,91,91,.88);border-color:#fff}
     .home-highlight{font-weight:700;color:#fff}
     .contents-slide .text .tagline{display:block;width:max-content;max-width:100%;margin:0 auto 10px auto;padding:6px 12px;border-radius:999px;background:#f1f7ff;border:1px solid #cfe0ff;color:#2354a4;font-size:13px;font-weight:700;line-height:1;text-align:center}
+    .contents-slide .text .tagline.zero-day-tagline{background:#fff1f1;border-color:#f0c9cd;color:#a13a43}
     .contents-slide .text strong{display:block;text-align:center;margin-bottom:10px}
     .contents-slide .text .mini-copy{display:block;width:calc(100% - 10px);max-width:430px;margin:10px auto 18px auto;padding:12px 16px;border-radius:14px;background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%);border:1px solid #d8e8ff;color:#3f4f67;line-height:1.75;font-size:15px;text-align:center !important;word-break:keep-all;box-shadow:0 8px 20px rgba(35,84,164,.08)}
     .contents-slide .text .mini-copy:before{content:"";display:block;width:30px;height:3px;margin:0 auto 8px auto;border-radius:999px;background:#4b7bec}
@@ -35,6 +40,8 @@
     .quick-contents-four > ul{display:flex !important;align-items:stretch;flex-wrap:nowrap;height:auto !important}
     .quick-contents-four > ul > li{float:none !important;width:25% !important;flex:0 0 25%;min-width:0}
     .quick-contents-four > ul > li.quick-card-zero-day{background:#d95b5b !important}
+    .quick-contents-four > ul > li.quick-card-zero-day .quick-link{box-shadow:inset 0 -4px 0 rgba(255,255,255,.18)}
+    .quick-contents-four > ul > li.quick-card-zero-day .quick-copy small{font-weight:700;opacity:1}
     .quick-contents-four > ul > li.quick-card-credential{background:#66c59b !important}
     .quick-contents-four > ul > li.quick-card-mitre{background:#1d3566 !important}
     .quick-contents-four > ul > li.quick-card-zta{background:#c8537a !important}
@@ -54,10 +61,10 @@
         box-sizing:border-box;
       }
       .quick-contents-four > ul{width:100%}
-      .quick-contents-four > ul > li.quick-card-zero-day{width:20% !important;flex:0 0 23%}
-      .quick-contents-four > ul > li.quick-card-credential{width:35% !important;flex:0 0 28%}
+      .quick-contents-four > ul > li.quick-card-zero-day{width:20% !important;flex:0 0 20%}
+      .quick-contents-four > ul > li.quick-card-credential{width:35% !important;flex:0 0 35%}
       .quick-contents-four > ul > li.quick-card-mitre{width:27% !important;flex:0 0 27%}
-      .quick-contents-four > ul > li.quick-card-zta{width:18% !important;flex:0 0 22%}
+      .quick-contents-four > ul > li.quick-card-zta{width:18% !important;flex:0 0 18%}
     }
 
     @media (max-width: 1100px) and (min-width: 961px){
@@ -121,22 +128,22 @@
 
                 <!-- 슬라이드 -->
                 <div class="swiper-wrapper">
-                  <!-- 1 -->
+                  <!-- 1: AI 제로데이 핵심 메시지 -->
                   <div class="swiper-slide">
                     <div class="visual-text">
-                      <span class="home-kicker">AI Hacking Era Defense Platform</span>
-                      <span class="title bold">AI 해킹 시대의 PLURA-AI·XDR</span>
+                      <span class="home-kicker home-kicker-zero">AI ZERO-DAY DETECTION &amp; RESPONSE</span>
+                      <span class="title bold">AI 기반 제로데이 공격 탐지·대응</span>
                       <p>
-                        공격은 자동화되고, 방어는 더 빠르게 연결되어야 합니다.<br>
-                        웹 요청·응답 본문, 계정 행위, 서버·PC 이벤트,<br>
-                        포렌식 증거를 하나의 흐름으로 분석합니다.<br>
-                        <b>로그가 남아야 공격을 보고, 연결되어야 막을 수 있습니다.</b>
+                        패치와 알려진 시그니처가 준비되기 전에도,<br>
+                        웹 요청·응답 본문과 서버·PC·계정 행위를 AI로 분석합니다.<br>
+                        공격 징후를 연결해 차단·격리·포렌식으로 대응합니다.<br>
+                        <b>알려지지 않은 공격은 행위 로그에서 먼저 드러납니다.</b>
                       </p>
                       <div class="home-pill-wrap">
-                        <span class="home-pill">AI 분석</span>
-                        <span class="home-pill">본문 로그</span>
-                        <span class="home-pill">상관 분석</span>
-                        <span class="home-pill">자동 대응</span>
+                        <span class="home-pill">AI 탐지</span>
+                        <span class="home-pill">요청·응답 본문</span>
+                        <span class="home-pill">XDR 상관 분석</span>
+                        <a href="zero-day.html" class="home-pill home-pill-link" aria-label="AI 기반 제로데이 공격 탐지·대응 자세히 보기">제로데이 자세히 보기</a>
                       </div>
                     </div>
                   </div>
@@ -159,22 +166,22 @@
                       </div>
                     </div>
                   </div>
-                  <!-- 3 -->
+                  <!-- 3: 웹 본문 기반 AI 제로데이 대응 -->
                   <div class="swiper-slide">
                     <div class="visual-text">
-                      <span class="home-kicker">Web Request · Response Body Analysis</span>
-                      <span class="title bold">본문까지 보는 웹 공격 대응</span>
+                      <span class="home-kicker">AI Zero-day Web Defense</span>
+                      <span class="title bold">본문까지 분석해 제로데이 웹 공격을 찾습니다</span>
                       <p>
-                        웹 공격은 URL만 보아서는 충분하지 않습니다.<br>
-                        요청 본문, 응답 본문, 로그인 행위, 서버 이벤트를 함께 봐야<br>
-                        우회 인젝션, 웹셸, 데이터 유출 징후를 추적할 수 있습니다.<br>
-                        PLURA-WAF는 <b>정탐 강화·오탐 감소·미탐 보완</b>을 목표로 운영됩니다.
+                        알려지지 않은 웹 공격은 URL과 시그니처만으로 충분하지 않습니다.<br>
+                        PLURA-AI는 요청·응답 본문과 로그인·서버 행위를 함께 분석해<br>
+                        우회·변형 페이로드와 데이터 노출 징후를 식별합니다.<br>
+                        PLURA-XDR은 <b>탐지→차단→가상패치→포렌식</b>으로 연결합니다.
                       </p>
                       <div class="home-pill-wrap">
-                        <span class="home-pill">OWASP Top 10</span>
-                        <span class="home-pill">Credential Stuffing</span>
-                        <span class="home-pill">Web Shell</span>
-                        <span class="home-pill">Data Exfiltration</span>
+                        <span class="home-pill">Unknown Attack</span>
+                        <span class="home-pill">Request Body</span>
+                        <span class="home-pill">Response Body</span>
+                        <span class="home-pill">Virtual Patching</span>
                       </div>
                     </div>
                   </div>
@@ -247,7 +254,7 @@
               <!-- CTA -->
               <div class="visual-text">
                 <a href="https://xdr.plura.io/auth/signup">
-                  <span>무료 평가판 시작하기</span>
+                  <span>AI 제로데이 무료 평가</span>
                   <img src="../res/images/icon_right_white.png" alt="">
                 </a>
               </div>
@@ -281,7 +288,7 @@
                         <path d="m13.2 6.7-4.4 6h3l-1 4.6 4.5-6.2h-3l.9-4.4Z" fill="currentColor"/>
                       </svg>
                     </span>
-                    <span class="quick-copy">Zero-day<small>AI 기반 신종 공격 탐지</small></span>
+                    <span class="quick-copy">Zero-day<small>AI 탐지·XDR 대응</small></span>
                     <img src="../res/images/icon_right_white.png" alt="" class="quick-arrow">
                   </a>
                 </li>
@@ -316,13 +323,13 @@
                   <div class="swiper-slide">
                     <div class="img"><img src="../res/images/img_mc_01.png" alt=""></div>
                     <div class="text">
-                      <span class="tagline">AI-XDR 중앙 분석 엔진</span>
+                      <span class="tagline zero-day-tagline">AI 제로데이 상관분석 엔진</span>
                       <strong>통합보안이벤트관리 SIEM</strong>
-                      <p class="mini-copy">WAF·EDR·Forensic 로그를 통합해<br/>공격 흐름을 맥락으로 분석합니다.</p>
+                      <p class="mini-copy">웹·서버·PC·계정·포렌식 로그를 AI로 연결해<br/>알려지지 않은 공격 흐름을 분석합니다.</p>
                       <ul>
+                        <li>AI 기반 제로데이·우회 공격 상관분석</li>
                         <li>MITRE ATT&amp;CK 기반 전술·기법 매핑</li>
                         <li>웹·서버·PC·계정 행위 상관분석</li>
-                        <li>랜섬웨어·APT·크리덴셜 스터핑 탐지</li>
                         <li>개인정보·민감정보 유출 징후 분석</li>
                         <li>PLURA-WAF·EDR 연동 차단 및 관제 연계</li>
                       </ul>
@@ -333,11 +340,11 @@
                   <div class="swiper-slide">
                     <div class="img"><img src="../res/images/img_mc_03.png" alt=""></div>
                     <div class="text">
-                      <span class="tagline">서버·PC 행위 기반 탐지</span>
+                      <span class="tagline">서버·PC 제로데이 행위 탐지</span>
                       <strong>호스트보안 EDR</strong>
-                      <p class="mini-copy">프로세스·파일·레지스트리·네트워크·계정 행위를<br/>연결 분석해 침해 흐름을 추적합니다.</p>
+                      <p class="mini-copy">프로세스·파일·네트워크·계정 행위를 AI로 연결해<br/>알려지지 않은 침해 흐름을 추적합니다.</p>
                       <ul>
-                        <li>ATT&amp;CK 기반 APT·랜섬웨어 대응</li>
+                        <li>ATT&amp;CK 기반 제로데이·APT·랜섬웨어 대응</li>
                         <li>DLL 인젝션·리버스 셸·권한 상승 탐지</li>
                         <li>Windows·Linux·macOS 감사 로그 분석</li>
                         <li>웹 공격 이후 서버 명령 실행 연계 분석</li>
@@ -350,15 +357,15 @@
                   <div class="swiper-slide">
                     <div class="img"><img src="../res/images/img_mc_04.png" alt=""></div>
                     <div class="text">
-                      <span class="tagline">본문 분석 기반 웹 공격 대응</span>
+                      <span class="tagline zero-day-tagline">AI 본문 분석 기반 제로데이 대응</span>
                       <strong>웹방화벽 WAF</strong>
-                      <p class="mini-copy">요청·응답 본문과 로그인 행위를 연결 분석해<br/>우회 공격과 데이터 유출을 포착합니다.</p>
+                      <p class="mini-copy">요청·응답 본문을 AI가 분석해<br/>시그니처 없는 우회·변형 공격을 찾습니다.</p>
                       <ul>
-                        <li>OWASP Top 10 웹 공격 탐지·차단</li>
+                        <li>AI 기반 제로데이·우회 웹 공격 탐지</li>
                         <li>SQL Injection·XSS·웹셸 업로드 대응</li>
                         <li>크리덴셜 스터핑·브루트포스 차단</li>
                         <li>응답 본문 기반 데이터 유출 징후 분석</li>
-                        <li>SIEM·EDR 연동으로 공격 체인 추적</li>
+                        <li>SIEM·EDR 연동 차단·격리·가상패치</li>
                       </ul>
                     </div>
                     <a href="platform_waf.html" class="more"><img src="../res/images/icon_arrow.png" alt=""><span>more</span></a>
@@ -428,7 +435,7 @@
 						<a href="casestudy.html">
 							<div class="thumb" style="background-image:url(../res/images/main_quick_03.png);"></div>
 							<div class="text">
-								<strong>CASE STUDY</strong><span>공격 대응 시나리오</span>
+								<strong>CASE STUDY</strong><span>제로데이·계정 공격 대응</span>
 							</div>
 						</a>
 					</li>
