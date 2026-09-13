@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "HTML files": 34,
+    "Local references": 1552,
+    "Anchor references": 83
+  },
+  "content_pages": 29,
+  "core_pages": 19,
+  "supporting_pages": 10,
+  "font_files": 0,
+  "unique_external_references": 56,
+  "errors": []
+}

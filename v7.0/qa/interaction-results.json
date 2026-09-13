@@ -1,0 +1,59 @@
+{
+  "tests": [
+    {
+      "test": "메인 증거 탭 / 키보드 ArrowRight·Home",
+      "pass": true
+    },
+    {
+      "test": "메인 시나리오 탭 3종",
+      "pass": true
+    },
+    {
+      "test": "PC 메뉴 단일 열림 / Escape 닫기",
+      "pass": true
+    },
+    {
+      "test": "모바일 메뉴 / 배경 inert / Escape",
+      "pass": true
+    },
+    {
+      "test": "자료실 필터·검색·결과 없음·복원",
+      "pass": true
+    },
+    {
+      "test": "기존 제품 이미지 확대 / Escape",
+      "pass": true
+    },
+    {
+      "test": "FAQ 펼침",
+      "pass": true
+    },
+    {
+      "test": "상담 필수값·공백 검증 / 로컬 초안·복사 대체",
+      "pass": true
+    },
+    {
+      "test": "상담 TXT 다운로드 / 미접수 안내",
+      "pass": true
+    },
+    {
+      "test": "단일 HTML 미리보기 시작 / 29개 메뉴",
+      "pass": true
+    },
+    {
+      "test": "미리보기 내부 페이지 이동 / 상담 쿼리 유지",
+      "pass": true
+    },
+    {
+      "test": "미리보기 29개 페이지 전체 라우팅",
+      "pass": true
+    },
+    {
+      "test": "단일 HTML 모바일 화면 / 메뉴",
+      "pass": true
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "javascript_errors": []
+}
