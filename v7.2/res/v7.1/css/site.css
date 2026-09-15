@@ -195,7 +195,7 @@ svg.icon{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.65;
 .sample-tag{font-size:10px}
 .threat-panel-top .mono{font-size:10px}}
 :root{--accent:#2458e8;--text:#162640;--muted:#657188;--surface:#f4f7fc;--line:#dfe6f1;--paper:#fff;--dark:#11294f;--radius:12px}
-.a-hero{background:linear-gradient(110deg,#fff 40%,#f0f5ff 100%);padding:40px 0 40px}
+.a-hero{background:linear-gradient(110deg,#fff 40%,#f0f5ff 100%);padding:82px 0 40px}
 .a-hero-grid{display:grid;grid-template-columns:1fr 1.07fr;align-items:center;gap:60px}
 .a-category{display:flex;align-items:center;gap:9px;color:var(--accent);font-size:15px;letter-spacing:.015em;font-weight:700}
 .a-category::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:2px}
@@ -585,3 +585,191 @@ a,input,button,select,textarea,summary{touch-action:manipulation}input:focus-vis
 }
 @media(max-width:379px){.v71-home .a-proof-strip{grid-template-columns:1fr;row-gap:22px}.v71-home .a-proof-strip>div{align-items:center}.v71-home .a-proof-strip .icon{margin-top:0}}
 @media print{.zt-model-grid,.zt-support-grid,.zt-detail-grid,.zt-workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.zt-model-item,.zt-support-card,.zt-detail-card{break-inside:avoid}.zt-count{break-inside:avoid}}
+
+/* ========================================================================== 
+   PLURA | Homepage console hover only | 2026-09-15
+   Append after the existing site.css. No HTML or JavaScript changes required.
+   Scope: .a-hero .a-visual > .a-console and its children only.
+   Does not change hero spacing, typography, dimensions, links or mobile layout.
+   Pointer hover only; no idle loop; reduced motion keeps color feedback only.
+   ========================================================================== */
+@media (hover: hover) and (pointer: fine) {
+  /* Panel: retain its position to avoid hover flicker at the edges. */
+  .a-hero .a-visual > .a-console {
+    transition: border-color 240ms ease, box-shadow 320ms ease;
+  }
+
+  .a-hero .a-visual > .a-console:hover {
+    border-color: #a9bff5;
+    box-shadow: 0 28px 64px rgba(32, 67, 133, 0.17),
+                0 0 0 3px rgba(36, 88, 232, 0.045);
+  }
+
+  .a-hero .a-visual > .a-console .a-console-head {
+    transition: background-color 240ms ease;
+  }
+
+  .a-hero .a-visual > .a-console:hover .a-console-head {
+    background-color: #1d365b;
+  }
+
+  .a-hero .a-visual > .a-console .console-brand::before {
+    transition: box-shadow 280ms ease, background-color 280ms ease;
+  }
+
+  .a-hero .a-visual > .a-console:hover .console-brand::before {
+    background-color: #a6c6ff;
+    box-shadow: 0 0 0 4px rgba(117, 163, 255, 0.13),
+                0 0 12px rgba(117, 163, 255, 0.55);
+  }
+
+  /* WEB > HOST > AI > SOC: each stage responds independently. */
+  .a-hero .a-visual > .a-console .a-flow-icon {
+    transition: transform 240ms cubic-bezier(0.2, 0.7, 0.2, 1),
+                background-color 220ms ease, border-color 220ms ease,
+                color 220ms ease, box-shadow 240ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-flow-step > b,
+  .a-hero .a-visual > .a-console .a-flow-step > small {
+    transition: color 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-flow-step:hover .a-flow-icon {
+    transform: translateY(-4px) scale(1.06);
+    color: #fff;
+    background-color: #2458e8;
+    border-color: #2458e8;
+    box-shadow: 0 8px 18px rgba(36, 88, 232, 0.23);
+  }
+
+  .a-hero .a-visual > .a-console .a-flow-step:hover > b,
+  .a-hero .a-visual > .a-console .a-flow-step:hover > small {
+    color: #2458e8;
+  }
+
+  /* Read-only example rows: visual feedback, not new buttons or links. */
+  .a-hero .a-visual > .a-console .a-console-row {
+    transition: background-color 220ms ease, box-shadow 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row > span:first-child {
+    transition: color 220ms ease, background-color 220ms ease,
+                border-color 220ms ease, transform 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row > div {
+    transition: transform 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row strong {
+    transition: color 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row > .icon {
+    transition: color 220ms ease, transform 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row:hover {
+    background-color: #f2f6ff;
+    box-shadow: -8px 0 0 #f2f6ff, 8px 0 0 #f2f6ff;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row:hover > span:first-child {
+    color: #fff;
+    background-color: #2458e8;
+    border-color: #2458e8;
+    transform: translateX(3px);
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row:hover > div {
+    transform: translateX(3px);
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row:hover strong {
+    color: #2458e8;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-row:hover > .icon {
+    color: #2458e8;
+    transform: translateX(3px);
+  }
+
+  /* AI summary: soft blue emphasis without moving the text. */
+  .a-hero .a-visual > .a-console .a-console-summary {
+    transition: background-color 240ms ease, box-shadow 240ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-summary > .icon {
+    transition: transform 240ms ease, color 220ms ease;
+  }
+
+  .a-hero .a-visual > .a-console .a-console-summary:hover {
+    background-color: #e7efff;
+    box-shadow: inset 0 0 0 1px #c8d8fc, 0 6px 16px rgba(36, 88, 232, 0.07);
+  }
+
+  .a-hero .a-visual > .a-console .a-console-summary:hover > .icon {
+    color: #1649cf;
+    transform: scale(1.12);
+  }
+
+  /* Decorative sidebar icons keep their existing non-interactive semantics. */
+  .a-hero .a-visual > .a-console .a-side-icons > .icon {
+    transition: transform 220ms ease, color 220ms ease;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .a-hero .a-visual > .a-console .a-side-icons > .icon:hover {
+    color: #2458e8;
+    transform: scale(1.14);
+  }
+}
+
+/* A single data-flow pass per panel hover; never plays at rest or on touch. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .a-hero .a-visual > .a-console:hover .a-flow-step:not(:last-child)::after {
+    background-image: linear-gradient(90deg,
+      transparent 0%, transparent 34%,
+      rgba(36, 88, 232, 0.8) 48%, #789dff 52%,
+      transparent 66%, transparent 100%);
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    animation: plura-console-flow-pass 1100ms ease-in-out 1 both;
+  }
+
+  .a-hero .a-visual > .a-console:hover .a-flow-step:nth-child(2)::after {
+    animation-delay: 120ms;
+  }
+
+  .a-hero .a-visual > .a-console:hover .a-flow-step:nth-child(3)::after {
+    animation-delay: 240ms;
+  }
+}
+
+@keyframes plura-console-flow-pass {
+  from { background-position: 100% 0; }
+  to   { background-position: 0% 0; }
+}
+
+/* Respect the visitor's reduced-motion preference within this panel only. */
+@media (prefers-reduced-motion: reduce) {
+  .a-hero .a-visual > .a-console,
+  .a-hero .a-visual > .a-console *,
+  .a-hero .a-visual > .a-console *::before,
+  .a-hero .a-visual > .a-console *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .a-hero .a-visual > .a-console .a-flow-step:hover .a-flow-icon,
+  .a-hero .a-visual > .a-console .a-console-row:hover > span:first-child,
+  .a-hero .a-visual > .a-console .a-console-row:hover > div,
+  .a-hero .a-visual > .a-console .a-console-row:hover > .icon,
+  .a-hero .a-visual > .a-console .a-console-summary:hover > .icon,
+  .a-hero .a-visual > .a-console .a-side-icons > .icon:hover {
+    transform: none;
+  }
+}
+/* END: PLURA homepage console hover only. */
