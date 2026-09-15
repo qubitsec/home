@@ -195,7 +195,7 @@ svg.icon{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.65;
 .sample-tag{font-size:10px}
 .threat-panel-top .mono{font-size:10px}}
 :root{--accent:#2458e8;--text:#162640;--muted:#657188;--surface:#f4f7fc;--line:#dfe6f1;--paper:#fff;--dark:#11294f;--radius:12px}
-.a-hero{background:linear-gradient(110deg,#fff 40%,#f0f5ff 100%);padding:82px 0 40px}
+.a-hero{background:linear-gradient(110deg,#fff 40%,#f0f5ff 100%);padding:40px 0 40px}
 .a-hero-grid{display:grid;grid-template-columns:1fr 1.07fr;align-items:center;gap:60px}
 .a-category{display:flex;align-items:center;gap:9px;color:var(--accent);font-size:15px;letter-spacing:.015em;font-weight:700}
 .a-category::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:2px}
