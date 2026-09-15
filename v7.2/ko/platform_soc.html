@@ -17,6 +17,104 @@
 <link href="../res/v7.1/css/site.css?v=7.1.2-20260915-zerotrust" rel="stylesheet"/>
 <link href="../res/v7.1/css/pages.css?v=7.1.2-20260915-zerotrust" rel="stylesheet"/>
 <script defer="" src="../res/v7.1/js/site.js?v=7.1.2-20260915-zerotrust"></script>
+
+<!-- This page presents reporting content directly; no sample download is required. -->
+<style id="platform-soc-inline-content">
+/* Page-scoped additions only; common CSS/JS files are unchanged. */
+/* site.css supplies scroll-padding-top; add the local navigation offset only. */
+body[data-page="platform_soc.html"] .v71-pages section[id] {
+  scroll-margin-top: 50px;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-intro {
+  max-width: 780px;
+  margin-top: 20px;
+  color: #5c6f89;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-card {
+  min-width: 0;
+  padding: 28px 25px 30px;
+  border: 1px solid #dce5f4;
+  border-radius: 12px;
+  background: #fff;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 23px;
+  color: var(--accent);
+  background: #f1f5ff;
+  border-radius: 10px;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-icon .icon {
+  width: 24px;
+  height: 24px;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-card h3 {
+  margin-bottom: 13px;
+  color: #1e3456;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-card p {
+  color: #5c6f89;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+  color: #5c6f89;
+  font-size: 15px;
+  line-height: 1.85;
+}
+body[data-page="platform_soc.html"] .platform-soc-report-note .icon {
+  width: 19px;
+  height: 19px;
+  margin-top: 4px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+@media (max-width: 1100px) {
+  body[data-page="platform_soc.html"] .platform-soc-report-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-page="platform_soc.html"] .platform-soc-report-card { padding: 27px; }
+}
+@media (max-width: 600px) {
+  body[data-page="platform_soc.html"] .platform-soc-report-intro {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  body[data-page="platform_soc.html"] .platform-soc-report-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  body[data-page="platform_soc.html"] .platform-soc-report-card { padding: 25px; }
+  body[data-page="platform_soc.html"] .platform-soc-report-icon { margin-bottom: 19px; }
+  body[data-page="platform_soc.html"] .platform-soc-report-card h3 { font-size: 22px; }
+  body[data-page="platform_soc.html"] .platform-soc-report-note { font-size: 14px; }
+}
+@media print {
+  body[data-page="platform_soc.html"] .platform-soc-report-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-page="platform_soc.html"] .platform-soc-report-card { break-inside: avoid; }
+}
+</style>
 </head>
 <body data-page="platform_soc.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -26,7 +124,43 @@
 <div class="header-actions"><a class="login-link" href="https://xdr.plura.io/auth/login" rel="noopener noreferrer" target="_blank">로그인<span class="sr-only"> (새 탭)</span></a><a class="btn btn-primary" href="contact.html">도입 상담 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
 <button aria-controls="primary-nav" aria-expanded="false" aria-label="전체 메뉴 열기" class="menu-button" id="menu-toggle" type="button"><span data-menu-icon=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></span><span data-close-icon="" hidden=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></span></button>
 </div></header>
-<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>AI 보안관제</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">PLURA-XDR + SOC</span></nav><div class="subhero-grid"><div><p class="eyebrow">PLATFORM + SECURITY OPERATIONS</p><h1>탐지부터 대응 운영까지,<br/><span class="text-mint">PLURA-XDR + SOC.</span></h1><p class="lead">PLURA-XDR이라는 통합 플랫폼 위에서 AI 분석과 전문 관제를 함께 제공합니다. 로그 준비 상태부터 사건 검토, 대응 이력과 후속 개선까지 연결합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html?plan=soc">플랫폼 + 관제 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a><a class="btn btn-ghost" href="soc-operation.html">관제 운영 방식<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-15a3 3 0 0 1 0 6m4 9v-3a5 5 0 0 0-4-5"></path></svg><p class="aside-label">BUILT ON PLURA-XDR</p><h2>플랫폼을 아는 관제.<br/>대응을 이어가는 운영.</h2><p>기술과 관제를 별개의 상품으로 나누지 않고, 같은 보안 데이터와 대응 맥락에서 운영합니다.</p><div class="tag-row"><span>PLATFORM</span><span>AI ANALYSIS</span><span>SOC</span></div></aside></div></div></section><nav aria-label="이 페이지의 내용" class="local-nav"><div class="container"><a href="#service">서비스 흐름</a><a href="#deliverables">고객 제공 결과</a><a href="#roles">역할과 범위</a><a href="#faq">자주 묻는 질문</a></div></nav><section class="section" id="service"><div class="container"><div class="section-head"><div><p class="eyebrow">ONE OPERATIONAL FLOW</p><h2>경보 확인을 넘어,<br/>사건의 다음 단계까지 연결합니다.</h2></div></div><div class="step-list"><article class="large-step"><span class="mono">01</span><h3>탐지할 수 있는 환경 준비</h3><p>감사 정책, 웹 로그와 호스트 데이터의 생성·수집 상태를 점검합니다. 관제 대상과 확인 가능한 범위를 정합니다.</p></article><article class="large-step"><span class="mono">02</span><h3>분석과 사건 검토</h3><p>PLURA-XDR의 로그와 AI 분석을 바탕으로 공격 징후와 연관 자산을 확인합니다. 판단 근거와 남은 질문을 구분합니다.</p></article><article class="large-step"><span class="mono">03</span><h3>합의된 절차에 따른 대응</h3><p>허용된 조치와 승인 대상 조치를 구분하고 업무 영향을 고려해 진행합니다. 정책·승인·실행 결과를 남깁니다.</p></article><article class="large-step"><span class="mono">04</span><h3>고객 통보와 후속 개선</h3><p>사건 요약, 확인 범위와 대응 이력을 전달합니다. 개선 권고와 후속 점검 사항을 운영에 반영합니다.</p></article></div></div></section><section class="section section-soft" id="deliverables"><div class="container"><div class="split"><div><p class="eyebrow">WHAT YOU RECEIVE</p><h2>고객에게 남는 것은<br/>경보가 아니라 판단의 근거.</h2><p>무엇을 확인했고, 무엇을 조치했으며, 어떤 확인이 더 필요한지. 담당자와 의사결정자가 이해할 수 있는 결과로 정리합니다.</p><ul class="check-list"><li><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m5 12 4 4L19 6"></path></svg><span>관련 로그와 분석의 근거</span></li><li><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m5 12 4 4L19 6"></path></svg><span>확인된 영향 범위와 미확인 항목</span></li><li><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m5 12 4 4L19 6"></path></svg><span>승인 주체와 대응 실행 이력</span></li><li><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m5 12 4 4L19 6"></path></svg><span>후속 개선 권고와 재점검 사항</span></li></ul><div class="btn-row"><a class="btn btn-line" download="" href="../res/v7.1/downloads/PLURA-SOC-report-sample.md">보고 구성 예시 다운로드<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"></path></svg></a></div></div><div class="report-preview"><div class="report-top"><b class="mono">PLURA-XDR + SOC</b><span>보고 구성 예시</span></div><h3>무슨 일이 있었고,<br/>어떻게 대응했는지.</h3><p>경보 목록을 넘어, 의사결정에 필요한 결과로.</p><div class="report-lines"><div class="report-line"><b>판단 근거</b><span>관련 로그와 확인한 공격 흔적</span></div><div class="report-line"><b>영향 범위</b><span>대상 자산·계정과 미확인 항목</span></div><div class="report-line"><b>대응 이력</b><span>정책·승인·실행 결과와 담당자</span></div><div class="report-line"><b>후속 권고</b><span>설정 개선과 재점검할 사항</span></div></div><div class="report-bottom">실제 고객 보고서가 아닌 제공 항목의 설명용 예시입니다.</div></div></div></div></section><section class="section" id="roles"><div class="container"><div class="section-head"><div><p class="eyebrow">SCOPE &amp; RESPONSIBILITY</p><h2>누가, 언제, 어디까지 운영하는지<br/>도입 전에 명확하게 정합니다.</h2></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div><h3>운영과 통보</h3><p>시스템 탐지와 전문인력 확인 시간을 구분하고, 사건 등급·통보 채널·연락망을 정합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"></path><path d="m8 12 3 3 5-6"></path></svg></div><h3>대응과 승인</h3><p>허용된 자동 조치, 고객 승인이 필요한 조치, 업무 영향 검토 대상을 구분합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"></path></svg></div><h3>보고와 후속 지원</h3><p>사건별·정기 보고 항목과 제공 주기, 원격 분석·현장 대응·복구 지원의 경계를 확인합니다.</p></article></div><div class="btn-row"><a class="btn btn-line" href="soc-operation.html">관제 운영 방식 확인<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div><p class="note">이 페이지는 서비스 구조를 설명합니다. 24시간 전문인력 관제, 특정 시간 내 통보·해결, 모든 사고의 현장 대응을 일괄 보장하지 않습니다. 구체적인 범위와 SLA는 계약 시 확정합니다.</p></div></section><section class="section section-soft" id="faq"><div class="container"><div class="section-head"><div><p class="eyebrow">FAQ</p><h2>도입 전에 궁금한 점.</h2></div></div><div class="faq-list"><details class="faq-item"><summary>자체 보안팀이 있어도 관제를 함께 이용할 수 있나요?</summary><div>자체 운영과 관제 포함 운영을 선택할 수 있습니다. 고객 보안팀과 전문 관제의 공동 운영이 필요한 경우, 사건 검토·승인·조치·보고 역할을 협의해 정합니다.</div></details><details class="faq-item"><summary>관제 서비스는 PLURA-XDR과 별개인가요?</summary><div>PLURA-SOC는 PLURA-XDR의 보안 데이터와 분석·대응 기능을 기반으로 운영하는 서비스입니다. 플랫폼 구성과 서비스 범위를 함께 검토합니다.</div></details><details class="faq-item"><summary>사고가 발생하면 복구까지 포함되나요?</summary><div>원격 조사, 현장 대응, 시스템 복구와 증거 보존은 서로 다른 업무입니다. 포함·제외 범위와 고객 수행 사항은 도입 계약에서 각각 확인합니다.</div></details></div></div></section><section class="final-cta"><div class="container"><div><h2>플랫폼과 관제를,<br/>하나의 도입으로 연결하세요.</h2><p>우리 조직의 보호 대상과 관제 운영 범위를 함께 확인합니다.</p></div><a class="btn btn-dark" href="contact.html?plan=soc">PLURA-XDR + SOC 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
+<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>AI 보안관제</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">PLURA-XDR + SOC</span></nav><div class="subhero-grid"><div><p class="eyebrow">PLATFORM + SECURITY OPERATIONS</p><h1>탐지부터 대응 운영까지,<br/><span class="text-mint">PLURA-XDR + SOC.</span></h1><p class="lead">PLURA-XDR이라는 통합 플랫폼 위에서 AI 분석과 전문 관제를 함께 제공합니다. 로그 준비 상태부터 사건 검토, 대응 이력과 후속 개선까지 연결합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html?plan=soc">플랫폼 + 관제 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a><a class="btn btn-ghost" href="soc-operation.html">관제 운영 방식<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-15a3 3 0 0 1 0 6m4 9v-3a5 5 0 0 0-4-5"></path></svg><p class="aside-label">BUILT ON PLURA-XDR</p><h2>플랫폼을 아는 관제.<br/>대응을 이어가는 운영.</h2><p>기술과 관제를 별개의 상품으로 나누지 않고, 같은 보안 데이터와 대응 맥락에서 운영합니다.</p><div class="tag-row"><span>PLATFORM</span><span>AI ANALYSIS</span><span>SOC</span></div></aside></div></div></section><nav aria-label="이 페이지의 내용" class="local-nav"><div class="container"><a href="#service">서비스 흐름</a><a href="#deliverables">보고·공유</a><a href="#roles">역할과 범위</a><a href="#faq">자주 묻는 질문</a></div></nav><section class="section" id="service"><div class="container"><div class="section-head"><div><p class="eyebrow">ONE OPERATIONAL FLOW</p><h2>경보 확인을 넘어,<br/>사건의 다음 단계까지 연결합니다.</h2></div></div><div class="step-list"><article class="large-step"><span class="mono">01</span><h3>탐지할 수 있는 환경 준비</h3><p>감사 정책, 웹 로그와 호스트 데이터의 생성·수집 상태를 점검합니다. 관제 대상과 확인 가능한 범위를 정합니다.</p></article><article class="large-step"><span class="mono">02</span><h3>분석과 사건 검토</h3><p>PLURA-XDR의 로그와 AI 분석을 바탕으로 공격 징후와 연관 자산을 확인합니다. 판단 근거와 남은 질문을 구분합니다.</p></article><article class="large-step"><span class="mono">03</span><h3>합의된 절차에 따른 대응</h3><p>허용된 조치와 승인 대상 조치를 구분하고 업무 영향을 고려해 진행합니다. 정책·승인·실행 결과를 남깁니다.</p></article><article class="large-step"><span class="mono">04</span><h3>고객 통보와 후속 개선</h3><p>사건 요약, 확인 범위와 대응 이력을 전달합니다. 개선 권고와 후속 점검 사항을 운영에 반영합니다.</p></article></div></div></section><section class="section section-soft" id="deliverables" aria-labelledby="platform-soc-deliverables-title">
+<div class="container">
+<div class="section-head">
+<div>
+<p class="eyebrow">REPORTING &amp; SHARING</p>
+<h2 id="platform-soc-deliverables-title">고객에게 남는 것은<br/>경보가 아니라 판단의 근거.</h2>
+<p class="platform-soc-report-intro">무엇을 확인했고, 무엇을 조치했으며, 어떤 확인이 더 필요한지. 담당자와 의사결정자가 이해할 수 있는 결과로 정리합니다.</p>
+</div>
+</div>
+<div class="platform-soc-report-grid">
+<article aria-labelledby="platform-soc-report-1" class="platform-soc-report-card">
+<div class="platform-soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><rect height="17" rx="2" width="14" x="5" y="4"></rect><path d="M9 4V3h6v1M9 9h6M9 13h6M9 17h4"></path></svg></div>
+<h3 id="platform-soc-report-1">사건 요약</h3>
+<p>어떤 징후가 발견되었고, 어떤 자산과 서비스가 관련되어 있는지 정리합니다.</p>
+</article>
+<article aria-labelledby="platform-soc-report-2" class="platform-soc-report-card">
+<div class="platform-soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5M8 10.5h5M10.5 8v5"></path></svg></div>
+<h3 id="platform-soc-report-2">분석 근거</h3>
+<p>관련 로그와 행위의 연결 관계를 설명하고, 확인된 사실과 추가 확인이 필요한 내용을 구분합니다.</p>
+</article>
+<article aria-labelledby="platform-soc-report-3" class="platform-soc-report-card">
+<div class="platform-soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7v5l3.5 2"></path></svg></div>
+<h3 id="platform-soc-report-3">대응 이력</h3>
+<p>권고·승인·실행 내역과 조치 결과를 구분해 정리합니다.</p>
+</article>
+<article aria-labelledby="platform-soc-report-4" class="platform-soc-report-card">
+<div class="platform-soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M8 5h12M8 12h12M8 19h12M2 5l1.5 1.5L6 3M2 12l1.5 1.5L6 10M2 19l1.5 1.5L6 17"></path></svg></div>
+<h3 id="platform-soc-report-4">후속 조치</h3>
+<p>남아 있는 위험과 고객 확인 사항, 개선 및 재점검 항목을 안내합니다.</p>
+</article>
+</div>
+<p class="platform-soc-report-note">
+<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<span>보고 항목·주기·전달 방식은 관제 서비스 범위에 따라 협의합니다.</span>
+</p>
+</div>
+</section><section class="section" id="roles"><div class="container"><div class="section-head"><div><p class="eyebrow">SCOPE &amp; RESPONSIBILITY</p><h2>누가, 언제, 어디까지 운영하는지<br/>도입 전에 명확하게 정합니다.</h2></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div><h3>운영과 통보</h3><p>시스템 탐지와 전문인력 확인 시간을 구분하고, 사건 등급·통보 채널·연락망을 정합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"></path><path d="m8 12 3 3 5-6"></path></svg></div><h3>대응과 승인</h3><p>허용된 자동 조치, 고객 승인이 필요한 조치, 업무 영향 검토 대상을 구분합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"></path></svg></div><h3>보고와 후속 지원</h3><p>사건별·정기 보고 항목과 제공 주기, 원격 분석·현장 대응·복구 지원의 경계를 확인합니다.</p></article></div><div class="btn-row"><a class="btn btn-line" href="soc-operation.html">관제 운영 방식 확인<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div><p class="note">이 페이지는 서비스 구조를 설명합니다. 24시간 전문인력 관제, 특정 시간 내 통보·해결, 모든 사고의 현장 대응을 일괄 보장하지 않습니다. 구체적인 범위와 SLA는 계약 시 확정합니다.</p></div></section><section class="section section-soft" id="faq"><div class="container"><div class="section-head"><div><p class="eyebrow">FAQ</p><h2>도입 전에 궁금한 점.</h2></div></div><div class="faq-list"><details class="faq-item"><summary>자체 보안팀이 있어도 관제를 함께 이용할 수 있나요?</summary><div>자체 운영과 관제 포함 운영을 선택할 수 있습니다. 고객 보안팀과 전문 관제의 공동 운영이 필요한 경우, 사건 검토·승인·조치·보고 역할을 협의해 정합니다.</div></details><details class="faq-item"><summary>관제 서비스는 PLURA-XDR과 별개인가요?</summary><div>PLURA-SOC는 PLURA-XDR의 보안 데이터와 분석·대응 기능을 기반으로 운영하는 서비스입니다. 플랫폼 구성과 서비스 범위를 함께 검토합니다.</div></details><details class="faq-item"><summary>사고가 발생하면 복구까지 포함되나요?</summary><div>원격 조사, 현장 대응, 시스템 복구와 증거 보존은 서로 다른 업무입니다. 포함·제외 범위와 고객 수행 사항은 도입 계약에서 각각 확인합니다.</div></details></div></div></section><section class="final-cta"><div class="container"><div><h2>플랫폼과 관제를,<br/>하나의 도입으로 연결하세요.</h2><p>우리 조직의 보호 대상과 관제 운영 범위를 함께 확인합니다.</p></div><a class="btn btn-dark" href="contact.html?plan=soc">PLURA-XDR + SOC 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
 <footer class="site-footer v71-footer"><div class="wrap">
 <div class="footer-main"><div class="footer-brand"><a aria-label="PLURA 홈페이지" href="index.html"><img alt="PLURA" height="68" src="../res/v7.1/images/logo_over.png" width="230"/></a><p>AI 공격을 AI가 방어합니다.<br/>탐지부터 대응, AI 보안관제까지 하나로.</p><p class="version-text">PLURA WEBSITE / V7.1</p></div><div class="footer-col"><h2>플랫폼</h2><a href="platform_xdr.html">PLURA-XDR</a><a href="ai.html">AI 분석·대응</a><a href="mitreattack.html">마이터 어택 기반 탐지</a><a href="platform.html">통합 보안 기능</a><a href="platform_soc.html">AI 보안관제</a><a href="zta.html">제로트러스트</a></div><div class="footer-col"><h2>위협 대응</h2><a href="web-attack.html">웹 해킹·웹셸</a><a href="underattack.html">크리덴셜 스터핑</a><a href="data-exfiltration.html">데이터 유출</a><a href="ransomware.html">랜섬웨어</a><a href="zero-day.html">제로데이</a></div><div class="footer-col"><h2>고객·자료</h2><a href="customer.html">고객 사례</a><a href="validation.html">기술 검증·시연</a><a href="video.html">영상·자료실</a><a href="https://docs.plura.io/ko/" rel="noopener noreferrer" target="_blank">기술 문서 ↗</a><a href="https://blog.plura.io/ko/" rel="noopener noreferrer" target="_blank">블로그 ↗</a></div><div class="footer-col"><h2>도입·지원</h2><a href="adoption.html">도입 안내</a><a href="deployment.html">배포·데이터 보호</a><a href="contact.html">통합 도입 상담</a><a href="https://docs.plura.io/ko/faq/comm/" rel="noopener noreferrer" target="_blank">고객지원 ↗</a><a href="https://www.qubitsec.com/" rel="noopener noreferrer" target="_blank">회사 소개 ↗</a><a href="https://www.qubitsec.com/recruit" rel="noopener noreferrer" target="_blank">채용 ↗</a></div></div>
 <div class="footer-info"><p>큐비트시큐리티 주식회사 · 대표이사 신승민 · 사업자등록번호 124-87-48126<br/>서울시 강남구 강남대로 318, 9층 (역삼동, 타워837) · 통신판매업 신고번호 2016-경기성남-0313</p><p><a href="tel:07088020306">070-8802-0306</a><br/><a href="mailto:plura@qubitsec.com">plura@qubitsec.com</a></p></div><div class="footer-bottom"><span>© 2014–2026 Qubit Security Inc. All rights reserved.</span><div class="footer-legal"><a href="https://w.plura.io/index.html?doc=/policy/ko/privacy.md" rel="noopener noreferrer" target="_blank">개인정보 처리방침 ↗</a><a href="https://w.plura.io/index.html?doc=/policy/ko/terms.md" rel="noopener noreferrer" target="_blank">이용약관 ↗</a></div><div class="footer-languages"><span aria-current="true">한국어</span><a aria-label="English 기존 영문 사이트 새 탭" href="https://www.plura.io/en/index.html" rel="noopener noreferrer" target="_blank">EN ↗</a><a aria-label="日本語 기존 일본어 사이트 새 탭" href="https://www.plura.io/ja/index.html" rel="noopener noreferrer" target="_blank">JA ↗</a></div></div></div></footer>
