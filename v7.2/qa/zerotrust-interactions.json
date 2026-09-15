@@ -1,0 +1,75 @@
+{
+  "mode": "Offline Chromium temporary inline preview, original unmodified site.js.",
+  "results": [
+    {
+      "test": "desktop_zero_trust_menu_visible",
+      "pass": true
+    },
+    {
+      "test": "desktop_menu_escape",
+      "pass": true
+    },
+    {
+      "test": "tab_click_1440_tab-A-web",
+      "pass": true
+    },
+    {
+      "test": "tab_click_1440_tab-A-identity",
+      "pass": true
+    },
+    {
+      "test": "tab_click_1440_tab-A-data",
+      "pass": true
+    },
+    {
+      "test": "tab_click_1440_tab-A-zero",
+      "pass": true
+    },
+    {
+      "test": "tabs_keyboard_1440",
+      "pass": true
+    },
+    {
+      "test": "home_zero_trust_anchor_1440",
+      "pass": true,
+      "top": 105.3125
+    },
+    {
+      "test": "mobile_zero_trust_menu_visible",
+      "pass": true
+    },
+    {
+      "test": "mobile_background_inert",
+      "pass": true
+    },
+    {
+      "test": "mobile_menu_close",
+      "pass": true
+    },
+    {
+      "test": "tab_click_390_tab-A-web",
+      "pass": true
+    },
+    {
+      "test": "tab_click_390_tab-A-identity",
+      "pass": true
+    },
+    {
+      "test": "tab_click_390_tab-A-data",
+      "pass": true
+    },
+    {
+      "test": "tab_click_390_tab-A-zero",
+      "pass": true
+    },
+    {
+      "test": "tabs_keyboard_390",
+      "pass": true
+    },
+    {
+      "test": "home_zero_trust_anchor_390",
+      "pass": true,
+      "top": 84.828125
+    }
+  ]
+}

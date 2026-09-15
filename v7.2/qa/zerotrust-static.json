@@ -1,0 +1,252 @@
+{
+  "local_reference_count": 1722,
+  "errors": [],
+  "navigation": [
+    {
+      "file": "index.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_xdr.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "ai.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_soc.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "soc-operation.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "threats.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "web-attack.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "underattack.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "data-exfiltration.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "ransomware.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "zero-day.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "customer.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "validation.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "video.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "trust.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "adoption.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "deployment.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "contact.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_waf.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_edr.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_siem.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_soar.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_forensic.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_vas.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_sysmon.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "platform_backup.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "mitreattack.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    },
+    {
+      "file": "zta.html",
+      "nav": 1,
+      "footer": 1,
+      "version": "7.1.2-20260915-zerotrust"
+    }
+  ],
+  "preservation": {
+    "site_js_unchanged": true,
+    "pages_css_unchanged": true,
+    "site_css_original_prefix_retained": true,
+    "redirects_unchanged": true,
+    "no_fonts_added": true,
+    "proof_text_unchanged": true,
+    "existing_key_font_sizes_unchanged_1440": true,
+    "existing_key_font_sizes_unchanged_390": true
+  },
+  "font_comparisons": [
+    {
+      "width": 1440,
+      "baseline": "before",
+      "values": {
+        ".a-category": "15px",
+        ".a-copy h1": "72px",
+        ".a-statement": "38.88px",
+        ".a-copy .lead": "17px",
+        ".section-title": "45px",
+        ".a-value-card h3": "24px",
+        ".a-value-card>p": "15px",
+        "#panel-A-web h3": "25px",
+        ".a-soc h2": "45px"
+      }
+    },
+    {
+      "width": 1440,
+      "baseline": "after",
+      "values": {
+        ".a-category": "15px",
+        ".a-copy h1": "72px",
+        ".a-statement": "38.88px",
+        ".a-copy .lead": "17px",
+        ".section-title": "45px",
+        ".a-value-card h3": "24px",
+        ".a-value-card>p": "15px",
+        "#panel-A-web h3": "25px",
+        ".a-soc h2": "45px"
+      }
+    },
+    {
+      "width": 390,
+      "baseline": "before",
+      "values": {
+        ".a-category": "13px",
+        ".a-copy h1": "52px",
+        ".a-statement": "29px",
+        ".a-copy .lead": "15px",
+        ".section-title": "30px",
+        ".a-value-card h3": "24px",
+        ".a-value-card>p": "15px",
+        "#panel-A-web h3": "22px",
+        ".a-soc h2": "30px"
+      }
+    },
+    {
+      "width": 390,
+      "baseline": "after",
+      "values": {
+        ".a-category": "13px",
+        ".a-copy h1": "52px",
+        ".a-statement": "29px",
+        ".a-copy .lead": "15px",
+        ".section-title": "30px",
+        ".a-value-card h3": "24px",
+        ".a-value-card>p": "15px",
+        "#panel-A-web h3": "22px",
+        ".a-soc h2": "30px"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2439 @@
+{
+  "static": {
+    "content_pages": 29,
+    "all_ko_html": 33,
+    "local_references_checked": 1644,
+    "errors": [],
+    "preserved_assets": {
+      "res/v7.1/css/site.css": {
+        "unchanged": true,
+        "sha256": "25d110f4f7dd000a2627ec0e747f1ffffe3988d9e69686feeb7e8301b17ee8bc"
+      },
+      "res/v7.1/css/pages.css": {
+        "unchanged": true,
+        "sha256": "12381eb7080f2b0737b45b705f48e1a91e3731cebc7984a4ff5746554af6c250"
+      },
+      "res/v7.1/js/site.js": {
+        "unchanged": true,
+        "sha256": "ff5352ffa02f178339e7823c34a40a041c9dc3267eeb78cb95576a2553f49a94"
+      }
+    }
+  },
+  "browser": [
+    {
+      "page": "adoption",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "하나의 PLURA-XDR.\n우리 조직에 맞는 운영.",
+      "mainBottom": 4008.140625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "ai",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을\nAI가 방어합니다.",
+      "mainBottom": 4504.78125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "contact",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "우리 기업의 보안 운영,\n함께 설계하겠습니다.",
+      "mainBottom": 2264.015625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "customer",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "고객의 환경에서\n쌓아온 신뢰.",
+      "mainBottom": 2912.140625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "data-exfiltration",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "유출 의심 경보를 넘어,\n확인 가능한 근거까지.",
+      "mainBottom": 3645.859375,
+      "h1Font": "53px"
+    },
+    {
+      "page": "deployment",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "배포 환경부터\n보안 데이터의 경계까지.",
+      "mainBottom": 3709.296875,
+      "h1Font": "53px"
+    },
+    {
+      "page": "index",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "PLURA-XDR",
+      "mainBottom": 4313.703125,
+      "h1Font": "72px"
+    },
+    {
+      "page": "mitreattack",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반 탐지,\n공격자의 행위를 읽습니다.",
+      "mainBottom": 4012.734375,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "여러 제품의 목록이 아니라,\n하나의 대응을 위한 연결.",
+      "mainBottom": 3198.296875,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_backup",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "필요한 근거를,\n정해진 보관 조건에 맞게.",
+      "mainBottom": 3745.453125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_edr",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반으로,\n서버·PC의 공격 행위를 탐지합니다.",
+      "mainBottom": 4364.890625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_forensic",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 이후의 질문에,\n변경 흔적으로 답합니다.",
+      "mainBottom": 3745.453125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_siem",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "흩어진 로그를 연결해,\n사건의 맥락을 분석합니다.",
+      "mainBottom": 3691.46875,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_soar",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "분석의 다음 단계,\n정책에 따라 실행합니다.",
+      "mainBottom": 2612,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_soc",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지부터 대응 운영까지,\nPLURA-XDR + SOC.",
+      "mainBottom": 3731.1875,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_sysmon",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "시스템의 운영 상태를,\n보안 분석의 맥락으로.",
+      "mainBottom": 3745.453125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_vas",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 전에,\n보안 설정과 로그 준비부터.",
+      "mainBottom": 3745.453125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_waf",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격과 계정 탈취,\n요청 본문부터 대응합니다.",
+      "mainBottom": 4198.109375,
+      "h1Font": "53px"
+    },
+    {
+      "page": "platform_xdr",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을 AI로 방어하고,\n보안 대응을 하나로.",
+      "mainBottom": 4912.390625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "ransomware",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "행위의 변화를 연결해,\n확산 대응의 근거를 확보합니다.",
+      "mainBottom": 3645.859375,
+      "h1Font": "53px"
+    },
+    {
+      "page": "soc-operation",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "관제의 범위와\n대응 절차를 명확하게.",
+      "mainBottom": 3771.578125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "threats",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "공격 유형은 달라도,\n대응은 하나의 흐름으로.",
+      "mainBottom": 3028.4375,
+      "h1Font": "53px"
+    },
+    {
+      "page": "trust",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "기술의 근거도,\n신뢰의 범위도 분명하게.",
+      "mainBottom": 3436.625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "underattack",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "크리덴셜 스터핑,\n로그인 흐름으로 탐지합니다.",
+      "mainBottom": 4396.453125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "validation",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "선언보다,\n증거로 확인하세요.",
+      "mainBottom": 4076.140625,
+      "h1Font": "53px"
+    },
+    {
+      "page": "video",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "검토에 필요한 자료를,\n한곳에서.",
+      "mainBottom": 2472.046875,
+      "h1Font": "53px"
+    },
+    {
+      "page": "web-attack",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격에서 웹셸 실행까지,\n행위와 증거로 탐지합니다.",
+      "mainBottom": 3730.3125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "zero-day",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격에 맞서는 방어,\n행위와 결과를 AI로 분석합니다.",
+      "mainBottom": 3733.25,
+      "h1Font": "53px"
+    },
+    {
+      "page": "zta",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyWidth": 1440,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "지속적인 검증은,\n확인할 데이터에서 시작됩니다.",
+      "mainBottom": 2288.578125,
+      "h1Font": "53px"
+    },
+    {
+      "page": "adoption",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "하나의 PLURA-XDR.\n우리 조직에 맞는 운영.",
+      "mainBottom": 3933.953125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "ai",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을\nAI가 방어합니다.",
+      "mainBottom": 4421.796875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "contact",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "우리 기업의 보안 운영,\n함께 설계하겠습니다.",
+      "mainBottom": 2241.28125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "customer",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "고객의 환경에서\n쌓아온 신뢰.",
+      "mainBottom": 2940.078125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "data-exfiltration",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "유출 의심 경보를 넘어,\n확인 가능한 근거까지.",
+      "mainBottom": 3458.5,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "deployment",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "배포 환경부터\n보안 데이터의 경계까지.",
+      "mainBottom": 3634.375,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "index",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "PLURA-XDR",
+      "mainBottom": 4304.203125,
+      "h1Font": "58px"
+    },
+    {
+      "page": "mitreattack",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반 탐지,\n공격자의 행위를 읽습니다.",
+      "mainBottom": 3885.75,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "여러 제품의 목록이 아니라,\n하나의 대응을 위한 연결.",
+      "mainBottom": 3075.921875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_backup",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "필요한 근거를,\n정해진 보관 조건에 맞게.",
+      "mainBottom": 3444.03125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_edr",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반으로,\n서버·PC의 공격 행위를 탐지합니다.",
+      "mainBottom": 4030.40625,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_forensic",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 이후의 질문에,\n변경 흔적으로 답합니다.",
+      "mainBottom": 3444.03125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_siem",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "흩어진 로그를 연결해,\n사건의 맥락을 분석합니다.",
+      "mainBottom": 3477.171875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_soar",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "분석의 다음 단계,\n정책에 따라 실행합니다.",
+      "mainBottom": 2507.0625,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_soc",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지부터 대응 운영까지,\nPLURA-XDR + SOC.",
+      "mainBottom": 3697.703125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_sysmon",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "시스템의 운영 상태를,\n보안 분석의 맥락으로.",
+      "mainBottom": 3444.03125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_vas",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 전에,\n보안 설정과 로그 준비부터.",
+      "mainBottom": 3444.03125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_waf",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격과 계정 탈취,\n요청 본문부터 대응합니다.",
+      "mainBottom": 3935.640625,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "platform_xdr",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을 AI로 방어하고,\n보안 대응을 하나로.",
+      "mainBottom": 4829.828125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "ransomware",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "행위의 변화를 연결해,\n확산 대응의 근거를 확보합니다.",
+      "mainBottom": 3458.5,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "soc-operation",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "관제의 범위와\n대응 절차를 명확하게.",
+      "mainBottom": 3647.21875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "threats",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "공격 유형은 달라도,\n대응은 하나의 흐름으로.",
+      "mainBottom": 3191.109375,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "trust",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "기술의 근거도,\n신뢰의 범위도 분명하게.",
+      "mainBottom": 3348.09375,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "underattack",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "크리덴셜 스터핑,\n로그인 흐름으로 탐지합니다.",
+      "mainBottom": 4297.1875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "validation",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "선언보다,\n증거로 확인하세요.",
+      "mainBottom": 4047.078125,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "video",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "검토에 필요한 자료를,\n한곳에서.",
+      "mainBottom": 2363.484375,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "web-attack",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격에서 웹셸 실행까지,\n행위와 증거로 탐지합니다.",
+      "mainBottom": 3582.09375,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "zero-day",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격에 맞서는 방어,\n행위와 결과를 AI로 분석합니다.",
+      "mainBottom": 3604.140625,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "zta",
+      "viewport": [
+        1024,
+        900
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 1024,
+      "scrollWidth": 1024,
+      "bodyWidth": 1024,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "지속적인 검증은,\n확인할 데이터에서 시작됩니다.",
+      "mainBottom": 2166.671875,
+      "h1Font": "39.912px"
+    },
+    {
+      "page": "adoption",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "하나의 PLURA-XDR.\n우리 조직에 맞는 운영.",
+      "mainBottom": 4262.234375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "ai",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을\nAI가 방어합니다.",
+      "mainBottom": 5956.421875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "contact",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "우리 기업의 보안 운영,\n함께 설계하겠습니다.",
+      "mainBottom": 2970.5625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "customer",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "고객의 환경에서\n쌓아온 신뢰.",
+      "mainBottom": 4042.765625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "data-exfiltration",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "유출 의심 경보를 넘어,\n확인 가능한 근거까지.",
+      "mainBottom": 4719.5625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "deployment",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "배포 환경부터\n보안 데이터의 경계까지.",
+      "mainBottom": 4011.265625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "index",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "PLURA-XDR",
+      "mainBottom": 5490.640625,
+      "h1Font": "70px"
+    },
+    {
+      "page": "mitreattack",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반 탐지,\n공격자의 행위를 읽습니다.",
+      "mainBottom": 4675.328125,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "여러 제품의 목록이 아니라,\n하나의 대응을 위한 연결.",
+      "mainBottom": 4991.53125,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_backup",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "필요한 근거를,\n정해진 보관 조건에 맞게.",
+      "mainBottom": 4235.71875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_edr",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반으로,\n서버·PC의 공격 행위를 탐지합니다.",
+      "mainBottom": 4729.234375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_forensic",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 이후의 질문에,\n변경 흔적으로 답합니다.",
+      "mainBottom": 4235.71875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_siem",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "흩어진 로그를 연결해,\n사건의 맥락을 분석합니다.",
+      "mainBottom": 4235.71875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_soar",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "분석의 다음 단계,\n정책에 따라 실행합니다.",
+      "mainBottom": 3433.796875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_soc",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지부터 대응 운영까지,\nPLURA-XDR + SOC.",
+      "mainBottom": 4901.9375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_sysmon",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "시스템의 운영 상태를,\n보안 분석의 맥락으로.",
+      "mainBottom": 4235.71875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_vas",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 전에,\n보안 설정과 로그 준비부터.",
+      "mainBottom": 4212.328125,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_waf",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격과 계정 탈취,\n요청 본문부터 대응합니다.",
+      "mainBottom": 4637.59375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "platform_xdr",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을 AI로 방어하고,\n보안 대응을 하나로.",
+      "mainBottom": 5484.78125,
+      "h1Font": "45px"
+    },
+    {
+      "page": "ransomware",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "행위의 변화를 연결해,\n확산 대응의 근거를 확보합니다.",
+      "mainBottom": 4719.5625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "soc-operation",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "관제의 범위와\n대응 절차를 명확하게.",
+      "mainBottom": 4351.640625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "threats",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "공격 유형은 달라도,\n대응은 하나의 흐름으로.",
+      "mainBottom": 4310.296875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "trust",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "기술의 근거도,\n신뢰의 범위도 분명하게.",
+      "mainBottom": 4179.75,
+      "h1Font": "45px"
+    },
+    {
+      "page": "underattack",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "크리덴셜 스터핑,\n로그인 흐름으로 탐지합니다.",
+      "mainBottom": 5483.796875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "validation",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "선언보다,\n증거로 확인하세요.",
+      "mainBottom": 5369.890625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "video",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "검토에 필요한 자료를,\n한곳에서.",
+      "mainBottom": 6356.296875,
+      "h1Font": "45px"
+    },
+    {
+      "page": "web-attack",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격에서 웹셸 실행까지,\n행위와 증거로 탐지합니다.",
+      "mainBottom": 4803.0625,
+      "h1Font": "45px"
+    },
+    {
+      "page": "zero-day",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격에 맞서는 방어,\n행위와 결과를 AI로 분석합니다.",
+      "mainBottom": 4848.953125,
+      "h1Font": "45px"
+    },
+    {
+      "page": "zta",
+      "viewport": [
+        768,
+        1024
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyWidth": 768,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "지속적인 검증은,\n확인할 데이터에서 시작됩니다.",
+      "mainBottom": 2796.84375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "adoption",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "하나의 PLURA-XDR.\n우리 조직에 맞는 운영.",
+      "mainBottom": 4675.671875,
+      "h1Font": "33px"
+    },
+    {
+      "page": "ai",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을\nAI가 방어합니다.",
+      "mainBottom": 6106.984375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "contact",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "우리 기업의 보안 운영,\n함께 설계하겠습니다.",
+      "mainBottom": 3582.953125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "customer",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "고객의 환경에서\n쌓아온 신뢰.",
+      "mainBottom": 4200.734375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "data-exfiltration",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "유출 의심 경보를 넘어,\n확인 가능한 근거까지.",
+      "mainBottom": 4755.109375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "deployment",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "배포 환경부터\n보안 데이터의 경계까지.",
+      "mainBottom": 4375.65625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "index",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "PLURA-XDR",
+      "mainBottom": 6365.84375,
+      "h1Font": "52px"
+    },
+    {
+      "page": "mitreattack",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반 탐지,\n공격자의 행위를 읽습니다.",
+      "mainBottom": 5177.96875,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "여러 제품의 목록이 아니라,\n하나의 대응을 위한 연결.",
+      "mainBottom": 5356.90625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_backup",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "필요한 근거를,\n정해진 보관 조건에 맞게.",
+      "mainBottom": 4012.578125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_edr",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반으로,\n서버·PC의 공격 행위를 탐지합니다.",
+      "mainBottom": 4710.265625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_forensic",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 이후의 질문에,\n변경 흔적으로 답합니다.",
+      "mainBottom": 4012.578125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_siem",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "흩어진 로그를 연결해,\n사건의 맥락을 분석합니다.",
+      "mainBottom": 4012.578125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_soar",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "분석의 다음 단계,\n정책에 따라 실행합니다.",
+      "mainBottom": 3377.53125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_soc",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지부터 대응 운영까지,\nPLURA-XDR + SOC.",
+      "mainBottom": 4928.546875,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_sysmon",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "시스템의 운영 상태를,\n보안 분석의 맥락으로.",
+      "mainBottom": 3957.984375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_vas",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 전에,\n보안 설정과 로그 준비부터.",
+      "mainBottom": 4005.828125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_waf",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격과 계정 탈취,\n요청 본문부터 대응합니다.",
+      "mainBottom": 4603.390625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "platform_xdr",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을 AI로 방어하고,\n보안 대응을 하나로.",
+      "mainBottom": 6324.3125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "ransomware",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "행위의 변화를 연결해,\n확산 대응의 근거를 확보합니다.",
+      "mainBottom": 4802.953125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "soc-operation",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "관제의 범위와\n대응 절차를 명확하게.",
+      "mainBottom": 4285.578125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "threats",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "공격 유형은 달라도,\n대응은 하나의 흐름으로.",
+      "mainBottom": 4276.046875,
+      "h1Font": "33px"
+    },
+    {
+      "page": "trust",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "기술의 근거도,\n신뢰의 범위도 분명하게.",
+      "mainBottom": 4812.453125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "underattack",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "크리덴셜 스터핑,\n로그인 흐름으로 탐지합니다.",
+      "mainBottom": 5888.65625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "validation",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "선언보다,\n증거로 확인하세요.",
+      "mainBottom": 5642.203125,
+      "h1Font": "33px"
+    },
+    {
+      "page": "video",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "검토에 필요한 자료를,\n한곳에서.",
+      "mainBottom": 4906.484375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "web-attack",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격에서 웹셸 실행까지,\n행위와 증거로 탐지합니다.",
+      "mainBottom": 4981.25,
+      "h1Font": "33px"
+    },
+    {
+      "page": "zero-day",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격에 맞서는 방어,\n행위와 결과를 AI로 분석합니다.",
+      "mainBottom": 5025.4375,
+      "h1Font": "33px"
+    },
+    {
+      "page": "zta",
+      "viewport": [
+        390,
+        844
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyWidth": 390,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "지속적인 검증은,\n확인할 데이터에서 시작됩니다.",
+      "mainBottom": 3245.390625,
+      "h1Font": "33px"
+    },
+    {
+      "page": "adoption",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "하나의 PLURA-XDR.\n우리 조직에 맞는 운영.",
+      "mainBottom": 4870.28125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "ai",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을\nAI가 방어합니다.",
+      "mainBottom": 6570.765625,
+      "h1Font": "30px"
+    },
+    {
+      "page": "contact",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "우리 기업의 보안 운영,\n함께 설계하겠습니다.",
+      "mainBottom": 3737.59375,
+      "h1Font": "30px"
+    },
+    {
+      "page": "customer",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "고객의 환경에서\n쌓아온 신뢰.",
+      "mainBottom": 4273.0625,
+      "h1Font": "30px"
+    },
+    {
+      "page": "data-exfiltration",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "유출 의심 경보를 넘어,\n확인 가능한 근거까지.",
+      "mainBottom": 5040.0625,
+      "h1Font": "30px"
+    },
+    {
+      "page": "deployment",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "배포 환경부터\n보안 데이터의 경계까지.",
+      "mainBottom": 4670.28125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "index",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "PLURA-XDR",
+      "mainBottom": 6716.09375,
+      "h1Font": "45px"
+    },
+    {
+      "page": "mitreattack",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반 탐지,\n공격자의 행위를 읽습니다.",
+      "mainBottom": 5583.078125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "여러 제품의 목록이 아니라,\n하나의 대응을 위한 연결.",
+      "mainBottom": 5477.140625,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_backup",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "필요한 근거를,\n정해진 보관 조건에 맞게.",
+      "mainBottom": 4170.8125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_edr",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "마이터 어택 기반으로,\n서버·PC의 공격 행위를 탐지합니다.",
+      "mainBottom": 5007.875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_forensic",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 이후의 질문에,\n변경 흔적으로 답합니다.",
+      "mainBottom": 4127.3125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_siem",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "흩어진 로그를 연결해,\n사건의 맥락을 분석합니다.",
+      "mainBottom": 4147.421875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_soar",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "분석의 다음 단계,\n정책에 따라 실행합니다.",
+      "mainBottom": 3533.6875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_soc",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지부터 대응 운영까지,\nPLURA-XDR + SOC.",
+      "mainBottom": 5304.375,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_sysmon",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "시스템의 운영 상태를,\n보안 분석의 맥락으로.",
+      "mainBottom": 4074.671875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_vas",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "탐지 전에,\n보안 설정과 로그 준비부터.",
+      "mainBottom": 4177.171875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_waf",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격과 계정 탈취,\n요청 본문부터 대응합니다.",
+      "mainBottom": 4767,
+      "h1Font": "30px"
+    },
+    {
+      "page": "platform_xdr",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격을 AI로 방어하고,\n보안 대응을 하나로.",
+      "mainBottom": 6494.703125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "ransomware",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "행위의 변화를 연결해,\n확산 대응의 근거를 확보합니다.",
+      "mainBottom": 5126.40625,
+      "h1Font": "30px"
+    },
+    {
+      "page": "soc-operation",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "관제의 범위와\n대응 절차를 명확하게.",
+      "mainBottom": 4538.171875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "threats",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "공격 유형은 달라도,\n대응은 하나의 흐름으로.",
+      "mainBottom": 4500.921875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "trust",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "기술의 근거도,\n신뢰의 범위도 분명하게.",
+      "mainBottom": 4976.96875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "underattack",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "크리덴셜 스터핑,\n로그인 흐름으로 탐지합니다.",
+      "mainBottom": 6499.921875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "validation",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "선언보다,\n증거로 확인하세요.",
+      "mainBottom": 5821.171875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "video",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "검토에 필요한 자료를,\n한곳에서.",
+      "mainBottom": 4925.03125,
+      "h1Font": "30px"
+    },
+    {
+      "page": "web-attack",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "웹 공격에서 웹셸 실행까지,\n행위와 증거로 탐지합니다.",
+      "mainBottom": 5364.9375,
+      "h1Font": "30px"
+    },
+    {
+      "page": "zero-day",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "AI 공격에 맞서는 방어,\n행위와 결과를 AI로 분석합니다.",
+      "mainBottom": 5328.046875,
+      "h1Font": "30px"
+    },
+    {
+      "page": "zta",
+      "viewport": [
+        320,
+        800
+      ],
+      "global_overflow": false,
+      "element_overflow": [],
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyWidth": 320,
+      "font": "\"Noto Sans KR\", \"Noto Sans CJK KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+      "h1": "지속적인 검증은,\n확인할 데이터에서 시작됩니다.",
+      "mainBottom": 3316.953125,
+      "h1Font": "30px"
+    }
+  ],
+  "functional": [
+    {
+      "check": "home tab",
+      "viewport": 1440,
+      "target": "panel-A-web",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 1440,
+      "target": "panel-A-identity",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 1440,
+      "target": "panel-A-data",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 1440,
+      "target": "panel-A-zero",
+      "pass": true
+    },
+    {
+      "check": "MITRE menu visible",
+      "viewport": 1440,
+      "pass": true
+    },
+    {
+      "check": "MITRE navigation href",
+      "viewport": 1440,
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 390,
+      "target": "panel-A-web",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 390,
+      "target": "panel-A-identity",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 390,
+      "target": "panel-A-data",
+      "pass": true
+    },
+    {
+      "check": "home tab",
+      "viewport": 390,
+      "target": "panel-A-zero",
+      "pass": true
+    },
+    {
+      "check": "mobile open + background inert",
+      "pass": true
+    },
+    {
+      "check": "MITRE menu visible",
+      "viewport": 390,
+      "pass": true
+    },
+    {
+      "check": "MITRE navigation href",
+      "viewport": 390,
+      "pass": true
+    },
+    {
+      "check": "new page mobile menu closed",
+      "pass": true
+    },
+    {
+      "check": "tab keyboard ArrowRight",
+      "pass": true
+    },
+    {
+      "check": "underattack FAQ open",
+      "pass": true
+    },
+    {
+      "check": "ai FAQ open",
+      "pass": true
+    }
+  ],
+  "font_note": "Remote font requests were blocked for repeatable checks. Installed Noto Sans CJK KR fallback used. No font binaries are packaged.",
+  "render_mode": "Self-contained document injection into Chromium (local navigation blocked by browser policy). CSS/JS/image source bytes preserved in rendering harness; internal links checked statically. No live-server HTTP/navigation claim.",
+  "js_errors": [],
+  "http_errors": [],
+  "http_navigation_tested": false
+}
