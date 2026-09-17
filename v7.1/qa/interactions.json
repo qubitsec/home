@@ -1,0 +1,393 @@
+{
+  "mode": "Offline Chromium, temporary local assets inlined. No production requests or writes.",
+  "checks": [
+    {
+      "name": "Adoption menu: two entries, no deployment",
+      "pass": true
+    },
+    {
+      "name": "Home tab 1",
+      "pass": true
+    },
+    {
+      "name": "Home tab 2",
+      "pass": true
+    },
+    {
+      "name": "Home tab 3",
+      "pass": true
+    },
+    {
+      "name": "Home tab 4",
+      "pass": true
+    },
+    {
+      "name": "Home console hover retained",
+      "pass": true
+    },
+    {
+      "name": "AI stage 1 blue hover",
+      "pass": true,
+      "background": "rgb(40, 85, 234)"
+    },
+    {
+      "name": "AI stage 1 selection",
+      "pass": true
+    },
+    {
+      "name": "AI stage 2 blue hover",
+      "pass": true,
+      "background": "rgb(40, 85, 234)"
+    },
+    {
+      "name": "AI stage 2 selection",
+      "pass": true
+    },
+    {
+      "name": "AI stage 3 blue hover",
+      "pass": true,
+      "background": "rgb(40, 85, 234)"
+    },
+    {
+      "name": "AI stage 3 selection",
+      "pass": true
+    },
+    {
+      "name": "AI stage 4 blue hover",
+      "pass": true,
+      "background": "rgb(40, 85, 234)"
+    },
+    {
+      "name": "AI stage 4 selection",
+      "pass": true
+    },
+    {
+      "name": "AI FAQ four questions preserved",
+      "pass": true
+    },
+    {
+      "name": "AI FAQ 1 open",
+      "pass": true
+    },
+    {
+      "name": "AI FAQ 2 open",
+      "pass": true
+    },
+    {
+      "name": "AI FAQ 3 open",
+      "pass": true
+    },
+    {
+      "name": "AI FAQ 4 open",
+      "pass": true
+    },
+    {
+      "name": "AI data question stays in data section",
+      "pass": true
+    },
+    {
+      "name": "ATTACK desktop 15 columns without horizontal scroll",
+      "pass": true,
+      "columns": 15
+    },
+    {
+      "name": "ATTACK 30 technique items preserved",
+      "pass": true
+    },
+    {
+      "name": "ATTACK select T1595",
+      "pass": true,
+      "value": "T1595"
+    },
+    {
+      "name": "ATTACK select T1592",
+      "pass": true,
+      "value": "T1592"
+    },
+    {
+      "name": "ATTACK select T1583",
+      "pass": true,
+      "value": "T1583"
+    },
+    {
+      "name": "ATTACK select T1587",
+      "pass": true,
+      "value": "T1587"
+    },
+    {
+      "name": "ATTACK select T1190",
+      "pass": true,
+      "value": "T1190"
+    },
+    {
+      "name": "ATTACK select T1078",
+      "pass": true,
+      "value": "T1078"
+    },
+    {
+      "name": "ATTACK select T1059-001",
+      "pass": true,
+      "value": "T1059.001"
+    },
+    {
+      "name": "ATTACK select T1059-003",
+      "pass": true,
+      "value": "T1059.003"
+    },
+    {
+      "name": "ATTACK select T1505-003",
+      "pass": true,
+      "value": "T1505.003"
+    },
+    {
+      "name": "ATTACK select T1543-003",
+      "pass": true,
+      "value": "T1543.003"
+    },
+    {
+      "name": "ATTACK select T1068",
+      "pass": true,
+      "value": "T1068"
+    },
+    {
+      "name": "ATTACK select T1548-002",
+      "pass": true,
+      "value": "T1548.002"
+    },
+    {
+      "name": "ATTACK select T1027",
+      "pass": true,
+      "value": "T1027"
+    },
+    {
+      "name": "ATTACK select T1036",
+      "pass": true,
+      "value": "T1036"
+    },
+    {
+      "name": "ATTACK select T1685",
+      "pass": true,
+      "value": "T1685"
+    },
+    {
+      "name": "ATTACK select T1686",
+      "pass": true,
+      "value": "T1686"
+    },
+    {
+      "name": "ATTACK select T1110-004",
+      "pass": true,
+      "value": "T1110.004"
+    },
+    {
+      "name": "ATTACK select T1003-001",
+      "pass": true,
+      "value": "T1003.001"
+    },
+    {
+      "name": "ATTACK select T1082",
+      "pass": true,
+      "value": "T1082"
+    },
+    {
+      "name": "ATTACK select T1083",
+      "pass": true,
+      "value": "T1083"
+    },
+    {
+      "name": "ATTACK select T1021-001",
+      "pass": true,
+      "value": "T1021.001"
+    },
+    {
+      "name": "ATTACK select T1021-002",
+      "pass": true,
+      "value": "T1021.002"
+    },
+    {
+      "name": "ATTACK select T1005",
+      "pass": true,
+      "value": "T1005"
+    },
+    {
+      "name": "ATTACK select T1560-001",
+      "pass": true,
+      "value": "T1560.001"
+    },
+    {
+      "name": "ATTACK select T1071-001",
+      "pass": true,
+      "value": "T1071.001"
+    },
+    {
+      "name": "ATTACK select T1105",
+      "pass": true,
+      "value": "T1105"
+    },
+    {
+      "name": "ATTACK select T1041",
+      "pass": true,
+      "value": "T1041"
+    },
+    {
+      "name": "ATTACK select T1567-002",
+      "pass": true,
+      "value": "T1567.002"
+    },
+    {
+      "name": "ATTACK select T1486",
+      "pass": true,
+      "value": "T1486"
+    },
+    {
+      "name": "ATTACK select T1490",
+      "pass": true,
+      "value": "T1490"
+    },
+    {
+      "name": "ATTACK mini selection 1",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 2",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 3",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 4",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 5",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 6",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 7",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 8",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 9",
+      "pass": true
+    },
+    {
+      "name": "ATTACK mini selection 10",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 1",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 1 hover",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 2",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 2 hover",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 3",
+      "pass": true
+    },
+    {
+      "name": "Platform scenario 3 hover",
+      "pass": true
+    },
+    {
+      "name": "Resource filter docs",
+      "pass": true
+    },
+    {
+      "name": "Resource filter demo",
+      "pass": true
+    },
+    {
+      "name": "Resource filter guide",
+      "pass": true
+    },
+    {
+      "name": "Resource filter video",
+      "pass": true
+    },
+    {
+      "name": "Resource filter all",
+      "pass": true
+    },
+    {
+      "name": "Resource search empty state",
+      "pass": true
+    },
+    {
+      "name": "Product screenshot zoom",
+      "pass": true
+    },
+    {
+      "name": "Product screenshot close",
+      "pass": true
+    },
+    {
+      "name": "Contact remains phone + email only",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu background inert",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu escape closes",
+      "pass": true
+    },
+    {
+      "name": "AI mobile selection 1",
+      "pass": true
+    },
+    {
+      "name": "AI mobile selection 2",
+      "pass": true
+    },
+    {
+      "name": "AI mobile selection 3",
+      "pass": true
+    },
+    {
+      "name": "AI mobile selection 4",
+      "pass": true
+    },
+    {
+      "name": "AI keyboard activation",
+      "pass": true
+    },
+    {
+      "name": "Adoption scope kept: SaaS services / On-prem 20GB per day",
+      "pass": true
+    },
+    {
+      "name": "No adoption checklist download",
+      "pass": true
+    },
+    {
+      "name": "AI touch tap selection",
+      "pass": true
+    }
+  ],
+  "page_errors": []
+}

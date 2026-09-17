@@ -1,0 +1,372 @@
+{
+  "checked_links": 1642,
+  "missing": [],
+  "broken_fragments": [],
+  "duplicate_ids": [],
+  "stale_paths": [],
+  "inline_preservation": [
+    {
+      "file": "platform_waf.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "soc-operation.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "zero-day.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_vas.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "ransomware.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "contact.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "old-pricing.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "data-exfiltration.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_edr.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_soar.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "trust.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "web-attack.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "pricing.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_soc.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "casestudy.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "validation.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "underattack.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "threats.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "customer.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_xdr.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_sysmon.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "zta.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "video.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "ai.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_forensic.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_backup.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "adoption.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_secureos.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "mitreattack.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "index.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "platform_siem.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "index.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    },
+    {
+      "file": "site-map.html",
+      "scripts_unchanged": true,
+      "inline_styles_unchanged": true
+    }
+  ],
+  "original_asset_preservation": [
+    {
+      "file": "res/css/pages.css",
+      "unchanged": true
+    },
+    {
+      "file": "res/css/site.css",
+      "unchanged": true
+    },
+    {
+      "file": "res/downloads/PLURA-XDR-evidence-checklist.md",
+      "unchanged": true
+    },
+    {
+      "file": "res/downloads/PLURA-XDR-adoption-checklist.md",
+      "unchanged": true
+    },
+    {
+      "file": "res/downloads/PLURA-SOC-report-sample.md",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/partner_03.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/partner_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/partner_04.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/video_img2.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/favicon.ico",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/logo.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/video_img1.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/video_img3.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/logo_over.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/partner_02.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/js/site.js",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/bccard.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/contec.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/koreacopy.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/willbes.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/gkl.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/inet.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/hug.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/keit.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/pusanuniversity.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/kisa.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/dbinc.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/jbe.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/etoos.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/ybmnet.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/kiha.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/samsung.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/warmemo.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/papajohns.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/commax.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/customers/posco.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/vas_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/backup_02.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/dashboard_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/dashboard_03.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/waf_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/siem_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/edr_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/forensic_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/sms_01.png",
+      "unchanged": true
+    },
+    {
+      "file": "res/images/screenshots/dashboard_02.png",
+      "unchanged": true
+    }
+  ],
+  "res_children": [
+    "css",
+    "downloads",
+    "images",
+    "js"
+  ],
+  "removed_page_absent": true
+}

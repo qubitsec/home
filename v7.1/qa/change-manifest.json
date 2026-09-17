@@ -1,0 +1,176 @@
+{
+  "source": "v7.1(1).zip",
+  "build": "7.1-20260917-final",
+  "pages": [
+    {
+      "file": "ko/platform_waf.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/soc-operation.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/zero-day.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_vas.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/ransomware.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/contact.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/old-pricing.html",
+      "deployment_references_removed_or_relinked": 0,
+      "changed": false
+    },
+    {
+      "file": "ko/data-exfiltration.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_edr.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_soar.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/trust.html",
+      "deployment_references_removed_or_relinked": 3,
+      "changed": true
+    },
+    {
+      "file": "ko/web-attack.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/pricing.html",
+      "deployment_references_removed_or_relinked": 0,
+      "changed": false
+    },
+    {
+      "file": "ko/platform_soc.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/casestudy.html",
+      "deployment_references_removed_or_relinked": 0,
+      "changed": false
+    },
+    {
+      "file": "ko/validation.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/underattack.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/threats.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/customer.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_xdr.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_sysmon.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/zta.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/video.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/ai.html",
+      "deployment_references_removed_or_relinked": 3,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_forensic.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_backup.html",
+      "deployment_references_removed_or_relinked": 3,
+      "changed": true
+    },
+    {
+      "file": "ko/adoption.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_secureos.html",
+      "deployment_references_removed_or_relinked": 0,
+      "changed": false
+    },
+    {
+      "file": "ko/mitreattack.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/index.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "ko/platform_siem.html",
+      "deployment_references_removed_or_relinked": 2,
+      "changed": true
+    },
+    {
+      "file": "index.html",
+      "deployment_references_removed_or_relinked": 0,
+      "changed": false
+    },
+    {
+      "file": "site-map.html",
+      "deployment_references_removed_or_relinked": 1,
+      "changed": true
+    }
+  ]
+}
