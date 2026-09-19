@@ -1,0 +1,16 @@
+{
+  "build": "7.1-20260919-links",
+  "input_sha256": "9a32c57147c13f1513d522a166a7db8142f5ecb7b07a558239ffe4a21ea7778b",
+  "content_pages": 27,
+  "modified_content_html": 28,
+  "removed_content_html": 1,
+  "byte_identical_resource_files": 47,
+  "internal_references": 1618,
+  "layout_checks": 63,
+  "ui_checks": 145,
+  "runtime_errors": 0,
+  "local_http_ok": 82,
+  "local_http_absent": 3,
+  "deployed_to_production": false,
+  "browser_http_integration_tested": false
+}

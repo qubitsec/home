@@ -1,0 +1,8092 @@
+[
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "https://www.plura.io/ko/mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#main",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1190",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1078",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1059-001",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1059-003",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1505-003",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1543-003",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1110-004",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1003-001",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1486",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#am-tech-T1490",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#attack-matrix",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#attack-matrix",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#detection",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#techniques",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#webshell",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "#references",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/mitreattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "https://www.plura.io/ko/platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "#main",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/images/screenshots/siem_01.png",
+    "target": "res/images/screenshots/siem_01.png"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "zta.html#zta-coverage",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_siem.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "https://www.plura.io/ko/zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "#main",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "#zta-model",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/zta.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "https://www.plura.io/ko/threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "#main",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/threats.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "https://www.plura.io/ko/platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "#main",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/images/screenshots/forensic_01.png",
+    "target": "res/images/screenshots/forensic_01.png"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_forensic.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "https://www.plura.io/ko/web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "#main",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "#evidence",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "#flow",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "#response",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "#faq",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/web-attack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "https://www.plura.io/ko/platform_backup.html",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "#main",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/images/screenshots/backup_02.png",
+    "target": "res/images/screenshots/backup_02.png"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "ai.html#data",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_backup.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "https://www.plura.io/ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "#main",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "#plans",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "#process",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "#scope",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "#faq",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html?plan=self",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html?plan=soc",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/adoption.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "https://www.plura.io/ko/platform_sysmon.html",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "#main",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/images/screenshots/sms_01.png",
+    "target": "res/images/screenshots/sms_01.png"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_sysmon.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "https://www.plura.io/ko/video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "#main",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/video_img1.png",
+    "target": "res/images/video_img1.png"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/video_img2.png",
+    "target": "res/images/video_img2.png"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/video_img3.png",
+    "target": "res/images/video_img3.png"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/downloads/PLURA-XDR-adoption-checklist.md",
+    "target": "res/downloads/PLURA-XDR-adoption-checklist.md"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/downloads/PLURA-SOC-report-sample.md",
+    "target": "res/downloads/PLURA-SOC-report-sample.md"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/downloads/PLURA-XDR-evidence-checklist.md",
+    "target": "res/downloads/PLURA-XDR-evidence-checklist.md"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/video.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_secureos.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_secureos.html",
+    "reference": "https://www.plura.io/ko/platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_secureos.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "https://www.plura.io/ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "#main",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "#threats",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "#zero-trust",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/index.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/casestudy.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/casestudy.html",
+    "reference": "https://www.plura.io/ko/customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/casestudy.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/pricing.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/pricing.html",
+    "reference": "https://www.plura.io/ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/pricing.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "https://www.plura.io/ko/soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "#main",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "#workflow",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "#scope",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "#authority",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "#deliver",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/soc-operation.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "https://www.plura.io/ko/trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "#main",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "#cert",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "#technology",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "#framework",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "#data",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/partner_01.png",
+    "target": "res/images/partner_01.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/partner_02.png",
+    "target": "res/images/partner_02.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/partner_03.png",
+    "target": "res/images/partner_03.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/partner_04.png",
+    "target": "res/images/partner_04.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "ai.html#data",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/trust.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "https://www.plura.io/ko/zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "#main",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "#evidence",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "#flow",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "#response",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "#faq",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/zero-day.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "https://www.plura.io/ko/platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "#main",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_vas.html",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_sysmon.html",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_backup.html",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "https://www.plura.io/ko/platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "#main",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "contact.html?plan=soc",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "#service",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "#deliverables",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "#roles",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "#faq",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "contact.html?plan=soc",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_soc.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "https://www.plura.io/ko/platform_vas.html",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "#main",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/images/screenshots/vas_01.png",
+    "target": "res/images/screenshots/vas_01.png"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_vas.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "https://www.plura.io/ko/contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "#main",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/contact.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "https://www.plura.io/ko/platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#main",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#overview",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#core-defense",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#visibility",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#evidence",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "#operation",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/images/screenshots/dashboard_01.png",
+    "target": "res/images/screenshots/dashboard_01.png"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_xdr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "https://www.plura.io/ko/underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "#main",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "#evidence",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "#flow",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "#response",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "#faq",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/underattack.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "https://www.plura.io/ko/platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "#main",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/images/screenshots/waf_01.png",
+    "target": "res/images/screenshots/waf_01.png"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_waf.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "https://www.plura.io/ko/data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "#main",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "#evidence",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "#flow",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "#response",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "#faq",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/data-exfiltration.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "https://www.plura.io/ko/ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "#main",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "#evidence",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "#flow",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "#response",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "#faq",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/ransomware.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/old-pricing.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/old-pricing.html",
+    "reference": "https://www.plura.io/ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/old-pricing.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "https://www.plura.io/ko/platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "#main",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/images/screenshots/edr_01.png",
+    "target": "res/images/screenshots/edr_01.png"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_edr.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "https://www.plura.io/ko/platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "#main",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "zta.html#zta-coverage",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/platform_soar.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "https://www.plura.io/ko/ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "#main",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "#analysis",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "#responsibility",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "#data",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "#faq",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/ai.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "https://www.plura.io/ko/customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/favicon.ico",
+    "target": "res/images/favicon.ico"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/css/pages.css?v=7.1-20260917-final",
+    "target": "res/css/pages.css"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/js/site.js?v=7.1-20260917-final",
+    "target": "res/js/site.js"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "#main",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/bccard.png",
+    "target": "res/images/customers/bccard.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/hug.png",
+    "target": "res/images/customers/hug.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/commax.png",
+    "target": "res/images/customers/commax.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/etoos.png",
+    "target": "res/images/customers/etoos.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/kisa.png",
+    "target": "res/images/customers/kisa.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/inet.png",
+    "target": "res/images/customers/inet.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/posco.png",
+    "target": "res/images/customers/posco.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/samsung.png",
+    "target": "res/images/customers/samsung.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/dbinc.png",
+    "target": "res/images/customers/dbinc.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/keit.png",
+    "target": "res/images/customers/keit.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/ybmnet.png",
+    "target": "res/images/customers/ybmnet.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/willbes.png",
+    "target": "res/images/customers/willbes.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/koreacopy.png",
+    "target": "res/images/customers/koreacopy.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/contec.png",
+    "target": "res/images/customers/contec.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/jbe.png",
+    "target": "res/images/customers/jbe.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/gkl.png",
+    "target": "res/images/customers/gkl.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/kiha.png",
+    "target": "res/images/customers/kiha.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/papajohns.png",
+    "target": "res/images/customers/papajohns.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/warmemo.png",
+    "target": "res/images/customers/warmemo.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/customers/pusanuniversity.png",
+    "target": "res/images/customers/pusanuniversity.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "../res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "ko/customer.html",
+    "reference": "contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "site-map.html",
+    "target": "site-map.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "res/css/site.css?v=7.1-20260917-final",
+    "target": "res/css/site.css"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "res/css/readability.css?v=7.1-20260917-final",
+    "target": "res/css/readability.css"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "res/images/logo_over.png",
+    "target": "res/images/logo_over.png"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_vas.html",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_sysmon.html",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_backup.html",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "site-map.html",
+    "reference": "ko/contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_vas.html",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_sysmon.html",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/platform_backup.html",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "ko/zta.html",
+    "target": "ko/zta.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/index.html",
+    "target": "ko/index.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_xdr.html",
+    "target": "ko/platform_xdr.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/ai.html",
+    "target": "ko/ai.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform.html",
+    "target": "ko/platform.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_soc.html",
+    "target": "ko/platform_soc.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/soc-operation.html",
+    "target": "ko/soc-operation.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/threats.html",
+    "target": "ko/threats.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/web-attack.html",
+    "target": "ko/web-attack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/underattack.html",
+    "target": "ko/underattack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/data-exfiltration.html",
+    "target": "ko/data-exfiltration.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/ransomware.html",
+    "target": "ko/ransomware.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/zero-day.html",
+    "target": "ko/zero-day.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/customer.html",
+    "target": "ko/customer.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/video.html",
+    "target": "ko/video.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/trust.html",
+    "target": "ko/trust.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/adoption.html",
+    "target": "ko/adoption.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/contact.html",
+    "target": "ko/contact.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_waf.html",
+    "target": "ko/platform_waf.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_edr.html",
+    "target": "ko/platform_edr.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_siem.html",
+    "target": "ko/platform_siem.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_soar.html",
+    "target": "ko/platform_soar.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_forensic.html",
+    "target": "ko/platform_forensic.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_vas.html",
+    "target": "ko/platform_vas.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_sysmon.html",
+    "target": "ko/platform_sysmon.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/platform_backup.html",
+    "target": "ko/platform_backup.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/mitreattack.html",
+    "target": "ko/mitreattack.html"
+  },
+  {
+    "source": "index.html",
+    "reference": "https://www.plura.io/ko/zta.html",
+    "target": "ko/zta.html"
+  }
+]
