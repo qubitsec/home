@@ -1,0 +1,216 @@
+/* PLURA WEBSITE v7.1 — shared explanatory text / 2026-09-17.
+   Load LAST, after pages.css and inline component styles.
+   Narrative copy only: retain display headings, navigation, icons, compact
+   ATT&CK cells, AI-Harness stage sizing, interactions and existing layouts. */
+@media screen {
+  main.v71-home, main.v71-pages {
+    --copy-text: #3e506a;
+    --copy-secondary: #4b5e78;
+    --copy-note: #53647a;
+  }
+
+  /* Standard explanatory paragraphs. No changes to heading/eyebrow labels. */
+  main.v71-pages .card p:not(.eyebrow),
+  main.v71-pages .split > div > p:not(.eyebrow),
+  main.v71-pages .feature-line p,
+  main.v71-pages .large-step p,
+  main.v71-pages .plan-card > p:not(.eyebrow),
+  main.v71-pages .scenario-description > p,
+  main.v71-pages .resource-body > p,
+  main.v71-pages .definition-box > p,
+  main.v71-pages .final-cta p,
+  main.v71-pages .soc-report-card > p,
+  main.v71-pages .platform-soc-report-card > p,
+  main.v71-pages .zt-detail-card > p:not(.zt-scope),
+  main.v71-pages .zt-workflow article > p,
+  main.v71-pages .zt-model-item > p:not(.zt-model-en),
+  main.v71-home .a-value-card > p,
+  main.v71-home .zt-support-card > p:not(.zt-product),
+  main.v71-home .resource-link > p:not(.resource-kicker) {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--copy-text);
+    line-height: 1.85;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* Full-width and section-opening descriptions. */
+  main.v71-pages .lead,
+  main.v71-pages .section-intro,
+  main.v71-pages .soc-scope-intro,
+  main.v71-pages .soc-report-intro,
+  main.v71-pages .platform-soc-report-intro,
+  main.v71-pages .contact-simple__intro,
+  main.v71-home .lead,
+  main.v71-home .a-platform-head > .lead,
+  main.v71-home .zt-section-head .lead,
+  main.v71-home .threats-heading .lead {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--copy-text);
+    line-height: 1.9;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* The introductory paragraph immediately beneath the large hero title. */
+  main.v71-pages .subhero .lead,
+  main.v71-home .a-copy .lead {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--copy-text);
+    line-height: 1.9;
+    letter-spacing: 0;
+  }
+  main.v71-pages .subhero-aside > p:not(.aside-label) {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--copy-secondary);
+    line-height: 1.85;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* Dense explanatory rows, not miniature diagram nodes or ATT&CK cells. */
+  main.v71-pages .arch-step p,
+  main.v71-pages .timeline-step p,
+  main.v71-pages .threat-card p,
+  main.v71-pages .analysis-row p:not(.analysis-label),
+  main.v71-pages .check-list li,
+  main.v71-pages .data-table td,
+  main.v71-home .threat-desc {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--copy-text);
+    line-height: 1.85;
+  }
+  main.v71-pages .data-table th {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #334966;
+  }
+  main.v71-pages .check-list li strong,
+  main.v71-pages .data-table td strong {
+    font-weight: 600;
+  }
+  main.v71-pages .faq-item > summary {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+  main.v71-pages .faq-item > div,
+  main.v71-pages .faq-item > div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--copy-text);
+    line-height: 1.9;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* Supporting explanations stay subordinate, but no longer faint/thin. */
+  main.v71-pages .note,
+  main.v71-pages .zt-scope,
+  main.v71-pages .zt-model-note,
+  main.v71-pages .soc-report-note,
+  main.v71-pages .platform-soc-report-note,
+  main.v71-pages .download-row p,
+  main.v71-pages .screenshot-figure figcaption,
+  main.v71-home .sample-note,
+  main.v71-home .zt-section-bottom > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--copy-note);
+    line-height: 1.85;
+  }
+
+  /* Keep compact UI geometry; only improve explanatory text contrast. */
+  #aih-harness .aih-detail p,
+  #attack-hero .hm-selection p {
+    color: #455b78;
+    font-weight: 400;
+  }
+  #attack-matrix .am-detail-grid p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #3e506a;
+  }
+  main.v71-home .a-console-main > .caption,
+  main.v71-home .a-console-row small,
+  main.v71-home .a-console-summary p,
+  main.v71-home .evidence-row p {
+    color: #52647e;
+    font-weight: 400;
+  }
+
+  /* Explicit light-on-dark treatments: never apply dark body colors here. */
+  main.v71-home .a-soc .lead {
+    font-size: 18px;
+    color: #d5e0f1;
+    font-weight: 400;
+    line-height: 1.9;
+  }
+  main.v71-home .a-soc-note {
+    color: #c5d3e8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+  main.v71-home .a-contact .contact-note {
+    color: #eef3ff;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  main.v71-pages .arch-step:last-child p {
+    color: #f0f5ff;
+  }
+  main.v71-pages .section-dark .section-intro,
+  main.v71-pages .card-dark p {
+    color: #d5e0f1;
+  }
+
+  /* Local review index uses the same body text standard. */
+  .map-main > p:not(.eyebrow), .map-card p {
+    color: #3e506a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+}
+@media screen and (max-width: 600px) {
+  main.v71-pages .subhero .lead,
+  main.v71-home .a-copy .lead {
+    font-size: 17px;
+    line-height: 1.85;
+  }
+  main.v71-pages .lead,
+  main.v71-pages .section-intro,
+  main.v71-pages .soc-scope-intro,
+  main.v71-pages .soc-report-intro,
+  main.v71-pages .platform-soc-report-intro,
+  main.v71-pages .contact-simple__intro,
+  main.v71-home .a-platform-head > .lead,
+  main.v71-home .zt-section-head .lead,
+  main.v71-home .threats-heading .lead,
+  main.v71-home .resources-head .lead,
+  main.v71-home .a-soc .lead {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  /* More-specific hero rules above retain 17px rather than inheriting 16px. */
+  main.v71-pages .subhero .lead { font-size: 17px; }
+  main.v71-pages .subhero-aside > p:not(.aside-label) { font-size: 15px; }
+  main.v71-pages .faq-item > summary { font-size: 17px; }
+  main.v71-pages .data-table td, main.v71-pages .data-table th { font-size: 14px; }
+  main.v71-pages .arch-step p { font-size: 14px; }
+  main.v71-pages .note, main.v71-pages .zt-scope,
+  main.v71-pages .zt-model-note, main.v71-pages .soc-report-note,
+  main.v71-pages .platform-soc-report-note,
+  main.v71-pages .download-row p,
+  main.v71-pages .screenshot-figure figcaption,
+  main.v71-home .sample-note, main.v71-home .zt-section-bottom > p { font-size: 13px; }
+}

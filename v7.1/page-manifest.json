@@ -1,0 +1,210 @@
+{
+  "website_version": "7.1",
+  "language": "ko",
+  "core_pages": 17,
+  "supporting_pages": 10,
+  "redirects": {
+    "casestudy.html": "customer.html",
+    "pricing.html": "adoption.html",
+    "old-pricing.html": "adoption.html",
+    "platform_secureos.html": "platform_edr.html"
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "PLURA-XDR",
+      "description": "마이터 어택 기반 탐지, 크리덴셜 스터핑 대응, AI 공격을 AI가 방어하는 PLURA-XDR. 제로트러스트 7대 영역 중 4개 영역의 탐지·분석·대응을 지원합니다.",
+      "section": "home",
+      "core": true
+    },
+    {
+      "file": "platform_xdr.html",
+      "title": "PLURA-XDR",
+      "description": "마이터 어택 기반 탐지, 크리덴셜 스터핑 대응, AI 방어와 제로트러스트 운영. WAF·EDR·SIEM·SOAR·Forensic을 연결하는 PLURA-XDR 통합 플랫폼입니다.",
+      "section": "platform",
+      "core": true
+    },
+    {
+      "file": "ai.html",
+      "title": "AI 분석·대응",
+      "description": "원천 보안 데이터에 기반한 AI 분석, 증거 검토와 정책 기반 대응의 역할을 확인하세요.",
+      "section": "platform",
+      "core": true
+    },
+    {
+      "file": "platform.html",
+      "title": "통합 보안 기능",
+      "description": "WAF·EDR·SIEM·SOAR·Forensic과 운영 보조 기능을 PLURA-XDR의 통합 대응 흐름에서 확인하세요.",
+      "section": "platform",
+      "core": true
+    },
+    {
+      "file": "platform_soc.html",
+      "title": "AI 보안관제 · PLURA-XDR + SOC",
+      "description": "PLURA-XDR 기반 AI 분석과 전문 관제. 탐지 준비부터 사건 검토, 대응 이력, 고객 보고와 후속 개선까지 연결합니다.",
+      "section": "soc",
+      "core": true
+    },
+    {
+      "file": "soc-operation.html",
+      "title": "관제 운영 방식",
+      "description": "PLURA-XDR + SOC의 운영 절차, 관제 범위, 대응 권한, 통보와 보고 기준을 확인하세요.",
+      "section": "soc",
+      "core": true
+    },
+    {
+      "file": "threats.html",
+      "title": "위협 대응",
+      "description": "마이터 어택 기반 웹셸 탐지, 크리덴셜 스터핑 대응, AI 기반 제로데이·우회 공격 분석을 PLURA-XDR의 통합 방어 흐름으로 확인하세요.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "web-attack.html",
+      "title": "웹 해킹·웹셸 탐지",
+      "description": "웹 요청·응답과 PLURA-EDR의 마이터 어택 기반 행위 탐지를 연결해 웹셸 파일·명령 실행·후속 침해 흔적을 분석합니다.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "underattack.html",
+      "title": "크리덴셜 스터핑 공격 대응",
+      "description": "요청 본문의 계정 식별 정보, 응답 상태·크기, 시도 횟수와 세션 행위를 분석하는 크리덴셜 스터핑 대응. PLURA-XDR의 전용 필터 탐지와 정책 기반 차단을 확인하세요.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "data-exfiltration.html",
+      "title": "데이터 유출",
+      "description": "무엇이 노출되었고, 어떤 계정과 자산이 관련되어 있는지. 요청·응답과 접근·호스트 흔적을 연결해 확인된 사실과 남은 질문을 구분합니다.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "ransomware.html",
+      "title": "랜섬웨어",
+      "description": "파일 변경, 프로세스 실행, 계정 사용과 원격 접근의 흐름을 함께 살펴봅니다. 의심 행위를 확인한 뒤 권한과 업무 영향을 고려해 대응합니다.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "zero-day.html",
+      "title": "AI·제로데이 공격 대응",
+      "description": "AI로 변형·자동화된 공격과 제로데이 징후를 웹 본문·호스트 행위·증거로 분석하고, 마이터 어택 기반 탐지와 정책 대응으로 연결합니다.",
+      "section": "threats",
+      "core": true
+    },
+    {
+      "file": "customer.html",
+      "title": "고객 사례",
+      "description": "기존 공개 PLURA 고객사와 고객 의견. 환경별 도입 범위와 확인 가능한 결과를 중심으로 검토하세요.",
+      "section": "resources",
+      "core": true
+    },
+    {
+      "file": "video.html",
+      "title": "영상·자료실",
+      "description": "플랫폼 소개 영상, 공개 시연, 공식 기술 문서와 도입·관제 체크리스트를 찾아보세요.",
+      "section": "resources",
+      "core": true
+    },
+    {
+      "file": "trust.html",
+      "title": "기술·신뢰",
+      "description": "PLURA 공개 인증·지정 자료, 통합 플랫폼 기술 근거와 보안 데이터 처리의 확인 범위를 안내합니다.",
+      "section": "resources",
+      "core": true
+    },
+    {
+      "file": "adoption.html",
+      "title": "운영 방식·도입 절차",
+      "description": "파편화된 보안 운영을 하나의 통합 플랫폼으로 연결하고, PLURA-XDR과 AI-SOC를 통해 분석·검증·대응을 이어가는 도입 방식을 확인하세요.",
+      "section": "adoption",
+      "core": true
+    },
+    {
+      "file": "contact.html",
+      "title": "통합 도입 상담",
+      "description": "PLURA-XDR 도입 상담. 전화 070-8802-0306 또는 이메일 plura@qubitsec.com으로 문의해 주세요.",
+      "section": "adoption",
+      "core": true
+    },
+    {
+      "file": "platform_waf.html",
+      "title": "PLURA-WAF",
+      "description": "웹 요청·응답 본문 분석과 크리덴셜 스터핑 전용 필터. PLURA-XDR의 웹 공격·계정 탈취 탐지와 정책 기반 차단을 확인하세요.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_edr.html",
+      "title": "PLURA-EDR",
+      "description": "마이터 어택 기반으로 프로세스·파일·계정 행위를 탐지하고, 웹셸 실행·서버 침해 흔적을 웹 로그 및 AI·포렌식 분석과 연결합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_siem.html",
+      "title": "PLURA-SIEM · 사건 상관분석",
+      "description": "PLURA-XDR의 통합 분석 기능입니다. 웹·호스트·계정의 보안 정보를 모아 시간·자산·행위의 관계를 분석하고 조사와 대응에 필요한 근거를 제공합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_soar.html",
+      "title": "PLURA-SOAR · 대응 실행",
+      "description": "PLURA-XDR의 보안 운영 자동화 기능입니다. 탐지·분석 결과를 허용된 조치와 알림·운영 절차에 연결하고 실제 실행 결과를 확인합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_forensic.html",
+      "title": "PLURA-Forensic · 증거 확인",
+      "description": "PLURA-XDR의 원격 라이브 포렌식 기능입니다. 호스트 상태와 스냅샷 변경 흔적을 탐지 이벤트에 연결해 침해 확인과 영향 범위 조사를 지원합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_vas.html",
+      "title": "PLURA-VAS · 보안 설정 점검",
+      "description": "PLURA-XDR의 보안 설정 점검 기능입니다. 계정·권한·서비스·감사 정책 등 지원 점검 항목을 확인하고 운영 환경의 개선 과제를 정리합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_sysmon.html",
+      "title": "PLURA-SysMon · 운영 상태 가시성",
+      "description": "PLURA-XDR의 리소스 모니터링 기능입니다. 호스트의 운영 상태를 확인하고 보안 이벤트와 함께 조사해야 할 상황을 파악합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "platform_backup.html",
+      "title": "로그 보관·관리 · 로그 보관·관리",
+      "description": "사건 조사와 사후 검토에 필요한 로그를 관리합니다. 수집 범위와 저장·조회·보관 조건을 업무 목적과 도입 구성에 맞춰 확인합니다.",
+      "section": "platform",
+      "core": false
+    },
+    {
+      "file": "mitreattack.html",
+      "title": "마이터 어택 기반 탐지",
+      "description": "PLURA-EDR의 마이터 어택 기반 행위 탐지. 프로세스·파일·계정 로그를 공격 전술·기법과 연결하고 웹셸·계정 공격의 증거를 AI·포렌식으로 분석합니다.",
+      "section": "resources",
+      "core": false
+    },
+    {
+      "file": "zta.html",
+      "title": "제로트러스트",
+      "description": "PLURA-XDR의 제로트러스트 지원 범위. 미 DoD 7대 영역 중 네트워크·환경, 기기·호스트, 가시성·분석, 자동화·오케스트레이션에 대응하는 기능을 확인하세요.",
+      "section": "platform",
+      "core": false
+    }
+  ],
+  "build": "7.1-20260919-links",
+  "design": "Enterprise Blue / selected concept A",
+  "review_build": true,
+  "content_build": "7.1-20260919-links",
+  "asset_root": "res/",
+  "source_archive_sha256": "9a32c57147c13f1513d522a166a7db8142f5ecb7b07a558239ffe4a21ea7778b",
+  "asset_build": "7.1-20260917-final"
+}
