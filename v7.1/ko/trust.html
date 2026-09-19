@@ -19,6 +19,160 @@
 <script defer="" src="../res/js/site.js?v=7.1-20260917-final"></script>
 <!-- Shared description typography; intentionally after page-specific styles. -->
 <link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-site-hover-styles" data-build="20260919-all-1">
+@media screen and (any-hover:hover) {
+html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step):hover {border-color:#8daef5;box-shadow:0 10px 28px rgba(28,72,156,.13);transform:translateY(-3px);}
+}
+/* PLURA / entire KO / input-aware feedback. Existing inline and shared CSS stays intact. */
+@media screen {
+.btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+.btn-primary:is(.is-pointer-hover,.ph-keyboard) {filter:brightness(.94)}
+.text-link:is(.is-pointer-hover,.ph-keyboard) {text-decoration:underline;text-underline-offset:5px}
+.main-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.nav-group>summary:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.main-nav .dropdown a:is(.is-pointer-hover,.ph-keyboard) {background:#eef3ff;color:var(--accent)}
+.footer-col a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-info a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-legal a:is(.is-pointer-hover,.ph-keyboard),
+.footer-languages a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+:where(.v71-pages) .text-link:is(.is-pointer-hover,.ph-keyboard) {color:#0d1e42}
+:where(.v71-pages) .text-link:is(.is-pointer-hover,.ph-keyboard) .icon {transform:translateX(3px)}
+:where(.v71-pages) .btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+:where(.v71-pages) .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#8eabe9}
+:where(.v71-pages) .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#202c47}
+:where(.v71-pages) .btn-line:is(.is-pointer-hover,.ph-keyboard) {border-color:#969caa;background:#f3f5f8}
+:where(.v71-pages) .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:#9eb7ec}
+:where(.v71-pages) .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--teal);border-bottom-color:var(--teal)}
+.v71-pages .text-link:is(.is-pointer-hover,.ph-keyboard) {color:#153caa}
+.v71-pages .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#1c47c1}
+.v71-pages .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#132b51}
+.v71-pages .btn-line:is(.is-pointer-hover,.ph-keyboard) {border-color:var(--accent);background:#f5f8ff}
+.v71-pages .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.v71-pages .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent);border-bottom-color:var(--accent)}
+.v71-pages .card:is(.is-pointer-hover,.ph-keyboard) {border-color:#bcd0f7;transform:none}
+
+}
+/* PLURA: one consistent blue feedback layer, scoped to existing components.
+   No font-size, line-height, padding, grid, width, or document order changes. */
+@media screen {
+  body[data-page] { --ph-blue:#2458e8; --ph-tint:#f1f6ff; --ph-line:#8daef5; }
+  body[data-page] .ph-feedback {
+    transition-property:color,background-color,border-color,box-shadow,transform,filter;
+    transition-duration:200ms;
+    transition-timing-function:ease;
+  }
+  body[data-page] #main [data-ph-kind] :is(.icon,.card-icon,.a-value-top,.zt-support-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {
+    transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,transform 180ms ease,box-shadow 180ms ease;
+  }
+  /* Non-clickable containers retain their natural cursor and accessibility semantics. */
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 10px 28px rgba(28,72,156,.13);
+    transform:translateY(-3px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured):not(.quote-card) {
+    background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured) :is(h3,.contact-simple__value) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) :is(.card-icon,.zt-support-icon,.soc-report-icon,.platform-soc-report-icon,.contact-simple__icon) {
+    background-color:var(--ph-blue);
+    color:#fff;
+    border-color:var(--ph-blue);
+    transform:translateY(-2px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) .a-value-top > .icon {
+    color:var(--ph-blue); transform:translateY(-2px);
+  }
+  /* Panel feedback doesn't move either the panel or neighbouring copy. */
+  body[data-page] #main [data-ph-kind="panel"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 12px 34px rgba(28,72,156,.13);
+  }
+  body[data-page] #main [data-ph-kind="tile"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    box-shadow:inset 0 0 0 1px #a5bff3;
+  }
+  /* Evidence / process rows: no vertical translation, so the target remains stable. */
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    border-color:#b1c8f2;
+    box-shadow:inset 3px 0 0 var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) :is(h3,h4,strong,.row-stage,.source) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) > :is(.icon,.mono) {
+    color:var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) .timeline-index {
+    background-color:var(--ph-blue); border-color:var(--ph-blue); color:#fff;
+    box-shadow:0 0 0 3px rgba(36,88,232,.10);
+  }
+  /* Dark-blue report panels keep light text and never get a white overlay. */
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:rgba(120,170,255,.15);
+    box-shadow:inset 3px 0 0 #93b9ff;
+  }
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) :is(b,strong,span) {color:#eef5ff;}
+  body[data-page] #main .data-table tbody tr:is(.is-pointer-hover,.ph-keyboard) > td {
+    background-color:#eff5ff;
+    transition:background-color 180ms ease;
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard)::after {color:var(--ph-blue);}
+  /* Tabs are preview highlights only. Selection still requires click or keyboard. */
+  body[data-page] #main [data-ph-kind="tab"]:is(.is-pointer-hover,.ph-keyboard):not([aria-selected="true"]):not([aria-pressed="true"]) {
+    color:#214fbf; background-color:#edf3ff; border-color:#9cb7f0;
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):not(:disabled):not([aria-disabled="true"]) {
+    box-shadow:0 5px 16px rgba(35,75,155,.19);
+    transform:translateY(-2px);
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):is(.btn-primary,.btn-dark) {
+    background-color:#194acd; border-color:#194acd; color:#fff;
+  }
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); text-decoration:underline; text-underline-offset:4px;
+  }
+  body[data-page] #main .a-soc [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {color:#dce9ff;}
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateX(3px);}
+  body[data-page] .site-header [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .site-footer [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {color:var(--ph-blue);}
+  body[data-page] .site-header .dropdown [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {background-color:#eef4ff;}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:#edf3ff; box-shadow:0 0 0 8px #edf3ff;
+  }
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) :is(b,.icon) {color:var(--ph-blue);}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateY(-2px);}
+  /* Main-panel transitions also run on a hybrid-input PC. */
+  body[data-page] #main .a-console :is(.a-flow-icon,.a-console-summary,.a-console-row,.a-side-icons>.icon) {
+    transition:color 200ms ease,background-color 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease;
+  }
+  /* Tactic header / compact diagram navigation and keyboard feedback. */
+  body[data-page] #main .ph-keyboard:focus-visible {outline:3px solid #2458e8;outline-offset:4px;}
+  body[data-page] #main .pa-user:is(.is-pointer-hover,.ph-keyboard) {border-color:#8eb1f6;box-shadow:0 5px 17px rgba(36,88,232,.10);}
+}
+@media (prefers-reduced-motion:reduce) {
+  body[data-page] .ph-feedback,
+  body[data-page] .ph-feedback *,
+  body[data-page] .ph-feedback::before,
+  body[data-page] .ph-feedback::after {
+    transition:none !important; animation:none !important;
+  }
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard) :is(.icon,.card-icon,.a-flow-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {transform:none !important;}
+}
+/* No focus/hover decorations should leak into a printed page. */
+@media print {
+  body[data-page] .ph-feedback {transition:none !important;animation:none !important;}
+}
+
+</style>
 </head>
 <body data-page="trust.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -35,5 +189,129 @@
 <button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
 <dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
 <noscript><div class="noscript-note wrap">JavaScript가 꺼져 있습니다. 각 메뉴의 상세 페이지는 열 수 있으며, 탭·자료 검색·상담 초안 작성은 JavaScript가 필요합니다.</div></noscript>
+
+<script id="plura-site-hover-script" data-build="20260919-all-1">
+/* PLURA v7.1 / Whole-KO hover layer / 20260919-all-1
+ * Visual state only: never opens links, submits forms, or changes selection.
+ * A real mouse (or hovering pen) works even when the primary input is touch.
+ * No external dependency, network request, storage, or animation loop.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || main.hasAttribute('data-plura-all-hover-ready')) return;
+    var groups = [
+  {
+    "selector": ".btn,\n.btn-primary,\n.footer-col a,\n.footer-info a,\n.footer-languages a,\n.footer-legal a,\n.main-nav .dropdown a,\n.main-nav a,\n.nav-group>summary,\n.text-link,\n.v71-pages .breadcrumbs a,\n.v71-pages .btn-dark,\n.v71-pages .btn-line,\n.v71-pages .btn-primary,\n.v71-pages .card,\n.v71-pages .local-nav a,\n.v71-pages .text-link,\n:where(.v71-pages) .breadcrumbs a,\n:where(.v71-pages) .btn,\n:where(.v71-pages) .btn-dark,\n:where(.v71-pages) .btn-line,\n:where(.v71-pages) .btn-primary,\n:where(.v71-pages) .local-nav a,\n:where(.v71-pages) .text-link"
+  },
+  {
+    "selector": "#main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step)",
+    "kind": "card"
+  },
+  {
+    "selector": "#main :is(.subhero-aside:not(.platform-architecture):not(.hm-card):not(.ai-harness-aside),.analysis-board,.report-preview,.a-report,.a-console,.definition-box,.zt-count)",
+    "kind": "panel"
+  },
+  {
+    "selector": "body[data-page] .btn",
+    "kind": "button"
+  },
+  {
+    "selector": "#main :is(.text-link,.feature-chips a,.local-nav a,.am-reference,.am-detail-link), #main .hm-footer>a",
+    "kind": "link"
+  },
+  {
+    "selector": "body[data-page] .site-header :is(.nav-group>summary,.dropdown a,.login-link), body[data-page] .site-footer a",
+    "kind": "nav"
+  }
+];
+    var nodes = [], known = new Set();
+    groups.forEach(function (group) {
+      document.querySelectorAll(group.selector).forEach(function (node) {
+        // Keep semantic roles and tabindex unchanged. Read-only cards stay read-only.
+        if (group.kind) node.setAttribute('data-ph-kind', group.kind);
+        if (!known.has(node)) { nodes.push(node); known.add(node); }
+      });
+    });
+    var keyboard = false;
+    function acceptsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    function disabled(node) {
+      return node.matches(':disabled, [aria-disabled="true"]');
+    }
+    function clearMouse() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    function clearFocus() {
+      nodes.forEach(function (node) { node.classList.remove('ph-keyboard'); });
+    }
+    nodes.forEach(function (node) {
+      node.setAttribute('data-ph-managed', '');
+      // Move colour/background only. The browser keeps the original layout.
+      node.classList.add('ph-feedback');
+      function update(event) {
+        var on = acceptsHover(event) && !disabled(node);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      if (window.PointerEvent) {
+        node.addEventListener('pointerenter', update);
+        node.addEventListener('pointermove', update, {passive: true});
+        node.addEventListener('pointerleave', clear);
+        node.addEventListener('pointercancel', clear);
+      } else {
+        // Fallback for an older browser; ignore compatibility mouse events after touch.
+        node.addEventListener('mouseenter', function () {
+          if (Date.now() >= ignoreMouseUntil && !disabled(node)) node.classList.add('is-pointer-hover');
+        });
+        node.addEventListener('mouseleave', clear);
+      }
+    });
+    var ignoreMouseUntil = 0;
+    function directInput(event) {
+      keyboard = false;
+      clearFocus();
+      if (event.type === 'touchstart' || event.pointerType === 'touch') {
+        ignoreMouseUntil = Date.now() + 800;
+        clearMouse();
+      }
+    }
+    document.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', directInput, {passive: true, capture: true});
+    if (!window.PointerEvent) document.addEventListener('touchstart', directInput, {passive: true, capture: true});
+    document.addEventListener('keydown', function (event) {
+      if (['Tab','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].indexOf(event.key) >= 0) keyboard = true;
+    }, true);
+    document.addEventListener('focusin', function (event) {
+      clearFocus();
+      var visible = false;
+      try { visible = event.target.matches(':focus-visible'); } catch (_) {}
+      if (!keyboard && !visible) return;
+      nodes.forEach(function (node) {
+        if (!disabled(node) && (node === event.target || node.contains(event.target))) node.classList.add('ph-keyboard');
+      });
+    });
+    document.addEventListener('focusout', function (event) {
+      nodes.forEach(function (node) {
+        if (!event.relatedTarget || !node.contains(event.relatedTarget)) node.classList.remove('ph-keyboard');
+      });
+    });
+    function clearAll() { clearMouse(); clearFocus(); }
+    window.addEventListener('blur', clearAll);
+    window.addEventListener('pagehide', clearAll);
+    document.addEventListener('visibilitychange', function () { if (document.hidden) clearAll(); });
+    document.documentElement.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-hover-targets', String(nodes.length));
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
+}());
+
+</script>
 </body>
 </html>
