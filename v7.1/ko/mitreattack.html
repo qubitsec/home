@@ -26,7 +26,7 @@
 #attack-matrix{--am-blue:var(--accent,#2454ed);--am-ink:var(--text,#182c4b);--am-muted:#53657f;--am-border:#dbe4f5;background:linear-gradient(160deg,#f5f8ff 0%,#f8faff 68%,#eff5ff 100%)}
 #attack-matrix .am-heading-row{gap:26px;align-items:flex-end}
 #attack-matrix .am-reference,#attack-matrix .am-detail-link{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:#244ba6;line-height:1.6;flex-shrink:0}
-#attack-matrix .am-reference:hover,#attack-matrix .am-detail-link:hover{text-decoration:underline;text-underline-offset:4px}
+#attack-matrix .am-reference:hover:where(:not([data-plura-hover-managed])),#attack-matrix .am-detail-link:hover:where(:not([data-plura-hover-managed])){text-decoration:underline;text-underline-offset:4px}
 #attack-matrix .am-shell{background:#fff;border:1px solid var(--am-border);border-radius:18px;box-shadow:0 18px 50px rgba(30,55,104,.055)}
 #attack-matrix .am-topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:19px 24px;border-radius:17px 17px 0 0;background:#192d4d;color:#fff}
 #attack-matrix .am-brandline{display:flex;align-items:center;gap:11px;flex-wrap:wrap;line-height:1.5}
@@ -112,12 +112,12 @@
 #attack-hero .hm-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:14px;padding-top:11px;border-top:1px solid #e7edf9;line-height:1.7}
 #attack-hero .hm-footer>span{font-size:10px;color:#70809b}
 #attack-hero .hm-footer>a{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;color:#244fbd}
-#attack-hero .hm-footer>a:hover{text-decoration:underline;text-underline-offset:4px}
-@media(hover:hover) and (pointer:fine){
-#attack-matrix .am-technique:hover{transform:translateY(-2px);border-color:#799aed;background:#f1f5ff;box-shadow:0 6px 14px rgba(38,77,147,.09)}
-#attack-matrix .am-technique:hover strong,#attack-matrix .am-technique:hover .am-tid{color:#2348c0}
-#attack-matrix .am-quick:hover,#attack-matrix .am-tactic:hover{background:#eaf1ff;border-color:#8da9e6}
-#attack-hero .hm-cell:hover{transform:translateY(-2px);border-color:#6d93e5;box-shadow:0 5px 12px rgba(33,76,150,.11)}
+#attack-hero .hm-footer>a:hover:where(:not([data-plura-hover-managed])){text-decoration:underline;text-underline-offset:4px}
+@media (any-hover: hover){
+#attack-matrix .am-technique:hover:where(:not([data-plura-hover-managed])){transform:translateY(-2px);border-color:#799aed;background:#f1f5ff;box-shadow:0 6px 14px rgba(38,77,147,.09)}
+#attack-matrix .am-technique:hover:where(:not([data-plura-hover-managed])) strong,#attack-matrix .am-technique:hover:where(:not([data-plura-hover-managed])) .am-tid{color:#2348c0}
+#attack-matrix .am-quick:hover:where(:not([data-plura-hover-managed])),#attack-matrix .am-tactic:hover:where(:not([data-plura-hover-managed])){background:#eaf1ff;border-color:#8da9e6}
+#attack-hero .hm-cell:hover:where(:not([data-plura-hover-managed])){transform:translateY(-2px);border-color:#6d93e5;box-shadow:0 5px 12px rgba(33,76,150,.11)}
 }
 /* Screen width determines the number of tactic columns. No omitted tactics. */
 @media(max-width:1359px){
@@ -186,6 +186,21 @@
 </style>
 <!-- Shared description typography; intentionally after page-specific styles. -->
 <link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-pointer-hover-styles">
+/* PLURA v7.1 / 20260919-pointer-hover-1.
+   Interaction colors/motion only; no typography or geometry changes.
+   Real mouse/hovering pen events work even when primary input is touch.
+   Kept AFTER readability.css so narrative-copy overrides stay independent. */
+@media screen {
+#attack-matrix .am-reference.is-pointer-hover,#attack-matrix .am-detail-link.is-pointer-hover {text-decoration:underline;text-underline-offset:4px}
+#attack-hero .hm-footer>a.is-pointer-hover {text-decoration:underline;text-underline-offset:4px}
+#attack-matrix .am-technique.is-pointer-hover {transform:translateY(-2px);border-color:#799aed;background:#f1f5ff;box-shadow:0 6px 14px rgba(38,77,147,.09)}
+#attack-matrix .am-technique.is-pointer-hover strong,#attack-matrix .am-technique.is-pointer-hover .am-tid {color:#2348c0}
+#attack-matrix .am-quick.is-pointer-hover,#attack-matrix .am-tactic.is-pointer-hover {background:#eaf1ff;border-color:#8da9e6}
+#attack-hero .hm-cell.is-pointer-hover {transform:translateY(-2px);border-color:#6d93e5;box-shadow:0 5px 12px rgba(33,76,150,.11)}
+}
+</style>
 </head>
 <body data-page="mitreattack.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -262,7 +277,9 @@
   try { data = JSON.parse(source.textContent); } catch (_) { return; }
   const has = key => Object.prototype.hasOwnProperty.call(data, key);
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const hover = window.matchMedia('(hover: hover) and (pointer: fine)');
+  // A connected mouse may not be the primary input on a touch-capable PC.
+  const isHoverPointer = event => event.pointerType === 'mouse' ||
+    (event.pointerType === 'pen' && event.buttons === 0);
   let selected = 'T1505-003';
   const status = section.querySelector('[data-am-status]');
   function enhance(link, kind) {
@@ -338,7 +355,8 @@
   section.querySelectorAll('[data-am-jump]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.amJump)));
   mini.forEach(b=>{
     b.addEventListener('click',()=>select(b.dataset.hmKey));
-    b.addEventListener('pointerenter',()=>{if(hover.matches)preview(b.dataset.hmKey);});
+    b.addEventListener('pointerenter',event=>{if(isHoverPointer(event))preview(b.dataset.hmKey);});
+    b.addEventListener('pointermove',event=>{if(isHoverPointer(event)&&!b.classList.contains('is-preview'))preview(b.dataset.hmKey);});
     b.addEventListener('focus',()=>preview(b.dataset.hmKey));
     b.addEventListener('keydown',e=>spatialNavigation(e,b,mini));
   });
@@ -349,6 +367,51 @@
   select(selected,false);
 })();
 
+</script>
+
+<script id="plura-pointer-hover-script">
+/* Local visual state only. No network, storage, timers, click interception,
+   or changes to component selection / keyboard / accessibility semantics. */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || !window.PointerEvent || main.hasAttribute('data-plura-hover-ready')) return;
+    var nodes = Array.prototype.slice.call(document.querySelectorAll("#attack-matrix .am-reference,\n#attack-matrix .am-detail-link,\n#attack-hero .hm-footer>a,\n#attack-matrix .am-technique,\n#attack-matrix .am-quick,\n#attack-matrix .am-tactic,\n#attack-hero .hm-cell"));
+    function supportsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    nodes.forEach(function (node) {
+      function update(event) {
+        var on = supportsHover(event);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      node.addEventListener('pointerenter', update);
+      node.addEventListener('pointermove', update, {passive: true});
+      node.addEventListener('pointerdown', update, {passive: true});
+      node.addEventListener('pointerleave', clear);
+      node.addEventListener('pointercancel', clear);
+      node.setAttribute('data-plura-hover-managed', '');
+    });
+    function clearAll() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    window.addEventListener('blur', clearAll);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) clearAll();
+    });
+    main.setAttribute('data-plura-hover-ready', '20260919-1');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, {once: true});
+  } else {
+    init();
+  }
+}());
 </script>
 </body>
 </html>

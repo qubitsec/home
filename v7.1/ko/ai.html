@@ -277,17 +277,17 @@ body[data-page="ai.html"] .v71-pages .subhero-aside#aih-harness {
   border-color: rgba(255, 255, 255, .34);
 }
 /* No hover-only state on touchscreen devices. */
-@media (hover: hover) and (pointer: fine) {
-  #aih-harness .aih-card:hover { border-color: #9cb5fb; box-shadow: 0 14px 34px rgba(40, 85, 234, .10); }
-  #aih-harness .aih-step:hover {
+@media (any-hover: hover) {
+  #aih-harness .aih-card:hover:where(:not([data-plura-hover-managed])) { border-color: #9cb5fb; box-shadow: 0 14px 34px rgba(40, 85, 234, .10); }
+  #aih-harness .aih-step:hover:where(:not([data-plura-hover-managed])) {
     background-color: var(--aih-blue);
     border-color: var(--aih-blue);
     color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 7px 18px rgba(40, 85, 234, .23);
   }
-  #aih-harness .aih-step:hover :is(.aih-num, .aih-sub) { color: #eef3ff; }
-  #aih-harness .aih-step:hover .aih-icon {
+  #aih-harness .aih-step:hover:where(:not([data-plura-hover-managed])) :is(.aih-num, .aih-sub) { color: #eef3ff; }
+  #aih-harness .aih-step:hover:where(:not([data-plura-hover-managed])) .aih-icon {
     color: #fff;
     background: rgba(255, 255, 255, .14);
     border-color: rgba(255, 255, 255, .34);
@@ -311,6 +311,29 @@ body[data-page="ai.html"] .v71-pages .subhero-aside#aih-harness {
 
 <!-- Shared description typography; intentionally after page-specific styles. -->
 <link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-pointer-hover-styles">
+/* PLURA v7.1 / 20260919-pointer-hover-1.
+   Interaction colors/motion only; no typography or geometry changes.
+   Real mouse/hovering pen events work even when primary input is touch.
+   Kept AFTER readability.css so narrative-copy overrides stay independent. */
+@media screen {
+#aih-harness .aih-card.is-pointer-hover { border-color: #9cb5fb; box-shadow: 0 14px 34px rgba(40, 85, 234, .10); }
+#aih-harness .aih-step.is-pointer-hover {
+    background-color: var(--aih-blue);
+    border-color: var(--aih-blue);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(40, 85, 234, .23);
+  }
+#aih-harness .aih-step.is-pointer-hover :is(.aih-num, .aih-sub) { color: #eef3ff; }
+#aih-harness .aih-step.is-pointer-hover .aih-icon {
+    color: #fff;
+    background: rgba(255, 255, 255, .14);
+    border-color: rgba(255, 255, 255, .34);
+  }
+}
+</style>
 </head>
 <body data-page="ai.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -376,7 +399,11 @@ body[data-page="ai.html"] .v71-pages .subhero-aside#aih-harness {
     {title: '03 / 검증·판단', text: '공격성·영향 범위·미확인 사항을 구분하고, 분석 결과를 원문과 대조해 검토합니다.'},
     {title: '04 / 정책 대응', text: '허용된 정책·권한·승인 기준에 따라 차단·격리와 관제 보고를 연결합니다.'}
   ];
-  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+  // Check the event, not the browser's primary-input media query.
+  function isHoverPointer(event) {
+    return event.pointerType === 'mouse' ||
+      (event.pointerType === 'pen' && event.buttons === 0);
+  }
   var selected = -1;
   function render(index) {
     var value = index >= 0 ? stages[index] : overview;
@@ -392,8 +419,9 @@ body[data-page="ai.html"] .v71-pages .subhero-aside#aih-harness {
     preview(focused >= 0 ? focused : selected);
   }
   buttons.forEach(function (button, index) {
-    button.addEventListener('pointerenter', function () { if (finePointer.matches) preview(index); });
-    button.addEventListener('pointerleave', function () { if (finePointer.matches) restore(); });
+    button.addEventListener('pointerenter', function (event) { if (isHoverPointer(event)) preview(index); });
+    button.addEventListener('pointermove', function (event) { if (isHoverPointer(event) && !button.classList.contains('is-preview')) preview(index); });
+    button.addEventListener('pointerleave', function (event) { if (isHoverPointer(event)) restore(); });
     button.addEventListener('focus', function () { preview(index); });
     button.addEventListener('blur', function () { window.setTimeout(restore, 0); });
     button.addEventListener('click', function () {
@@ -410,8 +438,53 @@ body[data-page="ai.html"] .v71-pages .subhero-aside#aih-harness {
       render(-1);
     });
   });
-  root.addEventListener('pointerleave', function () { if (finePointer.matches) restore(); });
+  root.addEventListener('pointerleave', function (event) { if (isHoverPointer(event)) restore(); });
   root.classList.add('aih-enhanced');
+}());
+</script>
+
+<script id="plura-pointer-hover-script">
+/* Local visual state only. No network, storage, timers, click interception,
+   or changes to component selection / keyboard / accessibility semantics. */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || !window.PointerEvent || main.hasAttribute('data-plura-hover-ready')) return;
+    var nodes = Array.prototype.slice.call(document.querySelectorAll("#aih-harness .aih-card,\n#aih-harness .aih-step"));
+    function supportsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    nodes.forEach(function (node) {
+      function update(event) {
+        var on = supportsHover(event);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      node.addEventListener('pointerenter', update);
+      node.addEventListener('pointermove', update, {passive: true});
+      node.addEventListener('pointerdown', update, {passive: true});
+      node.addEventListener('pointerleave', clear);
+      node.addEventListener('pointercancel', clear);
+      node.setAttribute('data-plura-hover-managed', '');
+    });
+    function clearAll() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    window.addEventListener('blur', clearAll);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) clearAll();
+    });
+    main.setAttribute('data-plura-hover-ready', '20260919-1');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, {once: true});
+  } else {
+    init();
+  }
 }());
 </script>
 </body>

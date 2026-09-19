@@ -339,32 +339,32 @@
   border-color: #6e99ee;
   box-shadow: 0 6px 18px rgba(36, 88, 232, .13);
 }
-@media (hover: hover) and (pointer: fine) {
-  #main.platform-interactive .scenario-evidence .timeline-step:hover {
+@media (any-hover: hover) {
+  #main.platform-interactive .scenario-evidence .timeline-step:hover:where(:not([data-plura-hover-managed])) {
     border-color: #bed2fb;
     background: #fff;
     box-shadow: 0 8px 24px rgba(36, 74, 141, .08);
   }
-  #main.platform-interactive .scenario-evidence .timeline-step:hover .timeline-index {
+  #main.platform-interactive .scenario-evidence .timeline-step:hover:where(:not([data-plura-hover-managed])) .timeline-index {
     border-color: #2458e8;
     background: #2458e8;
     color: #fff;
     box-shadow: 0 0 0 4px rgba(36, 88, 232, .09);
     transform: scale(1.06);
   }
-  #main.platform-interactive .scenario-evidence .timeline-step:hover > div { transform: translateX(3px); }
-  #main.platform-interactive .scenario-evidence .timeline-step:hover strong,
-  #main.platform-interactive .scenario-evidence .timeline-step:hover .source { color: #2154c2; }
-  #main.platform-interactive .pa-node[href]:hover,
-  #main.platform-interactive .pa-service:hover {
+  #main.platform-interactive .scenario-evidence .timeline-step:hover:where(:not([data-plura-hover-managed])) > div { transform: translateX(3px); }
+  #main.platform-interactive .scenario-evidence .timeline-step:hover:where(:not([data-plura-hover-managed])) strong,
+  #main.platform-interactive .scenario-evidence .timeline-step:hover:where(:not([data-plura-hover-managed])) .source { color: #2154c2; }
+  #main.platform-interactive .pa-node[href]:hover:where(:not([data-plura-hover-managed])),
+  #main.platform-interactive .pa-service:hover:where(:not([data-plura-hover-managed])) {
     border-color: #8eb1f6;
     background: #f0f5ff;
     box-shadow: 0 5px 17px rgba(36, 88, 232, .10);
   }
-  #main.platform-interactive .pa-node[href]:hover .pa-node-icon,
-  #main.platform-interactive .pa-service:hover .pa-service-icon,
-  #main.platform-interactive .pa-analysis:hover .pa-analysis-icon { transform: translateY(-2px); }
-  #main.platform-interactive .pa-analysis:hover {
+  #main.platform-interactive .pa-node[href]:hover:where(:not([data-plura-hover-managed])) .pa-node-icon,
+  #main.platform-interactive .pa-service:hover:where(:not([data-plura-hover-managed])) .pa-service-icon,
+  #main.platform-interactive .pa-analysis:hover:where(:not([data-plura-hover-managed])) .pa-analysis-icon { transform: translateY(-2px); }
+  #main.platform-interactive .pa-analysis:hover:where(:not([data-plura-hover-managed])) {
     border-color: #71a1f5;
     box-shadow: 0 7px 22px rgba(27, 63, 121, .22);
   }
@@ -431,6 +431,43 @@
 </style>
 <!-- Shared description typography; intentionally after page-specific styles. -->
 <link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-pointer-hover-styles">
+/* PLURA v7.1 / 20260919-pointer-hover-1.
+   Interaction colors/motion only; no typography or geometry changes.
+   Real mouse/hovering pen events work even when primary input is touch.
+   Kept AFTER readability.css so narrative-copy overrides stay independent. */
+@media screen {
+#main.platform-interactive .scenario-evidence .timeline-step.is-pointer-hover {
+    border-color: #bed2fb;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(36, 74, 141, .08);
+  }
+#main.platform-interactive .scenario-evidence .timeline-step.is-pointer-hover .timeline-index {
+    border-color: #2458e8;
+    background: #2458e8;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(36, 88, 232, .09);
+    transform: scale(1.06);
+  }
+#main.platform-interactive .scenario-evidence .timeline-step.is-pointer-hover > div { transform: translateX(3px); }
+#main.platform-interactive .scenario-evidence .timeline-step.is-pointer-hover strong,
+  #main.platform-interactive .scenario-evidence .timeline-step.is-pointer-hover .source { color: #2154c2; }
+#main.platform-interactive .pa-node[href].is-pointer-hover,
+  #main.platform-interactive .pa-service.is-pointer-hover {
+    border-color: #8eb1f6;
+    background: #f0f5ff;
+    box-shadow: 0 5px 17px rgba(36, 88, 232, .10);
+  }
+#main.platform-interactive .pa-node[href].is-pointer-hover .pa-node-icon,
+  #main.platform-interactive .pa-service.is-pointer-hover .pa-service-icon,
+  #main.platform-interactive .pa-analysis.is-pointer-hover .pa-analysis-icon { transform: translateY(-2px); }
+#main.platform-interactive .pa-analysis.is-pointer-hover {
+    border-color: #71a1f5;
+    box-shadow: 0 7px 22px rgba(27, 63, 121, .22);
+  }
+}
+</style>
 </head>
 <body data-page="platform.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -482,5 +519,50 @@
 <button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
 <dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
 <noscript><div class="noscript-note wrap">JavaScript가 꺼져 있습니다. 각 메뉴의 상세 페이지는 열 수 있으며, 탭·자료 검색·상담 초안 작성은 JavaScript가 필요합니다.</div></noscript>
+
+<script id="plura-pointer-hover-script">
+/* Local visual state only. No network, storage, timers, click interception,
+   or changes to component selection / keyboard / accessibility semantics. */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || !window.PointerEvent || main.hasAttribute('data-plura-hover-ready')) return;
+    var nodes = Array.prototype.slice.call(document.querySelectorAll("#main.platform-interactive .scenario-evidence .timeline-step,\n#main.platform-interactive .pa-node[href],\n#main.platform-interactive .pa-service,\n#main.platform-interactive .pa-analysis"));
+    function supportsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    nodes.forEach(function (node) {
+      function update(event) {
+        var on = supportsHover(event);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      node.addEventListener('pointerenter', update);
+      node.addEventListener('pointermove', update, {passive: true});
+      node.addEventListener('pointerdown', update, {passive: true});
+      node.addEventListener('pointerleave', clear);
+      node.addEventListener('pointercancel', clear);
+      node.setAttribute('data-plura-hover-managed', '');
+    });
+    function clearAll() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    window.addEventListener('blur', clearAll);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) clearAll();
+    });
+    main.setAttribute('data-plura-hover-ready', '20260919-1');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, {once: true});
+  } else {
+    init();
+  }
+}());
+</script>
 </body>
 </html>
