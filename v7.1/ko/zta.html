@@ -171,6 +171,17 @@ html:not([data-plura-all-hover-ready]) #main .zt-workflow > article:hover {backg
 }
 
 </style>
+
+<!-- ZTA only: the old shared rule paints 4 white on a white card.
+     Override text colours only; keep typography, layout, and hover handlers. -->
+<style id="plura-zta-count-visibility-fix" data-build="20260920-1">
+body[data-page="zta.html"] #main .zt-hero-aside .zt-hero-count > strong {
+  color: #2458e8;
+}
+body[data-page="zta.html"] #main .zt-hero-aside .zt-hero-count > span {
+  color: #536783;
+}
+</style>
 </head>
 <body data-page="zta.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
