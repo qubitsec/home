@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/><meta content="#2458e8" name="theme-color"/>
+<title>라이선스별 기능 안내 | PLURA-XDR</title><meta content="STANDARD, GOLD, PLATINUM의 주요 기능 제공 범위와 로그 조회 기간을 확인하세요." name="description"/>
+<meta content="Qubit Security Inc." name="author"/><meta content="7.1-20260922-license" name="plura-website-version"/>
+<!-- Review build. Enable indexing only after the release checklist is approved. -->
+<meta content="noindex, follow" name="robots"/><link href="https://www.plura.io/ko/license.html" rel="canonical"/>
+<meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="PLURA" property="og:site_name"/>
+<meta content="라이선스별 기능 안내 | PLURA-XDR" property="og:title"/><meta content="STANDARD, GOLD, PLATINUM의 주요 기능 제공 범위와 로그 조회 기간을 확인하세요." property="og:description"/><meta content="https://www.plura.io/ko/license.html" property="og:url"/>
+<link href="../res/images/favicon.ico" rel="icon"/>
+<!-- Typeface is loaded remotely. Offline use falls back to locally installed Korean fonts. -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../res/css/site.css?v=7.1-20260917-final" rel="stylesheet"/>
+<link href="../res/css/pages.css?v=7.1-20260917-final" rel="stylesheet"/>
+<script defer="" src="../res/js/site.js?v=7.1-20260917-final"></script>
+<!-- Shared description typography; intentionally after page-specific styles. -->
+<link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-site-hover-styles" data-build="20260919-all-1">
+@media screen and (any-hover:hover) {
+html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step):hover {border-color:#8daef5;box-shadow:0 10px 28px rgba(28,72,156,.13);transform:translateY(-3px);}
+html:not([data-plura-all-hover-ready]) #main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line):hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+html:not([data-plura-all-hover-ready]) #main .zt-workflow > article:hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+html:not([data-plura-all-hover-ready]) #main .faq-item > summary:hover {background-color:#f1f6ff;color:#2458e8;}
+}
+/* PLURA / entire KO / input-aware feedback. Existing inline and shared CSS stays intact. */
+@media screen {
+.btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+.btn-primary:is(.is-pointer-hover,.ph-keyboard) {filter:brightness(.94)}
+.main-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.nav-group>summary:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.main-nav .dropdown a:is(.is-pointer-hover,.ph-keyboard) {background:#eef3ff;color:var(--accent)}
+.footer-col a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-info a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-legal a:is(.is-pointer-hover,.ph-keyboard),
+.footer-languages a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+:where(.v71-pages) .btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+:where(.v71-pages) .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#8eabe9}
+:where(.v71-pages) .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#202c47}
+:where(.v71-pages) .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:#9eb7ec}
+:where(.v71-pages) .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--teal);border-bottom-color:var(--teal)}
+.v71-pages .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#1c47c1}
+.v71-pages .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#132b51}
+.v71-pages .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.v71-pages .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent);border-bottom-color:var(--accent)}
+.v71-pages .plan-card.featured .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#e9f0ff}
+
+}
+/* PLURA: one consistent blue feedback layer, scoped to existing components.
+   No font-size, line-height, padding, grid, width, or document order changes. */
+@media screen {
+  body[data-page] { --ph-blue:#2458e8; --ph-tint:#f1f6ff; --ph-line:#8daef5; }
+  body[data-page] .ph-feedback {
+    transition-property:color,background-color,border-color,box-shadow,transform,filter;
+    transition-duration:200ms;
+    transition-timing-function:ease;
+  }
+  body[data-page] #main [data-ph-kind] :is(.icon,.card-icon,.a-value-top,.zt-support-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {
+    transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,transform 180ms ease,box-shadow 180ms ease;
+  }
+  /* Non-clickable containers retain their natural cursor and accessibility semantics. */
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 10px 28px rgba(28,72,156,.13);
+    transform:translateY(-3px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured):not(.quote-card) {
+    background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured) :is(h3,.contact-simple__value) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) :is(.card-icon,.zt-support-icon,.soc-report-icon,.platform-soc-report-icon,.contact-simple__icon) {
+    background-color:var(--ph-blue);
+    color:#fff;
+    border-color:var(--ph-blue);
+    transform:translateY(-2px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) .a-value-top > .icon {
+    color:var(--ph-blue); transform:translateY(-2px);
+  }
+  /* Panel feedback doesn't move either the panel or neighbouring copy. */
+  body[data-page] #main [data-ph-kind="panel"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 12px 34px rgba(28,72,156,.13);
+  }
+  body[data-page] #main [data-ph-kind="tile"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    box-shadow:inset 0 0 0 1px #a5bff3;
+  }
+  /* Evidence / process rows: no vertical translation, so the target remains stable. */
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    border-color:#b1c8f2;
+    box-shadow:inset 3px 0 0 var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) :is(h3,h4,strong,.row-stage,.source) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) > :is(.icon,.mono) {
+    color:var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) .timeline-index {
+    background-color:var(--ph-blue); border-color:var(--ph-blue); color:#fff;
+    box-shadow:0 0 0 3px rgba(36,88,232,.10);
+  }
+  /* Dark-blue report panels keep light text and never get a white overlay. */
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:rgba(120,170,255,.15);
+    box-shadow:inset 3px 0 0 #93b9ff;
+  }
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) :is(b,strong,span) {color:#eef5ff;}
+  body[data-page] #main .data-table tbody tr:is(.is-pointer-hover,.ph-keyboard) > td {
+    background-color:#eff5ff;
+    transition:background-color 180ms ease;
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard)::after {color:var(--ph-blue);}
+  /* Tabs are preview highlights only. Selection still requires click or keyboard. */
+  body[data-page] #main [data-ph-kind="tab"]:is(.is-pointer-hover,.ph-keyboard):not([aria-selected="true"]):not([aria-pressed="true"]) {
+    color:#214fbf; background-color:#edf3ff; border-color:#9cb7f0;
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):not(:disabled):not([aria-disabled="true"]) {
+    box-shadow:0 5px 16px rgba(35,75,155,.19);
+    transform:translateY(-2px);
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):is(.btn-primary,.btn-dark) {
+    background-color:#194acd; border-color:#194acd; color:#fff;
+  }
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); text-decoration:underline; text-underline-offset:4px;
+  }
+  body[data-page] #main .a-soc [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {color:#dce9ff;}
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateX(3px);}
+  body[data-page] .site-header [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .site-footer [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {color:var(--ph-blue);}
+  body[data-page] .site-header .dropdown [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {background-color:#eef4ff;}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:#edf3ff; box-shadow:0 0 0 8px #edf3ff;
+  }
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) :is(b,.icon) {color:var(--ph-blue);}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateY(-2px);}
+  /* Main-panel transitions also run on a hybrid-input PC. */
+  body[data-page] #main .a-console :is(.a-flow-icon,.a-console-summary,.a-console-row,.a-side-icons>.icon) {
+    transition:color 200ms ease,background-color 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease;
+  }
+  /* Tactic header / compact diagram navigation and keyboard feedback. */
+  body[data-page] #main .ph-keyboard:focus-visible {outline:3px solid #2458e8;outline-offset:4px;}
+  body[data-page] #main .pa-user:is(.is-pointer-hover,.ph-keyboard) {border-color:#8eb1f6;box-shadow:0 5px 17px rgba(36,88,232,.10);}
+}
+@media (prefers-reduced-motion:reduce) {
+  body[data-page] .ph-feedback,
+  body[data-page] .ph-feedback *,
+  body[data-page] .ph-feedback::before,
+  body[data-page] .ph-feedback::after {
+    transition:none !important; animation:none !important;
+  }
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard) :is(.icon,.card-icon,.a-flow-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {transform:none !important;}
+}
+/* No focus/hover decorations should leak into a printed page. */
+@media print {
+  body[data-page] .ph-feedback {transition:none !important;animation:none !important;}
+}
+
+</style>
+
+<style id="plura-license-styles" data-build="20260922-license-1">
+/* License reference only. No shared styles, pricing cards or tier emphasis. */
+#main.license-page { background:#fff; color:#162640; }
+#main.license-page .lic-container { width:min(1120px,calc(100% - 112px)); margin-inline:auto; }
+#main.license-page .lic-intro { padding:28px 0 34px; border-bottom:1px solid #e3e9f1; }
+#main.license-page .breadcrumbs { margin:0 0 24px; color:#657188; font-size:13px; }
+#main.license-page .breadcrumbs [aria-current="page"] { color:#52647c; }
+#main.license-page .lic-kicker { margin:0 0 10px; font-size:12px; letter-spacing:.1em; font-weight:600; color:#55718f; }
+#main.license-page h1 { margin:0; font-size:clamp(30px,3vw,40px); font-weight:600; line-height:1.4; letter-spacing:-.035em; }
+#main.license-page .lic-lead { margin:14px 0 0; font-size:17px; font-weight:400; line-height:1.85; color:#526278; }
+#main.license-page .lic-jump { display:flex; flex-wrap:wrap; align-items:center; gap:10px 24px; margin-top:22px; }
+#main.license-page .lic-jump a { display:inline-flex; align-items:center; gap:7px; padding:5px 0; font-size:14px; color:#355d95; line-height:1.6; }
+#main.license-page .lic-jump .icon { width:15px; height:15px; }
+#main.license-page .lic-section { padding:36px 0 0; scroll-margin-top:110px; }
+#main.license-page .lic-section-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 20px; margin-bottom:16px; }
+#main.license-page .lic-section-head h2 { margin:0; font-size:24px; line-height:1.5; font-weight:600; letter-spacing:-.025em; }
+#main.license-page .lic-section-head p { margin:0; color:#637086; font-size:14px; font-weight:400; line-height:1.8; }
+#main.license-page .lic-table-frame { border:1px solid #dce4ee; border-radius:10px; overflow:hidden; }
+#main.license-page .lic-table { width:100%; border-collapse:collapse; table-layout:fixed; background:#fff; font-size:16px; line-height:1.65; }
+#main.license-page .lic-table .lic-col-feature { width:43%; }
+#main.license-page .lic-table .lic-col-plan { width:19%; }
+#main.license-page .lic-table th, #main.license-page .lic-table td { vertical-align:middle; padding:19px 22px; overflow-wrap:break-word; word-break:keep-all; }
+#main.license-page .lic-table thead th { background:#f3f6fa; font-size:14px; font-weight:600; color:#31465f; border-bottom:1px solid #dce4ee; text-align:center; letter-spacing:.015em; }
+#main.license-page .lic-table thead th:first-child { text-align:left; }
+#main.license-page .lic-table tbody tr + tr > * { border-top:1px solid #e5eaf1; }
+#main.license-page .lic-table tbody th { font-size:16px; font-weight:500; text-align:left; color:#203650; }
+#main.license-page .lic-table tbody td { border-left:1px solid #edf0f5; text-align:center; color:#34475d; font-weight:500; }
+#main.license-page .lic-item-title { display:block; }
+#main.license-page .lic-path { display:block; margin-top:5px; color:#627087; font-size:12px; font-weight:400; line-height:1.65; }
+#main.license-page .lic-status { display:block; font-weight:500; font-size:15px; }
+#main.license-page .lic-status--no { color:#657188; }
+#main.license-page .lic-sub { display:block; margin-top:2px; color:#637087; font-size:12px; font-weight:400; }
+#main.license-page .lic-mobile-plan { display:none; }
+#main.license-page .lic-table-note { margin:12px 0 0; color:#5e6e84; font-size:13px; line-height:1.85; font-weight:400; }
+#main.license-page .lic-bottom { padding:28px 0 48px; }
+#main.license-page .lic-policy-note { margin:0; color:#5e6e84; font-size:13px; font-weight:400; line-height:1.85; }
+#main.license-page .lic-help { display:flex; align-items:center; flex-wrap:wrap; gap:6px 18px; margin-top:18px; padding-top:18px; border-top:1px solid #e5eaf1; }
+#main.license-page .lic-help p { margin:0; font-size:14px; line-height:1.8; font-weight:400; color:#56677e; }
+#main.license-page .lic-help a { display:inline-block; padding:5px 0; font-size:14px; line-height:1.8; font-weight:500; color:#28599d; text-decoration:underline; text-underline-offset:4px; }
+#main.license-page a:focus-visible { outline:2px solid #2458e8; outline-offset:5px; border-radius:2px; }
+@media (any-hover:hover) {
+  #main.license-page .lic-table tbody tr:hover > * { background:#f8faff; }
+  #main.license-page .lic-jump a:hover { text-decoration:underline; text-underline-offset:4px; }
+}
+@media (max-width:1190px) { #main.license-page .lic-container { width:calc(100% - 72px); } }
+@media (max-width:1023px) {
+  #main.license-page .lic-container { width:calc(100% - 56px); }
+  #main.license-page .lic-table th, #main.license-page .lic-table td { padding:17px 15px; }
+  #main.license-page .lic-table .lic-col-feature { width:40%; }
+  #main.license-page .lic-table .lic-col-plan { width:20%; }
+}
+@media (max-width:700px) {
+  #main.license-page .lic-intro { padding:23px 0 26px; }
+  #main.license-page .lic-lead { font-size:16px; }
+  #main.license-page .lic-section { padding-top:28px; scroll-margin-top:90px; }
+  #main.license-page .lic-section-head { display:block; margin-bottom:14px; }
+  #main.license-page .lic-section-head h2 { font-size:22px; }
+  #main.license-page .lic-section-head p { margin-top:6px; font-size:13px; }
+  #main.license-page .lic-table-frame { border:0; border-radius:0; overflow:visible; }
+  /* One feature per card; all three licenses remain visible together. */
+  #main.license-page .lic-table, #main.license-page .lic-table tbody { display:block; width:100%; }
+  #main.license-page .lic-table colgroup { display:none; }
+  #main.license-page .lic-table thead { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); clip-path:inset(50%); border:0; white-space:nowrap; }
+  #main.license-page .lic-table tbody tr { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border:1px solid #dce4ee; border-radius:9px; overflow:hidden; margin:0 0 12px; }
+  #main.license-page .lic-table tbody tr:last-child { margin-bottom:0; }
+  #main.license-page .lic-table tbody tr > th { display:block; grid-column:1 / -1; background:#f6f8fb; border:0; padding:15px 16px; font-size:16px; }
+  #main.license-page .lic-table tbody tr > td { display:block; padding:14px 4px 15px; border-top:1px solid #e5eaf1; border-left:1px solid #e5eaf1; font-size:15px; }
+  #main.license-page .lic-table tbody tr > td:nth-child(2) { border-left:0; }
+  #main.license-page .lic-path { font-size:12px; line-height:1.8; margin-top:4px; }
+  #main.license-page .lic-mobile-plan { display:block; margin-bottom:8px; font-size:11px; letter-spacing:.01em; font-weight:600; line-height:1.5; color:#53657c; white-space:nowrap; }
+  #main.license-page .lic-status { font-size:14px; line-height:1.7; }
+  #main.license-page .lic-sub { font-size:11px; line-height:1.7; }
+  #main.license-page .lic-bottom { padding-bottom:34px; }
+}
+@media (max-width:600px) {
+  #main.license-page .lic-container { width:calc(100% - 40px); }
+  #main.license-page .breadcrumbs { font-size:11px; margin-bottom:20px; }
+  #main.license-page .lic-jump { margin-top:16px; gap:8px 20px; }
+  #main.license-page .lic-jump a { font-size:13px; }
+}
+@media (max-width:359px) {
+  #main.license-page .lic-container { width:calc(100% - 32px); }
+  #main.license-page h1 { font-size:28px; }
+  #main.license-page .lic-mobile-plan { font-size:10px; }
+  #main.license-page .lic-table tbody tr > th { padding:13px 12px; }
+}
+@media print {
+  #main.license-page .lic-container { width:100%; max-width:none; }
+  #main.license-page .lic-intro { padding:0 0 14px; }
+  #main.license-page h1 { font-size:23pt; }
+  #main.license-page .lic-lead { font-size:11pt; }
+  #main.license-page .lic-jump, #main.license-page .breadcrumbs, #main.license-page .lic-help { display:none; }
+  #main.license-page .lic-section { padding-top:20px; }
+  #main.license-page .lic-section-head h2 { font-size:15pt; }
+  #main.license-page .lic-table-frame { border:1px solid #ccd3de; border-radius:0; overflow:visible; }
+  #main.license-page .lic-table { display:table; font-size:10pt; }
+  #main.license-page .lic-table colgroup { display:table-column-group; }
+  #main.license-page .lic-table thead { display:table-header-group; position:static; width:auto; height:auto; margin:0; clip:auto; clip-path:none; white-space:normal; overflow:visible; }
+  #main.license-page .lic-table tbody { display:table-row-group; }
+  #main.license-page .lic-table tbody tr { display:table-row; border:0; margin:0; break-inside:avoid; }
+  #main.license-page .lic-table tbody tr > th, #main.license-page .lic-table tbody tr > td { display:table-cell; padding:9px 11px; font-size:10pt; border-top:1px solid #e5eaf1; }
+  #main.license-page .lic-table thead th { padding:10px 11px; font-size:10pt; }
+  #main.license-page .lic-mobile-plan { display:none; }
+  #main.license-page .lic-status { font-size:10pt; }
+  #main.license-page .lic-path, #main.license-page .lic-sub, #main.license-page .lic-table-note, #main.license-page .lic-policy-note { font-size:8pt; }
+  #main.license-page .lic-bottom { padding:16px 0 0; }
+}
+</style>
+
+</head>
+<body data-page="license.html" data-website-version="7.1">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<header class="site-header"><div class="wrap nav-inner">
+<a aria-label="PLURA 홈페이지" class="brand" href="index.html"><img alt="PLURA" height="68" src="../res/images/logo_over.png" width="230"/><span class="brand-label">SECURITY<br/>PLATFORM</span></a>
+<nav aria-label="주요 메뉴" class="main-nav" id="primary-nav"><details class="nav-group"><summary>PLURA-XDR<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">ONE INTEGRATED PLATFORM</p><a href="platform_xdr.html"><strong>플랫폼 개요</strong><span>원천 데이터부터 대응까지</span></a><a href="ai.html"><strong>AI 분석·대응</strong><span>AI 공격을 AI가 방어하는 체계</span></a><a href="mitreattack.html"><strong>마이터 어택 기반 탐지</strong><span>행위 탐지 · 기법 ID · 공격 흐름</span></a><a href="zta.html"><strong>제로트러스트</strong><span>7대 영역 중 4개 영역의 탐지·분석·대응</span></a><a href="platform.html"><strong>통합 보안 기능</strong><span>WAF · EDR · SIEM · SOAR · Forensic</span></a></div></details><details class="nav-group"><summary>AI 보안관제<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">PLURA-XDR + SOC</p><a href="platform_soc.html"><strong>PLURA-XDR + SOC</strong><span>플랫폼과 전문 관제의 연결</span></a><a href="soc-operation.html"><strong>관제 운영 방식</strong><span>검토 · 대응 · 보고 · 개선</span></a></div></details><details class="nav-group"><summary>위협 대응<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">THREAT-LED DEFENSE</p><a href="threats.html"><strong>위협 대응 개요</strong><span>공격을 확인하는 하나의 흐름</span></a><a href="web-attack.html"><strong>웹 해킹·웹셸</strong><span>웹에서 서버 내부의 행위까지</span></a><a href="underattack.html"><strong>크리덴셜 스터핑</strong><span>계정 탈취 탐지와 로그인 보호</span></a><a href="data-exfiltration.html"><strong>데이터 유출</strong><span>노출 징후와 판단 근거</span></a><a href="ransomware.html"><strong>랜섬웨어</strong><span>행위 변화와 확산 대응</span></a><a href="zero-day.html"><strong>제로데이·우회 공격</strong><span>AI 기반 변형·우회 공격 대응</span></a></div></details><details class="nav-group"><summary>고객·자료<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">EVIDENCE &amp; INSIGHTS</p><a href="customer.html"><strong>고객 사례</strong><span>고객 환경에서 쌓아온 신뢰</span></a><a href="video.html"><strong>영상·자료실</strong><span>영상 · 문서 · 체크리스트</span></a><a href="trust.html"><strong>기술·신뢰</strong><span>확인 가능한 기술과 근거</span></a></div></details><details class="nav-group is-current"><summary>도입 안내<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">BUILD YOUR SECURITY OPERATIONS</p><a href="adoption.html"><strong>운영 방식·도입 절차</strong><span>자체 운영 또는 관제 포함</span></a><a aria-current="page" href="license.html"><strong>라이선스별 기능</strong><span>등급별 제공 범위와 로그 조회 기간</span></a><a href="contact.html"><strong>통합 도입 상담</strong><span>우리 환경에 맞는 도입 설계</span></a></div></details><a class="nav-mobile-login" href="https://xdr.plura.io/auth/login" rel="noopener noreferrer" target="_blank">서비스 로그인 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only">새 탭</span></a></nav>
+<div class="header-actions"><a class="login-link" href="https://xdr.plura.io/auth/login" rel="noopener noreferrer" target="_blank">로그인<span class="sr-only"> (새 탭)</span></a><a class="btn btn-primary" href="contact.html">도입 상담 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="전체 메뉴 열기" class="menu-button" id="menu-toggle" type="button"><span data-menu-icon=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></span><span data-close-icon="" hidden=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></span></button>
+</div></header>
+<main class="v71-pages license-page" id="main" tabindex="-1">
+<section class="lic-intro" aria-labelledby="license-title"><div class="lic-container">
+<nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg><a href="adoption.html">도입 안내</a><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">라이선스별 기능</span></nav>
+<p class="lic-kicker">LICENSE GUIDE</p>
+<h1 id="license-title">라이선스별 기능 안내</h1>
+<p class="lic-lead">STANDARD, GOLD, PLATINUM의 주요 기능 제공 범위와 로그 조회 기간을 확인하세요.</p>
+<nav class="lic-jump" aria-label="이 페이지의 내용"><a href="#features">기능 제공 범위<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></a><a href="#log-period">로그 조회 기간<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></a></nav>
+</div></section>
+<div class="lic-container">
+<section class="lic-section" id="features" aria-labelledby="features-title">
+<div class="lic-section-head"><h2 id="features-title">기능 제공 범위</h2><p>라이선스에 따라 차이가 있는 주요 항목입니다.</p></div>
+<div class="lic-table-frame">
+<table class="lic-table" id="feature-table" role="table" aria-describedby="feature-note">
+<caption class="sr-only">라이선스별 보안탐지, 필터, 리소스모니터링 기능 비교</caption>
+<colgroup><col class="lic-col-feature"/><col class="lic-col-plan"/><col class="lic-col-plan"/><col class="lic-col-plan"/></colgroup>
+<thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">기능 / 메뉴</th><th scope="col" role="columnheader">STANDARD</th><th scope="col" role="columnheader">GOLD</th><th scope="col" role="columnheader">PLATINUM</th></tr></thead>
+<tbody role="rowgroup">
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">크리덴셜스터핑 · 세션행위</span><span class="lic-path">보안탐지 &gt; 크리덴셜스터핑 &gt; 세션행위</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">제로데이</span><span class="lic-path">보안탐지 &gt; 제로데이</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">제로데이 필터</span><span class="lic-path">필터 &gt; 보안 &gt; 제로데이</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">크리덴셜스터핑 · 세션행위 필터</span><span class="lic-path">필터 &gt; 보안 &gt; 크리덴셜스터핑 &gt; 세션행위</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">호스트 그래프 조회</span><span class="lic-path">리소스모니터링 &gt; 호스트 &gt; 그래프조회</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status">당일만 조회</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status">당일만 조회</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
+</tbody></table></div>
+<p class="lic-table-note" id="feature-note">위 표의 ‘미제공’ 항목은 해당 라이선스에서 메뉴가 표시되지 않습니다.</p>
+</section>
+<section class="lic-section" id="log-period" aria-labelledby="log-period-title">
+<div class="lic-section-head"><h2 id="log-period-title">로그 조회 기간</h2><p>탐지 로그와 전체 로그를 구분해 안내합니다.</p></div>
+<!-- Source image: GOLD / PLATINUM '(서버) 1개월' is interpreted as server full-log query period. Confirm this interpretation before publishing. -->
+<div class="lic-table-frame">
+<table class="lic-table" id="log-table" role="table" aria-describedby="log-note">
+<caption class="sr-only">라이선스별 탐지 로그, 서버 전체 로그, PC 전체 로그 조회 기간</caption>
+<colgroup><col class="lic-col-feature"/><col class="lic-col-plan"/><col class="lic-col-plan"/><col class="lic-col-plan"/></colgroup>
+<thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">로그 구분</th><th scope="col" role="columnheader">STANDARD</th><th scope="col" role="columnheader">GOLD</th><th scope="col" role="columnheader">PLATINUM</th></tr></thead>
+<tbody role="rowgroup">
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">탐지 로그</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status">1개월</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status">1개월</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">1개월</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">서버 전체 로그</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status">1개월</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">1개월</span></td></tr>
+<tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">PC 전체 로그</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status lic-status--no">미제공</span></td></tr>
+</tbody></table></div>
+<p class="lic-table-note" id="log-note">조회 가능한 기간을 기준으로 안내합니다. ‘미제공’은 해당 로그의 조회 기능이 제공되지 않는다는 의미입니다.</p>
+</section>
+<div class="lic-bottom">
+<p class="lic-policy-note">이 페이지는 표에 표시된 주요 항목을 안내합니다. 실제 제공 범위는 도입 구성과 계약에 따라 확인해 주세요.</p>
+<div class="lic-help"><p>도입 구성에 따른 적용 범위가 궁금하신가요?</p><a href="contact.html">도입 문의 <span aria-hidden="true">→</span></a></div>
+</div>
+</div>
+</main>
+<footer class="site-footer v71-footer"><div class="wrap">
+<div class="footer-main"><div class="footer-brand"><a aria-label="PLURA 홈페이지" href="index.html"><img alt="PLURA" height="68" src="../res/images/logo_over.png" width="230"/></a><p>AI 공격을 AI가 방어합니다.<br/>탐지부터 대응, AI 보안관제까지 하나로.</p><p class="version-text">PLURA WEBSITE / V7.1</p></div><div class="footer-col"><h2>플랫폼</h2><a href="platform_xdr.html">PLURA-XDR</a><a href="ai.html">AI 분석·대응</a><a href="mitreattack.html">마이터 어택 기반 탐지</a><a href="platform.html">통합 보안 기능</a><a href="platform_soc.html">AI 보안관제</a><a href="zta.html">제로트러스트</a></div><div class="footer-col"><h2>위협 대응</h2><a href="web-attack.html">웹 해킹·웹셸</a><a href="underattack.html">크리덴셜 스터핑</a><a href="data-exfiltration.html">데이터 유출</a><a href="ransomware.html">랜섬웨어</a><a href="zero-day.html">제로데이</a></div><div class="footer-col"><h2>고객·자료</h2><a href="customer.html">고객 사례</a><a href="video.html">영상·자료실</a><a href="https://docs.plura.io/ko/" rel="noopener noreferrer" target="_blank">기술 문서 ↗</a><a href="https://blog.plura.io/ko/" rel="noopener noreferrer" target="_blank">블로그 ↗</a></div><div class="footer-col"><h2>도입·지원</h2><a href="adoption.html">도입 안내</a><a href="license.html">라이선스별 기능</a><a href="contact.html">통합 도입 상담</a><a href="https://docs.plura.io/ko/faq/comm/" rel="noopener noreferrer" target="_blank">고객지원 ↗</a><a href="https://www.qubitsec.com/" rel="noopener noreferrer" target="_blank">회사 소개 ↗</a><a href="https://www.qubitsec.com/recruit" rel="noopener noreferrer" target="_blank">채용 ↗</a></div></div>
+<div class="footer-info"><p>큐비트시큐리티 주식회사 · 대표이사 신승민 · 사업자등록번호 124-87-48126<br/>서울시 강남구 강남대로 318, 9층 (역삼동, 타워837) · 통신판매업 신고번호 2016-경기성남-0313</p><p><a href="tel:07088020306">070-8802-0306</a><br/><a href="mailto:plura@qubitsec.com">plura@qubitsec.com</a></p></div><div class="footer-bottom"><span>© 2014–2026 Qubit Security Inc. All rights reserved.</span><div class="footer-legal"><a href="https://w.plura.io/index.html?doc=/policy/ko/privacy.md" rel="noopener noreferrer" target="_blank">개인정보 처리방침 ↗</a><a href="https://w.plura.io/index.html?doc=/policy/ko/terms.md" rel="noopener noreferrer" target="_blank">이용약관 ↗</a></div><div class="footer-languages"><span aria-current="true">한국어</span><a aria-label="English 기존 영문 사이트 새 탭" href="https://www.plura.io/en/index.html" rel="noopener noreferrer" target="_blank">EN ↗</a><a aria-label="日本語 기존 일본어 사이트 새 탭" href="https://www.plura.io/ja/index.html" rel="noopener noreferrer" target="_blank">JA ↗</a></div></div></div></footer>
+<button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
+<noscript><div class="noscript-note wrap">JavaScript가 꺼져 있어도 라이선스별 비교표를 확인할 수 있습니다. 아래의 하단 메뉴로 다른 페이지를 열 수 있습니다.</div></noscript>
+
+<script id="plura-site-hover-script" data-build="20260919-all-1">
+/* PLURA v7.1 / Whole-KO hover layer / 20260919-all-1
+ * Visual state only: never opens links, submits forms, or changes selection.
+ * A real mouse (or hovering pen) works even when the primary input is touch.
+ * No external dependency, network request, storage, or animation loop.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || main.hasAttribute('data-plura-all-hover-ready')) return;
+    var groups = [
+  {
+    "selector": ".btn,\n.btn-primary,\n.footer-col a,\n.footer-info a,\n.footer-languages a,\n.footer-legal a,\n.main-nav .dropdown a,\n.main-nav a,\n.nav-group>summary,\n.v71-pages .breadcrumbs a,\n.v71-pages .btn-dark,\n.v71-pages .btn-primary,\n.v71-pages .local-nav a,\n.v71-pages .plan-card.featured .btn-primary,\n:where(.v71-pages) .breadcrumbs a,\n:where(.v71-pages) .btn,\n:where(.v71-pages) .btn-dark,\n:where(.v71-pages) .btn-primary,\n:where(.v71-pages) .local-nav a"
+  },
+  {
+    "selector": "#main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step)",
+    "kind": "card"
+  },
+  {
+    "selector": "#main :is(.subhero-aside:not(.platform-architecture):not(.hm-card):not(.ai-harness-aside),.analysis-board,.report-preview,.a-report,.a-console,.definition-box,.zt-count)",
+    "kind": "panel"
+  },
+  {
+    "selector": "#main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line), #main .zt-workflow > article",
+    "kind": "row"
+  },
+  {
+    "selector": "#main .faq-item > summary",
+    "kind": "faq"
+  },
+  {
+    "selector": "body[data-page] .btn",
+    "kind": "button"
+  },
+  {
+    "selector": "#main :is(.text-link,.feature-chips a,.local-nav a,.am-reference,.am-detail-link), #main .hm-footer>a",
+    "kind": "link"
+  },
+  {
+    "selector": "body[data-page] .site-header :is(.nav-group>summary,.dropdown a,.login-link), body[data-page] .site-footer a",
+    "kind": "nav"
+  }
+];
+    var nodes = [], known = new Set();
+    groups.forEach(function (group) {
+      document.querySelectorAll(group.selector).forEach(function (node) {
+        // Keep semantic roles and tabindex unchanged. Read-only cards stay read-only.
+        if (group.kind) node.setAttribute('data-ph-kind', group.kind);
+        if (!known.has(node)) { nodes.push(node); known.add(node); }
+      });
+    });
+    var keyboard = false;
+    function acceptsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    function disabled(node) {
+      return node.matches(':disabled, [aria-disabled="true"]');
+    }
+    function clearMouse() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    function clearFocus() {
+      nodes.forEach(function (node) { node.classList.remove('ph-keyboard'); });
+    }
+    nodes.forEach(function (node) {
+      node.setAttribute('data-ph-managed', '');
+      // Move colour/background only. The browser keeps the original layout.
+      node.classList.add('ph-feedback');
+      function update(event) {
+        var on = acceptsHover(event) && !disabled(node);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      if (window.PointerEvent) {
+        node.addEventListener('pointerenter', update);
+        node.addEventListener('pointermove', update, {passive: true});
+        node.addEventListener('pointerleave', clear);
+        node.addEventListener('pointercancel', clear);
+      } else {
+        // Fallback for an older browser; ignore compatibility mouse events after touch.
+        node.addEventListener('mouseenter', function () {
+          if (Date.now() >= ignoreMouseUntil && !disabled(node)) node.classList.add('is-pointer-hover');
+        });
+        node.addEventListener('mouseleave', clear);
+      }
+    });
+    var ignoreMouseUntil = 0;
+    function directInput(event) {
+      keyboard = false;
+      clearFocus();
+      if (event.type === 'touchstart' || event.pointerType === 'touch') {
+        ignoreMouseUntil = Date.now() + 800;
+        clearMouse();
+      }
+    }
+    document.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', directInput, {passive: true, capture: true});
+    if (!window.PointerEvent) document.addEventListener('touchstart', directInput, {passive: true, capture: true});
+    document.addEventListener('keydown', function (event) {
+      if (['Tab','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].indexOf(event.key) >= 0) keyboard = true;
+    }, true);
+    document.addEventListener('focusin', function (event) {
+      clearFocus();
+      var visible = false;
+      try { visible = event.target.matches(':focus-visible'); } catch (_) {}
+      if (!keyboard && !visible) return;
+      nodes.forEach(function (node) {
+        if (!disabled(node) && (node === event.target || node.contains(event.target))) node.classList.add('ph-keyboard');
+      });
+    });
+    document.addEventListener('focusout', function (event) {
+      nodes.forEach(function (node) {
+        if (!event.relatedTarget || !node.contains(event.relatedTarget)) node.classList.remove('ph-keyboard');
+      });
+    });
+    function clearAll() { clearMouse(); clearFocus(); }
+    window.addEventListener('blur', clearAll);
+    window.addEventListener('pagehide', clearAll);
+    document.addEventListener('visibilitychange', function () { if (document.hidden) clearAll(); });
+    document.documentElement.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-hover-targets', String(nodes.length));
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
+}());
+
+</script>
+</body>
+</html>
