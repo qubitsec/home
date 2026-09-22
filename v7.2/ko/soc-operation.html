@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/><meta content="#2458e8" name="theme-color"/>
+<title>관제 운영 방식 | PLURA-XDR</title><meta content="웹사이트 DNS 변경과 서버·PC EDR 설치로 시작하는 PLURA-XDR + SOC. 자동 수집·탐지·AI 분석과 정책 기반 대응, 전문 관제로 고객의 운영 부담을 줄입니다." name="description"/>
+<meta content="Qubit Security Inc." name="author"/><meta content="7.1-20260919-links" name="plura-website-version"/>
+<!-- Review build. Enable indexing only after the release checklist is approved. -->
+<meta content="noindex, follow" name="robots"/><link href="https://www.plura.io/ko/soc-operation.html" rel="canonical"/>
+<meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="PLURA" property="og:site_name"/>
+<meta content="관제 운영 방식 | PLURA-XDR" property="og:title"/><meta content="웹사이트 DNS 변경과 서버·PC EDR 설치로 시작하는 PLURA-XDR + SOC. 자동 수집·탐지·AI 분석과 정책 기반 대응, 전문 관제로 고객의 운영 부담을 줄입니다." property="og:description"/><meta content="https://www.plura.io/ko/soc-operation.html" property="og:url"/>
+<link href="../res/images/favicon.ico" rel="icon"/>
+<!-- Typeface is loaded remotely. Offline use falls back to locally installed Korean fonts. -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../res/css/site.css?v=7.1-20260917-final" rel="stylesheet"/>
+<link href="../res/css/pages.css?v=7.1-20260917-final" rel="stylesheet"/>
+<script defer="" src="../res/js/include.js?v=7.1-20260922-shared-1" data-site-script="../res/js/site.js?v=7.1-20260917-final"></script>
+
+<!-- SOC page update: inline reporting and a consolidated onboarding guide. -->
+<style id="soc-operation-inline-content">
+/* Add only the extra anchor offset: site.css already supplies scroll-padding-top. */
+body[data-page="soc-operation.html"] .v71-pages section[id] { scroll-margin-top: 50px; }
+.v71-pages .soc-scope-intro,
+.v71-pages .soc-report-intro {
+  max-width: 780px;
+  margin-top: 20px;
+  color: #5c6f89;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+.v71-pages .soc-report-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+.v71-pages .soc-report-card {
+  min-width: 0;
+  padding: 28px 25px 30px;
+  border: 1px solid #dce5f4;
+  border-radius: 12px;
+  background: #fff;
+}
+.v71-pages .soc-report-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 23px;
+  color: var(--accent);
+  background: #f1f5ff;
+  border-radius: 10px;
+}
+.v71-pages .soc-report-icon .icon { width: 24px; height: 24px; }
+.v71-pages .soc-report-card h3 {
+  margin-bottom: 13px;
+  color: #1e3456;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.v71-pages .soc-report-card p {
+  color: #5c6f89;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+.v71-pages .soc-report-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+  color: #5c6f89;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.v71-pages .soc-report-note .icon {
+  width: 19px;
+  height: 19px;
+  margin-top: 4px;
+  color: var(--accent);
+}
+.v71-pages .soc-scope-table { min-width: 0; width: 100%; table-layout: fixed; }
+.v71-pages .soc-scope-table .soc-scope-label-col { width: 174px; }
+.v71-pages .soc-scope-table th,
+.v71-pages .soc-scope-table td { padding: 20px 22px; }
+.v71-pages .soc-scope-table tbody th {
+  padding: 20px 22px;
+  background: #fff;
+  color: #355078;
+  border-bottom: 1px solid #e5ebf6;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  vertical-align: top;
+}
+.v71-pages .soc-scope-table tbody td {
+  color: #5c6f89;
+  font-weight: 400;
+  vertical-align: top;
+}
+.v71-pages .soc-scope-table tbody tr:last-child th { border-bottom: 0; }
+@media (max-width: 1100px) {
+  .v71-pages .soc-report-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v71-pages .soc-report-card { padding: 27px; }
+}
+@media (max-width: 600px) {
+  .v71-pages .soc-scope-intro,
+  .v71-pages .soc-report-intro { font-size: 16px; line-height: 1.85; }
+  .v71-pages .soc-report-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .v71-pages .soc-report-card { padding: 25px; }
+  .v71-pages .soc-report-icon { margin-bottom: 19px; }
+  .v71-pages .soc-report-card h3 { font-size: 22px; }
+  .v71-pages .soc-report-card p { font-size: 16px; }
+  .v71-pages .soc-report-note { font-size: 14px; }
+  .v71-pages .soc-scope-table .soc-scope-label-col { width: 100px; }
+  .v71-pages .soc-scope-table th,
+  .v71-pages .soc-scope-table tbody th,
+  .v71-pages .soc-scope-table td { padding: 17px 14px; font-size: 14px; }
+}
+@media print {
+  .v71-pages .soc-report-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v71-pages .soc-report-card,
+  .v71-pages .soc-scope-table tr { break-inside: avoid; }
+}
+</style>
+<!-- Shared description typography; intentionally after page-specific styles. -->
+<link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-site-hover-styles" data-build="20260919-all-1">
+@media screen and (any-hover:hover) {
+html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step):hover {border-color:#8daef5;box-shadow:0 10px 28px rgba(28,72,156,.13);transform:translateY(-3px);}
+html:not([data-plura-all-hover-ready]) #main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line):hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+html:not([data-plura-all-hover-ready]) #main .zt-workflow > article:hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+}
+/* PLURA / entire KO / input-aware feedback. Existing inline and shared CSS stays intact. */
+@media screen {
+.btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+.btn-primary:is(.is-pointer-hover,.ph-keyboard) {filter:brightness(.94)}
+.main-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.nav-group>summary:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.main-nav .dropdown a:is(.is-pointer-hover,.ph-keyboard) {background:#eef3ff;color:var(--accent)}
+.footer-col a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-info a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-legal a:is(.is-pointer-hover,.ph-keyboard),
+.footer-languages a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+:where(.v71-pages) .btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+:where(.v71-pages) .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#8eabe9}
+:where(.v71-pages) .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#202c47}
+:where(.v71-pages) .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:#9eb7ec}
+:where(.v71-pages) .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--teal);border-bottom-color:var(--teal)}
+.v71-pages .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#1c47c1}
+.v71-pages .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#132b51}
+.v71-pages .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.v71-pages .local-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent);border-bottom-color:var(--accent)}
+.v71-pages .card:is(.is-pointer-hover,.ph-keyboard) {border-color:#bcd0f7;transform:none}
+
+
+}
+/* PLURA: one consistent blue feedback layer, scoped to existing components.
+   No font-size, line-height, padding, grid, width, or document order changes. */
+@media screen {
+  body[data-page] { --ph-blue:#2458e8; --ph-tint:#f1f6ff; --ph-line:#8daef5; }
+  body[data-page] .ph-feedback {
+    transition-property:color,background-color,border-color,box-shadow,transform,filter;
+    transition-duration:200ms;
+    transition-timing-function:ease;
+  }
+  body[data-page] #main [data-ph-kind] :is(.icon,.card-icon,.a-value-top,.zt-support-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {
+    transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,transform 180ms ease,box-shadow 180ms ease;
+  }
+  /* Non-clickable containers retain their natural cursor and accessibility semantics. */
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 10px 28px rgba(28,72,156,.13);
+    transform:translateY(-3px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured):not(.quote-card) {
+    background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured) :is(h3,.contact-simple__value) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) :is(.card-icon,.zt-support-icon,.soc-report-icon,.platform-soc-report-icon,.contact-simple__icon) {
+    background-color:var(--ph-blue);
+    color:#fff;
+    border-color:var(--ph-blue);
+    transform:translateY(-2px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) .a-value-top > .icon {
+    color:var(--ph-blue); transform:translateY(-2px);
+  }
+  /* Panel feedback doesn't move either the panel or neighbouring copy. */
+  body[data-page] #main [data-ph-kind="panel"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 12px 34px rgba(28,72,156,.13);
+  }
+  body[data-page] #main [data-ph-kind="tile"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    box-shadow:inset 0 0 0 1px #a5bff3;
+  }
+  /* Evidence / process rows: no vertical translation, so the target remains stable. */
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    border-color:#b1c8f2;
+    box-shadow:inset 3px 0 0 var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) :is(h3,h4,strong,.row-stage,.source) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) > :is(.icon,.mono) {
+    color:var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) .timeline-index {
+    background-color:var(--ph-blue); border-color:var(--ph-blue); color:#fff;
+    box-shadow:0 0 0 3px rgba(36,88,232,.10);
+  }
+  /* Dark-blue report panels keep light text and never get a white overlay. */
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:rgba(120,170,255,.15);
+    box-shadow:inset 3px 0 0 #93b9ff;
+  }
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) :is(b,strong,span) {color:#eef5ff;}
+  body[data-page] #main .data-table tbody tr:is(.is-pointer-hover,.ph-keyboard) > td {
+    background-color:#eff5ff;
+    transition:background-color 180ms ease;
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard)::after {color:var(--ph-blue);}
+  /* Tabs are preview highlights only. Selection still requires click or keyboard. */
+  body[data-page] #main [data-ph-kind="tab"]:is(.is-pointer-hover,.ph-keyboard):not([aria-selected="true"]):not([aria-pressed="true"]) {
+    color:#214fbf; background-color:#edf3ff; border-color:#9cb7f0;
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):not(:disabled):not([aria-disabled="true"]) {
+    box-shadow:0 5px 16px rgba(35,75,155,.19);
+    transform:translateY(-2px);
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):is(.btn-primary,.btn-dark) {
+    background-color:#194acd; border-color:#194acd; color:#fff;
+  }
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); text-decoration:underline; text-underline-offset:4px;
+  }
+  body[data-page] #main .a-soc [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {color:#dce9ff;}
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateX(3px);}
+  body[data-page] .site-header [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .site-footer [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {color:var(--ph-blue);}
+  body[data-page] .site-header .dropdown [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {background-color:#eef4ff;}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:#edf3ff; box-shadow:0 0 0 8px #edf3ff;
+  }
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) :is(b,.icon) {color:var(--ph-blue);}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateY(-2px);}
+  /* Main-panel transitions also run on a hybrid-input PC. */
+  body[data-page] #main .a-console :is(.a-flow-icon,.a-console-summary,.a-console-row,.a-side-icons>.icon) {
+    transition:color 200ms ease,background-color 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease;
+  }
+  /* Tactic header / compact diagram navigation and keyboard feedback. */
+  body[data-page] #main .ph-keyboard:focus-visible {outline:3px solid #2458e8;outline-offset:4px;}
+  body[data-page] #main .pa-user:is(.is-pointer-hover,.ph-keyboard) {border-color:#8eb1f6;box-shadow:0 5px 17px rgba(36,88,232,.10);}
+}
+@media (prefers-reduced-motion:reduce) {
+  body[data-page] .ph-feedback,
+  body[data-page] .ph-feedback *,
+  body[data-page] .ph-feedback::before,
+  body[data-page] .ph-feedback::after {
+    transition:none !important; animation:none !important;
+  }
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard) :is(.icon,.card-icon,.a-flow-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {transform:none !important;}
+}
+/* No focus/hover decorations should leak into a printed page. */
+@media print {
+  body[data-page] .ph-feedback {transition:none !important;animation:none !important;}
+}
+
+</style>
+
+<style id="soc-simple-onboarding-style" data-build="20260920-1">
+/* Only this page's two-step onboarding. Shared CSS/JS and existing hover code are unchanged. */
+body[data-page="soc-operation.html"] .subhero-grid { align-items: start; }
+body[data-page="soc-operation.html"] #scope { padding-block: 76px; }
+body[data-page="soc-operation.html"] #scope .section-head { margin-bottom: 30px; }
+body[data-page="soc-operation.html"] #scope .soc-start-intro {
+  margin: 16px 0 0; color: #3e506a; font-size: 18px; font-weight: 400; line-height: 1.85;
+  word-break: keep-all; overflow-wrap: anywhere;
+}
+body[data-page="soc-operation.html"] #scope .soc-start-keep { white-space: nowrap; }
+body[data-page="soc-operation.html"] #scope .soc-start-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;
+}
+body[data-page="soc-operation.html"] #scope .soc-start-card { padding: 26px 28px 22px; min-width: 0; border-radius: 14px; }
+body[data-page="soc-operation.html"] #scope .soc-start-card-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+body[data-page="soc-operation.html"] #scope .card-icon { margin: 0; width: 46px; height: 46px; background: #edf3ff; color: #2458e8; }
+body[data-page="soc-operation.html"] #scope .card-icon .icon { width: 24px; height: 24px; }
+body[data-page="soc-operation.html"] #scope .soc-start-number { font: 600 23px/1.4 var(--mono); color: #2458e8; white-space: nowrap; }
+body[data-page="soc-operation.html"] #scope .soc-start-number > span { font-size: 11px; letter-spacing: .07em; color: #536783; vertical-align: middle; font-weight: 400; }
+body[data-page="soc-operation.html"] #scope .soc-start-card h3 { margin: 0 0 9px; font-size: 24px; line-height: 1.5; letter-spacing: -.035em; word-break: keep-all; overflow-wrap: anywhere; }
+body[data-page="soc-operation.html"] #scope .soc-start-card > p { margin: 0; font-size: 16px; font-weight: 400; color: #3e506a; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
+body[data-page="soc-operation.html"] #scope .soc-start-route { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 19px; padding-top: 16px; border-top: 1px solid #e0e8f6; color: #536783; font-size: 13px; line-height: 1.6; }
+body[data-page="soc-operation.html"] #scope .soc-start-route .icon { width: 17px; height: 17px; color: #6d89c3; }
+body[data-page="soc-operation.html"] #scope .soc-start-route strong { font-size: 14px; font-weight: 600; color: #2458e8; white-space: nowrap; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto { margin-top: 22px; padding: 24px 28px 22px; border: 1px solid #d5e1f6; border-radius: 14px; background: #eaf1ff; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-heading { display: flex; align-items: center; gap: 10px; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-icon { width: 28px; height: 28px; display: grid; place-items: center; flex: 0 0 auto; color: #fff; background: #2458e8; border-radius: 50%; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-icon .icon { width: 17px; height: 17px; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto h3 { margin: 0; color: #19345f; font-size: 21px; font-weight: 600; line-height: 1.5; word-break: keep-all; overflow-wrap: anywhere; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-flow { margin: 17px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li { min-width: 0; display: flex; align-items: center; gap: 10px; color: #1e427f; font-size: 15px; line-height: 1.6; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li > span { flex: 1; text-align: center; display: block; padding: 9px 8px; border: 1px solid #d6e2f8; border-radius: 7px; background: #fff; word-break: keep-all; overflow-wrap: anywhere; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto-flow .icon { width: 18px; height: 18px; flex: 0 0 auto; color: #6d89c3; }
+body[data-page="soc-operation.html"] #scope .soc-start-auto > p { margin: 13px 0 0; font-size: 14px; font-weight: 400; line-height: 1.8; color: #466081; word-break: keep-all; overflow-wrap: anywhere; }
+/* These static cards use the already-installed real-pointer hover controller. */
+body[data-page="soc-operation.html"] #scope .soc-start-card:is(.is-pointer-hover,.ph-keyboard) .card-icon { background: #2458e8; color: #fff; }
+body[data-page="soc-operation.html"] #scope .soc-start-card:is(.is-pointer-hover,.ph-keyboard) .soc-start-route .icon { color: #2458e8; transform: translateX(3px); }
+@media (any-hover: hover) {
+  html:not([data-plura-all-hover-ready]) body[data-page="soc-operation.html"] #scope .soc-start-card:hover .card-icon { background: #2458e8; color: #fff; }
+}
+@media (max-width: 767px) {
+  body[data-page="soc-operation.html"] #scope { padding-block: 58px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-grid { grid-template-columns: minmax(0,1fr); gap: 16px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li:nth-child(2) > .icon { visibility: hidden; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li:nth-child(4)::after { content: ''; width: 18px; flex: 0 0 18px; }
+}
+@media (max-width: 600px) {
+  body[data-page="soc-operation.html"] #scope .section-head { margin-bottom: 24px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-intro { font-size: 16px; margin-top: 13px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-card { padding: 22px 21px 20px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-card-top { margin-bottom: 14px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-card h3 { font-size: 22px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-desktop-br { display: none; }
+  body[data-page="soc-operation.html"] #scope .soc-start-route { margin-top: 16px; gap: 10px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto { margin-top: 16px; padding: 21px 19px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto h3 { font-size: 19px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-heading { align-items: flex-start; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-icon { margin-top: 1px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow { gap: 8px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li { font-size: 14px; gap: 6px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-auto-flow li > span { padding: 9px 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-page="soc-operation.html"] #scope .soc-start-card,
+  body[data-page="soc-operation.html"] #scope .soc-start-card * { transition: none !important; transform: none !important; }
+}
+@media print {
+  body[data-page="soc-operation.html"] #scope { padding-block: 24px; }
+  body[data-page="soc-operation.html"] #scope .soc-start-card,
+  body[data-page="soc-operation.html"] #scope .soc-start-auto { break-inside: avoid; }
+}
+</style>
+</head>
+<body data-page="soc-operation.html" data-website-version="7.1">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="soc-operation.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
+<main class="v71-pages" data-soc-onboarding="20260920-1" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>AI 보안관제</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">관제 운영 방식</span></nav><div class="subhero-grid"><div><p class="eyebrow">SIMPLE START / AUTOMATED OPERATIONS</p><h1>고객의 준비는 간단하게,<br/>보안 운영은 자동으로.</h1><p class="lead">웹사이트 DNS를 변경하고 서버·PC에 EDR 에이전트를 설치하세요. 이후 수집·탐지·AI 분석과 정책 기반 대응은 PLURA-XDR이 자동으로 이어갑니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="19" r="2"></circle><path d="M7 5h10a4 4 0 0 1 0 8H7a3 3 0 0 0 0 6h10"></path></svg><p class="aside-label">PLURA-XDR + SOC</p><h2>DNS 변경 · EDR 설치<br/>→ 자동 보안 운영</h2><p>플랫폼의 자동 분석·대응에 전문 관제의 검토와 보고를 더합니다.</p><div class="tag-row"><span>WAF</span><span>EDR</span><span>AI · SOC</span></div></aside></div></div></section><nav aria-label="이 페이지의 내용" class="local-nav"><div class="container"><a href="#scope">도입 준비</a><a href="#workflow">자동 운영</a><a href="#authority">대응 권한</a><a href="#deliver">보고·공유</a></div></nav><section class="section section-soft soc-start" id="scope" aria-labelledby="soc-start-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">TWO STEPS TO START</p>
+        <h2 id="soc-start-title">고객이 준비할 일은 <span class="soc-start-keep">두 가지입니다.</span></h2>
+        <p class="soc-start-intro">웹사이트는 DNS 변경, 서버·PC는 EDR 설치로 연결합니다.</p>
+      </div>
+    </div>
+    <div class="soc-start-grid">
+      <article class="card soc-start-card" aria-labelledby="soc-start-web">
+        <div class="soc-start-card-top"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M7 6.5h.01M10 6.5h.01M8 13h8m-8 3h5"></path></svg></div><span class="soc-start-number">01 <span>/ WEB</span></span></div>
+        <h3 id="soc-start-web">웹사이트 DNS 변경</h3>
+        <p>안내된 주소로 웹사이트 DNS를 변경해<br class="soc-start-desktop-br"/> PLURA-WAF에 연결합니다.</p>
+        <div class="soc-start-route"><span>웹사이트</span><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg><strong>PLURA-WAF</strong></div>
+      </article>
+      <article class="card soc-start-card" aria-labelledby="soc-start-host">
+        <div class="soc-start-card-top"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"></rect><path d="M8 21h8m-6-5v5m4-5v5M7 7h10M7 11h5"></path></svg></div><span class="soc-start-number">02 <span>/ HOST</span></span></div>
+        <h3 id="soc-start-host">서버·PC에 EDR 설치</h3>
+        <p>보호할 서버와 PC에<br class="soc-start-desktop-br"/> PLURA-EDR 에이전트를 설치합니다.</p>
+        <div class="soc-start-route"><span>서버 · PC</span><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg><strong>PLURA-EDR</strong></div>
+      </article>
+    </div>
+    <div class="soc-start-auto" aria-labelledby="soc-start-auto-title">
+      <div class="soc-start-auto-heading"><span class="soc-start-auto-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"></path></svg></span><h3 id="soc-start-auto-title">연결 후에는 자동으로 이어집니다.</h3></div>
+      <ol class="soc-start-auto-flow" aria-label="자동 보안 운영 흐름">
+        <li><span>로그 수집</span><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></li><li><span>공격 탐지</span><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></li><li><span>AI 분석</span><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></li><li><span>정책 기반 대응</span></li>
+      </ol>
+      <p>PLURA-SOC가 사건 검토와 대응 결과 공유를 이어갑니다.</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="workflow" aria-labelledby="soc-auto-workflow-title"><div class="container"><div class="section-head"><div><p class="eyebrow">AUTOMATION + EXPERT OPERATIONS</p><h2 id="soc-auto-workflow-title">연결 이후의 보안 운영,<br/>PLURA-XDR + SOC가 이어갑니다.</h2></div></div><div class="step-list"><article class="large-step"><span class="mono">01</span><h3>로그 자동 수집·탐지</h3><p>연결된 웹·서버·PC의 로그를 자동으로 수집하고 공격 징후를 탐지합니다.</p></article><article class="large-step"><span class="mono">02</span><h3>AI 분석과 사건 검토</h3><p>AI-Harness가 연관 증거를 분석하고, 관제 전문가가 사건의 맥락과 영향을 검토합니다.</p></article><article class="large-step"><span class="mono">03</span><h3>정책 기반 대응</h3><p>사전 허용 정책에 따라 대응을 실행하며, 고객 승인이 필요한 조치는 별도로 확인합니다.</p></article><article class="large-step"><span class="mono">04</span><h3>결과 공유와 후속 관리</h3><p>판단 근거와 조치 결과를 공유하고, 개선 권고와 후속 점검을 이어갑니다.</p></article></div></div></section><section class="section" id="authority"><div class="container"><div class="section-head"><div><p class="eyebrow">SAFE RESPONSE</p><h2>자동화도, 승인된 경계 안에서.</h2></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 7h16M4 17h16"></path><circle cx="9" cy="7" fill="currentColor" r="3" stroke="none"></circle><circle cx="16" cy="17" fill="currentColor" r="3" stroke="none"></circle></svg></div><h3>사전 허용 조치</h3><p>조건·대상·권한이 합의된 정책에 따라 수행하고 적용 내역을 확인합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-15a3 3 0 0 1 0 6m4 9v-3a5 5 0 0 0-4-5"></path></svg></div><h3>승인 필요 조치</h3><p>서비스 영향이 있는 격리·정책 변경 등은 정해진 승인 절차를 거칩니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"></path></svg></div><h3>기록과 확인</h3><p>분석 권고, 승인, 실제 실행, 조치 결과를 서로 구분해 기록합니다.</p></article></div></div></section><section class="section section-soft" id="deliver" aria-labelledby="soc-report-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">REPORTING &amp; SHARING</p>
+        <h2 id="soc-report-title">탐지 근거부터 대응 결과까지.</h2>
+        <p class="soc-report-intro">사건의 내용과 판단 근거, 대응 이력과 후속 조치를 확인할 수 있도록 정리합니다.</p>
+      </div>
+    </div>
+    <div class="soc-report-grid">
+      <article class="soc-report-card" aria-labelledby="soc-report-1">
+        <div class="soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 9h6M9 13h6M9 17h4"></path></svg></div>
+        <h3 id="soc-report-1">사건 요약</h3>
+        <p>어떤 징후가 발견되었고, 어떤 자산과 서비스가 관련되어 있는지 정리합니다.</p>
+      </article>
+      <article class="soc-report-card" aria-labelledby="soc-report-2">
+        <div class="soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5M8 10.5h5M10.5 8v5"></path></svg></div>
+        <h3 id="soc-report-2">분석 근거</h3>
+        <p>관련 로그와 행위의 연결 관계를 설명하고, 확인된 사실과 추가 확인이 필요한 내용을 구분합니다.</p>
+      </article>
+      <article class="soc-report-card" aria-labelledby="soc-report-3">
+        <div class="soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7v5l3.5 2"></path></svg></div>
+        <h3 id="soc-report-3">대응 이력</h3>
+        <p>권고·승인·실행 내역과 조치 결과를 구분해 정리합니다.</p>
+      </article>
+      <article class="soc-report-card" aria-labelledby="soc-report-4">
+        <div class="soc-report-icon"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M8 5h12M8 12h12M8 19h12M2 5l1.5 1.5L6 3M2 12l1.5 1.5L6 10M2 19l1.5 1.5L6 17"></path></svg></div>
+        <h3 id="soc-report-4">후속 조치</h3>
+        <p>남아 있는 위험과 고객 확인 사항, 개선 및 재점검 항목을 안내합니다.</p>
+      </article>
+    </div>
+    <p class="soc-report-note">
+      <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+      <span>보고 항목·주기·전달 방식은 관제 서비스 범위에 따라 협의합니다.</span>
+    </p>
+  </div>
+</section><section class="final-cta"><div class="container"><div><h2>준비는 간단하게,<br/>관제 운영은 PLURA-SOC와.</h2><p>DNS 변경과 EDR 설치로 시작하고, 이후의 분석·대응 운영은 PLURA-XDR + SOC로 이어가세요.</p></div><a class="btn btn-dark" href="contact.html">관제 운영 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
+<div data-include-path="./p_footer.html" data-include-kind="footer"><noscript><div class="wrap"><a href="p_footer.html">하단 메뉴 보기</a></div></noscript></div>
+<button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
+<dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
+<noscript><div class="noscript-note wrap">JavaScript가 꺼져 있어도 도입 준비와 자동 운영, 보고·공유 내용은 모두 확인할 수 있습니다.</div></noscript>
+
+<script id="plura-site-hover-script" data-build="20260919-all-1">
+/* PLURA v7.1 / Whole-KO hover layer / 20260919-all-1
+ * Visual state only: never opens links, submits forms, or changes selection.
+ * A real mouse (or hovering pen) works even when the primary input is touch.
+ * No external dependency, network request, storage, or animation loop.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || main.hasAttribute('data-plura-all-hover-ready')) return;
+    var groups = [
+  {
+    "selector": ".btn,\n.btn-primary,\n.footer-col a,\n.footer-info a,\n.footer-languages a,\n.footer-legal a,\n.main-nav .dropdown a,\n.main-nav a,\n.nav-group>summary,\n.v71-pages .breadcrumbs a,\n.v71-pages .btn-dark,\n.v71-pages .btn-primary,\n.v71-pages .card,\n.v71-pages .local-nav a,\n:where(.v71-pages) .breadcrumbs a,\n:where(.v71-pages) .btn,\n:where(.v71-pages) .btn-dark,\n:where(.v71-pages) .btn-primary,\n:where(.v71-pages) .local-nav a"
+  },
+  {
+    "selector": "#main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step)",
+    "kind": "card"
+  },
+  {
+    "selector": "#main :is(.subhero-aside:not(.platform-architecture):not(.hm-card):not(.ai-harness-aside),.analysis-board,.report-preview,.a-report,.a-console,.definition-box,.zt-count)",
+    "kind": "panel"
+  },
+  {
+    "selector": "#main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line), #main .zt-workflow > article",
+    "kind": "row"
+  },
+  {
+    "selector": "#main .data-table tbody tr",
+    "kind": "table-row"
+  },
+  {
+    "selector": "body[data-page] .btn",
+    "kind": "button"
+  },
+  {
+    "selector": "#main :is(.text-link,.feature-chips a,.local-nav a,.am-reference,.am-detail-link), #main .hm-footer>a",
+    "kind": "link"
+  },
+  {
+    "selector": "body[data-page] .site-header :is(.nav-group>summary,.dropdown a,.login-link), body[data-page] .site-footer a",
+    "kind": "nav"
+  }
+];
+    var nodes = [], known = new Set();
+    groups.forEach(function (group) {
+      document.querySelectorAll(group.selector).forEach(function (node) {
+        // Keep semantic roles and tabindex unchanged. Read-only cards stay read-only.
+        if (group.kind) node.setAttribute('data-ph-kind', group.kind);
+        if (!known.has(node)) { nodes.push(node); known.add(node); }
+      });
+    });
+    var keyboard = false;
+    function acceptsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    function disabled(node) {
+      return node.matches(':disabled, [aria-disabled="true"]');
+    }
+    function clearMouse() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    function clearFocus() {
+      nodes.forEach(function (node) { node.classList.remove('ph-keyboard'); });
+    }
+    nodes.forEach(function (node) {
+      node.setAttribute('data-ph-managed', '');
+      // Move colour/background only. The browser keeps the original layout.
+      node.classList.add('ph-feedback');
+      function update(event) {
+        var on = acceptsHover(event) && !disabled(node);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      if (window.PointerEvent) {
+        node.addEventListener('pointerenter', update);
+        node.addEventListener('pointermove', update, {passive: true});
+        node.addEventListener('pointerleave', clear);
+        node.addEventListener('pointercancel', clear);
+      } else {
+        // Fallback for an older browser; ignore compatibility mouse events after touch.
+        node.addEventListener('mouseenter', function () {
+          if (Date.now() >= ignoreMouseUntil && !disabled(node)) node.classList.add('is-pointer-hover');
+        });
+        node.addEventListener('mouseleave', clear);
+      }
+    });
+    var ignoreMouseUntil = 0;
+    function directInput(event) {
+      keyboard = false;
+      clearFocus();
+      if (event.type === 'touchstart' || event.pointerType === 'touch') {
+        ignoreMouseUntil = Date.now() + 800;
+        clearMouse();
+      }
+    }
+    document.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', directInput, {passive: true, capture: true});
+    if (!window.PointerEvent) document.addEventListener('touchstart', directInput, {passive: true, capture: true});
+    document.addEventListener('keydown', function (event) {
+      if (['Tab','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].indexOf(event.key) >= 0) keyboard = true;
+    }, true);
+    document.addEventListener('focusin', function (event) {
+      clearFocus();
+      var visible = false;
+      try { visible = event.target.matches(':focus-visible'); } catch (_) {}
+      if (!keyboard && !visible) return;
+      nodes.forEach(function (node) {
+        if (!disabled(node) && (node === event.target || node.contains(event.target))) node.classList.add('ph-keyboard');
+      });
+    });
+    document.addEventListener('focusout', function (event) {
+      nodes.forEach(function (node) {
+        if (!event.relatedTarget || !node.contains(event.relatedTarget)) node.classList.remove('ph-keyboard');
+      });
+    });
+    function clearAll() { clearMouse(); clearFocus(); }
+    window.addEventListener('blur', clearAll);
+    window.addEventListener('pagehide', clearAll);
+    document.addEventListener('visibilitychange', function () { if (document.hidden) clearAll(); });
+    document.documentElement.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-hover-targets', String(nodes.length));
+  }
+  // Bind hover only after the common header/footer and the unchanged site.js are ready.
+  function startAfterSharedLayout() {
+    if (window.PLURA_INCLUDES_READY) window.PLURA_INCLUDES_READY.then(init);
+    else init();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startAfterSharedLayout, {once:true});
+  else startAfterSharedLayout();
+}());
+
+</script>
+</body>
+</html>

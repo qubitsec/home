@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/><meta content="#2458e8" name="theme-color"/>
+<title>통합 보안 기능 | PLURA-XDR</title><meta content="WAF·EDR·SIEM·SOAR·Forensic과 운영 보조 기능을 PLURA-XDR의 통합 대응 흐름에서 확인하세요." name="description"/>
+<meta content="Qubit Security Inc." name="author"/><meta content="7.1-20260919-links" name="plura-website-version"/>
+<!-- Review build. Enable indexing only after the release checklist is approved. -->
+<meta content="noindex, follow" name="robots"/><link href="https://www.plura.io/ko/platform.html" rel="canonical"/>
+<meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="PLURA" property="og:site_name"/>
+<meta content="통합 보안 기능 | PLURA-XDR" property="og:title"/><meta content="WAF·EDR·SIEM·SOAR·Forensic과 운영 보조 기능을 PLURA-XDR의 통합 대응 흐름에서 확인하세요." property="og:description"/><meta content="https://www.plura.io/ko/platform.html" property="og:url"/>
+<link href="../res/images/favicon.ico" rel="icon"/>
+<!-- Typeface is loaded remotely. Offline use falls back to locally installed Korean fonts. -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../res/css/site.css?v=7.1-20260917-final" rel="stylesheet"/>
+<link href="../res/css/pages.css?v=7.1-20260917-final" rel="stylesheet"/>
+<script defer="" src="../res/js/include.js?v=7.1-20260922-shared-1" data-site-script="../res/js/site.js?v=7.1-20260917-final"></script>
+<style id="platform-interactive-styles">
+/* PLURA platform.html — architecture + Connected Evidence hover, 2026-09-17.
+   Page-local only. No new script, image file, or shared stylesheet changes. */
+#main.platform-interactive .platform-architecture {
+  --pa-blue: #2458e8;
+  --pa-ink: #193354;
+  --pa-line: #d9e4f8;
+  display: block;
+  padding: 25px;
+  border: 1px solid var(--pa-line);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 16px 46px rgba(36, 73, 141, .06);
+  isolation: isolate;
+}
+#main.platform-interactive .pa-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+#main.platform-interactive .pa-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #4c6a97;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .08em;
+}
+#main.platform-interactive .pa-kicker::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background: var(--pa-blue);
+}
+#main.platform-interactive .pa-sample {
+  border: 1px solid #e2e9f5;
+  border-radius: 4px;
+  padding: 3px 7px;
+  color: #5e7190;
+  font-size: 10px;
+  line-height: 1.4;
+}
+#main.platform-interactive .platform-architecture h2 {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  color: var(--pa-ink);
+  margin: 0 0 23px;
+}
+#main.platform-interactive .pa-diagram { margin: 0; }
+#main.platform-interactive .pa-request-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+#main.platform-interactive .pa-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  min-height: 119px;
+  padding: 13px 5px 10px;
+  border: 1px solid #dce5f5;
+  border-radius: 10px;
+  background: #f8faff;
+  color: var(--pa-ink);
+  text-align: center;
+  transition: background-color .2s, border-color .2s, box-shadow .2s;
+}
+#main.platform-interactive .pa-user { background: #fbfcfe; border-color: #e6ebf3; }
+#main.platform-interactive .pa-node:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: calc(100% + 1px);
+  width: 11px;
+  height: 1px;
+  background: #84a7eb;
+  pointer-events: none;
+}
+#main.platform-interactive .pa-node:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 47px;
+  left: calc(100% + 6px);
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #7197df;
+  border-right: 1px solid #7197df;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+#main.platform-interactive .pa-node-icon {
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 30px;
+  margin-bottom: 8px;
+  color: var(--pa-blue);
+  transition: transform .2s;
+}
+#main.platform-interactive .pa-node-icon .icon { width: 27px; height: 27px; }
+#main.platform-interactive .pa-user .pa-node-icon { color: #6e86a6; }
+#main.platform-interactive .pa-node-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+  letter-spacing: -.03em;
+}
+#main.platform-interactive .pa-node-detail {
+  margin-top: 5px;
+  color: #617493;
+  font-size: 11px;
+  line-height: 1.5;
+}
+#main.platform-interactive .pa-edr-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 5px;
+  border: 1px solid #d7e3ff;
+  border-radius: 4px;
+  background: #edf3ff;
+  color: #2354cd;
+  font-size: 10px;
+  line-height: 1.35;
+  font-weight: 600;
+  white-space: nowrap;
+}
+#main.platform-interactive .pa-install {
+  margin-top: 3px;
+  color: #657b9b;
+  font-size: 10px;
+  line-height: 1.45;
+}
+#main.platform-interactive .pa-collection {
+  position: relative;
+  height: 42px;
+}
+#main.platform-interactive .pa-collection-label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  color: #7186a5;
+  font-size: 11px;
+  line-height: 1.5;
+}
+#main.platform-interactive .pa-log-lines,
+#main.platform-interactive .pa-response-lines {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  overflow: visible;
+  fill: none;
+  stroke: #91afe5;
+  stroke-width: 1.3;
+  pointer-events: none;
+}
+#main.platform-interactive .pa-log-path,
+#main.platform-interactive .pa-response-lines path {
+  stroke-dasharray: 3 4;
+  vector-effect: non-scaling-stroke;
+}
+#main.platform-interactive .pa-arrow-tip {
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: none;
+  stroke: #628edb;
+}
+#main.platform-interactive .pa-analysis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 84px;
+  padding: 16px 12px;
+  border: 1px solid #224476;
+  border-radius: 11px;
+  background: linear-gradient(105deg, #182e50, #214982);
+  color: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+#main.platform-interactive .pa-analysis-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 39px;
+  height: 39px;
+  border: 1px solid #577bab;
+  border-radius: 10px;
+  background: #ffffff0d;
+  color: #b7d1ff;
+  transition: transform .2s;
+}
+#main.platform-interactive .pa-analysis-icon .icon { width: 24px; height: 24px; }
+#main.platform-interactive .pa-analysis-copy { display: block; min-width: 0; }
+#main.platform-interactive .pa-analysis-copy strong {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+#main.platform-interactive .pa-analysis-copy strong span { color: #9dbfff; }
+#main.platform-interactive .pa-analysis-copy > span {
+  display: block;
+  margin-top: 3px;
+  color: #d0def4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+#main.platform-interactive .pa-response-lines { height: 28px; }
+#main.platform-interactive .pa-response-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+#main.platform-interactive .pa-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 11px 4px 12px;
+  border: 1px solid #dce5f5;
+  border-radius: 9px;
+  background: #fff;
+  color: #284770;
+  text-align: center;
+  transition: background-color .2s, border-color .2s, box-shadow .2s;
+}
+#main.platform-interactive .pa-service-icon {
+  display: grid;
+  place-items: center;
+  color: var(--pa-blue);
+  margin-bottom: 6px;
+  transition: transform .2s;
+}
+#main.platform-interactive .pa-service-icon .icon { width: 21px; height: 21px; }
+#main.platform-interactive .pa-service strong { font-size: 13px; font-weight: 600; line-height: 1.5; }
+#main.platform-interactive .pa-service > span:last-child { color: #617696; font-size: 11px; line-height: 1.5; margin-top: 3px; }
+#main.platform-interactive .pa-diagram figcaption {
+  margin-top: 17px;
+  padding-top: 14px;
+  border-top: 1px solid #e8edf7;
+  line-height: 1.75;
+}
+#main.platform-interactive .pa-caption-main { display: block; color: #49688f; font-size: 12px; }
+#main.platform-interactive .pa-caption-note { display: block; margin-top: 4px; color: #6c7e99; font-size: 10px; }
+
+/* This scope deliberately excludes timelines on all other pages. */
+#main.platform-interactive .scenario-evidence .timeline { gap: 8px; }
+#main.platform-interactive .scenario-evidence .timeline-step {
+  grid-template-columns: 33px minmax(0, 1fr);
+  gap: 15px;
+  padding: 15px 14px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background: transparent;
+  min-width: 0;
+  isolation: isolate;
+  cursor: default;
+  transition: border-color .2s, background-color .2s, box-shadow .2s;
+}
+#main.platform-interactive .scenario-evidence .timeline-step:not(:last-child)::before {
+  top: 47px;
+  bottom: -25px;
+  left: 30px;
+  background: #c9d9f3;
+  pointer-events: none;
+}
+#main.platform-interactive .scenario-evidence .timeline-index {
+  width: 33px;
+  height: 33px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 1;
+  transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s, transform .2s;
+}
+#main.platform-interactive .scenario-evidence .timeline-step > div {
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+  transition: transform .2s;
+}
+#main.platform-interactive .scenario-evidence .timeline-step strong,
+#main.platform-interactive .scenario-evidence .timeline-step .source { transition: color .2s; }
+#main.platform-interactive .scenario-evidence .timeline-step:focus-visible {
+  outline: 2px solid #2458e8;
+  outline-offset: 2px;
+  border-color: #bdd0fb;
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(34, 79, 157, .08);
+}
+#main.platform-interactive .scenario-evidence .timeline-step:focus-visible .timeline-index {
+  background: #2458e8;
+  border-color: #2458e8;
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(36, 88, 232, .09);
+}
+#main.platform-interactive .scenario-evidence .timeline-step:focus-visible strong,
+#main.platform-interactive .scenario-evidence .timeline-step:focus-visible .source { color: #2154c2; }
+#main.platform-interactive .pa-diagram a:focus-visible {
+  outline: 2px solid #2458e8;
+  outline-offset: 3px;
+  border-color: #6e99ee;
+  box-shadow: 0 6px 18px rgba(36, 88, 232, .13);
+}
+@media (hover: hover) and (pointer: fine) {
+  #main.platform-interactive .scenario-evidence .timeline-step:hover {
+    border-color: #bed2fb;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(36, 74, 141, .08);
+  }
+  #main.platform-interactive .scenario-evidence .timeline-step:hover .timeline-index {
+    border-color: #2458e8;
+    background: #2458e8;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(36, 88, 232, .09);
+    transform: scale(1.06);
+  }
+  #main.platform-interactive .scenario-evidence .timeline-step:hover > div { transform: translateX(3px); }
+  #main.platform-interactive .scenario-evidence .timeline-step:hover strong,
+  #main.platform-interactive .scenario-evidence .timeline-step:hover .source { color: #2154c2; }
+  #main.platform-interactive .pa-node[href]:hover,
+  #main.platform-interactive .pa-service:hover {
+    border-color: #8eb1f6;
+    background: #f0f5ff;
+    box-shadow: 0 5px 17px rgba(36, 88, 232, .10);
+  }
+  #main.platform-interactive .pa-node[href]:hover .pa-node-icon,
+  #main.platform-interactive .pa-service:hover .pa-service-icon,
+  #main.platform-interactive .pa-analysis:hover .pa-analysis-icon { transform: translateY(-2px); }
+  #main.platform-interactive .pa-analysis:hover {
+    border-color: #71a1f5;
+    box-shadow: 0 7px 22px rgba(27, 63, 121, .22);
+  }
+}
+@media (max-width: 1023px) and (min-width: 851px) {
+  #main.platform-interactive .subhero-grid { grid-template-columns: 1fr; gap: 34px; }
+  #main.platform-interactive .platform-architecture { max-width: 680px; width: 100%; justify-self: center; }
+}
+@media (max-width: 850px) {
+  #main.platform-interactive .platform-architecture { display: block; max-width: 680px; width: 100%; justify-self: center; padding: 27px; }
+  #main.platform-interactive .platform-architecture h2 br { display: initial; }
+}
+@media (max-width: 600px) {
+  #main.platform-interactive .platform-architecture { padding: 20px 18px; border-radius: 12px; }
+  #main.platform-interactive .platform-architecture h2 { font-size: 23px; margin-bottom: 20px; }
+  #main.platform-interactive .pa-kicker { font-size: 9px; letter-spacing: .04em; gap: 6px; }
+  #main.platform-interactive .pa-sample { font-size: 10px; }
+  #main.platform-interactive .pa-request-flow,
+  #main.platform-interactive .pa-response-flow { gap: 10px; }
+  #main.platform-interactive .pa-node { padding-inline: 3px; min-height: 119px; }
+  #main.platform-interactive .pa-node-title { font-size: 12px; }
+  #main.platform-interactive .pa-node-detail { font-size: 10px; }
+  #main.platform-interactive .pa-node:not(:last-child)::after { width: 9px; }
+  #main.platform-interactive .pa-node:not(:last-child)::before { left: calc(100% + 4px); }
+  #main.platform-interactive .pa-analysis { gap: 11px; padding: 14px 10px; min-height: 80px; }
+  #main.platform-interactive .pa-analysis-copy strong { font-size: 17px; }
+  #main.platform-interactive .pa-analysis-copy > span { font-size: 11px; }
+  #main.platform-interactive .pa-service > span:last-child { font-size: 10px; }
+  #main.platform-interactive .pa-caption-main { font-size: 11px; }
+  #main.platform-interactive .scenario-evidence { padding: 24px 16px; }
+  #main.platform-interactive .scenario-evidence .timeline-label { flex-wrap: wrap; row-gap: 7px; font-size: 10px; }
+  #main.platform-interactive .scenario-evidence .timeline-step { padding: 14px 10px; gap: 11px; }
+  #main.platform-interactive .scenario-evidence .timeline-step:not(:last-child)::before { left: 26px; top: 46px; bottom: -24px; }
+}
+@media (max-width: 359px) {
+  #main.platform-interactive .platform-architecture { padding: 18px 12px; }
+  #main.platform-interactive .platform-architecture h2 { font-size: 21px; }
+  #main.platform-interactive .pa-kicker { font-size: 8px; }
+  #main.platform-interactive .pa-node-title { font-size: 11px; }
+  #main.platform-interactive .pa-edr-badge { font-size: 9px; padding-inline: 3px; }
+  #main.platform-interactive .pa-analysis-copy strong { font-size: 16px; }
+  #main.platform-interactive .pa-analysis-copy > span { font-size: 10px; }
+  #main.platform-interactive .pa-analysis-icon { flex-basis: 33px; height: 35px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #main.platform-interactive .platform-architecture *,
+  #main.platform-interactive .scenario-evidence .timeline-step,
+  #main.platform-interactive .scenario-evidence .timeline-step * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  /* Keep static arrowheads; only motion is suppressed. */
+}
+@media print {
+  #main.platform-interactive .platform-architecture,
+  #main.platform-interactive .scenario-evidence .timeline-step { box-shadow: none; break-inside: avoid; }
+  #main.platform-interactive .pa-analysis { background: #fff; border-color: #aac0df; }
+  #main.platform-interactive .pa-analysis-copy strong,
+  #main.platform-interactive .pa-analysis-copy strong span,
+  #main.platform-interactive .pa-analysis-copy > span { color: #193354; }
+  #main.platform-interactive .pa-analysis-icon { color: #2458e8; border-color: #cbd9ef; }
+}
+</style>
+<!-- Shared description typography; intentionally after page-specific styles. -->
+<link rel="stylesheet" href="../res/css/readability.css?v=7.1-20260917-final"/>
+
+<style id="plura-site-hover-styles" data-build="20260919-all-1">
+@media screen and (any-hover:hover) {
+html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step):hover {border-color:#8daef5;box-shadow:0 10px 28px rgba(28,72,156,.13);transform:translateY(-3px);}
+html:not([data-plura-all-hover-ready]) #main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line):hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+html:not([data-plura-all-hover-ready]) #main .zt-workflow > article:hover {background-color:#f1f6ff;box-shadow:inset 3px 0 0 #2458e8;}
+}
+/* PLURA / entire KO / input-aware feedback. Existing inline and shared CSS stays intact. */
+@media screen {
+.btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+.btn-primary:is(.is-pointer-hover,.ph-keyboard) {filter:brightness(.94)}
+.text-link:is(.is-pointer-hover,.ph-keyboard) {text-decoration:underline;text-underline-offset:5px}
+.main-nav a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.nav-group>summary:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.main-nav .dropdown a:is(.is-pointer-hover,.ph-keyboard) {background:#eef3ff;color:var(--accent)}
+.footer-col a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-info a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.footer-legal a:is(.is-pointer-hover,.ph-keyboard),
+.footer-languages a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+:where(.v71-pages) .text-link:is(.is-pointer-hover,.ph-keyboard) {color:#0d1e42}
+:where(.v71-pages) .text-link:is(.is-pointer-hover,.ph-keyboard) .icon {transform:translateX(3px)}
+:where(.v71-pages) .btn:is(.is-pointer-hover,.ph-keyboard) {transform:translateY(-2px)}
+:where(.v71-pages) .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#8eabe9}
+:where(.v71-pages) .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#202c47}
+:where(.v71-pages) .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:#9eb7ec}
+.v71-pages .text-link:is(.is-pointer-hover,.ph-keyboard) {color:#153caa}
+.v71-pages .btn-primary:is(.is-pointer-hover,.ph-keyboard) {background:#1c47c1}
+.v71-pages .btn-dark:is(.is-pointer-hover,.ph-keyboard) {background:#132b51}
+.v71-pages .breadcrumbs a:is(.is-pointer-hover,.ph-keyboard) {color:var(--accent)}
+.v71-pages .card:is(.is-pointer-hover,.ph-keyboard) {border-color:#bcd0f7;transform:none}
+
+@media all {
+#main.platform-interactive .scenario-evidence .timeline-step:is(.is-pointer-hover,.ph-keyboard) {border-color: #bed2fb;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(36, 74, 141, .08);}
+#main.platform-interactive .scenario-evidence .timeline-step:is(.is-pointer-hover,.ph-keyboard) .timeline-index {border-color: #2458e8;
+    background: #2458e8;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(36, 88, 232, .09);
+    transform: scale(1.06);}
+#main.platform-interactive .scenario-evidence .timeline-step:is(.is-pointer-hover,.ph-keyboard) > div {transform: translateX(3px);}
+#main.platform-interactive .scenario-evidence .timeline-step:is(.is-pointer-hover,.ph-keyboard) strong,
+#main.platform-interactive .scenario-evidence .timeline-step:is(.is-pointer-hover,.ph-keyboard) .source {color: #2154c2;}
+#main.platform-interactive .pa-node[href]:is(.is-pointer-hover,.ph-keyboard),
+#main.platform-interactive .pa-service:is(.is-pointer-hover,.ph-keyboard) {border-color: #8eb1f6;
+    background: #f0f5ff;
+    box-shadow: 0 5px 17px rgba(36, 88, 232, .10);}
+#main.platform-interactive .pa-node[href]:is(.is-pointer-hover,.ph-keyboard) .pa-node-icon,
+#main.platform-interactive .pa-service:is(.is-pointer-hover,.ph-keyboard) .pa-service-icon,
+#main.platform-interactive .pa-analysis:is(.is-pointer-hover,.ph-keyboard) .pa-analysis-icon {transform: translateY(-2px);}
+#main.platform-interactive .pa-analysis:is(.is-pointer-hover,.ph-keyboard) {border-color: #71a1f5;
+    box-shadow: 0 7px 22px rgba(27, 63, 121, .22);}
+}
+}
+/* PLURA: one consistent blue feedback layer, scoped to existing components.
+   No font-size, line-height, padding, grid, width, or document order changes. */
+@media screen {
+  body[data-page] { --ph-blue:#2458e8; --ph-tint:#f1f6ff; --ph-line:#8daef5; }
+  body[data-page] .ph-feedback {
+    transition-property:color,background-color,border-color,box-shadow,transform,filter;
+    transition-duration:200ms;
+    transition-timing-function:ease;
+  }
+  body[data-page] #main [data-ph-kind] :is(.icon,.card-icon,.a-value-top,.zt-support-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {
+    transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,transform 180ms ease,box-shadow 180ms ease;
+  }
+  /* Non-clickable containers retain their natural cursor and accessibility semantics. */
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 10px 28px rgba(28,72,156,.13);
+    transform:translateY(-3px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured):not(.quote-card) {
+    background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard):not(.featured) :is(h3,.contact-simple__value) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) :is(.card-icon,.zt-support-icon,.soc-report-icon,.platform-soc-report-icon,.contact-simple__icon) {
+    background-color:var(--ph-blue);
+    color:#fff;
+    border-color:var(--ph-blue);
+    transform:translateY(-2px);
+  }
+  body[data-page] #main [data-ph-kind="card"]:is(.is-pointer-hover,.ph-keyboard) .a-value-top > .icon {
+    color:var(--ph-blue); transform:translateY(-2px);
+  }
+  /* Panel feedback doesn't move either the panel or neighbouring copy. */
+  body[data-page] #main [data-ph-kind="panel"]:is(.is-pointer-hover,.ph-keyboard) {
+    border-color:var(--ph-line);
+    box-shadow:0 12px 34px rgba(28,72,156,.13);
+  }
+  body[data-page] #main [data-ph-kind="tile"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    box-shadow:inset 0 0 0 1px #a5bff3;
+  }
+  /* Evidence / process rows: no vertical translation, so the target remains stable. */
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:var(--ph-tint);
+    border-color:#b1c8f2;
+    box-shadow:inset 3px 0 0 var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) :is(h3,h4,strong,.row-stage,.source) {
+    color:#214fbf;
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) > :is(.icon,.mono) {
+    color:var(--ph-blue);
+  }
+  body[data-page] #main [data-ph-kind="row"]:is(.is-pointer-hover,.ph-keyboard) .timeline-index {
+    background-color:var(--ph-blue); border-color:var(--ph-blue); color:#fff;
+    box-shadow:0 0 0 3px rgba(36,88,232,.10);
+  }
+  /* Dark-blue report panels keep light text and never get a white overlay. */
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:rgba(120,170,255,.15);
+    box-shadow:inset 3px 0 0 #93b9ff;
+  }
+  body[data-page] #main .analysis-board .analysis-row:is(.is-pointer-hover,.ph-keyboard) :is(b,strong,span) {color:#eef5ff;}
+  body[data-page] #main .data-table tbody tr:is(.is-pointer-hover,.ph-keyboard) > td {
+    background-color:#eff5ff;
+    transition:background-color 180ms ease;
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); background-color:var(--ph-tint);
+  }
+  body[data-page] #main [data-ph-kind="faq"]:is(.is-pointer-hover,.ph-keyboard)::after {color:var(--ph-blue);}
+  /* Tabs are preview highlights only. Selection still requires click or keyboard. */
+  body[data-page] #main [data-ph-kind="tab"]:is(.is-pointer-hover,.ph-keyboard):not([aria-selected="true"]):not([aria-pressed="true"]) {
+    color:#214fbf; background-color:#edf3ff; border-color:#9cb7f0;
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):not(:disabled):not([aria-disabled="true"]) {
+    box-shadow:0 5px 16px rgba(35,75,155,.19);
+    transform:translateY(-2px);
+  }
+  body[data-page] [data-ph-kind="button"]:is(.is-pointer-hover,.ph-keyboard):is(.btn-primary,.btn-dark) {
+    background-color:#194acd; border-color:#194acd; color:#fff;
+  }
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {
+    color:var(--ph-blue); text-decoration:underline; text-underline-offset:4px;
+  }
+  body[data-page] #main .a-soc [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) {color:#dce9ff;}
+  body[data-page] #main [data-ph-kind="link"]:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateX(3px);}
+  body[data-page] .site-header [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .site-footer [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {color:var(--ph-blue);}
+  body[data-page] .site-header .dropdown [data-ph-kind="nav"]:is(.is-pointer-hover,.ph-keyboard) {background-color:#eef4ff;}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) {
+    background-color:#edf3ff; box-shadow:0 0 0 8px #edf3ff;
+  }
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) :is(b,.icon) {color:var(--ph-blue);}
+  body[data-page] #main .a-proof-strip > div:is(.is-pointer-hover,.ph-keyboard) > .icon {transform:translateY(-2px);}
+  /* Main-panel transitions also run on a hybrid-input PC. */
+  body[data-page] #main .a-console :is(.a-flow-icon,.a-console-summary,.a-console-row,.a-side-icons>.icon) {
+    transition:color 200ms ease,background-color 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease;
+  }
+  /* Tactic header / compact diagram navigation and keyboard feedback. */
+  body[data-page] #main .ph-keyboard:focus-visible {outline:3px solid #2458e8;outline-offset:4px;}
+  body[data-page] #main .pa-user:is(.is-pointer-hover,.ph-keyboard) {border-color:#8eb1f6;box-shadow:0 5px 17px rgba(36,88,232,.10);}
+}
+@media (prefers-reduced-motion:reduce) {
+  body[data-page] .ph-feedback,
+  body[data-page] .ph-feedback *,
+  body[data-page] .ph-feedback::before,
+  body[data-page] .ph-feedback::after {
+    transition:none !important; animation:none !important;
+  }
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard),
+  body[data-page] .ph-feedback:is(.is-pointer-hover,.ph-keyboard) :is(.icon,.card-icon,.a-flow-icon,.timeline-index,.aih-icon,.pa-node-icon,.pa-service-icon,.soc-report-icon,.platform-soc-report-icon) {transform:none !important;}
+}
+/* No focus/hover decorations should leak into a printed page. */
+@media print {
+  body[data-page] .ph-feedback {transition:none !important;animation:none !important;}
+}
+
+</style>
+</head>
+<body data-page="platform.html" data-website-version="7.1">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="platform.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
+<main class="v71-pages platform-interactive" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>PLURA-XDR</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">통합 보안 기능</span></nav><div class="subhero-grid"><div><p class="eyebrow">CONNECTED CAPABILITIES</p><h1>여러 제품의 목록이 아니라,<br/>하나의 대응을 위한 연결.</h1><p class="lead">웹 보호부터 호스트 분석, 상관분석, 대응 자동화와 포렌식까지. 필요한 기능을 PLURA-XDR의 통합 흐름 안에서 확인하세요.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside platform-architecture" aria-labelledby="platform-architecture-title">
+  <div class="pa-heading"><span class="pa-kicker">ONE CONNECTED PLATFORM</span><span class="pa-sample">구성 예시</span></div>
+  <h2 id="platform-architecture-title">각 기능의 강점을,<br/>하나의 사건에 연결합니다.</h2>
+  <!-- Functional connection diagram adapted from /ko/platform_xdr.html.
+       Solid arrows = service requests. Dashed lines = log/analysis/response connections.
+       Network appliances and detailed deployment topology are intentionally omitted. -->
+  <figure class="pa-diagram" aria-labelledby="pa-diagram-caption">
+    <div class="pa-request-flow" role="group" aria-label="서비스 요청: 사용자에서 PLURA-WAF를 거쳐 PLURA-EDR가 설치된 웹 서버로 연결됩니다.">
+      <div class="pa-node pa-user">
+        <span class="pa-node-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.6 2.5 4 5.5 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.5-4-9s1.4-6.5 4-9Z"></path></svg></span><strong class="pa-node-title">사용자</strong><span class="pa-node-detail">웹 요청</span>
+      </div>
+      <a class="pa-node pa-waf" href="platform_waf.html" aria-label="PLURA-WAF: 웹 요청·응답 분석. 웹방화벽 기능 자세히 보기">
+        <span class="pa-node-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m12 3 8 4v5c0 4.7-3.3 7.4-8 9-4.7-1.6-8-4.3-8-9V7l8-4Z"></path><path d="m8.5 12 2.3 2.3 4.7-4.7"></path></svg></span><strong class="pa-node-title">PLURA-WAF</strong><span class="pa-node-detail">요청·응답 분석</span>
+      </a>
+      <a class="pa-node pa-host" href="platform_edr.html" aria-label="PLURA-EDR가 설치된 웹 서버. 호스트보안 기능 자세히 보기">
+        <span class="pa-node-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="7" rx="2"></rect><rect x="5" y="14" width="14" height="7" rx="2"></rect><path d="M8 6.5h.01M11 6.5h5M8 17.5h.01M11 17.5h5M12 10v4"></path></svg></span><strong class="pa-node-title">웹 서버</strong><span class="pa-edr-badge">PLURA-EDR</span><span class="pa-install">호스트에 설치</span>
+      </a>
+    </div>
+    <div class="pa-collection" aria-hidden="true">
+      <span class="pa-collection-label">웹·호스트 로그 수집</span>
+      <svg class="pa-log-lines" viewBox="0 0 600 42" preserveAspectRatio="none" focusable="false">
+        <path class="pa-log-path" d="M300 0V36M504 0V12Q504 19 497 19H309Q300 19 300 28"></path><path class="pa-arrow-tip" d="m296 32 4 5 4-5"></path>
+      </svg>
+    </div>
+    <a class="pa-analysis" href="platform_siem.html" aria-label="PLURA-SIEM과 AI: 로그 통합, 상관분석, 공격 판단. SIEM 기능 자세히 보기">
+      <span class="pa-analysis-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="16" y="16" width="6" height="6" rx="1"></rect><path d="M12 8v4M5 16v-4h14v4"></path></svg></span><span class="pa-analysis-copy"><strong>PLURA-SIEM <span>+ AI</span></strong><span>로그 통합 · 상관분석 · 공격 판단</span></span>
+    </a>
+    <svg class="pa-response-lines" viewBox="0 0 600 28" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M300 0V28M96 28V19Q96 13 102 13H498Q504 13 504 19V28"></path></svg>
+    <div class="pa-response-flow" role="group" aria-label="통합 분석과 연결되는 증거 조사, 정책 기반 대응, 전문 보안관제">
+      <a class="pa-service" href="platform_forensic.html"><span class="pa-service-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"></circle><path d="m14.5 14.5 6 6M8 10h4M10 8v4"></path></svg></span><strong>Forensic</strong><span>증거 조사</span></a>
+      <a class="pa-service" href="platform_soar.html"><span class="pa-service-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 2 4 14h7l-1 8 10-12h-7l1-8Z"></path></svg></span><strong>SOAR</strong><span>정책 기반 대응</span></a>
+      <a class="pa-service" href="platform_soc.html"><span class="pa-service-icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><circle cx="9" cy="7" r="3"></circle><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 13a5 5 0 0 1 3 5v3"></path></svg></span><strong>SOC</strong><span>전문 보안관제</span></a>
+    </div>
+    <figcaption id="pa-diagram-caption"><span class="pa-caption-main">웹·호스트의 증거를 분석·대응·관제로 연결합니다.</span><span class="pa-caption-note">핵심 기능 연결 예시이며, 상세 구성은 도입 환경에 따라 달라집니다.</span></figcaption>
+  </figure>
+</aside></div></div></section><section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">CAPABILITIES</p><h2>필요한 기능을 깊이 확인하세요.</h2><p class="section-intro">각 상세 페이지는 PLURA-XDR에서 해당 기능이 담당하는 역할과 연결되는 데이터를 설명합니다.</p></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><path d="M3 9h18M7 6.5h.01M10 6.5h.01m-1 6-2 2 2 2m6-4 2 2-2 2"></path></svg></div><h3>웹 공격 확인·방어</h3><p><strong>PLURA-WAF</strong><br/>웹 요청·응답에서 공격과 노출 징후를 확인하고 대응합니다.</p><a class="text-link" href="platform_waf.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M8 21h8m-6-5v5m4-5v5M7 8h4m-4 3h7"></path></svg></div><h3>서버·PC 행위 분석</h3><p><strong>PLURA-EDR</strong><br/>호스트 이벤트에서 실행·접근·변경 흔적을 확인합니다.</p><a class="text-link" href="platform_edr.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 15 6-6m-7 8-1 1a4.24 4.24 0 0 1-6-6l5-5a4.24 4.24 0 0 1 6 0m0 10a4.24 4.24 0 0 0 6 0l5-5a4.24 4.24 0 0 0-6-6l-1 1" transform="translate(1 0) scale(.92)"></path></svg></div><h3>사건 상관분석</h3><p><strong>PLURA-SIEM</strong><br/>서로 다른 로그를 시간·자산·계정 맥락으로 연결합니다.</p><a class="text-link" href="platform_siem.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"></path><path d="m8 12 3 3 5-6"></path></svg></div><h3>대응 실행</h3><p><strong>PLURA-SOAR</strong><br/>허용된 정책과 승인 절차에 따라 조치와 이력을 연결합니다.</p><a class="text-link" href="platform_soar.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M5 8a8 8 0 0 1 14 0m-15 4v1a10 10 0 0 1-1 5m17-6v1c0 3-.5 5-1 7M8 10a4 4 0 0 1 8 0v4c0 3-1 6-2 8m-6-9v1c0 3-.5 5-2 7m6-10v3c0 3-.5 5-1 7"></path></svg></div><h3>증거 확인</h3><p><strong>PLURA-Forensic</strong><br/>원격 호스트 상태와 스냅샷 변경 흔적을 조사합니다.</p><a class="text-link" href="platform_forensic.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 7h16M4 17h16"></path><circle cx="9" cy="7" fill="currentColor" r="3" stroke="none"></circle><circle cx="16" cy="17" fill="currentColor" r="3" stroke="none"></circle></svg></div><h3>보안 설정 점검</h3><p><strong>PLURA-VAS</strong><br/>보안 설정과 감사 정책을 점검해 탐지 준비 상태를 확인합니다.</p><a class="text-link" href="platform_vas.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M2 12h5l3-8 4 16 3-8h5"></path></svg></div><h3>운영 상태 가시성</h3><p><strong>PLURA-SysMon</strong><br/>리소스와 시스템 상태를 보안 운영의 맥락에서 살펴봅니다.</p><a class="text-link" href="platform_sysmon.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v7c0 4 16 4 16 0V5M4 12v7c0 4 16 4 16 0v-7"></path></svg></div><h3>로그 보관·관리</h3><p><strong>로그 보관</strong><br/>도입 목적에 맞는 로그 보관과 조회·관리 조건을 정합니다.</p><a class="text-link" href="platform_backup.html">기능 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></article></div><p class="note">통합 기능의 구성과 제공 범위는 도입 환경 및 계약에 따라 확정합니다. 목록에 표시된 모든 기능이 모든 요금·구성에 기본 포함된다는 의미는 아닙니다.</p></div></section><section class="section section-soft"><div class="container"><div class="section-head"><div><p class="eyebrow">IN CONTEXT</p><h2>기능을 공격 대응의 맥락에서 살펴보세요.</h2></div></div><div data-tabs=""><div aria-label="공격 대응 시나리오" class="tabs" role="tablist"><button aria-controls="cap-scenario-panel-web" aria-selected="true" class="tab" id="cap-scenario-tab-web" role="tab" tabindex="0">웹 해킹·웹셸</button><button aria-controls="cap-scenario-panel-account" aria-selected="false" class="tab" id="cap-scenario-tab-account" role="tab" tabindex="-1">계정 탈취</button><button aria-controls="cap-scenario-panel-data" aria-selected="false" class="tab" id="cap-scenario-tab-data" role="tab" tabindex="-1">데이터 유출</button></div><div aria-labelledby="cap-scenario-tab-web" class="scenario-panel" id="cap-scenario-panel-web" role="tabpanel" tabindex="0"><div class="scenario-description"><span class="pill">웹 해킹·웹셸</span><h3>웹 공격이 실제 서버 침해로 이어졌습니까?</h3><p>요청을 차단했는지와 서버에서 무엇이 실행되었는지는 다른 질문입니다. 웹 로그와 호스트 행위, 파일 흔적을 함께 확인합니다.</p><a class="text-link" href="web-attack.html">대응 흐름 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div><div class="scenario-evidence"><div class="timeline-label"><span class="mono">CONNECTED EVIDENCE</span><span class="pill">설명용 시나리오</span></div><div class="timeline"><div class="timeline-step" tabindex="0" role="group" aria-label="01 웹 요청·응답 확인"><span class="timeline-index">01</span><div><strong>웹 요청·응답 확인</strong><p>대상 URL과 본문에서 공격 의심 근거를 확인합니다.</p><span class="source">WAF / WEB LOG</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="02 서버 실행 흔적 연결"><span class="timeline-index">02</span><div><strong>서버 실행 흔적 연결</strong><p>관련 호스트의 프로세스와 파일 변경을 살펴봅니다.</p><span class="source">EDR / HOST LOG</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="03 침해 판단 근거 확인"><span class="timeline-index">03</span><div><strong>침해 판단 근거 확인</strong><p>시간·자산 관계를 비교하고 미확인 사항을 남깁니다.</p><span class="source">SIEM / FORENSIC</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="04 정책에 따른 대응·보고"><span class="timeline-index">04</span><div><strong>정책에 따른 대응·보고</strong><p>허용된 조치와 승인 이력, 후속 권고를 기록합니다.</p><span class="source">RESPONSE / SOC</span></div></div></div></div></div><div aria-labelledby="cap-scenario-tab-account" class="scenario-panel" hidden="" id="cap-scenario-panel-account" role="tabpanel" tabindex="0"><div class="scenario-description"><span class="pill">계정 탈취</span><h3>로그인 성공이 정상 사용을 의미합니까?</h3><p>인증 결과만 보지 않고 접근 대상과 후속 행위를 확인합니다. 계정의 사용 맥락과 관련 자산을 함께 살펴봅니다.</p><a class="text-link" href="underattack.html">대응 흐름 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div><div class="scenario-evidence"><div class="timeline-label"><span class="mono">CONNECTED EVIDENCE</span><span class="pill">설명용 시나리오</span></div><div class="timeline"><div class="timeline-step" tabindex="0" role="group" aria-label="01 인증 패턴 확인"><span class="timeline-index">01</span><div><strong>인증 패턴 확인</strong><p>시도·성공·실패와 계정별 접근 패턴을 확인합니다.</p><span class="source">ACCOUNT / AUTH LOG</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="02 후속 행위 확인"><span class="timeline-index">02</span><div><strong>후속 행위 확인</strong><p>로그인 이후의 접근 대상과 호스트 행위를 연결합니다.</p><span class="source">WEB / HOST LOG</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="03 정상 업무와 구분"><span class="timeline-index">03</span><div><strong>정상 업무와 구분</strong><p>업무 맥락과 권한을 확인하고 추가 조사 대상을 정합니다.</p><span class="source">CORRELATION / REVIEW</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="04 보호 조치와 고객 통보"><span class="timeline-index">04</span><div><strong>보호 조치와 고객 통보</strong><p>지원 범위와 승인 절차에 맞춰 조치하고 이력을 남깁니다.</p><span class="source">RESPONSE / SOC</span></div></div></div></div></div><div aria-labelledby="cap-scenario-tab-data" class="scenario-panel" hidden="" id="cap-scenario-panel-data" role="tabpanel" tabindex="0"><div class="scenario-description"><span class="pill">데이터 유출</span><h3>무엇이 노출되었고, 어디까지 확인했습니까?</h3><p>단순한 데이터 전송량만으로 유출을 단정하지 않습니다. 응답·접근 로그와 계정·호스트 흔적을 통해 확인 범위를 좁힙니다.</p><a class="text-link" href="data-exfiltration.html">대응 흐름 자세히 보기<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div><div class="scenario-evidence"><div class="timeline-label"><span class="mono">CONNECTED EVIDENCE</span><span class="pill">설명용 시나리오</span></div><div class="timeline"><div class="timeline-step" tabindex="0" role="group" aria-label="01 요청·응답 분석"><span class="timeline-index">01</span><div><strong>요청·응답 분석</strong><p>데이터 노출이 의심되는 요청과 응답을 확인합니다.</p><span class="source">WAF / RESPONSE</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="02 접근 맥락 연결"><span class="timeline-index">02</span><div><strong>접근 맥락 연결</strong><p>관련 계정·자산·호스트 행위를 연결합니다.</p><span class="source">ACCOUNT / HOST</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="03 확인 범위 구분"><span class="timeline-index">03</span><div><strong>확인 범위 구분</strong><p>노출 징후, 전송 정황과 미확인 항목을 분리합니다.</p><span class="source">EVIDENCE / SCOPE</span></div></div><div class="timeline-step" tabindex="0" role="group" aria-label="04 조치와 증거 보존"><span class="timeline-index">04</span><div><strong>조치와 증거 보존</strong><p>허용된 대응을 수행하고 판단 근거를 보고합니다.</p><span class="source">RESPONSE / SOC</span></div></div></div></div></div></div><p class="note">설명용 시나리오입니다. 실제 탐지·조치 결과나 모든 환경에서의 공격 차단을 의미하지 않습니다. 수집 범위와 대응 권한은 도입 구성에 따라 달라집니다.</p></div></section><section class="final-cta"><div class="container"><div><h2>우리 기업의 보안 운영,<br/>하나의 플랫폼에서 시작하세요.</h2><p>보호 대상과 운영 환경에 맞는 PLURA-XDR 도입 방식을 함께 설계합니다.</p></div><a class="btn btn-dark" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
+<div data-include-path="./p_footer.html" data-include-kind="footer"><noscript><div class="wrap"><a href="p_footer.html">하단 메뉴 보기</a></div></noscript></div>
+<button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
+<dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
+<noscript><div class="noscript-note wrap">JavaScript가 꺼져 있습니다. 각 메뉴의 상세 페이지는 열 수 있으며, 탭·자료 검색·상담 초안 작성은 JavaScript가 필요합니다.</div></noscript>
+
+<script id="plura-site-hover-script" data-build="20260919-all-1">
+/* PLURA v7.1 / Whole-KO hover layer / 20260919-all-1
+ * Visual state only: never opens links, submits forms, or changes selection.
+ * A real mouse (or hovering pen) works even when the primary input is touch.
+ * No external dependency, network request, storage, or animation loop.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var main = document.getElementById('main');
+    if (!main || main.hasAttribute('data-plura-all-hover-ready')) return;
+    var groups = [
+  {
+    "selector": "#main.platform-interactive .pa-analysis,\n#main.platform-interactive .pa-node[href],\n#main.platform-interactive .pa-service,\n#main.platform-interactive .scenario-evidence .timeline-step,\n.btn,\n.btn-primary,\n.footer-col a,\n.footer-info a,\n.footer-languages a,\n.footer-legal a,\n.main-nav .dropdown a,\n.main-nav a,\n.nav-group>summary,\n.text-link,\n.v71-pages .breadcrumbs a,\n.v71-pages .btn-dark,\n.v71-pages .btn-primary,\n.v71-pages .card,\n.v71-pages .text-link,\n:where(.v71-pages) .breadcrumbs a,\n:where(.v71-pages) .btn,\n:where(.v71-pages) .btn-dark,\n:where(.v71-pages) .btn-primary,\n:where(.v71-pages) .text-link"
+  },
+  {
+    "selector": "#main :is(.card,.plan-card,.threat-card,.resource-card,.resource-link,.a-value-card,.zt-support-card,.zt-model-item,.zt-detail-card,.soc-report-card,.platform-soc-report-card,.certificate-card,.quote-card,.contact-simple__card,.arch-step)",
+    "kind": "card"
+  },
+  {
+    "selector": "#main :is(.large-step,.timeline-step,.feature-line,.evidence-row,.report-line,.analysis-row,.a-report-line), #main .zt-workflow > article",
+    "kind": "row"
+  },
+  {
+    "selector": "#main :is(.tab,.filter-btn), #main .threat-tabs button",
+    "kind": "tab"
+  },
+  {
+    "selector": "body[data-page] .btn",
+    "kind": "button"
+  },
+  {
+    "selector": "#main :is(.text-link,.feature-chips a,.local-nav a,.am-reference,.am-detail-link), #main .hm-footer>a",
+    "kind": "link"
+  },
+  {
+    "selector": "body[data-page] .site-header :is(.nav-group>summary,.dropdown a,.login-link), body[data-page] .site-footer a",
+    "kind": "nav"
+  },
+  {
+    "selector": "#main .pa-user",
+    "kind": "node"
+  }
+];
+    var nodes = [], known = new Set();
+    groups.forEach(function (group) {
+      document.querySelectorAll(group.selector).forEach(function (node) {
+        // Keep semantic roles and tabindex unchanged. Read-only cards stay read-only.
+        if (group.kind) node.setAttribute('data-ph-kind', group.kind);
+        if (!known.has(node)) { nodes.push(node); known.add(node); }
+      });
+    });
+    var keyboard = false;
+    function acceptsHover(event) {
+      return event.pointerType === 'mouse' ||
+        (event.pointerType === 'pen' && event.buttons === 0);
+    }
+    function disabled(node) {
+      return node.matches(':disabled, [aria-disabled="true"]');
+    }
+    function clearMouse() {
+      nodes.forEach(function (node) { node.classList.remove('is-pointer-hover'); });
+    }
+    function clearFocus() {
+      nodes.forEach(function (node) { node.classList.remove('ph-keyboard'); });
+    }
+    nodes.forEach(function (node) {
+      node.setAttribute('data-ph-managed', '');
+      // Move colour/background only. The browser keeps the original layout.
+      node.classList.add('ph-feedback');
+      function update(event) {
+        var on = acceptsHover(event) && !disabled(node);
+        if (node.classList.contains('is-pointer-hover') !== on) {
+          node.classList.toggle('is-pointer-hover', on);
+        }
+      }
+      function clear() { node.classList.remove('is-pointer-hover'); }
+      if (window.PointerEvent) {
+        node.addEventListener('pointerenter', update);
+        node.addEventListener('pointermove', update, {passive: true});
+        node.addEventListener('pointerleave', clear);
+        node.addEventListener('pointercancel', clear);
+      } else {
+        // Fallback for an older browser; ignore compatibility mouse events after touch.
+        node.addEventListener('mouseenter', function () {
+          if (Date.now() >= ignoreMouseUntil && !disabled(node)) node.classList.add('is-pointer-hover');
+        });
+        node.addEventListener('mouseleave', clear);
+      }
+    });
+    var ignoreMouseUntil = 0;
+    function directInput(event) {
+      keyboard = false;
+      clearFocus();
+      if (event.type === 'touchstart' || event.pointerType === 'touch') {
+        ignoreMouseUntil = Date.now() + 800;
+        clearMouse();
+      }
+    }
+    document.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', directInput, {passive: true, capture: true});
+    if (!window.PointerEvent) document.addEventListener('touchstart', directInput, {passive: true, capture: true});
+    document.addEventListener('keydown', function (event) {
+      if (['Tab','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].indexOf(event.key) >= 0) keyboard = true;
+    }, true);
+    document.addEventListener('focusin', function (event) {
+      clearFocus();
+      var visible = false;
+      try { visible = event.target.matches(':focus-visible'); } catch (_) {}
+      if (!keyboard && !visible) return;
+      nodes.forEach(function (node) {
+        if (!disabled(node) && (node === event.target || node.contains(event.target))) node.classList.add('ph-keyboard');
+      });
+    });
+    document.addEventListener('focusout', function (event) {
+      nodes.forEach(function (node) {
+        if (!event.relatedTarget || !node.contains(event.relatedTarget)) node.classList.remove('ph-keyboard');
+      });
+    });
+    function clearAll() { clearMouse(); clearFocus(); }
+    window.addEventListener('blur', clearAll);
+    window.addEventListener('pagehide', clearAll);
+    document.addEventListener('visibilitychange', function () { if (document.hidden) clearAll(); });
+    document.documentElement.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-all-hover-ready', '20260919-all-1');
+    main.setAttribute('data-plura-hover-targets', String(nodes.length));
+  }
+  // Bind hover only after the common header/footer and the unchanged site.js are ready.
+  function startAfterSharedLayout() {
+    if (window.PLURA_INCLUDES_READY) window.PLURA_INCLUDES_READY.then(init);
+    else init();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startAfterSharedLayout, {once:true});
+  else startAfterSharedLayout();
+}());
+
+</script>
+</body>
+</html>
