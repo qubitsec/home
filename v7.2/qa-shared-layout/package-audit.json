@@ -1,0 +1,51 @@
+{
+  "baseline_file_count": 100,
+  "unchanged_existing_files": 73,
+  "changed_existing_files": [
+    "ko/adoption.html",
+    "ko/ai.html",
+    "ko/contact.html",
+    "ko/customer.html",
+    "ko/data-exfiltration.html",
+    "ko/index.html",
+    "ko/mitreattack.html",
+    "ko/platform.html",
+    "ko/platform_backup.html",
+    "ko/platform_edr.html",
+    "ko/platform_forensic.html",
+    "ko/platform_siem.html",
+    "ko/platform_soar.html",
+    "ko/platform_soc.html",
+    "ko/platform_sysmon.html",
+    "ko/platform_vas.html",
+    "ko/platform_waf.html",
+    "ko/platform_xdr.html",
+    "ko/ransomware.html",
+    "ko/soc-operation.html",
+    "ko/threats.html",
+    "ko/trust.html",
+    "ko/underattack.html",
+    "ko/video.html",
+    "ko/web-attack.html",
+    "ko/zero-day.html",
+    "ko/zta.html"
+  ],
+  "removed_files": [],
+  "added_files_before_audit": [
+    "SHARED-LAYOUT-README.md",
+    "ko/license.html",
+    "ko/p_footer.html",
+    "ko/p_header.html",
+    "qa-shared-layout/browser-checks.json",
+    "qa-shared-layout/http-checks.json",
+    "qa-shared-layout/source-preservation.json",
+    "res/js/include.js"
+  ],
+  "browser_summary": {
+    "page_viewport_checks": 56,
+    "page_assertions": 728,
+    "failed_page_assertions": 0,
+    "behavior_checks": 44,
+    "failed_behavior_checks": 0
+  }
+}

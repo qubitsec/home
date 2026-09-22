@@ -1,0 +1,544 @@
+{
+  "method": "Offline Chromium set_content, temporary local resource inlining; external network blocked; installed Korean fallback fonts",
+  "results": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [
+        {
+          "text": "플랫폼을 이해하는기술 문서",
+          "client": 70,
+          "scroll": 70
+        },
+        {
+          "text": "구성 기능부터 설치와 운영 방법까지.",
+          "client": 30,
+          "scroll": 30
+        },
+        {
+          "text": "고객 환경에서쌓아온 신뢰.",
+          "client": 70,
+          "scroll": 70
+        },
+        {
+          "text": "PLURA를 선택한 고객사와 공개 고객 의견을 확인하세요.",
+          "client": 59,
+          "scroll": 59
+        },
+        {
+          "text": "보안 운영에 필요한기술 인사이트",
+          "client": 70,
+          "scroll": 70
+        },
+        {
+          "text": "공격 분석과 보안 기술에 대한 이야기.",
+          "client": 30,
+          "scroll": 30
+        }
+      ],
+      "file": "index.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [
+        {
+          "text": "플랫폼을 이해하는기술 문서",
+          "client": 64,
+          "scroll": 64
+        },
+        {
+          "text": "구성 기능부터 설치와 운영 방법까지.",
+          "client": 30,
+          "scroll": 30
+        },
+        {
+          "text": "고객 환경에서쌓아온 신뢰.",
+          "client": 64,
+          "scroll": 64
+        },
+        {
+          "text": "PLURA를 선택한 고객사와 공개 고객 의견을 확인하세요.",
+          "client": 59,
+          "scroll": 59
+        },
+        {
+          "text": "보안 운영에 필요한기술 인사이트",
+          "client": 64,
+          "scroll": 64
+        },
+        {
+          "text": "공격 분석과 보안 기술에 대한 이야기.",
+          "client": 30,
+          "scroll": 30
+        }
+      ],
+      "file": "index.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_xdr.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_xdr.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "ai.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "ai.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_soc.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_soc.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "soc-operation.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "soc-operation.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "threats.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "threats.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "web-attack.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "web-attack.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "underattack.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "underattack.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "data-exfiltration.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "data-exfiltration.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "ransomware.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "ransomware.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "zero-day.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "zero-day.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "customer.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "customer.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "video.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "video.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "trust.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "trust.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "adoption.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "adoption.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "contact.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "contact.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_waf.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_waf.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_edr.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_edr.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_siem.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_siem.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_soar.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_soar.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_forensic.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_forensic.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_vas.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_vas.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_sysmon.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_sysmon.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_backup.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "platform_backup.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "mitreattack.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "mitreattack.html"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "zta.html"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "removedLinks": 0,
+      "missingImages": [],
+      "resourceText": [],
+      "file": "zta.html"
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "file": "index.html"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "file": "index.html"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "file": "index.html"
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "file": "customer.html"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "file": "customer.html"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "file": "customer.html"
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "file": "web-attack.html"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "file": "web-attack.html"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "file": "web-attack.html"
+    }
+  ]
+}

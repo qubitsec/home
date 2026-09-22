@@ -1,0 +1,1817 @@
+{
+  "scope": "Offline Chromium DOM rendering; fragment fetch and site.js loading use source-file fixtures. System browser URL navigation is blocked by environment policy. No policy modified, no production access.",
+  "browser": "144.0.7559.96",
+  "pages": [
+    {
+      "page": "adoption.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4159.46875
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4159.46875
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "ai.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3731.609375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3731.609375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "contact.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 469.375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 469.375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "customer.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2762.390625
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2762.390625
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3590.765625
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3590.765625
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5151.4375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5151.4375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "license.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 1490.84375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 1490.84375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "mitreattack.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5362.875
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5362.875
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3516.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3516.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_backup.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_edr.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4359.484375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4359.484375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_siem.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4122.90625
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4122.90625
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_soar.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2986.359375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2986.359375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_soc.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 6156.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 6156.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_vas.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3678.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_waf.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4255.09375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4255.09375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4072.59375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4072.59375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "ransomware.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3590.765625
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3590.765625
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "soc-operation.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3723.796875
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3723.796875
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "threats.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2976
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2976
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "trust.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3398.8125
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3398.8125
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "underattack.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4345
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 4345
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "video.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2452.390625
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 2452.390625
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "web-attack.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3711.3125
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3711.3125
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "zero-day.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3681.109375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 3681.109375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "zta.html",
+      "width": 1440,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5166.984375
+      },
+      "new_main_rect": {
+        "top": 82,
+        "width": 1440,
+        "height": 5166.984375
+      },
+      "old_document_width": 1440,
+      "new_document_width": 1440,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "adoption.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5240.109375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5240.109375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "ai.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5213.15625
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5213.15625
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 563.78125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 563.78125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "customer.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4136.3125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4136.3125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4798.296875
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4798.296875
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8796
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8796
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "license.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 2170.25
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 2170.25
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "mitreattack.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8234.453125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8234.453125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5802.984375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5802.984375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_backup.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4017.453125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4017.453125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_edr.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4775.0625
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4775.0625
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4017.453125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4017.453125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_siem.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4448.65625
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4448.65625
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_soar.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 3872.609375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 3872.609375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_soc.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 9592.1875
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 9592.1875
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 3987.859375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 3987.859375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_vas.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4065.296875
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4065.296875
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_waf.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4627.9375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4627.9375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 6071.125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 6071.125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "ransomware.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4818.390625
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4818.390625
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "soc-operation.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5556.609375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5556.609375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "threats.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4404.203125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4404.203125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "trust.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4807.984375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 4807.984375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "underattack.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 6015.171875
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 6015.171875
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "video.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5073.953125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5073.953125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "web-attack.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5088.453125
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5088.453125
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "zero-day.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5166.4375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 5166.4375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    },
+    {
+      "page": "zta.html",
+      "width": 390,
+      "main_dom_equal": true,
+      "header_equal_except_requested_link": true,
+      "footer_dom_equal": true,
+      "main_rect_equal": true,
+      "old_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8795.109375
+      },
+      "new_main_rect": {
+        "top": 68,
+        "width": 390,
+        "height": 8795.109375
+      },
+      "old_document_width": 390,
+      "new_document_width": 390,
+      "no_new_horizontal_overflow": true,
+      "header_direct_child": true,
+      "footer_direct_child": true,
+      "one_header_one_footer": true,
+      "one_license_header_link": true,
+      "no_license_footer_link": true,
+      "no_license_main_promotion": true,
+      "active_nav_preserved": true,
+      "hover_bound": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "desktop adoption menu exposes license",
+      "pass": true
+    },
+    {
+      "check": "header hover initialized after includes",
+      "pass": true
+    },
+    {
+      "check": "desktop license link target",
+      "pass": true
+    },
+    {
+      "check": "license active nav",
+      "pass": true
+    },
+    {
+      "check": "sticky header",
+      "pass": true
+    },
+    {
+      "check": "back-top shown",
+      "pass": true
+    },
+    {
+      "check": "back-top works",
+      "pass": true
+    },
+    {
+      "check": "desktop Escape closes dropdown",
+      "pass": true
+    },
+    {
+      "check": "desktop Escape restores focus",
+      "pass": true
+    },
+    {
+      "check": "mobile toggle opens",
+      "pass": true
+    },
+    {
+      "check": "mobile main inert",
+      "pass": true
+    },
+    {
+      "check": "mobile license link visible",
+      "pass": true
+    },
+    {
+      "check": "mobile license link target",
+      "pass": true
+    },
+    {
+      "check": "mobile menu closes on link click",
+      "pass": true
+    },
+    {
+      "check": "three license labels mobile",
+      "pass": true
+    },
+    {
+      "check": "mobile Escape closes menu",
+      "pass": true
+    },
+    {
+      "check": "mobile releases inert",
+      "pass": true
+    },
+    {
+      "check": "five threat tabs",
+      "pass": true
+    },
+    {
+      "check": "threat tab 1",
+      "pass": true
+    },
+    {
+      "check": "threat tab 2",
+      "pass": true
+    },
+    {
+      "check": "threat tab 3",
+      "pass": true
+    },
+    {
+      "check": "threat tab 4",
+      "pass": true
+    },
+    {
+      "check": "threat tab 5",
+      "pass": true
+    },
+    {
+      "check": "threat keyboard End",
+      "pass": true
+    },
+    {
+      "check": "resource search still works",
+      "pass": true
+    },
+    {
+      "check": "delayed fragments mobile menu works",
+      "pass": true
+    },
+    {
+      "check": "only two fragment requests",
+      "pass": true
+    },
+    {
+      "check": "missing header is visible error",
+      "pass": true
+    },
+    {
+      "check": "missing header main retained",
+      "pass": true
+    },
+    {
+      "check": "missing header footer loaded",
+      "pass": true
+    },
+    {
+      "check": "missing header partial state",
+      "pass": true
+    },
+    {
+      "check": "invalid HTML fragment detected",
+      "pass": true
+    },
+    {
+      "check": "nojs license tables visible",
+      "pass": true
+    },
+    {
+      "check": "nojs header fallback",
+      "pass": true
+    },
+    {
+      "check": "nojs footer fallback",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 320",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 360",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 600",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 700",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 768",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 1023",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 1024",
+      "pass": true
+    },
+    {
+      "check": "license no overflow at 1920",
+      "pass": true
+    },
+    {
+      "check": "no uncaught JS errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "page_viewport_checks": 56,
+    "page_assertions": 728,
+    "failed_page_assertions": 0,
+    "behavior_checks": 44,
+    "failed_behavior_checks": 0
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "content_pages": 27,
+  "legacy_redirect_files": 4,
+  "public_html_checked": 33,
+  "internal_references_checked": 1618,
+  "internal_reference_errors": [],
+  "forbidden_current_html_references": [],
+  "duplicate_ids": [],
+  "xml_urls": 27,
+  "asset_files": 47,
+  "byte_identical_assets": 47,
+  "inline_blocks": [
+    {
+      "file": "mitreattack.html",
+      "block_type": "script",
+      "count": 3,
+      "unchanged": true
+    },
+    {
+      "file": "mitreattack.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_siem.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_siem.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "zta.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "zta.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "threats.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "threats.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_forensic.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_forensic.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "web-attack.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "web-attack.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_backup.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_backup.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "adoption.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "adoption.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_sysmon.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_sysmon.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "video.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "video.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_secureos.html",
+      "block_type": "script",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_secureos.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "index.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "index.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "casestudy.html",
+      "block_type": "script",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "casestudy.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "pricing.html",
+      "block_type": "script",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "pricing.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "soc-operation.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "soc-operation.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "trust.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "trust.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "zero-day.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "zero-day.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_soc.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_soc.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_vas.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_vas.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "contact.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "contact.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_xdr.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_xdr.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "underattack.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "underattack.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_waf.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_waf.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "data-exfiltration.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "data-exfiltration.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "ransomware.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "ransomware.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "old-pricing.html",
+      "block_type": "script",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "old-pricing.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_edr.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_edr.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "platform_soar.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "platform_soar.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    },
+    {
+      "file": "ai.html",
+      "block_type": "script",
+      "count": 2,
+      "unchanged": true
+    },
+    {
+      "file": "ai.html",
+      "block_type": "style",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "customer.html",
+      "block_type": "script",
+      "count": 1,
+      "unchanged": true
+    },
+    {
+      "file": "customer.html",
+      "block_type": "style",
+      "count": 0,
+      "unchanged": true
+    }
+  ],
+  "nav_preservation": [
+    {
+      "page": "mitreattack.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_siem.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "zta.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "threats.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "web-attack.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_backup.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "adoption.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "video.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "index.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "soc-operation.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "trust.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "zero-day.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_soc.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_vas.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "contact.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "underattack.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_waf.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "ransomware.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_edr.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "platform_soar.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "ai.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    },
+    {
+      "page": "customer.html",
+      "header_preserved_except_removed_link": true,
+      "footer_preserved_except_removed_link": true
+    }
+  ],
+  "external_references_not_network_tested": 454,
+  "deleted_page_absent": true
+}

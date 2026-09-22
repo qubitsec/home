@@ -1,0 +1,430 @@
+{
+  "method": "Python urllib HTTP GET to local ThreadingHTTPServer; not browser HTTP or production server",
+  "results": [
+    {
+      "path": "ko/mitreattack.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_siem.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/zta.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/threats.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_forensic.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/web-attack.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_backup.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/adoption.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_sysmon.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/video.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_secureos.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/index.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/casestudy.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/pricing.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/soc-operation.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/trust.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/zero-day.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_soc.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_vas.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/contact.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_xdr.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/underattack.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_waf.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/data-exfiltration.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/ransomware.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/old-pricing.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_edr.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/platform_soar.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/ai.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/customer.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "site-map.html",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/downloads/PLURA-XDR-evidence-checklist.md",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/downloads/PLURA-SOC-report-sample.md",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/downloads/PLURA-XDR-adoption-checklist.md",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/js/site.js",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/css/readability.css",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/css/site.css",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/css/pages.css",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/logo.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/partner_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/partner_03.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/partner_02.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/video_img1.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/video_img3.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/partner_04.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/favicon.ico",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/video_img2.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/logo_over.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/forensic_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/backup_02.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/siem_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/dashboard_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/edr_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/dashboard_03.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/dashboard_02.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/sms_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/waf_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/screenshots/vas_01.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/pusanuniversity.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/gkl.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/ybmnet.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/kisa.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/hug.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/koreacopy.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/keit.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/dbinc.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/jbe.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/inet.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/posco.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/warmemo.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/etoos.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/willbes.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/kiha.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/samsung.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/commax.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/bccard.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/papajohns.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "res/images/customers/contec.png",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "sitemap-v7.1.xml",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "page-manifest.json",
+      "status": 200,
+      "bytes_equal": true
+    },
+    {
+      "path": "ko/validation.html",
+      "status": 404,
+      "expected_absent": true
+    },
+    {
+      "path": "ko/deployment.html",
+      "status": 404,
+      "expected_absent": true
+    },
+    {
+      "path": "res/v7.1/css/site.css",
+      "status": 404,
+      "expected_absent": true
+    }
+  ]
+}

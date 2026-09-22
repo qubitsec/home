@@ -1,0 +1,201 @@
+{
+  "build": "7.1-20260919-links",
+  "source_archive": "v7.1(2).zip",
+  "source_archive_sha256": "9a32c57147c13f1513d522a166a7db8142f5ecb7b07a558239ffe4a21ea7778b",
+  "deleted_files": [
+    "ko/validation.html"
+  ],
+  "changed_content_files": [
+    {
+      "file": "ko/adoption.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/ai.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/casestudy.html",
+      "changes": [
+        "기존 casestudy 주소를 customer.html로 직접 연결(메타 이동·canonical·링크·제목)"
+      ]
+    },
+    {
+      "file": "ko/contact.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/customer.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "고객 사례 본문의 기술 검증·시연 버튼과 빈 버튼 행 제거"
+      ]
+    },
+    {
+      "file": "ko/data-exfiltration.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "위협 대응 상단 보조 버튼을 고객 사례 보기로 변경"
+      ]
+    },
+    {
+      "file": "ko/index.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "메인 사례·시연 카드를 고객 사례 카드로 변경; 소개 문구와 내부 이동 아이콘 정리"
+      ]
+    },
+    {
+      "file": "ko/mitreattack.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_backup.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_edr.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_forensic.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_siem.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_soar.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_soc.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_sysmon.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_vas.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_waf.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/platform_xdr.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/ransomware.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "위협 대응 상단 보조 버튼을 고객 사례 보기로 변경"
+      ]
+    },
+    {
+      "file": "ko/soc-operation.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/threats.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/trust.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/underattack.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "위협 대응 상단 보조 버튼을 고객 사례 보기로 변경"
+      ]
+    },
+    {
+      "file": "ko/video.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    },
+    {
+      "file": "ko/web-attack.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "위협 대응 상단 보조 버튼을 고객 사례 보기로 변경"
+      ]
+    },
+    {
+      "file": "ko/zero-day.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거",
+        "위협 대응 상단 보조 버튼을 고객 사례 보기로 변경",
+        "하단 중복 기술 검증·시연 링크 제거; AI 분석·대응 링크 유지"
+      ]
+    },
+    {
+      "file": "ko/zta.html",
+      "changes": [
+        "GNB·푸터의 기술 검증·시연 항목 제거"
+      ]
+    }
+  ],
+  "content_pages": 27,
+  "legacy_redirects": {
+    "casestudy.html": "customer.html",
+    "pricing.html": "adoption.html",
+    "old-pricing.html": "adoption.html",
+    "platform_secureos.html": "platform_edr.html"
+  },
+  "unchanged_asset_files": 47,
+  "asset_root": "res/",
+  "archived_previous_reports_at": "history/pre-validation-removal-20260919/",
+  "notes": [
+    "All inline CSS/JS blocks and asset bytes were preserved.",
+    "Existing technical video/download assets are not removed by this narrowly scoped change.",
+    "Historical evidence is not the current release report."
+  ]
+}

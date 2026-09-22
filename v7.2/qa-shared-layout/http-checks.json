@@ -1,0 +1,4321 @@
+{
+  "scope": "Python standard-library localhost HTTP and filesystem checks; no production/network-browser claim",
+  "http_files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/adoption.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/ai.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/casestudy.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/contact.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/customer.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/data-exfiltration.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/index.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/license.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/mitreattack.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/old-pricing.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/p_footer.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/p_header.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_backup.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_edr.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_forensic.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_secureos.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_siem.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_soar.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_soc.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_sysmon.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_vas.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_waf.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/platform_xdr.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/pricing.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/ransomware.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/soc-operation.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/threats.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/trust.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/underattack.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/video.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/web-attack.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/zero-day.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "ko/zta.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    },
+    {
+      "path": "res/css/pages.css",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/css"
+    },
+    {
+      "path": "res/css/readability.css",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/css"
+    },
+    {
+      "path": "res/css/site.css",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/css"
+    },
+    {
+      "path": "res/downloads/PLURA-SOC-report-sample.md",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "res/downloads/PLURA-XDR-adoption-checklist.md",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "res/downloads/PLURA-XDR-evidence-checklist.md",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "res/images/customers/bccard.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/commax.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/contec.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/dbinc.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/etoos.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/gkl.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/hug.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/inet.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/jbe.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/keit.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/kiha.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/kisa.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/koreacopy.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/papajohns.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/posco.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/pusanuniversity.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/samsung.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/warmemo.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/willbes.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/customers/ybmnet.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/favicon.ico",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/vnd.microsoft.icon"
+    },
+    {
+      "path": "res/images/logo.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/logo_over.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/partner_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/partner_02.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/partner_03.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/partner_04.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/backup_02.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/dashboard_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/dashboard_02.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/dashboard_03.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/edr_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/forensic_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/siem_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/sms_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/vas_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/screenshots/waf_01.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/video_img1.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/video_img2.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/images/video_img3.png",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "image/png"
+    },
+    {
+      "path": "res/js/include.js",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "res/js/site.js",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "site-map.html",
+      "status": 200,
+      "byte_identical": true,
+      "content_type": "text/html"
+    }
+  ],
+  "internal_reference_checks": [
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "contact.html?plan=self",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "contact.html?plan=soc",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "adoption.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "ai.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "casestudy.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "contact.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/bccard.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/hug.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/commax.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/etoos.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/kisa.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/inet.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/posco.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/samsung.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/dbinc.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/keit.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/ybmnet.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/willbes.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/koreacopy.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/contec.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/jbe.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/gkl.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/kiha.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/papajohns.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/warmemo.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "src",
+      "value": "../res/images/customers/pusanuniversity.png",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "customer.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "data-exfiltration.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "license.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "mitreattack.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "old-pricing.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "src",
+      "value": "../res/images/logo_over.png",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "ransomware.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "video.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "src",
+      "value": "../res/images/logo_over.png",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "p_footer.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "src",
+      "value": "../res/images/logo_over.png",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "soc-operation.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "threats.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "ransomware.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "video.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "trust.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "license.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "p_header.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_vas.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_sysmon.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "platform_backup.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/backup_02.png",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "ai.html#data",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_backup.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/edr_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "ransomware.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_edr.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/forensic_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_forensic.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_secureos.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/siem_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "zta.html#zta-coverage",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_siem.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "soc-operation.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "zta.html#zta-coverage",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soar.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "contact.html?plan=soc",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "soc-operation.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "soc-operation.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "soc-operation.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "contact.html?plan=soc",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_soc.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/sms_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_sysmon.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/vas_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_vas.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "platform_xdr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "src",
+      "value": "../res/images/screenshots/waf_01.png",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_waf.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "platform_soc.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "platform_xdr.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "pricing.html",
+      "attribute": "href",
+      "value": "adoption.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "ransomware.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "soc-operation.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "ransomware.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "web-attack.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "data-exfiltration.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "ransomware.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "zero-day.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "threats.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "src",
+      "value": "../res/images/partner_01.png",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "src",
+      "value": "../res/images/partner_02.png",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "src",
+      "value": "../res/images/partner_03.png",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "src",
+      "value": "../res/images/partner_04.png",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "platform.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "zta.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "ai.html#data",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "trust.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "underattack.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "src",
+      "value": "../res/images/video_img1.png",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "src",
+      "value": "../res/images/video_img2.png",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "src",
+      "value": "../res/images/video_img3.png",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/downloads/PLURA-XDR-adoption-checklist.md",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/downloads/PLURA-SOC-report-sample.md",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "../res/downloads/PLURA-XDR-evidence-checklist.md",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "video.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "platform_forensic.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "web-attack.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "customer.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "zero-day.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "../res/images/favicon.ico",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "../res/css/site.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "../res/css/pages.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "src",
+      "value": "../res/js/include.js?v=7.1-20260922-shared-1",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "data-site-script",
+      "value": "../res/js/site.js?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "../res/css/readability.css?v=7.1-20260917-final",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "data-include-path",
+      "value": "./p_header.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "p_header.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "index.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "platform_waf.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "platform_edr.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "platform_soar.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "mitreattack.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "underattack.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "ai.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "platform_siem.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "contact.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "data-include-path",
+      "value": "./p_footer.html",
+      "exists": true
+    },
+    {
+      "page": "zta.html",
+      "attribute": "href",
+      "value": "p_footer.html",
+      "exists": true
+    }
+  ],
+  "javascript_syntax": [
+    {
+      "path": "res/js/include.js",
+      "pass": true
+    },
+    {
+      "path": "res/js/site.js",
+      "pass": true
+    },
+    {
+      "path": "ko/adoption.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/ai.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/ai.html#script-2",
+      "pass": true
+    },
+    {
+      "path": "ko/contact.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/customer.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/data-exfiltration.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/index.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/license.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/mitreattack.html#script-2",
+      "pass": true
+    },
+    {
+      "path": "ko/mitreattack.html#script-3",
+      "pass": true
+    },
+    {
+      "path": "ko/platform.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_backup.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_edr.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_forensic.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_siem.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_soar.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_soc.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_sysmon.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_vas.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_waf.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/platform_xdr.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/ransomware.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/soc-operation.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/threats.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/trust.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/underattack.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/video.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/web-attack.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/zero-day.html#script-1",
+      "pass": true
+    },
+    {
+      "path": "ko/zta.html#script-1",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "http_files": 84,
+    "http_failures": 0,
+    "internal_references": 612,
+    "missing_internal_references": 0,
+    "javascript_sources": 32,
+    "javascript_syntax_failures": 0
+  }
+}
