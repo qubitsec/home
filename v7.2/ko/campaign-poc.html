@@ -350,6 +350,14 @@ html:not([data-plura-all-hover-ready]) #main .faq-item > summary:hover {backgrou
 }
 
 </style>
+<style id="plura-poc-terms-styles">
+/* PoC / PoV definitions only. Shared styles and existing sections are unchanged. */
+#main.poc-campaign .cp-term-guide {display:grid;gap:8px;max-width:600px;margin:18px 0 0;padding:14px 18px;border:1px solid var(--cp-line);border-radius:8px;background:#fff;}
+#main.poc-campaign .cp-term-guide > div {display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:12px;align-items:baseline;}
+#main.poc-campaign .cp-term-guide dt {margin:0;color:var(--cp-blue);font-size:14px;font-weight:700;line-height:1.75;}
+#main.poc-campaign .cp-term-guide dd {display:flex;flex-wrap:wrap;gap:0 8px;min-width:0;margin:0;color:var(--cp-copy);font-size:14px;line-height:1.75;word-break:normal;overflow-wrap:anywhere;}
+#main.poc-campaign .cp-term-guide .cp-term-meaning {color:var(--cp-muted);}
+</style>
 </head>
 <body data-page="campaign-poc.html" data-website-version="7.2">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -365,6 +373,10 @@ html:not([data-plura-all-hover-ready]) #main .faq-item > summary:hover {backgrou
           <h1 id="campaign-title">PoC는 유료로<br/><span>해야 합니다.</span></h1>
           <p class="cp-hero-lead">검증은 필요합니다.<br/>그 검증에 대한 정당한 대가도 필요합니다.</p>
           <p class="cp-hero-desc">사이버보안 제품의 PoC·PoV에는 장비와 사람, 시간이 투입됩니다. 무료 검증을 당연하게 요구하기보다, 함께 비용을 책임지는 검증 문화를 제안합니다.</p>
+          <dl class="cp-term-guide" aria-label="PoC·PoV 약어 설명">
+            <div><dt>PoC</dt><dd><span lang="en">Proof of Concept</span><span class="cp-term-meaning">(개념 검증)</span></dd></div>
+            <div><dt>PoV</dt><dd><span lang="en">Proof of Value</span><span class="cp-term-meaning">(가치 검증)</span></dd></div>
+          </dl>
           <div class="cp-actions"><a class="btn btn-primary" href="#proposal">3~5% 제안 보기<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a><a class="cp-quiet-link" href="#why">왜 유료 PoC인가요? <span aria-hidden="true">↓</span></a></div>
         </div>
         <aside class="cp-proposal-card" aria-labelledby="proposal-card-title">
