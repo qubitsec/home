@@ -187,173 +187,24 @@ body[data-page="zta.html"] #main .zt-hero-aside .zt-hero-count > span {
 <!-- ZTA hero: make the Zero Trust operating loop explicit and visual. -->
 <style id="plura-zta-operating-loop" data-build="20261004-zta-loop-1">
 body[data-page="zta.html"] #main .zt-hero-aside.zt-hero-visual {
-  --ztv-blue:#2458e8;
-  --ztv-blue-dark:#153caa;
-  --ztv-blue-soft:#edf3ff;
-  --ztv-ink:#14284a;
-  --ztv-muted:#617492;
-  --ztv-line:#d8e3f4;
-  --ztv-soft:#f7faff;
+  --ztv-blue:#2b56e5;
+  --ztv-blue-dark:#1d3fb8;
+  --ztv-line:rgba(255,255,255,.22);
   display:block;
-  padding:20px;
-  background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
-  border:1px solid #d7e1f2;
-  border-radius:18px;
-  box-shadow:0 16px 34px rgba(27,58,120,.10);
-  color:var(--ztv-ink);
+  padding:18px;
+  background:linear-gradient(135deg,#2f5de9 0%,#4b6df0 100%);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:20px;
+  box-shadow:0 18px 34px rgba(31,63,168,.24);
+  color:#fff;
 }
 body[data-page="zta.html"] #zt-hero-visual > .icon { display:none; }
-body[data-page="zta.html"] #zt-hero-visual .ztv-topbox {
-  position:relative;
-  padding:14px 14px 15px;
-  border:1px solid #dce6f8;
-  border-radius:14px;
-  background:linear-gradient(135deg,#fbfdff 0%,#f3f7ff 100%);
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-topline {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  margin-bottom:10px;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-topid {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-width:0;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-shield {
-  display:grid;
-  place-items:center;
-  width:36px;
-  height:36px;
-  flex:0 0 36px;
-  border:1px solid #cfe0fb;
-  border-radius:11px;
-  background:#fff;
-  color:var(--ztv-blue);
-  box-shadow:0 6px 14px rgba(36,88,232,.08);
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-shield .icon { width:20px; height:20px; }
-body[data-page="zta.html"] #zt-hero-visual .ztv-kicker {
-  margin:0 0 2px;
-  color:#6b7c96;
-  font-size:9px;
-  font-weight:700;
-  line-height:1.5;
-  letter-spacing:.12em;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-title {
-  margin:0;
-  color:#203a6a;
-  font-size:13px;
-  font-weight:800;
-  line-height:1.45;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-chip {
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid #cdddff;
-  background:#fff;
-  color:#4663b2;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:.08em;
-  white-space:nowrap;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-chip::before {
-  content:"";
-  width:6px;
-  height:6px;
-  border-radius:50%;
-  background:var(--ztv-blue);
-  box-shadow:0 0 0 4px rgba(36,88,232,.12);
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-topdesc {
-  margin:0;
-  color:#60728d;
-  font-size:12px;
-  line-height:1.65;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principles {
-  margin-top:14px;
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:8px;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle {
-  min-width:0;
-  padding:10px 10px 11px;
-  border:1px solid #d8e2f2;
-  border-radius:12px;
-  background:#fff;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle b {
-  display:block;
-  color:#7a8aa0;
-  font-size:8px;
-  font-weight:800;
-  line-height:1.4;
-  letter-spacing:.10em;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle strong {
-  display:block;
-  margin-top:5px;
-  color:#344b69;
-  font-size:11px;
-  line-height:1.35;
-  font-weight:700;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle em {
-  display:block;
-  margin-top:4px;
-  color:#8c9bb0;
-  font-size:8px;
-  line-height:1.4;
-  font-style:normal;
-  letter-spacing:.06em;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-accent {
-  border-color:#b9ccff;
-  background:linear-gradient(180deg,#f7faff 0%,#eef4ff 100%);
-  box-shadow:0 8px 16px rgba(36,88,232,.08);
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-accent b,
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-accent em {
-  color:#5070b8;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-accent strong {
-  color:#1c409f;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-wide { grid-column:span 2; }
-body[data-page="zta.html"] #zt-hero-visual .ztv-linkline {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  margin:12px 0 10px;
-  color:#6580c5;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:.08em;
-}
-body[data-page="zta.html"] #zt-hero-visual .ztv-linkline::before,
-body[data-page="zta.html"] #zt-hero-visual .ztv-linkline::after {
-  content:"";
-  flex:1 1 auto;
-  max-width:72px;
-  border-top:1px dashed #bfd0f4;
-}
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr {
-  padding:16px;
-  border:1px solid #8dafff;
-  border-radius:16px;
-  background:linear-gradient(135deg,#1f4bd0 0%,#4b66f2 100%);
-  box-shadow:0 16px 26px rgba(36,88,232,.22);
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:none;
+  box-shadow:none;
   color:#fff;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-top {
@@ -361,26 +212,26 @@ body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-top {
   align-items:flex-start;
   justify-content:space-between;
   gap:12px;
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-kicker {
   margin:0 0 4px;
-  color:#d6e3ff;
-  font-size:9px;
+  color:rgba(255,255,255,.86);
+  font-size:10px;
   font-weight:700;
-  line-height:1.4;
-  letter-spacing:.12em;
+  line-height:1.45;
+  letter-spacing:.10em;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-title {
   margin:0;
   color:#fff;
-  font-size:19px;
-  line-height:1.25;
+  font-size:20px;
+  line-height:1.2;
   font-weight:800;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-copy {
-  margin:7px 0 0;
-  color:#edf3ff;
+  margin:8px 0 0;
+  color:rgba(255,255,255,.92);
   font-size:12px;
   line-height:1.6;
 }
@@ -390,93 +241,90 @@ body[data-page="zta.html"] #zt-hero-visual .ztv-pmark {
   width:42px;
   height:42px;
   border-radius:12px;
-  background:rgba(255,255,255,.16);
-  border:1px solid rgba(255,255,255,.26);
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.34);
   color:#fff;
   font-size:22px;
   font-weight:800;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.14);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18);
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-tags {
   display:flex;
   flex-wrap:wrap;
-  gap:6px;
+  gap:7px;
   margin-bottom:12px;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-tags span {
-  padding:5px 8px;
+  padding:7px 11px;
   border-radius:999px;
-  background:rgba(255,255,255,.14);
-  border:1px solid rgba(255,255,255,.24);
-  color:#edf2ff;
-  font-size:9px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.28);
+  color:#fff;
+  font-size:10px;
   font-weight:700;
-  letter-spacing:.08em;
+  letter-spacing:.05em;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-flow {
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:9px;
+  gap:10px;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-step {
   min-width:0;
-  padding:11px 11px 10px;
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:12px;
+  padding:12px 12px 11px;
+  border:1px solid rgba(255,255,255,.26);
+  border-radius:14px;
   background:rgba(255,255,255,.10);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.10);
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-step span {
   display:block;
-  margin-bottom:5px;
-  color:#dce6ff;
-  font-size:8px;
+  margin-bottom:6px;
+  color:rgba(255,255,255,.84);
+  font-size:9px;
   font-weight:700;
   letter-spacing:.10em;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-step b {
   display:block;
   color:#fff;
-  font-size:13px;
-  line-height:1.35;
+  font-size:15px;
+  line-height:1.32;
   font-weight:800;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-step em {
   display:block;
   margin-top:4px;
-  color:#ebf1ff;
-  font-size:9px;
-  line-height:1.45;
+  color:rgba(255,255,255,.92);
+  font-size:10px;
+  line-height:1.5;
   font-style:normal;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-evidence {
-  margin-top:12px;
+  margin-top:13px;
   display:flex;
-  align-items:center;
+  align-items:flex-end;
   justify-content:space-between;
   gap:12px;
-  padding-top:11px;
-  border-top:1px solid rgba(255,255,255,.18);
+  padding-top:12px;
+  border-top:1px solid rgba(255,255,255,.24);
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-evidence span {
-  color:#dce6ff;
-  font-size:9px;
+  color:rgba(255,255,255,.86);
+  font-size:10px;
   font-weight:700;
   letter-spacing:.10em;
 }
 body[data-page="zta.html"] #zt-hero-visual .ztv-evidence strong {
   color:#fff;
-  font-size:12px;
+  font-size:13px;
   line-height:1.5;
   text-align:right;
 }
 @media (max-width:700px) {
   body[data-page="zta.html"] #main .zt-hero-aside.zt-hero-visual { padding:16px; }
-  body[data-page="zta.html"] #zt-hero-visual .ztv-topline,
   body[data-page="zta.html"] #zt-hero-visual .ztv-xdr-top,
   body[data-page="zta.html"] #zt-hero-visual .ztv-evidence { align-items:flex-start; flex-direction:column; }
-  body[data-page="zta.html"] #zt-hero-visual .ztv-principles { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  body[data-page="zta.html"] #zt-hero-visual .ztv-principle.is-wide { grid-column:span 2; }
   body[data-page="zta.html"] #zt-hero-visual .ztv-evidence strong { text-align:left; }
 }
 @media (max-width:389px) {
@@ -488,36 +336,13 @@ body[data-page="zta.html"] #zt-hero-visual .ztv-evidence strong {
 <body data-page="zta.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
 <div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current=""><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
-<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>PLURA-XDR</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">제로트러스트</span></nav><div class="subhero-grid"><div><p class="eyebrow">ZERO TRUST / CONTINUOUS VERIFICATION</p><h1>제로트러스트의 지속 검증을,<br/>실제 보안 운영으로 완성합니다.</h1><p class="lead">제로트러스트는 접근 허용에서 끝나지 않습니다. PLURA-XDR은 조직의 IAM·인증·인가·접근 정책과 연계해 네트워크·호스트 행위를 계속 관측하고, SIEM·AI로 위험을 분석하며, SOAR로 허용된 대응을 실행합니다. 검증 결과와 조치 이력을 다시 정책에 반영해 지속 검증의 운영 루프를 완성합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a><a class="btn btn-outline" href="#zta-model">NIST 원칙과 역할 보기 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside zt-hero-aside zt-hero-visual" id="zt-hero-visual" aria-label="PLURA-XDR이 제로트러스트의 핵심 원칙을 지속 검증 운영으로 연결하는 구조">
-  <div class="ztv-topbox">
-    <div class="ztv-topline">
-      <div class="ztv-topid">
-        <span class="ztv-shield" aria-hidden="true"><svg class="icon" focusable="false" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"></path><path d="m8 12 3 3 5-6"></path></svg></span>
-        <div>
-          <p class="ztv-kicker">NIST SP 800-207 / ZERO TRUST</p>
-          <p class="ztv-title">7개 기본 원칙을,<br/>운영 가능한 4개 흐름으로 연결</p>
-        </div>
-      </div>
-      <span class="ztv-chip">4 CORE ROLES</span>
-    </div>
-    <p class="ztv-topdesc">연계 설계가 필요한 원칙은 그대로 두고, PLURA-XDR이 강하게 연결하는 가시성·상태 확인·분석·대응의 4개 운영 역할을 강조합니다.</p>
-  </div>
-  <div class="ztv-principles" aria-label="NIST 제로트러스트 7개 원칙 요약과 강조 항목">
-    <div class="ztv-principle"><b>01 / RESOURCES</b><strong>데이터·서비스를 자원으로</strong><em>연계 설계</em></div>
-    <div class="ztv-principle"><b>02 / COMMUNICATION</b><strong>위치와 무관한 통신 보호</strong><em>연계 설계</em></div>
-    <div class="ztv-principle"><b>03 / PER-SESSION ACCESS</b><strong>세션별 최소 권한 접근</strong><em>연계 설계</em></div>
-    <div class="ztv-principle is-accent"><b>04 / DYNAMIC POLICY</b><strong>동적 정책 기반 접근</strong><em>판단 근거</em></div>
-    <div class="ztv-principle is-accent"><b>05 / ASSET SECURITY</b><strong>자산 무결성·상태 확인</strong><em>상태 확인</em></div>
-    <div class="ztv-principle is-accent"><b>06 / AUTHN &amp; AUTHZ</b><strong>인증·인가와 연계</strong><em>정책 연동</em></div>
-    <div class="ztv-principle is-accent is-wide"><b>07 / CONTINUOUS IMPROVEMENT</b><strong>정보 수집·분석·개선</strong><em>분석 · 개선</em></div>
-  </div>
-  <div class="ztv-linkline" aria-hidden="true">PLURA-XDR CONNECTS</div>
+<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>PLURA-XDR</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">제로트러스트</span></nav><div class="subhero-grid"><div><p class="eyebrow">ZERO TRUST / CONTINUOUS VERIFICATION</p><h1>제로트러스트의 지속 검증을,<br/>실제 보안 운영으로 완성합니다.</h1><p class="lead">제로트러스트는 접근 허용에서 끝나지 않습니다. PLURA-XDR은 조직의 IAM·인증·인가·접근 정책과 연계해 네트워크·호스트 행위를 계속 관측하고, SIEM·AI로 위험을 분석하며, SOAR로 허용된 대응을 실행합니다. 검증 결과와 조치 이력을 다시 정책에 반영해 지속 검증의 운영 루프를 완성합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a><a class="btn btn-outline" href="#zta-model">NIST 원칙과 역할 보기 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside zt-hero-aside zt-hero-visual" id="zt-hero-visual" aria-label="PLURA-XDR의 제로트러스트 운영 흐름">
   <div class="ztv-xdr">
     <div class="ztv-xdr-top">
       <div>
         <p class="ztv-xdr-kicker">PLURA-XDR / ZERO TRUST OPERATIONS</p>
         <h2 class="ztv-xdr-title">지속 검증을,<br/>하나의 운영 흐름으로.</h2>
-        <p class="ztv-xdr-copy">네트워크·호스트의 관측, SIEM·AI 분석, SOAR 대응을 하나의 플랫폼에서 연결해 검증 근거와 조치 이력을 운영으로 이어갑니다.</p>
+        <p class="ztv-xdr-copy">네트워크 · 호스트의 관측, SIEM·AI 분석, SOAR 대응을 하나의 플랫폼에서 연결해 검증 근거와 조치 이력을 운영으로 이어갑니다.</p>
       </div>
       <span class="ztv-pmark" aria-hidden="true">P</span>
     </div>
