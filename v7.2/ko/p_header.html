@@ -1,6 +1,164 @@
-<header class="site-header"><div class="wrap nav-inner">
+<header class="site-header">
+<style id="plura-login-versions-style">
+/* Login selector only. Kept inside the header so include.js retains this style.
+   No inline handlers or scripts: include.js rejects scripts in layout fragments.
+   Native details supports click/tap/keyboard; desktop hover adds the V6/V5 tray. */
+.site-header #plura-login-desktop {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.site-header #plura-login-desktop > .plura-login-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0 18px;
+  border: 1px solid #1d3663;
+  border-radius: 5px;
+  background: #1d3663;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  list-style: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease;
+}
+.site-header #plura-login-desktop > .plura-login-trigger::-webkit-details-marker { display: none; }
+.site-header #plura-login-desktop > .plura-login-trigger::marker { content: ""; }
+.site-header #plura-login-desktop[open] > .plura-login-trigger {
+  background: #183057;
+  border-color: #183057;
+  color: #fff;
+}
+.site-header #plura-login-desktop > .plura-login-options {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: auto;
+  z-index: 80;
+  display: none;
+  grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+  align-items: center;
+  width: 152px;
+  max-width: calc(100vw - 32px);
+  margin: 0;
+  padding: 6px;
+  border: 1px solid #d9e2f2;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(20, 37, 75, .16);
+  color: #15213a;
+  transform: translateX(-50%);
+}
+/* The tray touches the trigger: there is no dead hover gap. */
+.site-header #plura-login-desktop[open] > .plura-login-options { display: grid; }
+.site-header .plura-login-options > a,
+.site-header .plura-mobile-login-options > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 36px;
+  margin: 0;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #15213a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .18s ease, background-color .18s ease;
+}
+.site-header .plura-login-separator {
+  display: block;
+  width: 1px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  background: #ccd7e9;
+}
+.site-header #plura-login-desktop > .plura-login-trigger:focus-visible,
+.site-header .plura-login-options > a:focus-visible,
+.site-header .plura-mobile-login-options > a:focus-visible {
+  outline: 3px solid #2458e8;
+  outline-offset: 3px;
+}
+.site-header .main-nav > .plura-mobile-logins { display: none; }
+@media (any-hover: hover) {
+  /* Modern browsers hide closed details content with content-visibility. */
+  .site-header #plura-login-desktop:hover::details-content { content-visibility: visible; }
+  .site-header #plura-login-desktop:hover > .plura-login-options { display: grid; }
+  .site-header #plura-login-desktop:hover > .plura-login-trigger {
+    background: #244778;
+    border-color: #244778;
+    color: #fff;
+  }
+  .site-header .plura-login-options > a:hover,
+  .site-header .plura-mobile-login-options > a:hover {
+    background: #eef3ff;
+    color: #2458e8;
+  }
+}
+@media (max-width: 1023px) {
+  .site-header #plura-login-desktop { display: none; }
+  .site-header .main-nav > .plura-mobile-logins {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px 0 0;
+    color: #52647f;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .site-header .plura-mobile-login-options {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+    align-items: center;
+    min-width: 152px;
+    padding: 4px;
+    border: 1px solid #d9e2f2;
+    border-radius: 8px;
+    background: #f7f9fd;
+  }
+  .site-header .plura-mobile-login-options > a { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header #plura-login-desktop > .plura-login-trigger,
+  .site-header .plura-login-options > a,
+  .site-header .plura-mobile-login-options > a { transition: none; }
+}
+</style>
+<div class="wrap nav-inner">
 <a aria-label="PLURA 홈페이지" class="brand" href="index.html"><img alt="PLURA" height="68" src="../res/images/logo_over.png" width="230"/><span class="brand-label">SECURITY<br/>PLATFORM</span></a>
-<nav aria-label="주요 메뉴" class="main-nav" id="primary-nav"><details class="nav-group"><summary>PLURA-XDR<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">ONE INTEGRATED PLATFORM</p><a href="platform_xdr.html"><strong>플랫폼 개요</strong><span>원천 데이터부터 대응까지</span></a><a href="ai.html"><strong>AI 분석·대응</strong><span>AI 공격을 AI가 방어하는 체계</span></a><a href="mitreattack.html"><strong>마이터 어택 기반 탐지</strong><span>행위 탐지 · 기법 ID · 공격 흐름</span></a><a href="zta.html"><strong>제로트러스트</strong><span>지속 검증 · 보안 분석 · 정책 기반 대응</span></a><a href="platform.html"><strong>통합 보안 기능</strong><span>WAF · EDR · SIEM · SOAR · Forensic</span></a></div></details><details class="nav-group"><summary>AI 보안관제<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">PLURA-XDR + SOC</p><a href="platform_soc.html"><strong>PLURA-XDR + SOC</strong><span>플랫폼과 전문 관제의 연결</span></a><a href="soc-operation.html"><strong>관제 운영 방식</strong><span>검토 · 대응 · 보고 · 개선</span></a></div></details><details class="nav-group"><summary>위협 대응<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">THREAT-LED DEFENSE</p><a href="threats.html"><strong>위협 대응 개요</strong><span>공격을 확인하는 하나의 흐름</span></a><a href="web-attack.html"><strong>웹 해킹·웹셸</strong><span>웹에서 서버 내부의 행위까지</span></a><a href="underattack.html"><strong>크리덴셜 스터핑</strong><span>계정 탈취 탐지와 로그인 보호</span></a><a href="data-exfiltration.html"><strong>데이터 유출</strong><span>노출 징후와 판단 근거</span></a><a href="ransomware.html"><strong>랜섬웨어</strong><span>행위 변화와 확산 대응</span></a><a href="zero-day.html"><strong>제로데이·우회 공격</strong><span>AI 기반 변형·우회 공격 대응</span></a></div></details><details class="nav-group"><summary>고객·자료<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">EVIDENCE &amp; INSIGHTS</p><a href="customer.html"><strong>고객 사례</strong><span>고객 환경에서 쌓아온 신뢰</span></a><a href="video.html"><strong>영상·자료실</strong><span>영상 · 문서 · 체크리스트</span></a><a href="trust.html"><strong>기술·신뢰</strong><span>확인 가능한 기술과 근거</span></a></div></details><details class="nav-group"><summary>도입 안내<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">BUILD YOUR SECURITY OPERATIONS</p><a href="adoption.html"><strong>운영 방식·도입 절차</strong><span>자체 운영 또는 관제 포함</span></a><a href="license.html"><strong>라이선스별 기능</strong><span>등급별 제공 범위와 로그 조회 기간</span></a><a href="campaign-poc.html"><strong>캠페인 · 유료 PoC</strong><span>검증 비용 지급 · 도입 시 차감</span></a><a href="contact.html"><strong>통합 도입 상담</strong><span>우리 환경에 맞는 도입 설계</span></a></div></details><a class="nav-mobile-login" href="https://xdr.plura.io/auth/login" rel="noopener noreferrer" target="_blank">서비스 로그인 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only">새 탭</span></a></nav>
-<div class="header-actions"><a class="login-link" href="https://xdr.plura.io/auth/login" rel="noopener noreferrer" target="_blank">로그인<span class="sr-only"> (새 탭)</span></a><a class="btn btn-primary" href="contact.html">도입 상담 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
+<nav aria-label="주요 메뉴" class="main-nav" id="primary-nav"><details class="nav-group"><summary>PLURA-XDR<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">ONE INTEGRATED PLATFORM</p><a href="platform_xdr.html"><strong>플랫폼 개요</strong><span>원천 데이터부터 대응까지</span></a><a href="ai.html"><strong>AI 분석·대응</strong><span>AI 공격을 AI가 방어하는 체계</span></a><a href="mitreattack.html"><strong>마이터 어택 기반 탐지</strong><span>행위 탐지 · 기법 ID · 공격 흐름</span></a><a href="zta.html"><strong>제로트러스트</strong><span>지속 검증 · 보안 분석 · 정책 기반 대응</span></a><a href="platform.html"><strong>통합 보안 기능</strong><span>WAF · EDR · SIEM · SOAR · Forensic</span></a></div></details><details class="nav-group"><summary>AI 보안관제<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">PLURA-XDR + SOC</p><a href="platform_soc.html"><strong>PLURA-XDR + SOC</strong><span>플랫폼과 전문 관제의 연결</span></a><a href="soc-operation.html"><strong>관제 운영 방식</strong><span>검토 · 대응 · 보고 · 개선</span></a></div></details><details class="nav-group"><summary>위협 대응<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">THREAT-LED DEFENSE</p><a href="threats.html"><strong>위협 대응 개요</strong><span>공격을 확인하는 하나의 흐름</span></a><a href="web-attack.html"><strong>웹 해킹·웹셸</strong><span>웹에서 서버 내부의 행위까지</span></a><a href="underattack.html"><strong>크리덴셜 스터핑</strong><span>계정 탈취 탐지와 로그인 보호</span></a><a href="data-exfiltration.html"><strong>데이터 유출</strong><span>노출 징후와 판단 근거</span></a><a href="ransomware.html"><strong>랜섬웨어</strong><span>행위 변화와 확산 대응</span></a><a href="zero-day.html"><strong>제로데이·우회 공격</strong><span>AI 기반 변형·우회 공격 대응</span></a></div></details><details class="nav-group"><summary>고객·자료<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">EVIDENCE &amp; INSIGHTS</p><a href="customer.html"><strong>고객 사례</strong><span>고객 환경에서 쌓아온 신뢰</span></a><a href="video.html"><strong>영상·자료실</strong><span>영상 · 문서 · 체크리스트</span></a><a href="trust.html"><strong>기술·신뢰</strong><span>확인 가능한 기술과 근거</span></a></div></details><details class="nav-group"><summary>도입 안내<svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="dropdown"><p class="dropdown-title">BUILD YOUR SECURITY OPERATIONS</p><a href="adoption.html"><strong>운영 방식·도입 절차</strong><span>자체 운영 또는 관제 포함</span></a><a href="license.html"><strong>라이선스별 기능</strong><span>등급별 제공 범위와 로그 조회 기간</span></a><a href="campaign-poc.html"><strong>캠페인 · 유료 PoC</strong><span>검증 비용 지급 · 도입 시 차감</span></a><a href="contact.html"><strong>통합 도입 상담</strong><span>우리 환경에 맞는 도입 설계</span></a></div></details><div class="plura-mobile-logins" role="group" aria-label="서비스 로그인 버전 선택">
+  <span>서비스 로그인</span>
+  <div class="plura-mobile-login-options">
+    <a href="https://xdr.plura.io/auth/login" target="_blank" rel="noopener noreferrer" aria-label="V6 로그인 (새 탭)">V6</a>
+    <span class="plura-login-separator" aria-hidden="true"></span>
+    <a href="https://siem.plura.io/login" target="_blank" rel="noopener noreferrer" aria-label="V5 로그인 (새 탭)">V5</a>
+  </div>
+</div></nav>
+<div class="header-actions"><details class="nav-group plura-login-select" id="plura-login-desktop">
+  <summary class="login-link plura-login-trigger" aria-label="로그인 버전 선택">로그인</summary>
+  <div class="plura-login-options" role="group" aria-label="로그인 버전 선택">
+    <a href="https://xdr.plura.io/auth/login" target="_blank" rel="noopener noreferrer" aria-label="V6 로그인 (새 탭)">V6</a>
+    <span class="plura-login-separator" aria-hidden="true"></span>
+    <a href="https://siem.plura.io/login" target="_blank" rel="noopener noreferrer" aria-label="V5 로그인 (새 탭)">V5</a>
+  </div>
+</details><a class="btn btn-primary" href="contact.html">도입 상담 <svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
 <button aria-controls="primary-nav" aria-expanded="false" aria-label="전체 메뉴 열기" class="menu-button" id="menu-toggle" type="button"><span data-menu-icon=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></span><span data-close-icon="" hidden=""><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></span></button>
 </div></header>
