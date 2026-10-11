@@ -128,6 +128,23 @@ body[data-page="index.html"] #paid-poc-campaign .home-poc-support__link:focus-vi
   }
 }
 </style>
+
+<style id="home-threat-evidence-spacing-fix" data-build="20261011-threats-inset-1">
+/* The shared hover style draws a 3px inset rail at the row's left edge.
+   Reserve space in every state so the rail cannot cover the stage label.
+   Keep the existing grid columns, mobile stacking, typography and hover effects. */
+@media screen {
+  body[data-page="index.html"] #threats .evidence-row {
+    padding-left: 12px;
+  }
+  body[data-page="index.html"] #threats .evidence-row > .row-stage {
+    white-space: nowrap;
+  }
+  body[data-page="index.html"] #threats .evidence-row > div {
+    min-width: 0;
+  }
+}
+</style>
 </head>
 <body data-page="index.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
