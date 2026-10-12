@@ -1,1 +1,80 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=ko/index.html"><title>PLURA 홈페이지 v7.2</title></head><body><p><a href="ko/index.html">PLURA 홈페이지 v7.2 열기</a></p><p><a href="site-map.html">전체 페이지 목록 보기</a></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Redirecting...</title>
+
+  <script>
+    (function () {
+      // --- cookie utils (no regex) ---
+      function getCookie(name){
+        var cs = ('; ' + document.cookie).split('; ' + name + '=');
+        if (cs.length < 2) return null;
+        return decodeURIComponent(cs.pop().split(';').shift());
+      }
+      function setCookie(name, value){
+        var parts = [
+          name + '=' + encodeURIComponent(value),
+          'Max-Age=31536000',
+          'Path=/',
+          'SameSite=Lax'
+        ];
+        if (location.protocol === 'https:') parts.push('Secure');
+        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
+        document.cookie = parts.join('; ');
+      }
+      function delCookie(name){
+        var parts = [name + '=', 'Max-Age=0', 'Path=/'];
+        if (location.protocol === 'https:') parts.push('Secure');
+        try { if (location.hostname.endsWith('plura.io')) parts.push('Domain=.plura.io'); } catch(e){}
+        document.cookie = parts.join('; ');
+      }
+
+      function mapLang(l){
+        if (!l) return 'en';
+        l = l.toLowerCase();
+        if (l.indexOf('ko') === 0) return 'ko';
+        if (l.indexOf('ja') === 0) return 'ja';
+        return 'en';
+      }
+
+      var path = location.pathname;
+
+      // 언어 폴더에 이미 있으면 쿠키만 보정하고 종료
+      var m = /^\/(ko|ja|en)(\/|$)/.exec(path);
+      if (m) {
+        var cur = m[1];
+        if (getCookie('px_lang') !== cur) setCookie('px_lang', cur);
+        try { document.documentElement.setAttribute('lang', cur); } catch(e){}
+        return;
+      }
+
+      // 루트에서만 리다이렉트
+      if (path === '/' || path === '/index.html') {
+        // 구 쿠키 lang -> px_lang 마이그레이션
+        var legacy = getCookie('lang');
+        if (legacy && !getCookie('px_lang')) { setCookie('px_lang', mapLang(legacy)); delCookie('lang'); }
+
+        var lang = getCookie('px_lang');
+        if (!lang) {
+          lang = mapLang(navigator.language || navigator.userLanguage);
+          setCookie('px_lang', lang);
+        }
+
+        // blog처럼 /{lang}/ 로 보내도 되고, 기존대로 /{lang}/index.html 유지해도 됩니다.
+        location.replace('/' + lang + '/index.html');
+        // location.replace('/' + lang + '/');  // (선택) blog와 동일한 형태
+      }
+    })();
+  </script>
+
+  <!-- (선택) JS 비활성 fallback -->
+  <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
+</head>
+<body>
+  <!-- Loading 문구 제거 -->
+</body>
+</html>
