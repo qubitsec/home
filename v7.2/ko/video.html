@@ -4,12 +4,12 @@
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="light" name="color-scheme"/><meta content="#2458e8" name="theme-color"/>
-<title>영상·자료실 | PLURA-XDR</title><meta content="PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료를 한곳에서 확인하세요." name="description"/>
+<title>영상·자료실 | PLURA-XDR</title><meta content="PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료와 기고 칼럼을 한곳에서 확인하세요." name="description"/>
 <meta content="Qubit Security Inc." name="author"/><meta content="7.1-20260919-links" name="plura-website-version"/>
 <!-- Review build. Enable indexing only after the release checklist is approved. -->
 <meta content="noindex, follow" name="robots"/><link href="https://www.plura.io/ko/video.html" rel="canonical"/>
 <meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="PLURA" property="og:site_name"/>
-<meta content="영상·자료실 | PLURA-XDR" property="og:title"/><meta content="PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료를 한곳에서 확인하세요." property="og:description"/><meta content="https://www.plura.io/ko/video.html" property="og:url"/>
+<meta content="영상·자료실 | PLURA-XDR" property="og:title"/><meta content="PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료와 기고 칼럼을 한곳에서 확인하세요." property="og:description"/><meta content="https://www.plura.io/ko/video.html" property="og:url"/>
 <link href="../res/images/favicon.ico" rel="icon"/>
 <!-- Typeface is loaded remotely. Offline use falls back to locally installed Korean fonts. -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -265,6 +265,83 @@ body[data-page="video.html"] #main #resource-mtn-news .resource-body>.text-link 
  body[data-page="video.html"] #main .vm-source:hover { transform:none; }
 }
 </style>
+
+<style id="plura-press-columns-styles" data-build="20261018-columns-1">
+/* Local additions only: original media cards, logos and shared assets are unchanged. */
+body[data-page="video.html"] #main .pc-jump { margin-top:17px; font-size:13px; line-height:1.7; }
+body[data-page="video.html"] #main .pc-jump a { display:inline-flex; align-items:center; gap:8px; color:#335da8; text-decoration:none; padding:4px 0; }
+body[data-page="video.html"] #main .pc-jump .icon { width:16px; height:16px; flex-shrink:0; }
+body[data-page="video.html"] #press-columns { scroll-margin-top:110px; background:#f6f8fc; border-top:1px solid #e1e8f3; }
+body[data-page="video.html"] #press-columns .pc-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:28px; }
+body[data-page="video.html"] #press-columns .pc-heading .eyebrow { margin:0 0 10px; font-size:12px; letter-spacing:.13em; }
+body[data-page="video.html"] #press-columns h2 { margin:0; font-size:32px; font-weight:700; letter-spacing:-.04em; line-height:1.4; color:#172b4d; }
+body[data-page="video.html"] #press-columns .pc-heading p:not(.eyebrow) { margin:12px 0 0; color:#526680; font-size:15px; line-height:1.8; }
+body[data-page="video.html"] #press-columns .pc-author { flex-shrink:0; font-size:13px; color:#596d86; line-height:1.7; padding-bottom:3px; }
+body[data-page="video.html"] #press-columns .pc-toolbar { display:flex; align-items:center; justify-content:space-between; gap:18px; margin:0 0 18px; }
+body[data-page="video.html"] #press-columns .pc-filters { display:flex; flex-wrap:wrap; gap:8px; }
+body[data-page="video.html"] #press-columns .pc-filter { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:10px 15px; border:1px solid #d4deed; border-radius:7px; background:#fff; color:#3f5574; font:inherit; font-size:13px; font-weight:500; line-height:1.5; cursor:pointer; }
+body[data-page="video.html"] #press-columns .pc-filter span { font-size:11px; font-variant-numeric:tabular-nums; opacity:.85; }
+body[data-page="video.html"] #press-columns .pc-filter[aria-pressed="true"] { background:#2458e8; border-color:#2458e8; color:#fff; }
+body[data-page="video.html"] #press-columns .pc-filter:is(.is-pointer-hover,.ph-keyboard):not([aria-pressed="true"]) { border-color:#8daaf0; background:#eef4ff; color:#214fbf; }
+body[data-page="video.html"] #press-columns .pc-search-wrap { position:relative; flex:0 1 292px; min-width:220px; }
+body[data-page="video.html"] #press-columns .pc-search-wrap>.icon { position:absolute; left:13px; top:14px; height:17px; width:17px; color:#7487a1; pointer-events:none; }
+body[data-page="video.html"] #press-columns .pc-search { display:block; width:100%; min-height:44px; padding:10px 12px 10px 38px; border:1px solid #d4deed; border-radius:7px; background:#fff; color:#1d3356; font:inherit; font-size:13px; line-height:1.65; box-sizing:border-box; }
+body[data-page="video.html"] #press-columns .pc-search::placeholder { color:#6b7d96; opacity:1; }
+body[data-page="video.html"] #press-columns .pc-count { margin:0 0 13px; color:#697d98; font-size:12px; line-height:1.7; }
+body[data-page="video.html"] #press-columns .pc-count span { color:#425c80; font-weight:600; }
+body[data-page="video.html"] #press-columns .pc-list { border:1px solid #d9e3f1; border-radius:13px; background:#fff; }
+body[data-page="video.html"] #press-columns .pc-row { display:grid; grid-template-columns:106px minmax(0,1fr) 100px; align-items:center; column-gap:24px; padding:21px 25px; border-top:1px solid #e4eaf3; position:relative; transition:background-color .18s ease,box-shadow .18s ease; }
+body[data-page="video.html"] #press-columns .pc-row:first-child { border-top:0; border-top-left-radius:12px; border-top-right-radius:12px; }
+body[data-page="video.html"] #press-columns .pc-row:last-child { border-bottom-left-radius:12px; border-bottom-right-radius:12px; }
+body[data-page="video.html"] #press-columns .pc-row:is(.is-pointer-hover,.ph-keyboard) { background:#f0f5ff; box-shadow:inset 3px 0 0 #2458e8; }
+body[data-page="video.html"] #press-columns .pc-date { color:#607692; font-size:12px; line-height:1.65; font-variant-numeric:tabular-nums; white-space:nowrap; }
+body[data-page="video.html"] #press-columns .pc-row-body { min-width:0; }
+body[data-page="video.html"] #press-columns .pc-meta { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:0 0 8px; font-size:11px; color:#687d98; line-height:1.6; }
+body[data-page="video.html"] #press-columns .pc-publisher { display:inline-block; background:#f0f4fa; color:#344f72; border:1px solid #dce5f2; border-radius:4px; padding:2px 7px; font-weight:600; }
+body[data-page="video.html"] #press-columns .pc-row h3 { margin:0; font-size:17px; color:#182e4d; font-weight:600; line-height:1.7; letter-spacing:-.022em; word-break:keep-all; overflow-wrap:anywhere; }
+body[data-page="video.html"] #press-columns .pc-title-link { color:inherit; text-decoration:none; }
+body[data-page="video.html"] #press-columns .pc-title-link .icon { display:inline-block; width:14px; height:14px; vertical-align:-1px; margin-left:5px; color:#6e86ab; }
+body[data-page="video.html"] #press-columns .pc-title-link:is(.is-pointer-hover,.ph-keyboard) { color:#1b50c7; text-decoration:underline; text-underline-offset:4px; }
+body[data-page="video.html"] #press-columns .pc-blog-link { display:inline-flex; gap:5px; align-items:center; justify-self:end; min-height:44px; padding:6px 0; font-size:12px; line-height:1.6; color:#58729a; text-decoration:none; white-space:nowrap; }
+body[data-page="video.html"] #press-columns .pc-blog-link .icon { width:13px; height:13px; flex-shrink:0; }
+body[data-page="video.html"] #press-columns .pc-blog-link:is(.is-pointer-hover,.ph-keyboard) { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
+body[data-page="video.html"] #press-columns .pc-empty { margin:0; padding:35px 20px; text-align:center; color:#59718f; line-height:1.8; font-size:14px; }
+body[data-page="video.html"] #press-columns .pc-notes { margin-top:19px; }
+body[data-page="video.html"] #press-columns .pc-notes p { margin:5px 0 0; font-size:12px; line-height:1.85; color:#667a95; }
+body[data-page="video.html"] #press-columns [hidden] { display:none!important; }
+body[data-page="video.html"] #press-columns :is(a,button,input):focus-visible,
+body[data-page="video.html"] #main .pc-jump a:focus-visible { outline:3px solid #5484ec; outline-offset:4px; }
+@media (any-hover:hover) {
+ body[data-page="video.html"] #press-columns .pc-row:not([data-ph-managed]):hover { background:#f0f5ff; box-shadow:inset 3px 0 0 #2458e8; }
+ body[data-page="video.html"] #press-columns .pc-title-link:not([data-ph-managed]):hover,
+ body[data-page="video.html"] #press-columns .pc-blog-link:not([data-ph-managed]):hover,
+ body[data-page="video.html"] #main .pc-jump a:hover { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
+}
+@media (max-width:900px) {
+ body[data-page="video.html"] #press-columns .pc-heading { align-items:flex-start; flex-direction:column; gap:8px; }
+ body[data-page="video.html"] #press-columns .pc-row { grid-template-columns:88px minmax(0,1fr) 91px; gap:18px; padding:20px; }
+ body[data-page="video.html"] #press-columns .pc-toolbar { align-items:stretch; flex-direction:column; gap:12px; }
+ body[data-page="video.html"] #press-columns .pc-search-wrap { flex:auto; min-width:0; width:100%; max-width:100%; }
+}
+@media (max-width:600px) {
+ body[data-page="video.html"] #press-columns h2 { font-size:27px; }
+ body[data-page="video.html"] #press-columns .pc-heading p:not(.eyebrow) { font-size:14px; }
+ body[data-page="video.html"] #press-columns .pc-filter { font-size:12px; padding:9px 12px; gap:6px; }
+ body[data-page="video.html"] #press-columns .pc-row { grid-template-columns:minmax(0,1fr) auto; gap:9px 12px; padding:18px 17px; }
+ body[data-page="video.html"] #press-columns .pc-row-body { grid-column:1 / -1; grid-row:2; }
+ body[data-page="video.html"] #press-columns .pc-date { grid-column:1; grid-row:1; font-size:11px; }
+ body[data-page="video.html"] #press-columns .pc-blog-link { grid-column:2; grid-row:1; font-size:11px; min-height:36px; }
+ body[data-page="video.html"] #press-columns .pc-row h3 { font-size:15px; line-height:1.8; }
+ body[data-page="video.html"] #press-columns .pc-meta { margin-bottom:8px; }
+}
+@media (max-width:359px) {
+ body[data-page="video.html"] #press-columns .pc-filters { gap:6px; }
+ body[data-page="video.html"] #press-columns .pc-filter { padding:9px 9px; font-size:11px; gap:4px; }
+}
+@media (prefers-reduced-motion:reduce) {
+ body[data-page="video.html"] #press-columns, body[data-page="video.html"] #press-columns * { transition:none!important; animation:none!important; }
+}
+</style>
 </head>
 <body data-page="video.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -273,8 +350,9 @@ body[data-page="video.html"] #main #resource-mtn-news .resource-body>.text-link 
 <div class="vm-hero-copy">
   <p class="eyebrow">VIDEO &amp; MEDIA</p>
   <h1>방송·인터뷰와<br/>제품 소개 영상</h1>
-  <p class="lead">PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료를 한곳에서 확인하세요.</p>
+  <p class="lead">PLURA의 제품 소개 영상과 방송·인터뷰, 보도 자료와 기고 칼럼을 한곳에서 확인하세요.</p>
   <div class="btn-row"><a class="btn btn-primary" href="#media-library">영상·보도 자료 보기<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"></path></svg></a><a class="btn btn-outline" href="contact.html">통합 도입 상담<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div>
+<p class="pc-jump"><a href="#press-columns">전자신문·머니투데이방송 기고 칼럼 보기<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"></path></svg></a></p>
 </div>
 <aside class="subhero-aside media-library-aside" aria-labelledby="media-spotlight-title">
   <div class="vm-panel-head"><span class="vm-panel-label"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"></rect><path d="m10 8 6 4-6 4V8Z"></path></svg>VIDEO &amp; MEDIA</span></div>
@@ -312,7 +390,78 @@ body[data-page="video.html"] #main #resource-mtn-news .resource-body>.text-link 
     <a class="text-link" href="https://www.youtube.com/watch?v=wswf0P5wTjg" rel="noopener noreferrer" target="_blank">영상 보기<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> (새 탭)</span></a>
   </div>
 </article>
-</div><p class="empty-state" data-empty="" hidden="">검색 조건에 맞는 자료가 없습니다. 다른 검색어나 유형을 선택해 주세요.</p></div><p class="note">외부 영상과 보도 기사는 인터넷 연결이 필요합니다. 자료의 제품 화면·설명은 게시 당시 버전 기준일 수 있으며, 도입 시 제공 범위를 확인합니다.</p></div></section><section class="final-cta"><div class="container"><div><h2>우리 기업의 보안 운영,<br/>하나의 플랫폼에서 시작하세요.</h2><p>보호 대상과 운영 환경에 맞는 PLURA-XDR 도입 방식을 함께 설계합니다.</p></div><a class="btn btn-dark" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
+</div><p class="empty-state" data-empty="" hidden="">검색 조건에 맞는 자료가 없습니다. 다른 검색어나 유형을 선택해 주세요.</p></div><p class="note">외부 영상과 보도 기사는 인터넷 연결이 필요합니다. 자료의 제품 화면·설명은 게시 당시 버전 기준일 수 있으며, 도입 시 제공 범위를 확인합니다.</p></div></section>
+<!-- Press contributions: verified outlet publications, separate from existing videos/interviews.
+     See accompanying sources.md for discovery scope, metadata differences and access limitations. -->
+<section class="section" id="press-columns" aria-labelledby="press-columns-title">
+  <div class="container">
+    <div class="pc-heading"><div><p class="eyebrow">PRESS &amp; COLUMNS</p><h2 id="press-columns-title">언론 기고·칼럼</h2><p>전자신문과 머니투데이방송에 기고한 사이버보안 칼럼을 모았습니다.</p></div><span class="pc-author">신승민 · 큐비트시큐리티 대표</span></div>
+    <div class="pc-toolbar" data-pc-controls hidden>
+      <div class="pc-filters" role="group" aria-label="칼럼 매체 선택">
+        <button type="button" class="pc-filter" data-pc-filter="all" aria-pressed="true" aria-controls="press-column-list">전체 <span>10</span></button>
+        <button type="button" class="pc-filter" data-pc-filter="etnews" aria-pressed="false" aria-controls="press-column-list">전자신문 <span>8</span></button>
+        <button type="button" class="pc-filter" data-pc-filter="mtn" aria-pressed="false" aria-controls="press-column-list">머니투데이방송 <span>2</span></button>
+      </div>
+      <div class="pc-search-wrap"><label class="sr-only" for="press-column-search">기고 칼럼 제목·매체·날짜 검색</label><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input class="pc-search" id="press-column-search" type="search" maxlength="80" placeholder="칼럼 제목·매체·날짜 검색" aria-controls="press-column-list" autocomplete="off"/></div>
+    </div>
+    <p class="pc-count" role="status" aria-live="polite" aria-atomic="true"><span data-pc-count>10개 칼럼</span> · 최신 게재순</p>
+    <div class="pc-list" id="press-column-list">
+      <article class="pc-row" data-pc-item data-publisher="mtn" id="column-mtn-log-penalty">
+        <time class="pc-date" datetime="2026-06-15">2026.06.15<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">머니투데이방송</span><span>기고</span></p><h3><a class="pc-title-link" href="https://news.mtn.co.kr/news-detail/2026061509421622322" target="_blank" rel="noopener noreferrer">쿠팡 사태, 로그 기준 없는 과징금 산정 기준은?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 머니투데이방송 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-coupang-gov-briefing-log-gap-administrative-penalty/" target="_blank" rel="noopener noreferrer" aria-label="쿠팡 사태, 로그 기준 없는 과징금 산정 기준은? — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-isms-p">
+        <time class="pc-date" datetime="2026-05-29">2026.05.29<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>기고</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260529000334" target="_blank" rel="noopener noreferrer">ISMS-P 인증받고도 뚫린다… 미토스 시대, 실전 사이버보안으로 가야 한다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-isms-p-cybersecurity-op-ed/" target="_blank" rel="noopener noreferrer" aria-label="ISMS-P 인증받고도 뚫린다… 미토스 시대, 실전 사이버보안으로 가야 한다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-certification">
+        <time class="pc-date" datetime="2026-05-19">2026.05.19<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>기고</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260519000099" target="_blank" rel="noopener noreferrer">AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-ai-era-certification-crisis/" target="_blank" rel="noopener noreferrer" aria-label="AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="mtn" id="column-mtn-public-test">
+        <time class="pc-date" datetime="2026-05-19">2026.05.19<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">머니투데이방송</span><span>기고</span></p><h3><a class="pc-title-link" href="https://news.mtn.co.kr/news-detail/2026051914400395301" target="_blank" rel="noopener noreferrer">AI 사이버보안, 공개 시험으로 국민을 안심시켜야 한다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 머니투데이방송 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-national-ai-cyber-defense-challenge/" target="_blank" rel="noopener noreferrer" aria-label="AI 사이버보안, 공개 시험으로 국민을 안심시켜야 한다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-ai-defense">
+        <time class="pc-date" datetime="2026-05-14">2026.05.14<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>보안칼럼</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260514000067" target="_blank" rel="noopener noreferrer">AI 해킹 공격, 방어도 AI로 해야 한다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-ai-cyberattack-defense-with-ai/" target="_blank" rel="noopener noreferrer" aria-label="AI 해킹 공격, 방어도 AI로 해야 한다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-ks">
+        <time class="pc-date" datetime="2026-04-17">2026.04.17<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>보안칼럼</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260417000076" target="_blank" rel="noopener noreferrer">보안 인증은 &#x27;KS 마크&#x27;가 아니다… 실전 대응력 키워야<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-isms-not-ks-2026-04/" target="_blank" rel="noopener noreferrer" aria-label="보안 인증은 &#x27;KS 마크&#x27;가 아니다… 실전 대응력 키워야 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-soc">
+        <time class="pc-date" datetime="2026-04-09">2026.04.09<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>ET단상</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260409000110" target="_blank" rel="noopener noreferrer">24시간 관제의 역설:아무도 대응하지 못했다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-saving-soc/" target="_blank" rel="noopener noreferrer" aria-label="24시간 관제의 역설:아무도 대응하지 못했다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-lolbas">
+        <time class="pc-date" datetime="2026-04-08">2026.04.08<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>보안칼럼</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260408000161" target="_blank" rel="noopener noreferrer">지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-lolbas-understanding-attack/" target="_blank" rel="noopener noreferrer" aria-label="지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-logging">
+        <time class="pc-date" datetime="2026-03-18">2026.03.18<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>보안칼럼</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20260318000409" target="_blank" rel="noopener noreferrer">보안의 출발점은 기록이다<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/" target="_blank" rel="noopener noreferrer" aria-label="보안의 출발점은 기록이다 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <article class="pc-row" data-pc-item data-publisher="etnews" id="column-et-home-network">
+        <time class="pc-date" datetime="2022-03-01">2022.03.01<span class="sr-only"> 게재</span></time>
+        <div class="pc-row-body"><p class="pc-meta"><span class="pc-publisher">전자신문</span><span>보안칼럼</span></p><h3><a class="pc-title-link" href="https://www.etnews.com/20220301000118" target="_blank" rel="noopener noreferrer">홈네트워크 보안 강화 방안<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg><span class="sr-only"> — 전자신문 원문 (새 탭)</span></a></h3></div>
+        <a class="pc-blog-link" href="https://blog.plura.io/ko/column/news-home-network-security/" target="_blank" rel="noopener noreferrer" aria-label="홈네트워크 보안 강화 방안 — PLURA 블로그 해설 (새 탭)">블로그 해설 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"></path></svg></a>
+      </article>
+      <p class="pc-empty" data-pc-empty hidden>검색 조건에 맞는 칼럼이 없습니다. 다른 검색어나 매체를 선택해 주세요.</p>
+    </div>
+    <div class="pc-notes"><p>제목을 누르면 언론사 원문이 새 탭에서 열립니다. ‘블로그 해설’은 해당 기고문을 바탕으로 확장·재구성한 자료이며, 원문과 제목·내용 구성이 다를 수 있습니다.</p><p>게재일은 언론사 온라인 발행일 또는 PLURA 블로그에 기재된 원문 정보 기준입니다.</p></div>
+  </div>
+</section>
+<section class="final-cta"><div class="container"><div><h2>우리 기업의 보안 운영,<br/>하나의 플랫폼에서 시작하세요.</h2><p>보호 대상과 운영 환경에 맞는 PLURA-XDR 도입 방식을 함께 설계합니다.</p></div><a class="btn btn-dark" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
 <div data-include-path="./p_footer.html" data-include-kind="footer"><noscript><div class="wrap"><a href="p_footer.html">하단 메뉴 보기</a></div></noscript></div>
 <button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
 <dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
@@ -330,6 +479,8 @@ body[data-page="video.html"] #main #resource-mtn-news .resource-body>.text-link 
     var main = document.getElementById('main');
     if (!main || main.hasAttribute('data-plura-all-hover-ready')) return;
     var groups = [
+  {"selector":"#press-columns .pc-row","kind":"press-row"},
+  {"selector":"#press-columns .pc-filter, #press-columns .pc-title-link, #press-columns .pc-blog-link, .pc-jump a"},
   {"selector": "#main .vm-source, #main .plura-media-cover"},
   {
     "selector": ".btn,\n.btn-primary,\n.footer-col a,\n.footer-info a,\n.footer-languages a,\n.footer-legal a,\n.main-nav .dropdown a,\n.main-nav a,\n.nav-group>summary,\n.text-link,\n.v71-pages .breadcrumbs a,\n.v71-pages .btn-dark,\n.v71-pages .btn-primary,\n.v71-pages .resource-card,\n.v71-pages .text-link,\n:where(.v71-pages) .breadcrumbs a,\n:where(.v71-pages) .btn,\n:where(.v71-pages) .btn-dark,\n:where(.v71-pages) .btn-primary,\n:where(.v71-pages) .text-link"
@@ -450,6 +601,53 @@ body[data-page="video.html"] #main #resource-mtn-news .resource-body>.text-link 
   else startAfterSharedLayout();
 }());
 
+</script>
+
+<script id="plura-press-columns-filter" data-build="20261018-columns-1">
+/* Independent of the existing video library: no fetch, storage, or shared-script changes. */
+(function () {
+  'use strict';
+  function initPressColumns() {
+    var section = document.getElementById('press-columns');
+    if (!section || section.hasAttribute('data-pc-ready')) return;
+    var controls = section.querySelector('[data-pc-controls]');
+    var buttons = Array.from(section.querySelectorAll('[data-pc-filter]'));
+    var items = Array.from(section.querySelectorAll('[data-pc-item]'));
+    var search = document.getElementById('press-column-search');
+    var count = section.querySelector('[data-pc-count]');
+    var empty = section.querySelector('[data-pc-empty]');
+    if (!controls || !buttons.length || !items.length || !search || !count || !empty) return;
+    var current = 'all';
+    function normalize(value) { return String(value).normalize('NFKC').toLocaleLowerCase('ko').replace(/\s+/g, ' ').trim(); }
+    var index = items.map(function (item) { return normalize(item.textContent); });
+    function update() {
+      var tokens = normalize(search.value).split(' ').filter(Boolean);
+      var matches = 0;
+      items.forEach(function (item, i) {
+        var publisherMatches = current === 'all' || item.getAttribute('data-publisher') === current;
+        var textMatches = tokens.every(function (token) { return index[i].includes(token); });
+        item.hidden = !(publisherMatches && textMatches);
+        if (!item.hidden) matches += 1;
+      });
+      count.textContent = matches + '개 칼럼';
+      empty.hidden = matches !== 0;
+    }
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        current = button.getAttribute('data-pc-filter');
+        buttons.forEach(function (item) { item.setAttribute('aria-pressed', String(item === button)); });
+        update();
+      });
+    });
+    search.addEventListener('input', update);
+    search.addEventListener('search', update);
+    section.setAttribute('data-pc-ready', '');
+    controls.hidden = false;
+    update();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initPressColumns, {once:true});
+  else initPressColumns();
+}());
 </script>
 </body>
 </html>
