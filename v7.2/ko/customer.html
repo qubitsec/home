@@ -165,11 +165,242 @@ html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.
 }
 
 </style>
+<style id="plura-customer-complete-styles" data-build="20261019-customer-complete-1">
+/* This page only: a static, equal-weight logo wall. No carousel or hidden clients. */
+body[data-page="customer.html"] #customer-references { scroll-margin-top:110px; }
+body[data-page="customer.html"] #customer-references .section-head { margin-bottom:30px; }
+body[data-page="customer.html"] #customer-references .customer-grid {
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:14px;
+  padding:0;
+  margin:0;
+  border:0;
+  list-style:none;
+}
+body[data-page="customer.html"] #customer-references .customer-tile {
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:132px;
+  margin:0;
+  padding:25px 22px;
+  border:1px solid #dce5f4;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 2px 5px rgba(28,57,109,.025);
+  cursor:default;
+  transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+body[data-page="customer.html"] #customer-references .customer-tile img {
+  display:block;
+  position:static;
+  width:100%;
+  max-width:170px;
+  height:66px;
+  max-height:66px;
+  object-fit:contain;
+  object-position:center;
+  opacity:1;
+  filter:none;
+  transform:none;
+}
+body[data-page="customer.html"] #customer-references .customer-tile:is(.is-pointer-hover,.ph-keyboard) {
+  background-color:#f5f8ff;
+  border-color:#9ab8ef;
+  box-shadow:0 7px 18px rgba(28,72,156,.10);
+  transform:none;
+}
+body[data-page="customer.html"] #customer-references .customer-logo-fallback {
+  display:block;
+  width:100%;
+  color:#344d73;
+  font-size:14px;
+  line-height:1.6;
+  text-align:center;
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+}
+body[data-page="customer.html"] #customer-references [hidden] { display:none!important; }
+@media (any-hover:hover) {
+ body[data-page="customer.html"] #customer-references .customer-tile:not([data-ph-managed]):hover {
+   background-color:#f5f8ff; border-color:#9ab8ef; box-shadow:0 7px 18px rgba(28,72,156,.10);
+ }
+}
+@media (max-width:1199px) {
+ body[data-page="customer.html"] #customer-references .customer-grid { grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; }
+ body[data-page="customer.html"] #customer-references .customer-tile { padding:22px 18px; min-height:120px; }
+}
+@media (max-width:999px) {
+ body[data-page="customer.html"] #customer-references .customer-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+@media (max-width:759px) {
+ body[data-page="customer.html"] #customer-references .customer-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+ body[data-page="customer.html"] #customer-references .customer-tile { min-height:112px; padding:20px 16px; }
+ body[data-page="customer.html"] #customer-references .customer-tile img { height:60px; max-height:60px; }
+}
+@media (max-width:559px) {
+ body[data-page="customer.html"] #customer-references .section-head { margin-bottom:24px; }
+ body[data-page="customer.html"] #customer-references .customer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+ body[data-page="customer.html"] #customer-references .customer-tile { min-height:106px; padding:18px 16px; border-radius:10px; }
+ body[data-page="customer.html"] #customer-references .customer-tile img { height:55px; max-height:55px; }
+ body[data-page="customer.html"] #customer-references .customer-logo-fallback { font-size:12px; }
+}
+@media (prefers-reduced-motion:reduce) {
+ body[data-page="customer.html"] #customer-references .customer-tile { transition:none!important; }
+}
+@media print {
+ body[data-page="customer.html"] #customer-references .customer-grid { grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; }
+ body[data-page="customer.html"] #customer-references .customer-tile { min-height:90px; padding:15px; break-inside:avoid; box-shadow:none; }
+}
+</style>
 </head>
 <body data-page="customer.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
 <div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="customer.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
-<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>고객·자료</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">고객 사례</span></nav><div class="subhero-grid"><div><p class="eyebrow">TRUST BUILT IN REAL ENVIRONMENTS</p><h1>고객의 환경에서<br/>쌓아온 신뢰.</h1><p class="lead">다양한 조직의 보안 운영을 함께해 온 PLURA. 도입 제품의 이름보다 어떤 데이터를 확인하고, 어떤 운영 문제를 해결하는지에 주목합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 21V3h12v18m0-12h4v12M8 7h4m-4 4h4m-4 4h4m-3 6v-3h2v3M2 21h20"></path></svg><p class="aside-label">CUSTOMER CONTEXT</p><h2>같은 플랫폼도,<br/>고객의 환경에서 완성됩니다.</h2><p>보호 대상, 수집 범위와 운영 방식이 고객마다 다릅니다. 유사 환경에서 확인할 근거를 함께 살펴보세요.</p><div class="tag-row"><span>FINANCE</span><span>PUBLIC</span><span>ENTERPRISE</span></div></aside></div></div></section><section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">PUBLIC CUSTOMER REFERENCES</p><h2>PLURA와 함께하는 고객사.</h2></div></div><div class="customer-grid"><div class="customer-tile"><img alt="BC카드" decoding="async" loading="lazy" src="../res/images/customers/bccard.png"/></div><div class="customer-tile"><img alt="주택도시보증공사" decoding="async" loading="lazy" src="../res/images/customers/hug.png"/></div><div class="customer-tile"><img alt="코맥스" decoding="async" loading="lazy" src="../res/images/customers/commax.png"/></div><div class="customer-tile"><img alt="이투스" decoding="async" loading="lazy" src="../res/images/customers/etoos.png"/></div><div class="customer-tile"><img alt="한국인터넷진흥원" decoding="async" loading="lazy" src="../res/images/customers/kisa.png"/></div><div class="customer-tile"><img alt="아이네트호스팅" decoding="async" loading="lazy" src="../res/images/customers/inet.png"/></div><div class="customer-tile"><img alt="포스코" decoding="async" loading="lazy" src="../res/images/customers/posco.png"/></div><div class="customer-tile"><img alt="삼성" decoding="async" loading="lazy" src="../res/images/customers/samsung.png"/></div><div class="customer-tile"><img alt="DB Inc." decoding="async" loading="lazy" src="../res/images/customers/dbinc.png"/></div><div class="customer-tile"><img alt="한국산업기술기획평가원" decoding="async" loading="lazy" src="../res/images/customers/keit.png"/></div><div class="customer-tile"><img alt="YBM넷" decoding="async" loading="lazy" src="../res/images/customers/ybmnet.png"/></div><div class="customer-tile"><img alt="윌비스" decoding="async" loading="lazy" src="../res/images/customers/willbes.png"/></div><div class="customer-tile"><img alt="한국저작권보호원" decoding="async" loading="lazy" src="../res/images/customers/koreacopy.png"/></div><div class="customer-tile"><img alt="컨텍" decoding="async" loading="lazy" src="../res/images/customers/contec.png"/></div><div class="customer-tile"><img alt="전북특별자치도교육청" decoding="async" loading="lazy" src="../res/images/customers/jbe.png"/></div><div class="customer-tile"><img alt="그랜드코리아레저" decoding="async" loading="lazy" src="../res/images/customers/gkl.png"/></div><div class="customer-tile"><img alt="대한산업보건협회" decoding="async" loading="lazy" src="../res/images/customers/kiha.png"/></div><div class="customer-tile"><img alt="파파존스" decoding="async" loading="lazy" src="../res/images/customers/papajohns.png"/></div><div class="customer-tile"><img alt="전쟁기념관" decoding="async" loading="lazy" src="../res/images/customers/warmemo.png"/></div><div class="customer-tile"><img alt="부산대학교" decoding="async" loading="lazy" src="../res/images/customers/pusanuniversity.png"/></div></div><p class="note">기존 PLURA 홈페이지의 공개 고객사 자료를 바탕으로 구성했습니다. 모든 고객이 PLURA-XDR의 전체 기능이나 SOC 서비스를 이용한다는 의미는 아니며, 고객별 도입 범위와 시기는 서로 다릅니다.</p></div></section><section class="section section-soft"><div class="container"><div class="split split-top"><div><p class="eyebrow">CUSTOMER VOICE</p><h2>사고 대응의 출발점은<br/>확인할 수 있는 로그.</h2><p>기존 공개 고객 의견에서 확인할 수 있는 메시지는 분명합니다. 실제로 무슨 일이 있었는지 파악하려면 먼저 근거가 되는 데이터를 확인해야 합니다.</p></div><div class="quote-card"><div aria-hidden="true" class="quote-mark">“</div><blockquote>해킹 발생 사실을 인지한 후 가장 먼저 해야 할 일은 시스템의 로그 분석입니다.</blockquote><p class="quote-credit"><strong>신중현 대표이사</strong><br/>(주)아이네트호스팅 · 기존 공식 홈페이지 공개 고객 의견</p></div></div></div></section><section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">HOW TO READ A CUSTOMER STORY</p><h2>고객 사례는 이 질문으로 검토하세요.</h2></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 21V3h12v18m0-12h4v12M8 7h4m-4 4h4m-4 4h4m-3 6v-3h2v3M2 21h20"></path></svg></div><h3>같은 환경인가?</h3><p>자산 종류, 배포 방식, 수집 데이터와 운영 인력 조건을 비교합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg></div><h3>무엇을 확인했는가?</h3><p>실제로 관측한 공격 흔적, 적용 범위와 고객이 확인한 결과를 봅니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"></path></svg></div><h3>어떤 근거가 있는가?</h3><p>공개 가능한 로그·화면·고객 의견과 측정 조건을 확인합니다.</p></article></div></div></section><section class="final-cta"><div class="container"><div><h2>우리와 비슷한 환경의<br/>도입 경험을 확인하세요.</h2><p>보호 대상과 운영 방식에 맞는 공개 가능 자료를 안내합니다.</p></div><a class="btn btn-dark" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
+<main class="v71-pages" id="main" tabindex="-1"><section class="subhero"><div class="container"><nav aria-label="현재 위치" class="breadcrumbs"><a href="index.html">홈</a><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span>고객·자료</span><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">고객 사례</span></nav><div class="subhero-grid"><div><p class="eyebrow">TRUST BUILT IN REAL ENVIRONMENTS</p><h1>고객의 환경에서<br/>쌓아온 신뢰.</h1><p class="lead">다양한 조직의 보안 운영을 함께해 온 PLURA. 도입 제품의 이름보다 어떤 데이터를 확인하고, 어떤 운영 문제를 해결하는지에 주목합니다.</p><div class="btn-row"><a class="btn btn-primary" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></div><aside class="subhero-aside"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 21V3h12v18m0-12h4v12M8 7h4m-4 4h4m-4 4h4m-3 6v-3h2v3M2 21h20"></path></svg><p class="aside-label">CUSTOMER CONTEXT</p><h2>같은 플랫폼도,<br/>고객의 환경에서 완성됩니다.</h2><p>보호 대상, 수집 범위와 운영 방식이 고객마다 다릅니다. 유사 환경에서 확인할 근거를 함께 살펴보세요.</p><div class="tag-row"><span>FINANCE</span><span>PUBLIC</span><span>ENTERPRISE</span></div></aside></div></div></section><section class="section" id="customer-references" aria-labelledby="customer-references-title">
+  <div class="container">
+    <div class="section-head"><div><p class="eyebrow">CUSTOMERS</p><h2 id="customer-references-title">PLURA와 함께하는 고객사.</h2></div></div>
+    <ul class="customer-grid" role="list" aria-label="PLURA 고객사 및 기관">
+      <li class="customer-tile" data-customer-file="bccard.png">
+        <img alt="BC카드" decoding="async" loading="lazy" src="../res/images/customers/bccard.png" data-customer-logo-fallback="../../res/images/customers/bccard.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">BC카드</span>
+      </li>
+      <li class="customer-tile" data-customer-file="hug.png">
+        <img alt="주택도시보증공사" decoding="async" loading="lazy" src="../res/images/customers/hug.png" data-customer-logo-fallback="../../res/images/customers/hug.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">주택도시보증공사</span>
+      </li>
+      <li class="customer-tile" data-customer-file="commax.png">
+        <img alt="코맥스" decoding="async" loading="lazy" src="../res/images/customers/commax.png" data-customer-logo-fallback="../../res/images/customers/commax.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">코맥스</span>
+      </li>
+      <li class="customer-tile" data-customer-file="etoos.png">
+        <img alt="이투스" decoding="async" loading="lazy" src="../res/images/customers/etoos.png" data-customer-logo-fallback="../../res/images/customers/etoos.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">이투스</span>
+      </li>
+      <li class="customer-tile" data-customer-file="kisa.png">
+        <img alt="한국인터넷진흥원" decoding="async" loading="lazy" src="../res/images/customers/kisa.png" data-customer-logo-fallback="../../res/images/customers/kisa.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">한국인터넷진흥원</span>
+      </li>
+      <li class="customer-tile" data-customer-file="inet.png">
+        <img alt="아이네트호스팅" decoding="async" loading="lazy" src="../res/images/customers/inet.png" data-customer-logo-fallback="../../res/images/customers/inet.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">아이네트호스팅</span>
+      </li>
+      <li class="customer-tile" data-customer-file="posco.png">
+        <img alt="포스코" decoding="async" loading="lazy" src="../res/images/customers/posco.png" data-customer-logo-fallback="../../res/images/customers/posco.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">포스코</span>
+      </li>
+      <li class="customer-tile" data-customer-file="samsung.png">
+        <img alt="삼성" decoding="async" loading="lazy" src="../res/images/customers/samsung.png" data-customer-logo-fallback="../../res/images/customers/samsung.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">삼성</span>
+      </li>
+      <li class="customer-tile" data-customer-file="dbinc.png">
+        <img alt="DB Inc." decoding="async" loading="lazy" src="../res/images/customers/dbinc.png" data-customer-logo-fallback="../../res/images/customers/dbinc.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">DB Inc.</span>
+      </li>
+      <li class="customer-tile" data-customer-file="keit.png">
+        <img alt="한국산업기술기획평가원" decoding="async" loading="lazy" src="../res/images/customers/keit.png" data-customer-logo-fallback="../../res/images/customers/keit.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">한국산업기술기획평가원</span>
+      </li>
+      <li class="customer-tile" data-customer-file="ybmnet.png">
+        <img alt="YBM넷" decoding="async" loading="lazy" src="../res/images/customers/ybmnet.png" data-customer-logo-fallback="../../res/images/customers/ybmnet.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">YBM넷</span>
+      </li>
+      <li class="customer-tile" data-customer-file="willbes.png">
+        <img alt="윌비스" decoding="async" loading="lazy" src="../res/images/customers/willbes.png" data-customer-logo-fallback="../../res/images/customers/willbes.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">윌비스</span>
+      </li>
+      <li class="customer-tile" data-customer-file="koreacopy.png">
+        <img alt="한국저작권보호원" decoding="async" loading="lazy" src="../res/images/customers/koreacopy.png" data-customer-logo-fallback="../../res/images/customers/koreacopy.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">한국저작권보호원</span>
+      </li>
+      <li class="customer-tile" data-customer-file="contec.png">
+        <img alt="컨텍" decoding="async" loading="lazy" src="../res/images/customers/contec.png" data-customer-logo-fallback="../../res/images/customers/contec.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">컨텍</span>
+      </li>
+      <li class="customer-tile" data-customer-file="jbe.png">
+        <img alt="전북특별자치도교육청" decoding="async" loading="lazy" src="../res/images/customers/jbe.png" data-customer-logo-fallback="../../res/images/customers/jbe.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">전북특별자치도교육청</span>
+      </li>
+      <li class="customer-tile" data-customer-file="gkl.png">
+        <img alt="그랜드코리아레저" decoding="async" loading="lazy" src="../res/images/customers/gkl.png" data-customer-logo-fallback="../../res/images/customers/gkl.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">그랜드코리아레저</span>
+      </li>
+      <li class="customer-tile" data-customer-file="kiha.png">
+        <img alt="대한산업보건협회" decoding="async" loading="lazy" src="../res/images/customers/kiha.png" data-customer-logo-fallback="../../res/images/customers/kiha.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">대한산업보건협회</span>
+      </li>
+      <li class="customer-tile" data-customer-file="papajohns.png">
+        <img alt="파파존스" decoding="async" loading="lazy" src="../res/images/customers/papajohns.png" data-customer-logo-fallback="../../res/images/customers/papajohns.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">파파존스</span>
+      </li>
+      <li class="customer-tile" data-customer-file="warmemo.png">
+        <img alt="전쟁기념관" decoding="async" loading="lazy" src="../res/images/customers/warmemo.png" data-customer-logo-fallback="../../res/images/customers/warmemo.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">전쟁기념관</span>
+      </li>
+      <li class="customer-tile" data-customer-file="pusanuniversity.png">
+        <img alt="부산대학교" decoding="async" loading="lazy" src="../res/images/customers/pusanuniversity.png" data-customer-logo-fallback="../../res/images/customers/pusanuniversity.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">부산대학교</span>
+      </li>
+      <li class="customer-tile" data-customer-file="sarang.png">
+        <img alt="sarang" decoding="async" loading="lazy" src="../res/images/customers/sarang.png" data-customer-logo-fallback="../../res/images/customers/sarang.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">sarang</span>
+      </li>
+      <li class="customer-tile" data-customer-file="ctstv.png">
+        <img alt="ctstv" decoding="async" loading="lazy" src="../res/images/customers/ctstv.png" data-customer-logo-fallback="../../res/images/customers/ctstv.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">ctstv</span>
+      </li>
+      <li class="customer-tile" data-customer-file="archdiocese.png">
+        <img alt="archdiocese" decoding="async" loading="lazy" src="../res/images/customers/archdiocese.png" data-customer-logo-fallback="../../res/images/customers/archdiocese.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">archdiocese</span>
+      </li>
+      <li class="customer-tile" data-customer-file="kormedi.png">
+        <img alt="kormedi" decoding="async" loading="lazy" src="../res/images/customers/kormedi.png" data-customer-logo-fallback="../../res/images/customers/kormedi.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">kormedi</span>
+      </li>
+      <li class="customer-tile" data-customer-file="mtn.png">
+        <img alt="mtn" decoding="async" loading="lazy" src="../res/images/customers/mtn.png" data-customer-logo-fallback="../../res/images/customers/mtn.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">mtn</span>
+      </li>
+      <li class="customer-tile" data-customer-file="seaman.png">
+        <img alt="seaman" decoding="async" loading="lazy" src="../res/images/customers/seaman.png" data-customer-logo-fallback="../../res/images/customers/seaman.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">seaman</span>
+      </li>
+      <li class="customer-tile" data-customer-file="siheung.png">
+        <img alt="siheung" decoding="async" loading="lazy" src="../res/images/customers/siheung.png" data-customer-logo-fallback="../../res/images/customers/siheung.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">siheung</span>
+      </li>
+      <li class="customer-tile" data-customer-file="seoulgover.png">
+        <img alt="seoulgover" decoding="async" loading="lazy" src="../res/images/customers/seoulgover.png" data-customer-logo-fallback="../../res/images/customers/seoulgover.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">seoulgover</span>
+      </li>
+      <li class="customer-tile" data-customer-file="woorishop.png">
+        <img alt="woorishop" decoding="async" loading="lazy" src="../res/images/customers/woorishop.png" data-customer-logo-fallback="../../res/images/customers/woorishop.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">woorishop</span>
+      </li>
+      <li class="customer-tile" data-customer-file="hanjoo.png">
+        <img alt="hanjoo" decoding="async" loading="lazy" src="../res/images/customers/hanjoo.png" data-customer-logo-fallback="../../res/images/customers/hanjoo.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">hanjoo</span>
+      </li>
+      <li class="customer-tile" data-customer-file="pillsang.png">
+        <img alt="pillsang" decoding="async" loading="lazy" src="../res/images/customers/pillsang.png" data-customer-logo-fallback="../../res/images/customers/pillsang.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">pillsang</span>
+      </li>
+      <li class="customer-tile" data-customer-file="apsi.png">
+        <img alt="apsi" decoding="async" loading="lazy" src="../res/images/customers/apsi.png" data-customer-logo-fallback="../../res/images/customers/apsi.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">apsi</span>
+      </li>
+      <li class="customer-tile" data-customer-file="kyhospital.png">
+        <img alt="kyhospital" decoding="async" loading="lazy" src="../res/images/customers/kyhospital.png" data-customer-logo-fallback="../../res/images/customers/kyhospital.png"/>
+        <span class="customer-logo-fallback" hidden aria-hidden="true">kyhospital</span>
+      </li>
+    </ul>
+    <!-- p_customer.html has mt.png commented out. Keep it unpublished here too;
+         it is not one of the 33 active logo references. -->
+  </div>
+</section><section class="section section-soft"><div class="container"><div class="split split-top"><div><p class="eyebrow">CUSTOMER VOICE</p><h2>사고 대응의 출발점은<br/>확인할 수 있는 로그.</h2><p>기존 공개 고객 의견에서 확인할 수 있는 메시지는 분명합니다. 실제로 무슨 일이 있었는지 파악하려면 먼저 근거가 되는 데이터를 확인해야 합니다.</p></div><div class="quote-card"><div aria-hidden="true" class="quote-mark">“</div><blockquote>해킹 발생 사실을 인지한 후 가장 먼저 해야 할 일은 시스템의 로그 분석입니다.</blockquote><p class="quote-credit"><strong>신중현 대표이사</strong><br/>(주)아이네트호스팅 · 기존 공식 홈페이지 공개 고객 의견</p></div></div></div></section><section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">HOW TO READ A CUSTOMER STORY</p><h2>고객 사례는 이 질문으로 검토하세요.</h2></div></div><div class="grid-3"><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 21V3h12v18m0-12h4v12M8 7h4m-4 4h4m-4 4h4m-3 6v-3h2v3M2 21h20"></path></svg></div><h3>같은 환경인가?</h3><p>자산 종류, 배포 방식, 수집 데이터와 운영 인력 조건을 비교합니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg></div><h3>무엇을 확인했는가?</h3><p>실제로 관측한 공격 흔적, 적용 범위와 고객이 확인한 결과를 봅니다.</p></article><article class="card"><div class="card-icon"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"></path></svg></div><h3>어떤 근거가 있는가?</h3><p>공개 가능한 로그·화면·고객 의견과 측정 조건을 확인합니다.</p></article></div></div></section><section class="final-cta"><div class="container"><div><h2>우리와 비슷한 환경의<br/>도입 경험을 확인하세요.</h2><p>보호 대상과 운영 방식에 맞는 공개 가능 자료를 안내합니다.</p></div><a class="btn btn-dark" href="contact.html">통합 도입 상담<svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></a></div></section></main>
 <div data-include-path="./p_footer.html" data-include-kind="footer"><noscript><div class="wrap"><a href="p_footer.html">하단 메뉴 보기</a></div></noscript></div>
 <button aria-label="상단으로 이동" class="top-button" hidden="" id="back-top" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></button>
 <dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog"><div class="dialog-head"><p id="dialog-title">제품 화면</p><button aria-label="확대 화면 닫기" class="dialog-close" type="button"><svg aria-hidden="true" class="icon" focusable="false" height="24" viewBox="0 0 24 24" width="24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><img alt="PLURA 공개 자료" decoding="async" loading="lazy"/></dialog>
@@ -302,6 +533,36 @@ html:not([data-plura-all-hover-ready]) #main :is(.card,.plan-card,.threat-card,.
   else startAfterSharedLayout();
 }());
 
+</script>
+<script id="plura-customer-logo-fallback">
+(function () {
+  'use strict';
+  function initCustomerLogos() {
+    document.querySelectorAll('#customer-references img[data-customer-logo-fallback]').forEach(function (img) {
+      function failed() {
+        var fallback = img.getAttribute('data-customer-logo-fallback');
+        if (!img.hasAttribute('data-customer-logo-retried') && fallback) {
+          img.setAttribute('data-customer-logo-retried', '');
+          var next = new URL(fallback, document.baseURI).href;
+          if (next !== img.src) { img.src = next; return; }
+        }
+        var tile = img.closest('.customer-tile');
+        var label = tile && tile.querySelector('.customer-logo-fallback');
+        if (label) {
+          img.hidden = true;
+          label.hidden = false;
+          label.removeAttribute('aria-hidden');
+          tile.setAttribute('data-logo-unavailable', '');
+        }
+      }
+      img.addEventListener('error', failed);
+      if (img.complete && !img.naturalWidth) failed();
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCustomerLogos, {once:true});
+  } else { initCustomerLogos(); }
+}());
 </script>
 </body>
 </html>
