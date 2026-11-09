@@ -280,6 +280,86 @@ html:not([data-plura-all-hover-ready]) #main .faq-item > summary:hover {backgrou
 }
 </style>
 
+<style id="plura-license-ai-exclusive-style" data-build="20261110-platinum-ai-1">
+/* Only the AI-integration feature row is emphasized. Shared CSS/JS are unchanged. */
+#main.license-page #feature-table .lic-ai-exclusive > th,
+#main.license-page #feature-table .lic-ai-exclusive > td {
+  background:#eef4ff;
+  color:#1e3c72;
+  font-weight:700;
+  border-color:#d2dff5;
+}
+#main.license-page #feature-table .lic-ai-exclusive > th {
+  box-shadow:inset 4px 0 0 #2458e8;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-ai-badge {
+  display:inline-block;
+  max-width:100%;
+  margin-bottom:8px;
+  padding:4px 9px;
+  border-radius:5px;
+  background:#2458e8;
+  color:#fff;
+  font-size:11px;
+  line-height:1.6;
+  font-weight:700;
+  letter-spacing:.015em;
+  vertical-align:middle;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-item-title {
+  color:#173d81;
+  font-weight:700;
+  line-height:1.75;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-status {
+  font-weight:700;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-status--no {
+  color:#52637e;
+}
+#main.license-page #feature-table .lic-ai-exclusive > .lic-ai-plan {
+  background:#dce9ff;
+  color:#173f9c;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-status--exclusive {
+  color:#173f9c;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-ai-check {
+  display:inline-block;
+  margin-right:5px;
+  font-weight:700;
+}
+#main.license-page #feature-table .lic-ai-exclusive .lic-mobile-plan {
+  color:#3d5479;
+  font-weight:700;
+}
+#main.license-page #feature-table .lic-ai-exclusive > .lic-ai-plan .lic-mobile-plan {
+  color:#173f9c;
+}
+@media (any-hover:hover) {
+  #main.license-page #feature-table .lic-ai-exclusive:hover > th,
+  #main.license-page #feature-table .lic-ai-exclusive:hover > td {
+    background:#e6efff;
+  }
+  #main.license-page #feature-table .lic-ai-exclusive:hover > .lic-ai-plan {
+    background:#ccdeff;
+  }
+}
+@media (max-width:700px) {
+  #main.license-page #feature-table .lic-ai-exclusive {
+    border-color:#a9c2f0;
+  }
+}
+@media print {
+  #main.license-page #feature-table .lic-ai-exclusive > th,
+  #main.license-page #feature-table .lic-ai-exclusive > td,
+  #main.license-page #feature-table .lic-ai-exclusive .lic-ai-badge {
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+}
+</style>
+
 </head>
 <body data-page="license.html" data-website-version="7.1">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -297,17 +377,26 @@ html:not([data-plura-all-hover-ready]) #main .faq-item > summary:hover {backgrou
 <div class="lic-section-head"><h2 id="features-title">기능 제공 범위</h2><p>라이선스에 따라 차이가 있는 주요 항목입니다.</p></div>
 <div class="lic-table-frame">
 <table class="lic-table" id="feature-table" role="table" aria-describedby="feature-note">
-<caption class="sr-only">라이선스별 보안탐지, 필터, 리소스모니터링 기능 비교</caption>
+<caption class="sr-only">라이선스별 AI 연동, 보안탐지, 필터, 리소스모니터링 기능 비교</caption>
 <colgroup><col class="lic-col-feature"/><col class="lic-col-plan"/><col class="lic-col-plan"/><col class="lic-col-plan"/></colgroup>
 <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">기능 / 메뉴</th><th scope="col" role="columnheader">STANDARD</th><th scope="col" role="columnheader">GOLD</th><th scope="col" role="columnheader">PLATINUM</th></tr></thead>
 <tbody role="rowgroup">
+<tr class="lic-ai-exclusive" id="feature-ai-integration" role="row">
+  <th scope="row" role="rowheader">
+    <span class="lic-ai-badge">PLATINUM 전용</span>
+    <strong class="lic-item-title">AI 연동 기반<br/>제로데이 공격 대응 및 데이터 분석</strong>
+  </th>
+  <td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><strong class="lic-status lic-status--no">미제공</strong></td>
+  <td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><strong class="lic-status lic-status--no">미제공</strong></td>
+  <td class="lic-ai-plan" role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><strong class="lic-status lic-status--exclusive"><span class="lic-ai-check" aria-hidden="true">✓</span>제공</strong></td>
+</tr>
 <tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">크리덴셜스터핑 · 세션행위</span><span class="lic-path">보안탐지 &gt; 크리덴셜스터핑 &gt; 세션행위</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
 <tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">제로데이</span><span class="lic-path">보안탐지 &gt; 제로데이</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
 <tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">제로데이 필터</span><span class="lic-path">필터 &gt; 보안 &gt; 제로데이</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
 <tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">크리덴셜스터핑 · 세션행위 필터</span><span class="lic-path">필터 &gt; 보안 &gt; 크리덴셜스터핑 &gt; 세션행위</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status lic-status--no">미제공</span><span class="lic-sub">메뉴 미노출</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
 <tr role="row"><th scope="row" role="rowheader"><span class="lic-item-title">호스트 그래프 조회</span><span class="lic-path">리소스모니터링 &gt; 호스트 &gt; 그래프조회</span></th><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">STANDARD</span><span class="lic-status">당일만 조회</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">GOLD</span><span class="lic-status">당일만 조회</span></td><td role="cell"><span class="lic-mobile-plan" aria-hidden="true">PLATINUM</span><span class="lic-status">제공</span></td></tr>
 </tbody></table></div>
-<p class="lic-table-note" id="feature-note">위 표의 ‘미제공’ 항목은 해당 라이선스에서 메뉴가 표시되지 않습니다.</p>
+<p class="lic-table-note" id="feature-note">‘미제공’은 해당 라이선스에서 기능이 제공되지 않는다는 의미입니다. ‘메뉴 미노출’로 표시된 항목은 해당 메뉴가 표시되지 않습니다.</p>
 </section>
 <section class="lic-section" id="log-period" aria-labelledby="log-period-title">
 <div class="lic-section-head"><h2 id="log-period-title">로그 조회 기간</h2><p>탐지 로그와 전체 로그를 구분해 안내합니다.</p></div>
