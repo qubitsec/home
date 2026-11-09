@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
 <meta name="theme-color" content="#2458e8"/>
-<title>라디오 광고 | PLURA</title>
-<meta name="description" content="PLURA의 웹방화벽·통합 보안 플랫폼 라디오 광고를 다시 듣고, 광고 메시지와 송출 안내 기록을 확인하세요."/>
+<title>라디오·신문·지하철 광고 | PLURA</title>
+<meta name="description" content="PLURA의 라디오 광고 음원, 전자신문 전면 광고와 신분당선 지하철 광고를 모았습니다. 게재일·공지일·송출 안내 기록을 함께 확인하세요."/>
 <meta name="author" content="Qubit Security Inc."/>
-<meta name="plura-website-version" content="7.2-radio-20261110"/>
-<link rel="canonical" href="https://www.plura.io/ko/radio.html"/>
+<meta name="plura-website-version" content="7.2-ad-all-media-20261110"/>
+<link rel="canonical" href="https://www.plura.io/ko/ad.html"/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="ko_KR"/>
 <meta property="og:site_name" content="PLURA"/>
-<meta property="og:title" content="라디오 광고 | PLURA"/>
-<meta property="og:description" content="PLURA 라디오 광고 음원과 광고 메시지, 송출 안내 기록입니다."/>
-<meta property="og:url" content="https://www.plura.io/ko/radio.html"/>
+<meta property="og:title" content="라디오·신문·지하철 광고 | PLURA"/>
+<meta property="og:description" content="신문 지면, 지하철 현장 사진과 라디오 음원으로 만나는 PLURA 광고. 매체별 게재·송출 기록을 확인하세요."/>
+<meta property="og:url" content="https://www.plura.io/ko/ad.html"/>
 <link rel="icon" href="../res/images/favicon.ico"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -24,157 +24,344 @@
 <link href="../res/css/pages.css?v=7.1-20260917-final" rel="stylesheet"/>
 <link href="../res/css/readability.css?v=7.1-20260917-final" rel="stylesheet"/>
 <script defer src="../res/js/include.js?v=7.1-20260922-shared-1" data-site-script="../res/js/site.js?v=7.1-20260917-final"></script>
-<style id="plura-radio-page-style">
-/* Radio page only. Shared styles, header/footer and other pages are unchanged. */
-body[data-page="radio.html"] #main { --ra-ink:#182f52; --ra-muted:#526984; --ra-line:#dce5f2; --ra-blue:#2458e8; color:var(--ra-ink); background:#fff; }
-body[data-page="radio.html"] #main *, body[data-page="radio.html"] #main *::before, body[data-page="radio.html"] #main *::after { box-sizing:border-box; }
-body[data-page="radio.html"] #main .container { width:min(1200px,calc(100% - 64px)); margin-inline:auto; }
-body[data-page="radio.html"] #main .icon { display:inline-block; width:20px; height:20px; flex-shrink:0; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-body[data-page="radio.html"] #main .ra-hero { padding:30px 0 48px; background:linear-gradient(180deg,#f7faff 0%,#fff 100%); border-bottom:1px solid var(--ra-line); }
-body[data-page="radio.html"] #main .breadcrumbs { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:0 0 34px; font-size:12px; line-height:1.8; color:#62758e; }
-body[data-page="radio.html"] #main .breadcrumbs a { color:#62758e; text-decoration:none; }
-body[data-page="radio.html"] #main .breadcrumbs .icon { width:12px; height:12px; }
-body[data-page="radio.html"] #main .ra-hero-grid { display:grid; grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr); align-items:center; gap:64px; }
-body[data-page="radio.html"] #main .ra-eyebrow { margin:0 0 13px; color:#536d98; font-size:11px; line-height:1.6; font-weight:700; letter-spacing:.12em; }
-body[data-page="radio.html"] #main h1 { margin:0; color:var(--ra-ink); font-size:clamp(32px,3.4vw,44px); line-height:1.35; font-weight:700; letter-spacing:-.04em; word-break:keep-all; }
-body[data-page="radio.html"] #main .ra-lead { margin:18px 0 0; max-width:560px; color:var(--ra-muted); font-size:17px; line-height:1.9; font-weight:400; word-break:keep-all; }
-body[data-page="radio.html"] #main .ra-hero-links { display:flex; flex-wrap:wrap; align-items:center; gap:15px 22px; margin-top:25px; }
-body[data-page="radio.html"] #main .ra-primary { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 17px; color:#fff; background:#2458e8; border:1px solid #2458e8; border-radius:7px; font-size:14px; font-weight:600; text-decoration:none; line-height:1.6; }
-body[data-page="radio.html"] #main .ra-link { display:inline-flex; align-items:center; gap:7px; min-height:40px; padding:6px 0; color:#365d9d; font-size:13px; font-weight:500; text-decoration:none; line-height:1.7; }
-body[data-page="radio.html"] #main .ra-link .icon { width:15px; height:15px; }
-body[data-page="radio.html"] #main .ra-overview { min-width:0; padding:24px; border:1px solid var(--ra-line); border-radius:16px; background:#fff; box-shadow:0 8px 25px rgba(30,59,113,.045); }
-body[data-page="radio.html"] #main .ra-overview-head { display:flex; align-items:center; gap:9px; margin-bottom:15px; }
-body[data-page="radio.html"] #main .ra-overview-head>.icon { color:#345ba8; width:19px; height:19px; }
-body[data-page="radio.html"] #main .ra-overview h2 { margin:0; color:var(--ra-ink); font-size:16px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
-body[data-page="radio.html"] #main .ra-overview a { display:flex; align-items:center; gap:12px; min-width:0; padding:13px 12px; border:1px solid #e4ebf5; border-radius:9px; color:#27476e; background:#f8faff; text-decoration:none; font-size:14px; line-height:1.7; }
-body[data-page="radio.html"] #main .ra-overview a+a { margin-top:8px; }
-body[data-page="radio.html"] #main .ra-overview a span { font-size:11px; color:#5671a0; font-variant-numeric:tabular-nums; }
-body[data-page="radio.html"] #main .ra-overview a strong { font-weight:600; min-width:0; }
-body[data-page="radio.html"] #main .ra-overview a>.icon { margin-left:auto; width:16px; height:16px; }
-body[data-page="radio.html"] #main .ra-section { padding:50px 0; }
-body[data-page="radio.html"] #main .ra-section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:25px; }
-body[data-page="radio.html"] #main .ra-section-head h2 { margin:0; font-size:27px; line-height:1.4; letter-spacing:-.035em; font-weight:650; color:var(--ra-ink); }
-body[data-page="radio.html"] #main .ra-section-head p { margin:0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
-body[data-page="radio.html"] #main .ra-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
-body[data-page="radio.html"] #main .ra-record { position:relative; min-width:0; padding:28px; border:1px solid var(--ra-line); border-radius:15px; background:#fff; box-shadow:0 6px 22px rgba(26,56,108,.035); transition:border-color .2s ease,box-shadow .2s ease; scroll-margin-top:110px; }
-body[data-page="radio.html"] #main .ra-record-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-body[data-page="radio.html"] #main .ra-number { display:inline-flex; align-items:center; gap:8px; padding:5px 9px; border-radius:6px; color:#34599e; background:#edf3ff; font-size:12px; font-weight:600; line-height:1.6; }
-body[data-page="radio.html"] #main .ra-number>.icon { width:15px; height:15px; }
-body[data-page="radio.html"] #main .ra-format { color:#75859b; font-size:10px; letter-spacing:.12em; font-weight:600; }
-body[data-page="radio.html"] #main .ra-record h3 { margin:19px 0 7px; color:var(--ra-ink); font-size:23px; line-height:1.5; font-weight:650; letter-spacing:-.025em; word-break:keep-all; }
-body[data-page="radio.html"] #main .ra-credit { margin:0; color:#647994; font-size:12px; line-height:1.8; }
-body[data-page="radio.html"] #main .ra-player { margin:22px 0 20px; padding:16px 13px 13px; background:#f3f6fb; border:1px solid #e4ebf5; border-radius:11px; }
-body[data-page="radio.html"] #main .ra-player-info { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:0 5px 11px; }
-body[data-page="radio.html"] #main .ra-play-state { display:inline-flex; align-items:center; gap:6px; color:#556c8e; font-size:11px; line-height:1.6; }
-body[data-page="radio.html"] #main .ra-play-state::before { content:""; display:block; width:6px; height:6px; border-radius:50%; background:#8b9fbd; }
-body[data-page="radio.html"] #main .ra-player-label { font-size:10px; line-height:1.6; font-weight:500; color:#647b9f; letter-spacing:.06em; }
-body[data-page="radio.html"] #main audio { display:block; width:100%; max-width:100%; min-width:0; height:42px; color-scheme:light; }
-body[data-page="radio.html"] #main .ra-record.is-playing { border-color:#8daef5; box-shadow:0 10px 28px rgba(28,72,156,.10); }
-body[data-page="radio.html"] #main .ra-record.is-playing .ra-play-state { color:#2458e8; }
-body[data-page="radio.html"] #main .ra-record.is-playing .ra-play-state::before { background:#2458e8; box-shadow:0 0 0 3px rgba(36,88,232,.11); }
-body[data-page="radio.html"] #main .ra-player-error { margin:10px 4px 0; color:#8c3e22; font-size:12px; line-height:1.8; }
-body[data-page="radio.html"] #main .ra-message { border-top:1px solid #e7edf6; padding-top:18px; }
-body[data-page="radio.html"] #main .ra-message-label { margin:0 0 9px; color:#74839a; font-size:11px; font-weight:500; }
-body[data-page="radio.html"] #main .ra-message blockquote { margin:0 0 10px; padding:0; border:0; color:#274b84; font-size:16px; line-height:1.75; font-weight:600; letter-spacing:-.02em; word-break:keep-all; }
-body[data-page="radio.html"] #main .ra-description { margin:0; color:#536984; font-size:14px; line-height:1.9; word-break:keep-all; overflow-wrap:break-word; }
-body[data-page="radio.html"] #main .ra-file-row { margin-top:19px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:7px 15px; }
-body[data-page="radio.html"] #main .ra-file-row>span { font-size:10px; color:#7c8ca3; line-height:1.7; }
-body[data-page="radio.html"] #main .ra-file-row .ra-link { font-size:12px; }
-body[data-page="radio.html"] #main .ra-history { background:#f7f9fc; border-top:1px solid #e4eaf4; }
-body[data-page="radio.html"] #main .ra-history .ra-section-head { align-items:flex-start; flex-direction:column; gap:10px; }
-body[data-page="radio.html"] #main .ra-history .ra-section-head h2 { font-size:25px; }
-body[data-page="radio.html"] #main .ra-table-wrap { overflow-x:auto; border:1px solid #dce4ef; border-radius:12px; background:#fff; }
-body[data-page="radio.html"] #main table { width:100%; min-width:680px; border-collapse:collapse; text-align:left; font-size:13px; line-height:1.75; }
-body[data-page="radio.html"] #main th { color:#536984; background:#eff4fa; font-size:11px; font-weight:600; padding:14px 18px; border-bottom:1px solid #dce4ef; white-space:nowrap; }
-body[data-page="radio.html"] #main td { padding:17px 18px; border-bottom:1px solid #e6edf6; color:#314c72; vertical-align:middle; }
-body[data-page="radio.html"] #main tr:last-child td { border-bottom:0; }
-body[data-page="radio.html"] #main td:first-child { color:#8192a9; font-size:11px; width:56px; }
-body[data-page="radio.html"] #main .ra-date { display:block; color:#243f66; font-size:13px; font-weight:500; font-variant-numeric:tabular-nums; }
-body[data-page="radio.html"] #main .ra-period-note { display:block; color:#7c8ba1; margin-top:4px; font-size:11px; }
-body[data-page="radio.html"] #main .ra-mobile-hint { display:none; margin:10px 0 0; color:#74849b; font-size:11px; line-height:1.8; }
-body[data-page="radio.html"] #main .ra-history-note { margin:14px 0 0; color:#75869f; font-size:12px; line-height:1.85; }
-body[data-page="radio.html"] #main .ra-related { padding:34px 0; border-top:1px solid var(--ra-line); }
-body[data-page="radio.html"] #main .ra-related-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:15px 30px; }
-body[data-page="radio.html"] #main .ra-related h2 { margin:0; color:var(--ra-ink); font-size:20px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
-body[data-page="radio.html"] #main .ra-related p { margin:6px 0 0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
-body[data-page="radio.html"] #main .ra-related-links { display:flex; flex-wrap:wrap; align-items:center; gap:10px 22px; }
-body[data-page="radio.html"] #main :is(a,audio,.ra-table-wrap):focus-visible { outline:3px solid #5182ed; outline-offset:4px; }
-body[data-page="radio.html"] #main [hidden] { display:none!important; }
-body[data-page="radio.html"] #radio-audio, body[data-page="radio.html"] #radio-history { scroll-margin-top:106px; }
+<style id="plura-ad-page-style">
+/* Advertisement archive. Shared header/footer and other pages are unchanged. */
+body[data-page="ad.html"] #main { --ra-ink:#182f52; --ra-muted:#526984; --ra-line:#dce5f2; --ra-blue:#2458e8; color:var(--ra-ink); background:#fff; }
+body[data-page="ad.html"] #main *, body[data-page="ad.html"] #main *::before, body[data-page="ad.html"] #main *::after { box-sizing:border-box; }
+body[data-page="ad.html"] #main .container { width:min(1200px,calc(100% - 64px)); margin-inline:auto; }
+body[data-page="ad.html"] #main .icon { display:inline-block; width:20px; height:20px; flex-shrink:0; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+body[data-page="ad.html"] #main .ra-hero { padding:30px 0 48px; background:linear-gradient(180deg,#f7faff 0%,#fff 100%); border-bottom:1px solid var(--ra-line); }
+body[data-page="ad.html"] #main .breadcrumbs { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:0 0 34px; font-size:12px; line-height:1.8; color:#62758e; }
+body[data-page="ad.html"] #main .breadcrumbs a { color:#62758e; text-decoration:none; }
+body[data-page="ad.html"] #main .breadcrumbs .icon { width:12px; height:12px; }
+body[data-page="ad.html"] #main .ra-hero-grid { display:grid; grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr); align-items:center; gap:64px; }
+body[data-page="ad.html"] #main .ra-eyebrow { margin:0 0 13px; color:#536d98; font-size:11px; line-height:1.6; font-weight:700; letter-spacing:.12em; }
+body[data-page="ad.html"] #main h1 { margin:0; color:var(--ra-ink); font-size:clamp(32px,3.4vw,44px); line-height:1.35; font-weight:700; letter-spacing:-.04em; word-break:keep-all; }
+body[data-page="ad.html"] #main .ra-lead { margin:18px 0 0; max-width:560px; color:var(--ra-muted); font-size:17px; line-height:1.9; font-weight:400; word-break:keep-all; }
+body[data-page="ad.html"] #main .ra-hero-links { display:flex; flex-wrap:wrap; align-items:center; gap:15px 22px; margin-top:25px; }
+body[data-page="ad.html"] #main .ra-primary { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 17px; color:#fff; background:#2458e8; border:1px solid #2458e8; border-radius:7px; font-size:14px; font-weight:600; text-decoration:none; line-height:1.6; }
+body[data-page="ad.html"] #main .ra-link { display:inline-flex; align-items:center; gap:7px; min-height:40px; padding:6px 0; color:#365d9d; font-size:13px; font-weight:500; text-decoration:none; line-height:1.7; }
+body[data-page="ad.html"] #main .ra-link .icon { width:15px; height:15px; }
+body[data-page="ad.html"] #main .ra-overview { min-width:0; padding:24px; border:1px solid var(--ra-line); border-radius:16px; background:#fff; box-shadow:0 8px 25px rgba(30,59,113,.045); }
+body[data-page="ad.html"] #main .ra-overview-head { display:flex; align-items:center; gap:9px; margin-bottom:15px; }
+body[data-page="ad.html"] #main .ra-overview-head>.icon { color:#345ba8; width:19px; height:19px; }
+body[data-page="ad.html"] #main .ra-overview h2 { margin:0; color:var(--ra-ink); font-size:16px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
+body[data-page="ad.html"] #main .ra-overview a { display:flex; align-items:center; gap:12px; min-width:0; padding:13px 12px; border:1px solid #e4ebf5; border-radius:9px; color:#27476e; background:#f8faff; text-decoration:none; font-size:14px; line-height:1.7; }
+body[data-page="ad.html"] #main .ra-overview a+a { margin-top:8px; }
+body[data-page="ad.html"] #main .ra-overview a span { font-size:11px; color:#5671a0; font-variant-numeric:tabular-nums; }
+body[data-page="ad.html"] #main .ra-overview a strong { font-weight:600; min-width:0; }
+body[data-page="ad.html"] #main .ra-overview a>.icon { margin-left:auto; width:16px; height:16px; }
+body[data-page="ad.html"] #main .ra-section { padding:50px 0; }
+body[data-page="ad.html"] #main .ra-section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:25px; }
+body[data-page="ad.html"] #main .ra-section-head h2 { margin:0; font-size:27px; line-height:1.4; letter-spacing:-.035em; font-weight:650; color:var(--ra-ink); }
+body[data-page="ad.html"] #main .ra-section-head p { margin:0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
+body[data-page="ad.html"] #main .ra-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+body[data-page="ad.html"] #main .ra-record { position:relative; min-width:0; padding:28px; border:1px solid var(--ra-line); border-radius:15px; background:#fff; box-shadow:0 6px 22px rgba(26,56,108,.035); transition:border-color .2s ease,box-shadow .2s ease; scroll-margin-top:110px; }
+body[data-page="ad.html"] #main .ra-record-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+body[data-page="ad.html"] #main .ra-number { display:inline-flex; align-items:center; gap:8px; padding:5px 9px; border-radius:6px; color:#34599e; background:#edf3ff; font-size:12px; font-weight:600; line-height:1.6; }
+body[data-page="ad.html"] #main .ra-number>.icon { width:15px; height:15px; }
+body[data-page="ad.html"] #main .ra-format { color:#75859b; font-size:10px; letter-spacing:.12em; font-weight:600; }
+body[data-page="ad.html"] #main .ra-record h3 { margin:19px 0 7px; color:var(--ra-ink); font-size:23px; line-height:1.5; font-weight:650; letter-spacing:-.025em; word-break:keep-all; }
+body[data-page="ad.html"] #main .ra-credit { margin:0; color:#647994; font-size:12px; line-height:1.8; }
+body[data-page="ad.html"] #main .ra-player { margin:22px 0 20px; padding:16px 13px 13px; background:#f3f6fb; border:1px solid #e4ebf5; border-radius:11px; }
+body[data-page="ad.html"] #main .ra-player-info { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:0 5px 11px; }
+body[data-page="ad.html"] #main .ra-play-state { display:inline-flex; align-items:center; gap:6px; color:#556c8e; font-size:11px; line-height:1.6; }
+body[data-page="ad.html"] #main .ra-play-state::before { content:""; display:block; width:6px; height:6px; border-radius:50%; background:#8b9fbd; }
+body[data-page="ad.html"] #main .ra-player-label { font-size:10px; line-height:1.6; font-weight:500; color:#647b9f; letter-spacing:.06em; }
+body[data-page="ad.html"] #main audio { display:block; width:100%; max-width:100%; min-width:0; height:42px; color-scheme:light; }
+body[data-page="ad.html"] #main .ra-record.is-playing { border-color:#8daef5; box-shadow:0 10px 28px rgba(28,72,156,.10); }
+body[data-page="ad.html"] #main .ra-record.is-playing .ra-play-state { color:#2458e8; }
+body[data-page="ad.html"] #main .ra-record.is-playing .ra-play-state::before { background:#2458e8; box-shadow:0 0 0 3px rgba(36,88,232,.11); }
+body[data-page="ad.html"] #main .ra-player-error { margin:10px 4px 0; color:#8c3e22; font-size:12px; line-height:1.8; }
+body[data-page="ad.html"] #main .ra-message { border-top:1px solid #e7edf6; padding-top:18px; }
+body[data-page="ad.html"] #main .ra-message-label { margin:0 0 9px; color:#74839a; font-size:11px; font-weight:500; }
+body[data-page="ad.html"] #main .ra-message blockquote { margin:0 0 10px; padding:0; border:0; color:#274b84; font-size:16px; line-height:1.75; font-weight:600; letter-spacing:-.02em; word-break:keep-all; }
+body[data-page="ad.html"] #main .ra-description { margin:0; color:#536984; font-size:14px; line-height:1.9; word-break:keep-all; overflow-wrap:break-word; }
+body[data-page="ad.html"] #main .ra-file-row { margin-top:19px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:7px 15px; }
+body[data-page="ad.html"] #main .ra-file-row>span { font-size:10px; color:#7c8ca3; line-height:1.7; }
+body[data-page="ad.html"] #main .ra-file-row .ra-link { font-size:12px; }
+body[data-page="ad.html"] #main .ra-history { background:#f7f9fc; border-top:1px solid #e4eaf4; }
+body[data-page="ad.html"] #main .ra-history .ra-section-head { align-items:flex-start; flex-direction:column; gap:10px; }
+body[data-page="ad.html"] #main .ra-history .ra-section-head h2 { font-size:25px; }
+body[data-page="ad.html"] #main .ra-table-wrap { overflow-x:auto; border:1px solid #dce4ef; border-radius:12px; background:#fff; }
+body[data-page="ad.html"] #main table { width:100%; min-width:680px; border-collapse:collapse; text-align:left; font-size:13px; line-height:1.75; }
+body[data-page="ad.html"] #main th { color:#536984; background:#eff4fa; font-size:11px; font-weight:600; padding:14px 18px; border-bottom:1px solid #dce4ef; white-space:nowrap; }
+body[data-page="ad.html"] #main td { padding:17px 18px; border-bottom:1px solid #e6edf6; color:#314c72; vertical-align:middle; }
+body[data-page="ad.html"] #main tr:last-child td { border-bottom:0; }
+body[data-page="ad.html"] #main td:first-child { color:#8192a9; font-size:11px; width:56px; }
+body[data-page="ad.html"] #main .ra-date { display:block; color:#243f66; font-size:13px; font-weight:500; font-variant-numeric:tabular-nums; }
+body[data-page="ad.html"] #main .ra-period-note { display:block; color:#7c8ba1; margin-top:4px; font-size:11px; }
+body[data-page="ad.html"] #main .ra-mobile-hint { display:none; margin:10px 0 0; color:#74849b; font-size:11px; line-height:1.8; }
+body[data-page="ad.html"] #main .ra-history-note { margin:14px 0 0; color:#75869f; font-size:12px; line-height:1.85; }
+body[data-page="ad.html"] #main .ra-related { padding:34px 0; border-top:1px solid var(--ra-line); }
+body[data-page="ad.html"] #main .ra-related-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:15px 30px; }
+body[data-page="ad.html"] #main .ra-related h2 { margin:0; color:var(--ra-ink); font-size:20px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
+body[data-page="ad.html"] #main .ra-related p { margin:6px 0 0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
+body[data-page="ad.html"] #main .ra-related-links { display:flex; flex-wrap:wrap; align-items:center; gap:10px 22px; }
+body[data-page="ad.html"] #main :is(a,audio,.ra-table-wrap):focus-visible { outline:3px solid #5182ed; outline-offset:4px; }
+body[data-page="ad.html"] #main [hidden] { display:none!important; }
+body[data-page="ad.html"] #radio-audio, body[data-page="ad.html"] #radio-history { scroll-margin-top:106px; }
 @media(any-hover:hover) {
- body[data-page="radio.html"] #main .ra-overview a:hover { background:#edf3ff; border-color:#b7cdf7; color:#2458e8; }
- body[data-page="radio.html"] #main .ra-record:hover { border-color:#a4bff1; box-shadow:0 10px 25px rgba(28,72,156,.09); }
- body[data-page="radio.html"] #main .ra-primary:hover { background:#1d48c5; }
- body[data-page="radio.html"] #main .ra-link:hover { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
- body[data-page="radio.html"] #main .ra-table-wrap tbody tr:hover { background:#f6f9ff; }
+ body[data-page="ad.html"] #main .ra-overview a:hover { background:#edf3ff; border-color:#b7cdf7; color:#2458e8; }
+ body[data-page="ad.html"] #main .ra-record:hover { border-color:#a4bff1; box-shadow:0 10px 25px rgba(28,72,156,.09); }
+ body[data-page="ad.html"] #main .ra-primary:hover { background:#1d48c5; }
+ body[data-page="ad.html"] #main .ra-link:hover { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
+ body[data-page="ad.html"] #main .ra-table-wrap tbody tr:hover { background:#f6f9ff; }
 }
 @media(max-width:960px) {
- body[data-page="radio.html"] #main .ra-hero-grid { grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:30px; }
- body[data-page="radio.html"] #main .ra-grid { gap:18px; }
- body[data-page="radio.html"] #main .ra-record { padding:23px; }
+ body[data-page="ad.html"] #main .ra-hero-grid { grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:30px; }
+ body[data-page="ad.html"] #main .ra-grid { gap:18px; }
+ body[data-page="ad.html"] #main .ra-record { padding:23px; }
 }
 @media(max-width:740px) {
- body[data-page="radio.html"] #main .container { width:calc(100% - 40px); }
- body[data-page="radio.html"] #main .ra-hero-grid, body[data-page="radio.html"] #main .ra-grid { grid-template-columns:minmax(0,1fr); }
- body[data-page="radio.html"] #main .ra-hero { padding:22px 0 32px; }
- body[data-page="radio.html"] #main .breadcrumbs { margin-bottom:25px; }
- body[data-page="radio.html"] #main .ra-lead { font-size:15px; }
- body[data-page="radio.html"] #main .ra-overview { padding:20px; }
- body[data-page="radio.html"] #main .ra-section { padding:34px 0; }
- body[data-page="radio.html"] #main .ra-section-head { align-items:flex-start; flex-direction:column; gap:8px; margin-bottom:20px; }
- body[data-page="radio.html"] #main .ra-section-head h2 { font-size:24px; }
- body[data-page="radio.html"] #main .ra-record { padding:22px; }
- body[data-page="radio.html"] #main .ra-record h3 { font-size:21px; }
- body[data-page="radio.html"] #main .ra-description { font-size:13px; }
- body[data-page="radio.html"] #main table { min-width:660px; font-size:12px; }
- body[data-page="radio.html"] #main th, body[data-page="radio.html"] #main td { padding:14px 13px; }
- body[data-page="radio.html"] #main .ra-mobile-hint { display:block; }
- body[data-page="radio.html"] #main .ra-date { font-size:12px; }
- body[data-page="radio.html"] #main .ra-time { font-size:12px; }
+ body[data-page="ad.html"] #main .container { width:calc(100% - 40px); }
+ body[data-page="ad.html"] #main .ra-hero-grid, body[data-page="ad.html"] #main .ra-grid { grid-template-columns:minmax(0,1fr); }
+ body[data-page="ad.html"] #main .ra-hero { padding:22px 0 32px; }
+ body[data-page="ad.html"] #main .breadcrumbs { margin-bottom:25px; }
+ body[data-page="ad.html"] #main .ra-lead { font-size:15px; }
+ body[data-page="ad.html"] #main .ra-overview { padding:20px; }
+ body[data-page="ad.html"] #main .ra-section { padding:34px 0; }
+ body[data-page="ad.html"] #main .ra-section-head { align-items:flex-start; flex-direction:column; gap:8px; margin-bottom:20px; }
+ body[data-page="ad.html"] #main .ra-section-head h2 { font-size:24px; }
+ body[data-page="ad.html"] #main .ra-record { padding:22px; }
+ body[data-page="ad.html"] #main .ra-record h3 { font-size:21px; }
+ body[data-page="ad.html"] #main .ra-description { font-size:13px; }
+ body[data-page="ad.html"] #main table { min-width:660px; font-size:12px; }
+ body[data-page="ad.html"] #main th, body[data-page="ad.html"] #main td { padding:14px 13px; }
+ body[data-page="ad.html"] #main .ra-mobile-hint { display:block; }
+ body[data-page="ad.html"] #main .ra-date { font-size:12px; }
+ body[data-page="ad.html"] #main .ra-time { font-size:12px; }
 }
 @media(max-width:360px) {
- body[data-page="radio.html"] #main .container { width:calc(100% - 32px); }
- body[data-page="radio.html"] #main .ra-record { padding:18px; }
- body[data-page="radio.html"] #main h1 { font-size:29px; }
- body[data-page="radio.html"] #main .ra-player { padding-inline:5px; }
- body[data-page="radio.html"] #main th,body[data-page="radio.html"] #main td { padding-inline:7px; }
+ body[data-page="ad.html"] #main .container { width:calc(100% - 32px); }
+ body[data-page="ad.html"] #main .ra-record { padding:18px; }
+ body[data-page="ad.html"] #main h1 { font-size:29px; }
+ body[data-page="ad.html"] #main .ra-player { padding-inline:5px; }
+ body[data-page="ad.html"] #main th,body[data-page="ad.html"] #main td { padding-inline:7px; }
 }
-@media(prefers-reduced-motion:reduce) { body[data-page="radio.html"] #main * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+@media(prefers-reduced-motion:reduce) { body[data-page="ad.html"] #main * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
 @media print {
- body[data-page="radio.html"] #main .ra-hero,body[data-page="radio.html"] #main .ra-history { background:#fff; }
- body[data-page="radio.html"] #main .ra-player { display:none; }
- body[data-page="radio.html"] #main .ra-grid { grid-template-columns:1fr; }
- body[data-page="radio.html"] #main .ra-record { break-inside:avoid; box-shadow:none; }
- body[data-page="radio.html"] #main .ra-section { padding:18px 0; }
- body[data-page="radio.html"] #main .ra-frequency { display:table-cell; }
+ body[data-page="ad.html"] #main .ra-hero,body[data-page="ad.html"] #main .ra-history { background:#fff; }
+ body[data-page="ad.html"] #main .ra-player { display:none; }
+ body[data-page="ad.html"] #main .ra-grid { grid-template-columns:1fr; }
+ body[data-page="ad.html"] #main .ra-record { break-inside:avoid; box-shadow:none; }
+ body[data-page="ad.html"] #main .ra-section { padding:18px 0; }
+ body[data-page="ad.html"] #main .ra-frequency { display:table-cell; }
+}
+</style>
+<style id="plura-ad-archive-style">
+
+/* Integrated ad archive; no changes to shared header/footer or stylesheet files. */
+body[data-page="ad.html"] #main { font-family:"Noto Sans KR",Arial,sans-serif; }
+body[data-page="ad.html"] #main .ra-hero-grid { grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr); gap:58px; }
+body[data-page="ad.html"] #main .ra-hero h1 { font-size:clamp(30px,3vw,40px); line-height:1.45; }
+body[data-page="ad.html"] #main .ra-lead { max-width:640px; font-size:16px; }
+body[data-page="ad.html"] #main .ra-eyebrow { margin:0 0 10px; color:#48658e; font-size:11px; letter-spacing:.12em; }
+body[data-page="ad.html"] #main .ad-overview { padding:22px; }
+body[data-page="ad.html"] #main .ad-overview a { padding:11px 12px; }
+body[data-page="ad.html"] #main .ad-overview .ad-overview-icon { display:grid; place-items:center; flex:0 0 34px; width:34px; height:34px; border-radius:8px; background:#edf3ff; color:#315da8; }
+body[data-page="ad.html"] #main .ad-overview .ad-overview-copy { display:block; flex:1 1 auto; min-width:0; line-height:1.65; }
+body[data-page="ad.html"] #main .ad-overview-copy strong { display:block; color:#263e60; font-size:14px; }
+body[data-page="ad.html"] #main .ad-overview-copy small { display:block; margin-top:2px; color:#667d98; font-size:11px; font-weight:400; letter-spacing:0; }
+body[data-page="ad.html"] #main .ad-section-nav { border-bottom:1px solid #e4ebf5; background:#fff; }
+body[data-page="ad.html"] #main .ad-section-nav>.container { display:flex; flex-wrap:wrap; gap:0 28px; }
+body[data-page="ad.html"] #main .ad-section-nav a { display:inline-flex; align-items:center; min-height:54px; padding:14px 0; color:#526984; font-size:13px; font-weight:500; text-decoration:none; border-bottom:2px solid transparent; }
+body[data-page="ad.html"] #main .ra-section-head h2 { font-size:27px; }
+body[data-page="ad.html"] #main :is(#newspaper-ads,#subway-ads,#radio-audio,#ad-history,.ad-print-card) { scroll-margin-top:110px; }
+body[data-page="ad.html"] #main .ad-legacy-anchor { display:block; position:relative; scroll-margin-top:110px; }
+body[data-page="ad.html"] #main .ad-print-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+body[data-page="ad.html"] #main .ad-print-card { min-width:0; overflow:hidden; border:1px solid #dce5f2; border-radius:14px; background:#fff; box-shadow:0 6px 22px rgba(26,56,108,.035); transition:border-color .2s ease,box-shadow .2s ease; }
+body[data-page="ad.html"] #main .ad-visual { position:relative; display:grid; place-items:center; min-width:0; text-decoration:none; color:#244e9e; background:#f1f4f9; overflow:hidden; cursor:zoom-in; }
+body[data-page="ad.html"] #main .ad-visual--print { height:428px; padding:20px 20px 25px; border-bottom:1px solid #e1e8f2; }
+body[data-page="ad.html"] #main .ad-visual--print img { display:block; width:auto; height:100%; max-height:100%; max-width:100%; object-fit:contain; box-shadow:0 4px 15px rgba(15,35,66,.14); transition:transform .2s ease; }
+body[data-page="ad.html"] #main .ad-zoom-hint { position:absolute; display:inline-flex; align-items:center; gap:6px; right:14px; bottom:14px; min-height:34px; padding:7px 11px; border:1px solid #d2deef; border-radius:8px; background:#fff; color:#315389; box-shadow:0 3px 10px rgba(13,36,77,.08); font-size:11px; font-weight:600; line-height:1.5; pointer-events:none; }
+body[data-page="ad.html"] #main .ad-zoom-hint .icon { width:16px; height:16px; }
+body[data-page="ad.html"] #main .ad-print-body { padding:23px 25px 25px; }
+body[data-page="ad.html"] #main .ad-meta { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 16px; margin:0 0 15px; font-size:12px; line-height:1.6; color:#5b718f; font-variant-numeric:tabular-nums; }
+body[data-page="ad.html"] #main .ad-badge { display:inline-flex; padding:4px 8px; border:1px solid #dce6f8; border-radius:5px; background:#f0f5ff; color:#365c9e; font-size:11px; line-height:1.5; font-weight:600; }
+body[data-page="ad.html"] #main .ad-badge--subway { background:#eff8f6; border-color:#d5ebe5; color:#286a5e; }
+body[data-page="ad.html"] #main .ad-print-body h3 { margin:0 0 8px; color:#1d3557; font-size:19px; line-height:1.65; font-weight:600; letter-spacing:-.025em; word-break:keep-all; overflow-wrap:anywhere; }
+body[data-page="ad.html"] #main .ad-publisher { margin:0 0 12px; color:#617694; font-size:12px; line-height:1.8; }
+body[data-page="ad.html"] #main .ad-subway-section { background:#f7f9fc; border-top:1px solid #e4ebf5; border-bottom:1px solid #e4ebf5; }
+body[data-page="ad.html"] #main .ad-subway-card { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr); min-width:0; background:#fff; border:1px solid #dce5f2; border-radius:14px; overflow:hidden; }
+body[data-page="ad.html"] #main .ad-visual--subway { padding:18px; }
+body[data-page="ad.html"] #main .ad-visual--subway img { display:block; width:100%; max-width:100%; height:auto; border-radius:6px; }
+body[data-page="ad.html"] #main .ad-subway-body { display:flex; flex-direction:column; justify-content:center; min-width:0; padding:32px; }
+body[data-page="ad.html"] #main .ad-subway-body h3 { margin:0 0 14px; color:#1d3557; font-size:24px; line-height:1.55; font-weight:600; letter-spacing:-.035em; }
+body[data-page="ad.html"] #main .ad-facts { margin:22px 0 0; border-top:1px solid #e4ebf5; }
+body[data-page="ad.html"] #main .ad-facts>div { display:grid; grid-template-columns:82px minmax(0,1fr); gap:12px; padding:13px 0; border-bottom:1px solid #e4ebf5; font-size:13px; line-height:1.8; }
+body[data-page="ad.html"] #main .ad-facts dt { margin:0; color:#6a7e98; font-weight:400; }
+body[data-page="ad.html"] #main .ad-facts dd { margin:0; color:#2b4568; font-weight:500; word-break:keep-all; }
+body[data-page="ad.html"] #main .ad-history-table { min-width:850px; }
+body[data-page="ad.html"] #main .ad-history-table th:nth-child(2) { width:185px; }
+body[data-page="ad.html"] #main .ad-history-table th:nth-child(3) { width:90px; }
+body[data-page="ad.html"] #main .ad-history-table th:nth-child(4) { width:235px; }
+body[data-page="ad.html"] #main .ad-table-badge { display:inline-block; white-space:nowrap; color:#486489; padding:3px 7px; background:#f3f6fb; border:1px solid #dfe7f2; border-radius:5px; font-size:11px; line-height:1.6; }
+body[data-page="ad.html"] #main .ad-record-link { color:#315a9a; text-decoration:none; line-height:1.9; }
+body[data-page="ad.html"] #main .ad-visual:focus-visible { outline:3px solid #2458e8; outline-offset:-5px; }
+body[data-page="ad.html"] #main .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+body[data-page="ad.html"] #main .ra-grid > * { min-width:0; }
+@media (any-hover:hover) {
+ body[data-page="ad.html"] #main .ad-print-card:hover { border-color:#9dbbf0; box-shadow:0 10px 24px rgba(28,72,156,.10); }
+ body[data-page="ad.html"] #main .ad-visual:hover .ad-zoom-hint { color:#fff; border-color:#2458e8; background:#2458e8; }
+ body[data-page="ad.html"] #main .ad-visual--print:hover img { transform:translateY(-2px); }
+ body[data-page="ad.html"] #main .ad-section-nav a:hover { color:#2458e8; border-bottom-color:#2458e8; }
+ body[data-page="ad.html"] #main .ad-record-link:hover { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
+}
+@media(max-width:1000px) {
+ body[data-page="ad.html"] #main .ra-hero-grid { grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:28px; }
+ body[data-page="ad.html"] #main .ad-visual--print { height:380px; }
+ body[data-page="ad.html"] #main .ad-subway-body { padding:24px; }
+ body[data-page="ad.html"] #main .ad-subway-body h3 { font-size:22px; }
+ body[data-page="ad.html"] #main .ad-desktop-break { display:none; }
+}
+@media(max-width:740px) {
+ body[data-page="ad.html"] #main .ra-hero-grid,body[data-page="ad.html"] #main .ad-print-grid,body[data-page="ad.html"] #main .ad-subway-card { grid-template-columns:minmax(0,1fr); }
+ body[data-page="ad.html"] #main .ra-hero-grid { gap:24px; }
+ body[data-page="ad.html"] #main .ra-hero h1 { font-size:clamp(27px,5.7vw,34px); line-height:1.5; }
+ body[data-page="ad.html"] #main .ra-lead { font-size:15px; }
+ body[data-page="ad.html"] #main .ad-section-nav>.container { gap:0 18px; }
+ body[data-page="ad.html"] #main .ad-section-nav a { min-height:48px; font-size:12px; }
+ body[data-page="ad.html"] #main .ad-print-body { padding:20px; }
+ body[data-page="ad.html"] #main .ad-print-body h3 { font-size:18px; }
+ body[data-page="ad.html"] #main .ad-visual--print { height:400px; }
+ body[data-page="ad.html"] #main .ad-subway-body { padding:24px 22px; }
+ body[data-page="ad.html"] #main .ad-visual--subway { padding:13px; }
+ body[data-page="ad.html"] #main .ra-section-head h2 { font-size:24px; }
+ body[data-page="ad.html"] #main .ad-history-table { min-width:810px; }
+}
+@media(max-width:400px) {
+ body[data-page="ad.html"] #main .ad-visual--print { height:360px; padding:15px 12px 20px; }
+ body[data-page="ad.html"] #main .ad-section-nav>.container { gap:0 16px; }
+ body[data-page="ad.html"] #main .ad-facts>div { grid-template-columns:70px minmax(0,1fr); gap:8px; font-size:12px; }
+}
+/* Full-size gallery. Native dialog keeps keyboard focus in the viewer. */
+body[data-page="ad.html"] #ad-image-dialog { width:min(1240px,calc(100vw - 32px)); height:min(960px,calc(100dvh - 32px)); max-width:none; max-height:none; margin:auto; padding:0; border:1px solid #cfdaea; border-radius:14px; color:#203757; background:#fff; overflow:hidden; box-shadow:0 24px 80px rgba(4,13,35,.35); font-family:"Noto Sans KR",Arial,sans-serif; }
+body[data-page="ad.html"] #ad-image-dialog[open] { display:flex; flex-direction:column; }
+body[data-page="ad.html"] #ad-image-dialog:not([open]) { display:none; }
+body[data-page="ad.html"] #ad-image-dialog::backdrop { background:rgba(6,15,33,.83); }
+body[data-page="ad.html"] #ad-image-dialog * { box-sizing:border-box; }
+body[data-page="ad.html"] #ad-image-dialog .icon { width:19px; height:19px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; flex:none; }
+body[data-page="ad.html"] .ad-viewer-head { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:15px 18px; border-bottom:1px solid #dfe7f3; flex:none; }
+body[data-page="ad.html"] .ad-viewer-head h2 { margin:0; color:#203757; font-size:17px; font-weight:600; line-height:1.6; letter-spacing:-.02em; }
+body[data-page="ad.html"] .ad-viewer-head p { margin:4px 0 0; color:#607692; font-size:12px; line-height:1.7; }
+body[data-page="ad.html"] .ad-viewer-button { display:inline-flex; align-items:center; justify-content:center; gap:6px; min-width:40px; min-height:40px; padding:7px 11px; border:1px solid #d4dfef; border-radius:7px; background:#fff; color:#33547e; font:inherit; font-size:12px; line-height:1.6; cursor:pointer; }
+body[data-page="ad.html"] .ad-viewer-button:disabled { opacity:.4; cursor:default; }
+body[data-page="ad.html"] .ad-viewer-toolbar { display:flex; align-items:center; justify-content:space-between; gap:10px 18px; padding:10px 18px; background:#fff; border-bottom:1px solid #dfe7f3; flex:none; }
+body[data-page="ad.html"] .ad-viewer-tools { display:flex; align-items:center; flex-wrap:wrap; gap:7px; }
+body[data-page="ad.html"] .ad-viewer-zoom-value { min-width:49px; text-align:center; color:#4c6486; font-size:12px; font-variant-numeric:tabular-nums; }
+body[data-page="ad.html"] .ad-viewer-original { color:#315a9a; font-size:12px; line-height:1.8; text-decoration:underline; text-underline-offset:3px; white-space:nowrap; }
+body[data-page="ad.html"] .ad-viewer-stage { position:relative; flex:1 1 auto; min-height:0; overflow:auto; background:#e9edf4; overscroll-behavior:contain; touch-action:pan-x pan-y pinch-zoom; }
+body[data-page="ad.html"] .ad-viewer-canvas { display:flex; align-items:center; justify-content:center; width:max-content; min-width:100%; min-height:100%; padding:18px; }
+body[data-page="ad.html"] .ad-viewer-canvas img { display:block; flex:none; max-width:none!important; max-height:none!important; object-fit:contain; background:#fff; box-shadow:0 5px 20px rgba(17,34,62,.15); user-select:none; }
+body[data-page="ad.html"] .ad-viewer-foot { margin:0; padding:9px 18px; flex:none; border-top:1px solid #dfe7f3; color:#627692; font-size:11px; line-height:1.7; }
+body[data-page="ad.html"] #ad-image-dialog :is(a,button,[tabindex]):focus-visible { outline:3px solid #5182ed; outline-offset:2px; }
+body[data-page="ad.html"] #ad-image-dialog [hidden] { display:none!important; }
+body[data-page="ad.html"] .ad-viewer-error { padding:28px; color:#7f3e27; font-size:14px; line-height:1.8; }
+@media(any-hover:hover) {
+ body[data-page="ad.html"] .ad-viewer-button:not(:disabled):hover { color:#2458e8; border-color:#91afea; background:#f0f5ff; }
+}
+@media(max-width:600px) {
+ body[data-page="ad.html"] #ad-image-dialog { width:calc(100vw - 16px); height:calc(100dvh - 16px); border-radius:10px; }
+ body[data-page="ad.html"] .ad-viewer-head { padding:12px; }
+ body[data-page="ad.html"] .ad-viewer-head h2 { font-size:15px; }
+ body[data-page="ad.html"] .ad-viewer-head p { font-size:11px; }
+ body[data-page="ad.html"] .ad-viewer-toolbar { padding:9px 12px; flex-wrap:wrap; gap:8px; }
+ body[data-page="ad.html"] .ad-viewer-tools { gap:5px; }
+ body[data-page="ad.html"] .ad-viewer-button { padding:6px 8px; min-width:36px; min-height:40px; font-size:11px; }
+ body[data-page="ad.html"] .ad-viewer-foot { padding:9px 12px; }
+ body[data-page="ad.html"] .ad-viewer-canvas { padding:12px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ body[data-page="ad.html"] #main :is(.ad-print-card,.ad-visual img) { transition:none!important; transform:none!important; }
+}
+@media print {
+ body[data-page="ad.html"] #ad-image-dialog { display:none!important; }
+ body[data-page="ad.html"] #main :is(.ad-zoom-hint,.ad-section-nav,.ra-overview,.ra-hero-links) { display:none!important; }
+ body[data-page="ad.html"] #main .ad-print-card { break-inside:avoid; box-shadow:none; }
+ body[data-page="ad.html"] #main .ad-print-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ body[data-page="ad.html"] #main .ad-subway-card { break-inside:avoid; }
+ body[data-page="ad.html"] #main .ad-history-table { min-width:0; }
 }
 </style>
 </head>
-<body data-page="radio.html" data-website-version="7.2">
+<body data-page="ad.html" data-website-version="7.2">
 <a class="skip-link" href="#main">본문으로 바로가기</a>
-<div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="radio.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
+<div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="ad.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
 <main class="v71-pages" id="main" tabindex="-1">
-<section class="ra-hero" aria-labelledby="radio-page-title">
+<section class="ra-hero ad-hero" aria-labelledby="ad-page-title">
   <div class="container">
-    <nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span>고객·자료</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span aria-current="page">라디오 광고</span></nav>
+    <nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span>고객·자료</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span aria-current="page">라디오·신문·지하철 광고</span></nav>
     <div class="ra-hero-grid">
       <div>
-        <p class="ra-eyebrow">RADIO ADVERTISING</p>
-        <h1 id="radio-page-title">PLURA 라디오 광고</h1>
-        <p class="ra-lead">라디오로 전한 PLURA의 보안 이야기.<br/>광고 음원을 다시 듣고, 광고 메시지와 송출 안내를 확인하세요.</p>
-        <div class="ra-hero-links"><a class="ra-primary" href="#radio-audio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg> 광고 듣기</a><a class="ra-link" href="#radio-history">송출 안내 기록 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+        <p class="ra-eyebrow">PLURA ADVERTISING</p>
+        <h1 id="ad-page-title">라디오·신문·<wbr/>지하철 광고</h1>
+        <p class="ra-lead">신문 지면과 지하철 현장, 라디오 음원으로 만나는 PLURA.<br class="ad-desktop-break"/> 광고와 함께 게재·공지·송출 기록을 확인하세요.</p>
+        <div class="ra-hero-links"><a class="ra-primary" href="#newspaper-ads">광고 살펴보기 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a><a class="ra-link" href="#ad-history">게재·송출 기록 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
       </div>
-      <aside class="ra-overview" aria-labelledby="radio-overview-title">
-        <div class="ra-overview-head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg><h2 id="radio-overview-title">광고 음원</h2></div>
-        <a href="#radio-waf"><span>01</span><strong>웹방화벽 편</strong><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
-        <a href="#radio-platform"><span>02</span><strong>통합 보안 플랫폼 편</strong><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+      <aside class="ra-overview ad-overview" aria-labelledby="ad-overview-title">
+        <div class="ra-overview-head"><h2 id="ad-overview-title">매체별 광고 보기</h2></div>
+        <a href="#newspaper-ads"><span class="ad-overview-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="16" height="18" rx="2"/><path d="M5 8H2v11a2 2 0 0 0 2 2M9 7h8m-8 4h8m-8 4h3m3 0h2"/></svg></span><span class="ad-overview-copy"><strong>신문 광고</strong><small>전자신문 전면 광고 · 2026</small></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+        <a href="#subway-ads"><span class="ad-overview-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 11h14M12 3v8M8 18l-2 3m10-3 2 3"/><path d="M8 15h.01M16 15h.01"/></svg></span><span class="ad-overview-copy"><strong>지하철 광고</strong><small>신분당선 개찰구 · 2025</small></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+        <a href="#radio-audio"><span class="ad-overview-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg></span><span class="ad-overview-copy"><strong>라디오 광고</strong><small>광고 음원 · 2024 송출 안내</small></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
       </aside>
     </div>
   </div>
 </section>
+<nav class="ad-section-nav" aria-label="광고 자료 바로가기"><div class="container"><a href="#newspaper-ads">신문 광고</a><a href="#subway-ads">지하철 광고</a><a href="#radio-audio">라디오 광고</a><a href="#ad-history">게재·송출 기록</a></div></nav>
+<section class="ra-section ad-print-section" id="newspaper-ads" aria-labelledby="newspaper-ads-title">
+  <div class="container">
+    <div class="ra-section-head"><div><p class="ra-eyebrow">NEWSPAPER / 2026</p><h2 id="newspaper-ads-title">신문 광고</h2></div><p>이미지를 선택하면 지면 전체를 확대해 볼 수 있습니다.</p></div>
+    <div class="ad-print-grid"><article class="ad-print-card" id="newspaper-20260420" aria-labelledby="newspaper-20260420-title">
+  <a class="ad-visual ad-visual--print" href="../res/images/ads/newspaper_20260420.jpg" target="_blank" rel="noopener noreferrer" data-ad-gallery data-ad-title="전자신문 전면 광고 · 2026.04.20" data-ad-caption="게재일 2026.04.20 · 전자신문 13면" aria-haspopup="dialog" aria-label="2026.04.20 전자신문 광고 크게 보기">
+    <img src="../res/images/ads/newspaper_20260420.jpg" width="1107" height="1527" alt="2026년 4월 20일 전자신문 13면 PLURA-XDR 전면 광고. 해킹은 멈추지 않습니다. 보안은 이제, 통합이어야 합니다." loading="lazy" decoding="async"/>
+    <span class="ad-zoom-hint"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6m-3-3v6"/></svg> 크게 보기</span>
+  </a>
+  <div class="ad-print-body">
+    <div class="ad-meta"><span class="ad-badge">신문 광고</span><span><time datetime="2026-04-20">2026.04.20</time> 게재</span></div>
+    <h3 id="newspaper-20260420-title">보안은 이제, 통합이어야 합니다.</h3>
+    <p class="ad-publisher">전자신문 · 전면 광고 · 13면</p>
+    <p class="ra-description">실시간 로그 생성·분석·탐지·대응과 통합 보안 플랫폼 PLURA-XDR을 소개한 전면 광고입니다.</p>
+  </div>
+</article>
+<article class="ad-print-card" id="newspaper-20260413" aria-labelledby="newspaper-20260413-title">
+  <a class="ad-visual ad-visual--print" href="../res/images/ads/newspaper_20260413.jpg" target="_blank" rel="noopener noreferrer" data-ad-gallery data-ad-title="전자신문 전면 광고 · 2026.04.13" data-ad-caption="게재일 2026.04.13 · 전자신문 19면" aria-haspopup="dialog" aria-label="2026.04.13 전자신문 광고 크게 보기">
+    <img src="../res/images/ads/newspaper_20260413.jpg" width="1107" height="1527" alt="2026년 4월 13일 전자신문 19면 PLURA-XDR 전면 광고. 보안은 맡겨두세요. 이제, 안전하게 일하세요." loading="lazy" decoding="async"/>
+    <span class="ad-zoom-hint"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6m-3-3v6"/></svg> 크게 보기</span>
+  </a>
+  <div class="ad-print-body">
+    <div class="ad-meta"><span class="ad-badge">신문 광고</span><span><time datetime="2026-04-13">2026.04.13</time> 게재</span></div>
+    <h3 id="newspaper-20260413-title">보안은 맡겨두세요. 이제, 안전하게 일하세요.</h3>
+    <p class="ad-publisher">전자신문 · 전면 광고 · 19면</p>
+    <p class="ra-description">크리덴셜 스터핑·랜섬웨어·제로데이 공격 대응과 통합 정보보안 플랫폼 PLURA-XDR을 알리는 전면 광고입니다.</p>
+  </div>
+</article></div>
+  </div>
+</section>
+<section class="ra-section ad-subway-section" id="subway-ads" aria-labelledby="subway-ads-title">
+  <div class="container">
+    <div class="ra-section-head"><div><p class="ra-eyebrow">OFFLINE / 2025</p><h2 id="subway-ads-title">지하철 광고</h2></div><p>신분당선 개찰구에서 만나는 PLURA-XDR.</p></div>
+    <article class="ad-subway-card" aria-labelledby="subway-card-title">
+      <a class="ad-visual ad-visual--subway" href="../res/images/ads/new_blog_news_2025-08-28.jpg" target="_blank" rel="noopener noreferrer" data-ad-gallery data-ad-title="신분당선 개찰구 광고" data-ad-caption="공지일 2025.08.28 · 신분당선 광교역~동천역, 6개역" aria-haspopup="dialog" aria-label="신분당선 개찰구 광고 현장 사진 크게 보기">
+        <img src="../res/images/ads/new_blog_news_2025-08-28.jpg" width="1196" height="879" alt="신분당선 개찰구 상단에 부착된 PLURA-XDR 랜섬웨어 대응 광고의 현장 사진" loading="lazy" decoding="async"/>
+        <span class="ad-zoom-hint"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6m-3-3v6"/></svg> 크게 보기</span>
+      </a>
+      <div class="ad-subway-body">
+        <div class="ad-meta"><span class="ad-badge ad-badge--subway">지하철 광고</span><span>오프라인</span></div>
+        <h3 id="subway-card-title">신분당선 개찰구 광고</h3>
+        <p class="ra-description">광교역부터 동천역까지, 신분당선 6개역 개찰구에 게시한 PLURA-XDR 광고입니다. 랜섬웨어 대응 메시지를 일상 속 이동 공간에서 전했습니다.</p>
+        <dl class="ad-facts">
+          <div><dt>공지일</dt><dd><time datetime="2025-08-28">2025.08.28</time></dd></div>
+          <div><dt>노선·구간</dt><dd>신분당선 · 광교역 ~ 동천역</dd></div>
+          <div><dt>게시 위치</dt><dd>6개역 개찰구</dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+</section>
 <section class="ra-section" id="radio-audio" aria-labelledby="radio-audio-title">
  <div class="container">
-  <div class="ra-section-head"><h2 id="radio-audio-title">광고 다시 듣기</h2><p>재생 버튼을 누르면 이 페이지에서 바로 들을 수 있습니다.</p></div>
+  <div class="ra-section-head"><div><p class="ra-eyebrow">RADIO / 2024 송출 안내</p><h2 id="radio-audio-title">라디오 광고</h2></div><p>재생 버튼을 누르면 광고 음원 2편을 바로 들을 수 있습니다.</p></div>
   <div class="ra-grid"><article class="ra-record" id="radio-waf" aria-labelledby="radio-waf-title">
   <div class="ra-record-top"><span class="ra-number"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg>01</span><span class="ra-format">RADIO / MP3</span></div>
   <h3 id="radio-waf-title">웹방화벽 편</h3>
@@ -220,23 +407,27 @@ body[data-page="radio.html"] #radio-audio, body[data-page="radio.html"] #radio-h
 </article></div>
  </div>
 </section>
-<section class="ra-section ra-history" id="radio-history" aria-labelledby="radio-history-title">
+<section class="ra-section ra-history ad-history" id="ad-history" aria-labelledby="ad-history-title">
  <div class="container">
-  <div class="ra-section-head"><h2 id="radio-history-title">송출 안내 기록</h2><p>2024년 공개 안내에 기록된 방송사와 송출 일정입니다.</p></div>
-  <div class="ra-table-wrap" role="region" aria-label="2024년 라디오 광고 송출 안내 표" tabindex="0">
-   <table>
-    <caption class="sr-only">PLURA 라디오 광고의 2024년 송출 안내. 주파수는 당시 문서 표기이며 현재 편성표가 아닙니다.</caption>
-    <thead><tr><th scope="col">No.</th><th scope="col">안내 기간</th><th scope="col">방송사</th><th scope="col" class="ra-frequency">주파수 · 지역</th><th scope="col">송출 시간</th></tr></thead>
+  <span id="radio-history" class="ad-legacy-anchor" aria-hidden="true"></span>
+  <div class="ra-section-head"><div><p class="ra-eyebrow">ADVERTISING RECORDS</p><h2 id="ad-history-title">게재·송출 기록</h2></div><p>매체별로 기록된 날짜를 최신순으로 모았습니다.</p></div>
+  <div class="ra-table-wrap" role="region" aria-label="신문·지하철·라디오 광고 게재 및 송출 기록" tabindex="0">
+   <table class="ad-history-table">
+    <caption class="sr-only">신문 광고 게재일, 지하철 광고 공지일, 라디오 광고 송출 안내 기간을 구분한 기록입니다.</caption>
+    <thead><tr><th scope="col">No.</th><th scope="col">날짜·기간</th><th scope="col">구분</th><th scope="col">매체·위치</th><th scope="col">광고·송출 안내</th></tr></thead>
     <tbody>
-     <tr><td>01</td><td><span class="ra-date">2024.07.01 ~</span><span class="ra-period-note">당시 시작 예정으로 안내</span></td><td>MBC</td><td class="ra-frequency">FM 95.5 MHz · 서울</td><td class="ra-time">오전 6:59</td></tr>
-     <tr><td>02</td><td><span class="ra-date">2024.05.01 ~ 05.31</span><span class="ra-period-note">종료</span></td><td>MBC<span class="ra-period-note">정오뉴스</span></td><td class="ra-frequency">FM 95.9 MHz · 서울</td><td class="ra-time">평일 오후 12:19<br/>토·일 오후 12:09</td></tr>
-     <tr><td>03</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td>MBC</td><td class="ra-frequency">FM 95.5 MHz · 서울</td><td class="ra-time">오전 6:59</td></tr>
-     <tr><td>04</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td>YTN</td><td class="ra-frequency">FM 94.5 MHz · 수도권</td><td class="ra-time">평일 오전 7:29<br/>토·일 오전 7:19</td></tr>
+     <tr><td>01</td><td><time class="ra-date" datetime="2026-04-20">2026.04.20</time><span class="ra-period-note">게재일</span></td><td><span class="ad-table-badge">신문</span></td><td>전자신문 · 13면</td><td><a class="ad-record-link" href="#newspaper-20260420">보안은 이제, 통합이어야 합니다.</a><span class="ra-period-note">전면 광고</span></td></tr>
+     <tr><td>02</td><td><time class="ra-date" datetime="2026-04-13">2026.04.13</time><span class="ra-period-note">게재일</span></td><td><span class="ad-table-badge">신문</span></td><td>전자신문 · 19면</td><td><a class="ad-record-link" href="#newspaper-20260413">보안은 맡겨두세요. 이제, 안전하게 일하세요.</a><span class="ra-period-note">전면 광고</span></td></tr>
+     <tr><td>03</td><td><time class="ra-date" datetime="2025-08-28">2025.08.28</time><span class="ra-period-note">공지일</span></td><td><span class="ad-table-badge">지하철</span></td><td>신분당선 · 광교역 ~ 동천역</td><td><a class="ad-record-link" href="#subway-ads">PLURA-XDR 개찰구 광고</a><span class="ra-period-note">6개역 개찰구</span></td></tr>
+     <tr><td>04</td><td><span class="ra-date">2024.07.01 ~</span><span class="ra-period-note">당시 시작 예정으로 안내</span></td><td><span class="ad-table-badge">라디오</span></td><td>MBC<span class="ra-period-note">FM 95.5 MHz · 서울</span></td><td>오전 6:59</td></tr>
+     <tr><td>05</td><td><span class="ra-date">2024.05.01 ~ 05.31</span><span class="ra-period-note">종료</span></td><td><span class="ad-table-badge">라디오</span></td><td>MBC 정오뉴스<span class="ra-period-note">FM 95.9 MHz · 서울</span></td><td>평일 오후 12:19<br/>토·일 오후 12:09</td></tr>
+     <tr><td>06</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td><span class="ad-table-badge">라디오</span></td><td>MBC<span class="ra-period-note">FM 95.5 MHz · 서울</span></td><td>오전 6:59</td></tr>
+     <tr><td>07</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td><span class="ad-table-badge">라디오</span></td><td>YTN<span class="ra-period-note">FM 94.5 MHz · 수도권</span></td><td>평일 오전 7:29<br/>토·일 오전 7:19</td></tr>
     </tbody>
    </table>
   </div>
-  <p class="ra-mobile-hint">표를 좌우로 움직이면 주파수와 송출 시간을 확인할 수 있습니다.</p>
-  <p class="ra-history-note">기간·시간·주파수는 당시 안내 표기입니다. 현재의 송출 여부나 방송 편성을 나타내지 않습니다.</p>
+  <p class="ra-mobile-hint">표를 좌우로 움직이면 매체·위치와 광고·송출 안내를 확인할 수 있습니다.</p>
+  <p class="ra-history-note">신문은 게재일, 지하철은 공지일, 라디오는 당시 송출 안내 기준입니다. 현재 광고 집행 여부나 방송 편성을 나타내지 않습니다.</p>
  </div>
 </section>
 <section class="ra-related" aria-labelledby="radio-related-title">
@@ -304,6 +495,150 @@ body[data-page="radio.html"] #radio-audio, body[data-page="radio.html"] #radio-h
     });
     window.addEventListener('pagehide', function () {
       players.forEach(function (audio) { audio.pause(); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
+}());
+</script>
+<dialog id="ad-image-dialog" aria-labelledby="ad-image-title" aria-describedby="ad-image-caption">
+  <div class="ad-viewer-head"><div><h2 id="ad-image-title">광고 이미지</h2><p id="ad-image-caption"></p></div><button class="ad-viewer-button" type="button" data-ad-close aria-label="광고 이미지 확대창 닫기" autofocus><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+  <div class="ad-viewer-toolbar"><div class="ad-viewer-tools" role="group" aria-label="이미지 확대·축소"><button class="ad-viewer-button" type="button" data-ad-zoom-out aria-label="이미지 축소"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><output class="ad-viewer-zoom-value" data-ad-scale aria-live="polite">100%</output><button class="ad-viewer-button" type="button" data-ad-zoom-in aria-label="이미지 확대"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button><button class="ad-viewer-button" type="button" data-ad-fit><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg> 화면 맞춤</button><button class="ad-viewer-button" type="button" data-ad-native>원본 크기</button></div><a class="ad-viewer-original" data-ad-original href="../res/images/ads/newspaper_20260420.jpg" target="_blank" rel="noopener noreferrer">이미지 원본 열기 ↗</a></div>
+  <div class="ad-viewer-stage" data-ad-stage tabindex="0" aria-label="확대 이미지. 스크롤하여 다른 부분을 볼 수 있습니다."><div class="ad-viewer-canvas"><img data-ad-image alt="" draggable="false"/></div><p class="ad-viewer-error" data-ad-image-error hidden>이미지를 불러오지 못했습니다. ‘이미지 원본 열기’에서 확인해 주세요.</p></div>
+  <p class="ad-viewer-foot">이미지를 확대하면 스크롤로 이동할 수 있습니다. 닫기 버튼이나 Esc 키로 돌아갑니다.</p>
+</dialog>
+
+<script id="plura-ad-gallery-script">
+/* Local image viewer. No image rewriting, external libraries or server calls.
+ * Image links still open their original file when JavaScript/dialog is unavailable.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var dialog = document.getElementById('ad-image-dialog');
+    var root = document.getElementById('main');
+    if (!root || !dialog || typeof dialog.showModal !== 'function' || dialog.dataset.ready) return;
+    dialog.dataset.ready = 'true';
+    var image = dialog.querySelector('[data-ad-image]');
+    var stage = dialog.querySelector('[data-ad-stage]');
+    var title = document.getElementById('ad-image-title');
+    var caption = document.getElementById('ad-image-caption');
+    var original = dialog.querySelector('[data-ad-original]');
+    var error = dialog.querySelector('[data-ad-image-error]');
+    var value = dialog.querySelector('[data-ad-scale]');
+    var plus = dialog.querySelector('[data-ad-zoom-in]');
+    var minus = dialog.querySelector('[data-ad-zoom-out]');
+    var fitButton = dialog.querySelector('[data-ad-fit]');
+    var nativeButton = dialog.querySelector('[data-ad-native]');
+    var closeButton = dialog.querySelector('[data-ad-close]');
+    var opener = null;
+    var oldOverflow = '';
+    var scale = 1;
+    var fitScale = 1;
+    var ready = false;
+    var fitMode = true;
+    var resizeTimer = null;
+
+    function setReady(state) {
+      ready = state;
+      plus.disabled = !state;
+      minus.disabled = !state;
+      fitButton.disabled = !state;
+      nativeButton.disabled = !state;
+      value.textContent = state ? Math.round(scale * 100) + '%' : '…';
+    }
+    function measureFit() {
+      if (!image.naturalWidth || !image.naturalHeight) return false;
+      var pad = window.innerWidth <= 600 ? 24 : 36;
+      fitScale = Math.min(1, Math.max(1, stage.clientWidth - pad) / image.naturalWidth,
+        Math.max(1, stage.clientHeight - pad) / image.naturalHeight);
+      return true;
+    }
+    function paint(next) {
+      if (!ready) return;
+      var centerX = (stage.scrollLeft + stage.clientWidth / 2) / Math.max(1,stage.scrollWidth);
+      var centerY = (stage.scrollTop + stage.clientHeight / 2) / Math.max(1,stage.scrollHeight);
+      scale = Math.max(fitScale, Math.min(3, next));
+      image.style.width = Math.round(image.naturalWidth * scale) + 'px';
+      image.style.height = Math.round(image.naturalHeight * scale) + 'px';
+      value.textContent = Math.round(scale * 100) + '%';
+      minus.disabled = scale <= fitScale + 0.001;
+      plus.disabled = scale >= 3 - 0.001;
+      if (fitMode) { stage.scrollLeft = 0; stage.scrollTop = 0; }
+      else {
+        stage.scrollLeft = centerX * stage.scrollWidth - stage.clientWidth / 2;
+        stage.scrollTop = centerY * stage.scrollHeight - stage.clientHeight / 2;
+      }
+    }
+    function fit() {
+      if (!measureFit()) return;
+      fitMode = true;
+      paint(fitScale);
+    }
+    function loaded() {
+      if (!dialog.open || !image.naturalWidth) return;
+      image.hidden = false;
+      error.hidden = true;
+      setReady(true);
+      fit();
+    }
+    image.addEventListener('load', loaded);
+    image.addEventListener('error', function () {
+      if (!dialog.open) return;
+      image.hidden = true;
+      error.hidden = false;
+      setReady(false);
+      value.textContent = '—';
+    });
+    root.addEventListener('click', function (event) {
+      var link = event.target.closest && event.target.closest('a[data-ad-gallery]');
+      if (!link || !root.contains(link) || event.defaultPrevented || event.button !== 0 ||
+          event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      opener = link;
+      title.textContent = link.getAttribute('data-ad-title') || '광고 이미지';
+      caption.textContent = link.getAttribute('data-ad-caption') || '';
+      original.href = link.href;
+      image.alt = (link.querySelector('img') || {}).alt || title.textContent;
+      error.hidden = true;
+      image.hidden = true;
+      image.style.width = '';
+      image.style.height = '';
+      setReady(false);
+      oldOverflow = document.documentElement.style.overflow;
+      try { dialog.showModal(); }
+      catch (_) { return; }
+      event.preventDefault();
+      document.documentElement.style.overflow = 'hidden';
+      image.src = link.href;
+      closeButton.focus();
+      if (image.complete && image.naturalWidth) loaded();
+    });
+    closeButton.addEventListener('click', function () { dialog.close(); });
+    dialog.addEventListener('click', function (event) {
+      if (event.target !== dialog) return;
+      var box = dialog.getBoundingClientRect();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close();
+    });
+    dialog.addEventListener('close', function () {
+      document.documentElement.style.overflow = oldOverflow;
+      image.hidden = true;
+      image.removeAttribute('src');
+      setReady(false);
+      clearTimeout(resizeTimer);
+      if (opener && opener.isConnected) opener.focus({preventScroll:true});
+    });
+    plus.addEventListener('click', function () { fitMode = false; paint(scale * 1.25); });
+    minus.addEventListener('click', function () { fitMode = false; paint(scale / 1.25); });
+    fitButton.addEventListener('click', fit);
+    nativeButton.addEventListener('click', function () { fitMode = false; paint(1); });
+    window.addEventListener('resize', function () {
+      if (!dialog.open || !ready) return;
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (!dialog.open || !ready) return;
+        if (fitMode) fit();
+        else { measureFit(); paint(scale); }
+      }, 100);
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
