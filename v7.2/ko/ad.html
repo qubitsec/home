@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="color-scheme" content="light"/>
+<meta name="theme-color" content="#2458e8"/>
+<title>라디오 광고 | PLURA</title>
+<meta name="description" content="PLURA의 웹방화벽·통합 보안 플랫폼 라디오 광고를 다시 듣고, 광고 메시지와 송출 안내 기록을 확인하세요."/>
+<meta name="author" content="Qubit Security Inc."/>
+<meta name="plura-website-version" content="7.2-radio-20261110"/>
+<link rel="canonical" href="https://www.plura.io/ko/radio.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" content="PLURA"/>
+<meta property="og:title" content="라디오 광고 | PLURA"/>
+<meta property="og:description" content="PLURA 라디오 광고 음원과 광고 메시지, 송출 안내 기록입니다."/>
+<meta property="og:url" content="https://www.plura.io/ko/radio.html"/>
+<link rel="icon" href="../res/images/favicon.ico"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../res/css/site.css?v=7.2-20260927-final-site" rel="stylesheet"/>
+<link href="../res/css/pages.css?v=7.1-20260917-final" rel="stylesheet"/>
+<link href="../res/css/readability.css?v=7.1-20260917-final" rel="stylesheet"/>
+<script defer src="../res/js/include.js?v=7.1-20260922-shared-1" data-site-script="../res/js/site.js?v=7.1-20260917-final"></script>
+<style id="plura-radio-page-style">
+/* Radio page only. Shared styles, header/footer and other pages are unchanged. */
+body[data-page="radio.html"] #main { --ra-ink:#182f52; --ra-muted:#526984; --ra-line:#dce5f2; --ra-blue:#2458e8; color:var(--ra-ink); background:#fff; }
+body[data-page="radio.html"] #main *, body[data-page="radio.html"] #main *::before, body[data-page="radio.html"] #main *::after { box-sizing:border-box; }
+body[data-page="radio.html"] #main .container { width:min(1200px,calc(100% - 64px)); margin-inline:auto; }
+body[data-page="radio.html"] #main .icon { display:inline-block; width:20px; height:20px; flex-shrink:0; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+body[data-page="radio.html"] #main .ra-hero { padding:30px 0 48px; background:linear-gradient(180deg,#f7faff 0%,#fff 100%); border-bottom:1px solid var(--ra-line); }
+body[data-page="radio.html"] #main .breadcrumbs { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:0 0 34px; font-size:12px; line-height:1.8; color:#62758e; }
+body[data-page="radio.html"] #main .breadcrumbs a { color:#62758e; text-decoration:none; }
+body[data-page="radio.html"] #main .breadcrumbs .icon { width:12px; height:12px; }
+body[data-page="radio.html"] #main .ra-hero-grid { display:grid; grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr); align-items:center; gap:64px; }
+body[data-page="radio.html"] #main .ra-eyebrow { margin:0 0 13px; color:#536d98; font-size:11px; line-height:1.6; font-weight:700; letter-spacing:.12em; }
+body[data-page="radio.html"] #main h1 { margin:0; color:var(--ra-ink); font-size:clamp(32px,3.4vw,44px); line-height:1.35; font-weight:700; letter-spacing:-.04em; word-break:keep-all; }
+body[data-page="radio.html"] #main .ra-lead { margin:18px 0 0; max-width:560px; color:var(--ra-muted); font-size:17px; line-height:1.9; font-weight:400; word-break:keep-all; }
+body[data-page="radio.html"] #main .ra-hero-links { display:flex; flex-wrap:wrap; align-items:center; gap:15px 22px; margin-top:25px; }
+body[data-page="radio.html"] #main .ra-primary { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 17px; color:#fff; background:#2458e8; border:1px solid #2458e8; border-radius:7px; font-size:14px; font-weight:600; text-decoration:none; line-height:1.6; }
+body[data-page="radio.html"] #main .ra-link { display:inline-flex; align-items:center; gap:7px; min-height:40px; padding:6px 0; color:#365d9d; font-size:13px; font-weight:500; text-decoration:none; line-height:1.7; }
+body[data-page="radio.html"] #main .ra-link .icon { width:15px; height:15px; }
+body[data-page="radio.html"] #main .ra-overview { min-width:0; padding:24px; border:1px solid var(--ra-line); border-radius:16px; background:#fff; box-shadow:0 8px 25px rgba(30,59,113,.045); }
+body[data-page="radio.html"] #main .ra-overview-head { display:flex; align-items:center; gap:9px; margin-bottom:15px; }
+body[data-page="radio.html"] #main .ra-overview-head>.icon { color:#345ba8; width:19px; height:19px; }
+body[data-page="radio.html"] #main .ra-overview h2 { margin:0; color:var(--ra-ink); font-size:16px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
+body[data-page="radio.html"] #main .ra-overview a { display:flex; align-items:center; gap:12px; min-width:0; padding:13px 12px; border:1px solid #e4ebf5; border-radius:9px; color:#27476e; background:#f8faff; text-decoration:none; font-size:14px; line-height:1.7; }
+body[data-page="radio.html"] #main .ra-overview a+a { margin-top:8px; }
+body[data-page="radio.html"] #main .ra-overview a span { font-size:11px; color:#5671a0; font-variant-numeric:tabular-nums; }
+body[data-page="radio.html"] #main .ra-overview a strong { font-weight:600; min-width:0; }
+body[data-page="radio.html"] #main .ra-overview a>.icon { margin-left:auto; width:16px; height:16px; }
+body[data-page="radio.html"] #main .ra-section { padding:50px 0; }
+body[data-page="radio.html"] #main .ra-section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:25px; }
+body[data-page="radio.html"] #main .ra-section-head h2 { margin:0; font-size:27px; line-height:1.4; letter-spacing:-.035em; font-weight:650; color:var(--ra-ink); }
+body[data-page="radio.html"] #main .ra-section-head p { margin:0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
+body[data-page="radio.html"] #main .ra-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+body[data-page="radio.html"] #main .ra-record { position:relative; min-width:0; padding:28px; border:1px solid var(--ra-line); border-radius:15px; background:#fff; box-shadow:0 6px 22px rgba(26,56,108,.035); transition:border-color .2s ease,box-shadow .2s ease; scroll-margin-top:110px; }
+body[data-page="radio.html"] #main .ra-record-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+body[data-page="radio.html"] #main .ra-number { display:inline-flex; align-items:center; gap:8px; padding:5px 9px; border-radius:6px; color:#34599e; background:#edf3ff; font-size:12px; font-weight:600; line-height:1.6; }
+body[data-page="radio.html"] #main .ra-number>.icon { width:15px; height:15px; }
+body[data-page="radio.html"] #main .ra-format { color:#75859b; font-size:10px; letter-spacing:.12em; font-weight:600; }
+body[data-page="radio.html"] #main .ra-record h3 { margin:19px 0 7px; color:var(--ra-ink); font-size:23px; line-height:1.5; font-weight:650; letter-spacing:-.025em; word-break:keep-all; }
+body[data-page="radio.html"] #main .ra-credit { margin:0; color:#647994; font-size:12px; line-height:1.8; }
+body[data-page="radio.html"] #main .ra-player { margin:22px 0 20px; padding:16px 13px 13px; background:#f3f6fb; border:1px solid #e4ebf5; border-radius:11px; }
+body[data-page="radio.html"] #main .ra-player-info { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:0 5px 11px; }
+body[data-page="radio.html"] #main .ra-play-state { display:inline-flex; align-items:center; gap:6px; color:#556c8e; font-size:11px; line-height:1.6; }
+body[data-page="radio.html"] #main .ra-play-state::before { content:""; display:block; width:6px; height:6px; border-radius:50%; background:#8b9fbd; }
+body[data-page="radio.html"] #main .ra-player-label { font-size:10px; line-height:1.6; font-weight:500; color:#647b9f; letter-spacing:.06em; }
+body[data-page="radio.html"] #main audio { display:block; width:100%; max-width:100%; min-width:0; height:42px; color-scheme:light; }
+body[data-page="radio.html"] #main .ra-record.is-playing { border-color:#8daef5; box-shadow:0 10px 28px rgba(28,72,156,.10); }
+body[data-page="radio.html"] #main .ra-record.is-playing .ra-play-state { color:#2458e8; }
+body[data-page="radio.html"] #main .ra-record.is-playing .ra-play-state::before { background:#2458e8; box-shadow:0 0 0 3px rgba(36,88,232,.11); }
+body[data-page="radio.html"] #main .ra-player-error { margin:10px 4px 0; color:#8c3e22; font-size:12px; line-height:1.8; }
+body[data-page="radio.html"] #main .ra-message { border-top:1px solid #e7edf6; padding-top:18px; }
+body[data-page="radio.html"] #main .ra-message-label { margin:0 0 9px; color:#74839a; font-size:11px; font-weight:500; }
+body[data-page="radio.html"] #main .ra-message blockquote { margin:0 0 10px; padding:0; border:0; color:#274b84; font-size:16px; line-height:1.75; font-weight:600; letter-spacing:-.02em; word-break:keep-all; }
+body[data-page="radio.html"] #main .ra-description { margin:0; color:#536984; font-size:14px; line-height:1.9; word-break:keep-all; overflow-wrap:break-word; }
+body[data-page="radio.html"] #main .ra-file-row { margin-top:19px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:7px 15px; }
+body[data-page="radio.html"] #main .ra-file-row>span { font-size:10px; color:#7c8ca3; line-height:1.7; }
+body[data-page="radio.html"] #main .ra-file-row .ra-link { font-size:12px; }
+body[data-page="radio.html"] #main .ra-history { background:#f7f9fc; border-top:1px solid #e4eaf4; }
+body[data-page="radio.html"] #main .ra-history .ra-section-head { align-items:flex-start; flex-direction:column; gap:10px; }
+body[data-page="radio.html"] #main .ra-history .ra-section-head h2 { font-size:25px; }
+body[data-page="radio.html"] #main .ra-table-wrap { overflow-x:auto; border:1px solid #dce4ef; border-radius:12px; background:#fff; }
+body[data-page="radio.html"] #main table { width:100%; min-width:680px; border-collapse:collapse; text-align:left; font-size:13px; line-height:1.75; }
+body[data-page="radio.html"] #main th { color:#536984; background:#eff4fa; font-size:11px; font-weight:600; padding:14px 18px; border-bottom:1px solid #dce4ef; white-space:nowrap; }
+body[data-page="radio.html"] #main td { padding:17px 18px; border-bottom:1px solid #e6edf6; color:#314c72; vertical-align:middle; }
+body[data-page="radio.html"] #main tr:last-child td { border-bottom:0; }
+body[data-page="radio.html"] #main td:first-child { color:#8192a9; font-size:11px; width:56px; }
+body[data-page="radio.html"] #main .ra-date { display:block; color:#243f66; font-size:13px; font-weight:500; font-variant-numeric:tabular-nums; }
+body[data-page="radio.html"] #main .ra-period-note { display:block; color:#7c8ba1; margin-top:4px; font-size:11px; }
+body[data-page="radio.html"] #main .ra-mobile-hint { display:none; margin:10px 0 0; color:#74849b; font-size:11px; line-height:1.8; }
+body[data-page="radio.html"] #main .ra-history-note { margin:14px 0 0; color:#75869f; font-size:12px; line-height:1.85; }
+body[data-page="radio.html"] #main .ra-related { padding:34px 0; border-top:1px solid var(--ra-line); }
+body[data-page="radio.html"] #main .ra-related-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:15px 30px; }
+body[data-page="radio.html"] #main .ra-related h2 { margin:0; color:var(--ra-ink); font-size:20px; line-height:1.6; font-weight:600; letter-spacing:-.02em; }
+body[data-page="radio.html"] #main .ra-related p { margin:6px 0 0; color:var(--ra-muted); font-size:13px; line-height:1.8; }
+body[data-page="radio.html"] #main .ra-related-links { display:flex; flex-wrap:wrap; align-items:center; gap:10px 22px; }
+body[data-page="radio.html"] #main :is(a,audio,.ra-table-wrap):focus-visible { outline:3px solid #5182ed; outline-offset:4px; }
+body[data-page="radio.html"] #main [hidden] { display:none!important; }
+body[data-page="radio.html"] #radio-audio, body[data-page="radio.html"] #radio-history { scroll-margin-top:106px; }
+@media(any-hover:hover) {
+ body[data-page="radio.html"] #main .ra-overview a:hover { background:#edf3ff; border-color:#b7cdf7; color:#2458e8; }
+ body[data-page="radio.html"] #main .ra-record:hover { border-color:#a4bff1; box-shadow:0 10px 25px rgba(28,72,156,.09); }
+ body[data-page="radio.html"] #main .ra-primary:hover { background:#1d48c5; }
+ body[data-page="radio.html"] #main .ra-link:hover { color:#2458e8; text-decoration:underline; text-underline-offset:4px; }
+ body[data-page="radio.html"] #main .ra-table-wrap tbody tr:hover { background:#f6f9ff; }
+}
+@media(max-width:960px) {
+ body[data-page="radio.html"] #main .ra-hero-grid { grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:30px; }
+ body[data-page="radio.html"] #main .ra-grid { gap:18px; }
+ body[data-page="radio.html"] #main .ra-record { padding:23px; }
+}
+@media(max-width:740px) {
+ body[data-page="radio.html"] #main .container { width:calc(100% - 40px); }
+ body[data-page="radio.html"] #main .ra-hero-grid, body[data-page="radio.html"] #main .ra-grid { grid-template-columns:minmax(0,1fr); }
+ body[data-page="radio.html"] #main .ra-hero { padding:22px 0 32px; }
+ body[data-page="radio.html"] #main .breadcrumbs { margin-bottom:25px; }
+ body[data-page="radio.html"] #main .ra-lead { font-size:15px; }
+ body[data-page="radio.html"] #main .ra-overview { padding:20px; }
+ body[data-page="radio.html"] #main .ra-section { padding:34px 0; }
+ body[data-page="radio.html"] #main .ra-section-head { align-items:flex-start; flex-direction:column; gap:8px; margin-bottom:20px; }
+ body[data-page="radio.html"] #main .ra-section-head h2 { font-size:24px; }
+ body[data-page="radio.html"] #main .ra-record { padding:22px; }
+ body[data-page="radio.html"] #main .ra-record h3 { font-size:21px; }
+ body[data-page="radio.html"] #main .ra-description { font-size:13px; }
+ body[data-page="radio.html"] #main table { min-width:660px; font-size:12px; }
+ body[data-page="radio.html"] #main th, body[data-page="radio.html"] #main td { padding:14px 13px; }
+ body[data-page="radio.html"] #main .ra-mobile-hint { display:block; }
+ body[data-page="radio.html"] #main .ra-date { font-size:12px; }
+ body[data-page="radio.html"] #main .ra-time { font-size:12px; }
+}
+@media(max-width:360px) {
+ body[data-page="radio.html"] #main .container { width:calc(100% - 32px); }
+ body[data-page="radio.html"] #main .ra-record { padding:18px; }
+ body[data-page="radio.html"] #main h1 { font-size:29px; }
+ body[data-page="radio.html"] #main .ra-player { padding-inline:5px; }
+ body[data-page="radio.html"] #main th,body[data-page="radio.html"] #main td { padding-inline:7px; }
+}
+@media(prefers-reduced-motion:reduce) { body[data-page="radio.html"] #main * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+@media print {
+ body[data-page="radio.html"] #main .ra-hero,body[data-page="radio.html"] #main .ra-history { background:#fff; }
+ body[data-page="radio.html"] #main .ra-player { display:none; }
+ body[data-page="radio.html"] #main .ra-grid { grid-template-columns:1fr; }
+ body[data-page="radio.html"] #main .ra-record { break-inside:avoid; box-shadow:none; }
+ body[data-page="radio.html"] #main .ra-section { padding:18px 0; }
+ body[data-page="radio.html"] #main .ra-frequency { display:table-cell; }
+}
+</style>
+</head>
+<body data-page="radio.html" data-website-version="7.2">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<div class="site-header" data-include-path="./p_header.html" data-include-kind="header" data-nav-current="radio.html"><noscript><div class="wrap nav-inner"><a class="brand" href="index.html">PLURA</a><a href="p_header.html">전체 메뉴 보기</a></div></noscript></div>
+<main class="v71-pages" id="main" tabindex="-1">
+<section class="ra-hero" aria-labelledby="radio-page-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span>고객·자료</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg><span aria-current="page">라디오 광고</span></nav>
+    <div class="ra-hero-grid">
+      <div>
+        <p class="ra-eyebrow">RADIO ADVERTISING</p>
+        <h1 id="radio-page-title">PLURA 라디오 광고</h1>
+        <p class="ra-lead">라디오로 전한 PLURA의 보안 이야기.<br/>광고 음원을 다시 듣고, 광고 메시지와 송출 안내를 확인하세요.</p>
+        <div class="ra-hero-links"><a class="ra-primary" href="#radio-audio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg> 광고 듣기</a><a class="ra-link" href="#radio-history">송출 안내 기록 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+      </div>
+      <aside class="ra-overview" aria-labelledby="radio-overview-title">
+        <div class="ra-overview-head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg><h2 id="radio-overview-title">광고 음원</h2></div>
+        <a href="#radio-waf"><span>01</span><strong>웹방화벽 편</strong><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+        <a href="#radio-platform"><span>02</span><strong>통합 보안 플랫폼 편</strong><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="ra-section" id="radio-audio" aria-labelledby="radio-audio-title">
+ <div class="container">
+  <div class="ra-section-head"><h2 id="radio-audio-title">광고 다시 듣기</h2><p>재생 버튼을 누르면 이 페이지에서 바로 들을 수 있습니다.</p></div>
+  <div class="ra-grid"><article class="ra-record" id="radio-waf" aria-labelledby="radio-waf-title">
+  <div class="ra-record-top"><span class="ra-number"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg>01</span><span class="ra-format">RADIO / MP3</span></div>
+  <h3 id="radio-waf-title">웹방화벽 편</h3>
+  <p class="ra-credit">나레이션 · 권도일 성우</p>
+  <div class="ra-player">
+    <div class="ra-player-info"><span class="ra-play-state" data-radio-state>재생 대기</span><span class="ra-player-label">PLURA-XDR</span></div>
+    <audio controls preload="none" aria-label="PLURA 라디오 광고 웹방화벽 편" data-radio-audio>
+      <!-- Local media is preferred after copying the original MP3 into res/audio/radio/.
+           Until then, the actual attachment URL from the public radio page is the fallback. -->
+      <source src="../res/audio/radio/PLURA-XDR_WAF.mp3" type="audio/mpeg"/>
+      <source src="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2F4mJafKGpr4hC5CxIrHhk%2FPLURA-XDR_WAF.mp3?alt=media&amp;token=b90f8312-3f93-4a70-bca1-30ea8d01f477" type="audio/mpeg"/>
+      이 브라우저에서는 음원 재생을 지원하지 않습니다. <a href="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2F4mJafKGpr4hC5CxIrHhk%2FPLURA-XDR_WAF.mp3?alt=media&amp;token=b90f8312-3f93-4a70-bca1-30ea8d01f477" target="_blank" rel="noopener noreferrer">음원 파일 열기</a>
+    </audio>
+    <p class="ra-player-error" data-radio-error role="status" hidden>음원을 불러오지 못했습니다. 아래 ‘음원 파일 열기’에서 확인해 주세요.</p>
+  </div>
+  <div class="ra-message">
+    <p class="ra-message-label">광고 메시지</p>
+    <blockquote>“홈페이지를 운영하고 계신가요”</blockquote>
+    <p class="ra-description">홈페이지 운영자를 위한 웹방화벽 광고입니다. 계정 탈취와 크리덴셜 스터핑 공격에 대응하는 PLURA-XDR 웹방화벽 서비스를 소개합니다.</p>
+  </div>
+  <div class="ra-file-row"><a class="ra-link" href="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2F4mJafKGpr4hC5CxIrHhk%2FPLURA-XDR_WAF.mp3?alt=media&amp;token=b90f8312-3f93-4a70-bca1-30ea8d01f477" target="_blank" rel="noopener noreferrer" data-radio-file>음원 파일 열기 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg><span class="sr-only"> (새 탭)</span></a><span>광고 음원</span></div>
+</article><article class="ra-record" id="radio-platform" aria-labelledby="radio-platform-title">
+  <div class="ra-record-top"><span class="ra-number"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="12" width="5" height="9" rx="2"/><rect x="16" y="12" width="5" height="9" rx="2"/></svg>02</span><span class="ra-format">RADIO / MP3</span></div>
+  <h3 id="radio-platform-title">통합 보안 플랫폼 편</h3>
+  <p class="ra-credit">나레이션 · 권도일 성우</p>
+  <div class="ra-player">
+    <div class="ra-player-info"><span class="ra-play-state" data-radio-state>재생 대기</span><span class="ra-player-label">PLURA-XDR</span></div>
+    <audio controls preload="none" aria-label="PLURA 라디오 광고 통합 보안 플랫폼 편" data-radio-audio>
+      <!-- Local media is preferred after copying the original MP3 into res/audio/radio/.
+           Until then, the actual attachment URL from the public radio page is the fallback. -->
+      <source src="../res/audio/radio/PLURA-XDR_Security_Platform.mp3" type="audio/mpeg"/>
+      <source src="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2FpyEsi3mB1QwXRTDd9jUN%2FPLURA-XDR_Security_Platform.mp3?alt=media&amp;token=9087ad74-ec54-4be8-812b-e66b191b02fb" type="audio/mpeg"/>
+      이 브라우저에서는 음원 재생을 지원하지 않습니다. <a href="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2FpyEsi3mB1QwXRTDd9jUN%2FPLURA-XDR_Security_Platform.mp3?alt=media&amp;token=9087ad74-ec54-4be8-812b-e66b191b02fb" target="_blank" rel="noopener noreferrer">음원 파일 열기</a>
+    </audio>
+    <p class="ra-player-error" data-radio-error role="status" hidden>음원을 불러오지 못했습니다. 아래 ‘음원 파일 열기’에서 확인해 주세요.</p>
+  </div>
+  <div class="ra-message">
+    <p class="ra-message-label">광고 메시지</p>
+    <blockquote>“정보보안 솔루션이 플랫폼으로 진화합니다.”</blockquote>
+    <p class="ra-description">웹방화벽, 호스트보안, 통합보안이벤트관리를 하나의 플랫폼으로 소개하는 광고입니다. 실시간 안티 해킹 플랫폼 PLURA-XDR의 메시지를 담았습니다.</p>
+  </div>
+  <div class="ra-file-row"><a class="ra-link" href="https://3912928640-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbL8mhGEJFL6ccTwojZ6f%2Fuploads%2FpyEsi3mB1QwXRTDd9jUN%2FPLURA-XDR_Security_Platform.mp3?alt=media&amp;token=9087ad74-ec54-4be8-812b-e66b191b02fb" target="_blank" rel="noopener noreferrer" data-radio-file>음원 파일 열기 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg><span class="sr-only"> (새 탭)</span></a><span>광고 음원</span></div>
+</article></div>
+ </div>
+</section>
+<section class="ra-section ra-history" id="radio-history" aria-labelledby="radio-history-title">
+ <div class="container">
+  <div class="ra-section-head"><h2 id="radio-history-title">송출 안내 기록</h2><p>2024년 공개 안내에 기록된 방송사와 송출 일정입니다.</p></div>
+  <div class="ra-table-wrap" role="region" aria-label="2024년 라디오 광고 송출 안내 표" tabindex="0">
+   <table>
+    <caption class="sr-only">PLURA 라디오 광고의 2024년 송출 안내. 주파수는 당시 문서 표기이며 현재 편성표가 아닙니다.</caption>
+    <thead><tr><th scope="col">No.</th><th scope="col">안내 기간</th><th scope="col">방송사</th><th scope="col" class="ra-frequency">주파수 · 지역</th><th scope="col">송출 시간</th></tr></thead>
+    <tbody>
+     <tr><td>01</td><td><span class="ra-date">2024.07.01 ~</span><span class="ra-period-note">당시 시작 예정으로 안내</span></td><td>MBC</td><td class="ra-frequency">FM 95.5 MHz · 서울</td><td class="ra-time">오전 6:59</td></tr>
+     <tr><td>02</td><td><span class="ra-date">2024.05.01 ~ 05.31</span><span class="ra-period-note">종료</span></td><td>MBC<span class="ra-period-note">정오뉴스</span></td><td class="ra-frequency">FM 95.9 MHz · 서울</td><td class="ra-time">평일 오후 12:19<br/>토·일 오후 12:09</td></tr>
+     <tr><td>03</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td>MBC</td><td class="ra-frequency">FM 95.5 MHz · 서울</td><td class="ra-time">오전 6:59</td></tr>
+     <tr><td>04</td><td><span class="ra-date">2024.02.01 ~ 04.30</span><span class="ra-period-note">종료</span></td><td>YTN</td><td class="ra-frequency">FM 94.5 MHz · 수도권</td><td class="ra-time">평일 오전 7:29<br/>토·일 오전 7:19</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p class="ra-mobile-hint">표를 좌우로 움직이면 주파수와 송출 시간을 확인할 수 있습니다.</p>
+  <p class="ra-history-note">기간·시간·주파수는 당시 안내 표기입니다. 현재의 송출 여부나 방송 편성을 나타내지 않습니다.</p>
+ </div>
+</section>
+<section class="ra-related" aria-labelledby="radio-related-title">
+ <div class="container ra-related-inner">
+  <div><h2 id="radio-related-title">PLURA의 다른 자료도 만나보세요.</h2><p>방송·인터뷰와 제품 소개 영상, 기고 칼럼을 확인할 수 있습니다.</p></div>
+  <div class="ra-related-links"><a class="ra-link" href="video.html">영상·자료실 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a><a class="ra-link" href="https://www.instagram.com/qubitsec.official/" target="_blank" rel="noopener noreferrer">인스타그램 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg><span class="sr-only"> (새 탭)</span></a></div>
+ </div>
+</section>
+</main>
+<div data-include-path="./p_footer.html" data-include-kind="footer"><noscript><div class="wrap"><a href="p_footer.html">하단 메뉴 보기</a></div></noscript></div>
+<button class="top-button" id="back-top" type="button" aria-label="상단으로 이동" hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></button>
+<noscript><div class="noscript-note wrap">JavaScript가 꺼져 있어도 광고 음원은 기본 재생 버튼으로 들을 수 있습니다. 전체 메뉴는 상단의 메뉴 링크를 이용해 주세요.</div></noscript>
+<script id="plura-radio-player-script">
+/* Radio only: no external library, no autoplay, no rewritten media addresses.
+ * Native source fallback prefers a local MP3, then the original public attachment.
+ */
+(function () {
+  'use strict';
+  function init() {
+    var root = document.getElementById('radio-audio');
+    if (!root || root.hasAttribute('data-radio-ready')) return;
+    root.setAttribute('data-radio-ready', '');
+    var players = Array.from(root.querySelectorAll('[data-radio-audio]'));
+    players.forEach(function (audio) {
+      var card = audio.closest('.ra-record');
+      var state = card.querySelector('[data-radio-state]');
+      var error = card.querySelector('[data-radio-error]');
+      var fileLink = card.querySelector('[data-radio-file]');
+      var sources = Array.from(audio.querySelectorAll('source'));
+      var failedSources = new Set();
+      function showError() {
+        card.classList.remove('is-playing');
+        state.textContent = '재생 연결 확인';
+        error.hidden = false;
+      }
+      audio.addEventListener('play', function () {
+        players.forEach(function (other) { if (other !== audio) other.pause(); });
+        error.hidden = true;
+        card.classList.add('is-playing');
+        state.textContent = '재생 중';
+      });
+      audio.addEventListener('pause', function () {
+        card.classList.remove('is-playing');
+        state.textContent = audio.ended ? '재생 완료' : '일시정지';
+      });
+      audio.addEventListener('ended', function () {
+        card.classList.remove('is-playing');
+        state.textContent = '재생 완료';
+      });
+      audio.addEventListener('loadedmetadata', function () {
+        error.hidden = true;
+        if (audio.paused) state.textContent = '재생 준비';
+        // currentSrc is accepted only if it exactly resolves to a declared source.
+        if (audio.currentSrc && sources.some(function (source) { return source.src === audio.currentSrc; })) {
+          fileLink.href = audio.currentSrc;
+        }
+      });
+      sources.forEach(function (source) {
+        source.addEventListener('error', function () {
+          failedSources.add(source);
+          if (failedSources.size === sources.length) showError();
+        });
+      });
+      audio.addEventListener('error', showError);
+    });
+    window.addEventListener('pagehide', function () {
+      players.forEach(function (audio) { audio.pause(); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
+}());
+</script>
+</body>
+</html>
